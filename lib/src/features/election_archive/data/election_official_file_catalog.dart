@@ -1,4 +1,5 @@
 import '../../../core/models/election_official_file.dart';
+import '../../parliamentary_2019/data/parliamentary_2019_official_files.dart';
 import '../../parliamentary_2021/data/parliamentary_2021_official_files.dart';
 
 class ElectionOfficialFileCatalog {
@@ -6,6 +7,7 @@ class ElectionOfficialFileCatalog {
 
   static const List<ElectionOfficialFile> all = [
     ...Parliamentary2021OfficialFiles.files,
+    ...Parliamentary2019OfficialFiles.files,
   ];
 
   static List<ElectionOfficialFile> byElectionId(String electionId) {
