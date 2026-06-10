@@ -1,0 +1,656 @@
+import 'package:flutter/material.dart';
+
+import '../../../core/models/election_source.dart';
+import '../../../core/models/municipality_result.dart';
+import '../../../core/services/selected_election_controller.dart';
+import '../../../core/theme/app_theme.dart';
+import '../../../core/utils/app_formatters.dart';
+import '../../../core/widgets/app_state_cards.dart';
+import '../../../core/widgets/election_picker_card.dart';
+import '../../results/data/election_repository.dart';
+
+enum MunicipalitySortMode {
+  name,
+  turnout,
+  voters,
+  votesCast,
+}
+
+class MunicipalitiesScreen extends StatefulWidget {
+  const MunicipalitiesScreen({super.key});
+
+  @override
+  State<MunicipalitiesScreen> createState() => _MunicipalitiesScreenState();
+}
+
+class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
+  final ElectionRepository _repository = const ElectionRepository();
+  final TextEditingController _searchController = TextEditingController();
+
+  late Future<List<MunicipalityResult>> _municipalityResultsFuture;
+
+  String _searchQuery = '';
+  MunicipalitySortMode _sortMode = MunicipalitySortMode.name;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadMunicipalities();
+  }
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  void _loadMunicipalities() {
+    _municipalityResultsFuture = _repository.getMunicipalityResults();
+  }
+
+  void _refresh() {
+    setState(_loadMunicipalities);
+  }
+
+  List<MunicipalityResult> _filterAndSort(
+      List<MunicipalityResult> municipalities,
+      ) {
+    final query = _searchQuery.trim().toLowerCase();
+
+    final filtered = municipalities.where((item) {
+      if (query.isEmpty) return true;
+
+      return item.name.toLowerCase().contains(query) ||
+          item.leadingSubject.toLowerCase().contains(query) ||
+          item.id.toLowerCase().contains(query);
+    }).toList();
+
+    switch (_sortMode) {
+      case MunicipalitySortMode.name:
+        filtered.sort((a, b) => a.name.compareTo(b.name));
+        break;
+      case MunicipalitySortMode.turnout:
+        filtered.sort((a, b) => b.turnoutPercentage.compareTo(a.turnoutPercentage));
+        break;
+      case MunicipalitySortMode.voters:
+        filtered.sort((a, b) => b.voters.compareTo(a.voters));
+        break;
+      case MunicipalitySortMode.votesCast:
+        filtered.sort((a, b) => b.votesCast.compareTo(a.votesCast));
+        break;
+    }
+
+    return filtered;
+  }
+
+  int _totalVoters(List<MunicipalityResult> municipalities) {
+    return municipalities.fold<int>(0, (sum, item) => sum + item.voters);
+  }
+
+  int _totalVotesCast(List<MunicipalityResult> municipalities) {
+    return municipalities.fold<int>(0, (sum, item) => sum + item.votesCast);
+  }
+
+  double _averageTurnout(List<MunicipalityResult> municipalities) {
+    if (municipalities.isEmpty) return 0;
+
+    final total = municipalities.fold<double>(
+      0,
+          (sum, item) => sum + item.turnoutPercentage,
+    );
+
+    return total / municipalities.length;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ValueListenableBuilder<ElectionSource>(
+      valueListenable: SelectedElectionController.selectedElection,
+      builder: (context, selectedElection, _) {
+        return Scaffold(
+          backgroundColor: AppTheme.background,
+          appBar: AppBar(
+            title: const Text('Komunat'),
+            actions: [
+              IconButton(
+                tooltip: 'Përditëso',
+                onPressed: _refresh,
+                icon: const Icon(Icons.refresh_rounded),
+              ),
+            ],
+          ),
+          body: FutureBuilder<List<MunicipalityResult>>(
+            future: _municipalityResultsFuture,
+            builder: (context, snapshot) {
+              final allMunicipalities =
+                  snapshot.data ?? const <MunicipalityResult>[];
+              final visibleMunicipalities =
+              _filterAndSort(allMunicipalities);
+
+              return RefreshIndicator(
+                onRefresh: () async {
+                  _refresh();
+                  await _municipalityResultsFuture;
+                },
+                child: ListView(
+                  padding: const EdgeInsets.fromLTRB(18, 12, 18, 24),
+                  children: [
+                    const _PageHeader(),
+                    const SizedBox(height: 12),
+                    ElectionPickerCard(onChanged: _refresh),
+                    const SizedBox(height: 12),
+                    _MunicipalityDataNotice(source: selectedElection),
+                    const SizedBox(height: 12),
+                    _SummaryCard(
+                      municipalitiesCount: allMunicipalities.length,
+                      totalVoters: _totalVoters(allMunicipalities),
+                      totalVotesCast: _totalVotesCast(allMunicipalities),
+                      averageTurnout: _averageTurnout(allMunicipalities),
+                    ),
+                    const SizedBox(height: 12),
+                    _SearchAndSortCard(
+                      controller: _searchController,
+                      sortMode: _sortMode,
+                      onSearchChanged: (value) {
+                        setState(() {
+                          _searchQuery = value;
+                        });
+                      },
+                      onSortChanged: (value) {
+                        if (value == null) return;
+                        setState(() {
+                          _sortMode = value;
+                        });
+                      },
+                    ),
+                    const SizedBox(height: 18),
+                    if (snapshot.connectionState == ConnectionState.waiting)
+                      const AppLoadingCard(
+                        message: 'Duke ngarkuar komunat...',
+                      )
+                    else if (snapshot.hasError)
+                      AppErrorCard(
+                        message:
+                        'Ju lutem kontrolloni lidhjen me internetin ose provoni përsëri.',
+                        onRetry: _refresh,
+                      )
+                    else if (allMunicipalities.isEmpty)
+                        const AppEmptyCard(
+                          message: 'Nuk ka ende komuna për t’u shfaqur.',
+                        )
+                      else if (visibleMunicipalities.isEmpty)
+                          const AppEmptyCard(
+                            message: 'Nuk u gjet asnjë komunë me këtë kërkim.',
+                          )
+                        else
+                          ...visibleMunicipalities.asMap().entries.map(
+                                (entry) => _MunicipalityCard(
+                              rank: entry.key + 1,
+                              result: entry.value,
+                            ),
+                          ),
+                  ],
+                ),
+              );
+            },
+          ),
+        );
+      },
+    );
+  }
+}
+
+class _PageHeader extends StatelessWidget {
+  const _PageHeader();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.fromLTRB(18, 18, 18, 18),
+      decoration: BoxDecoration(
+        color: AppTheme.primaryBlue,
+        borderRadius: BorderRadius.circular(24),
+        boxShadow: [
+          BoxShadow(
+            color: AppTheme.primaryBlue.withValues(alpha: 0.18),
+            blurRadius: 22,
+            offset: const Offset(0, 12),
+          ),
+        ],
+      ),
+      child: const Row(
+        children: [
+          Icon(
+            Icons.location_city_rounded,
+            color: Colors.white,
+            size: 36,
+          ),
+          SizedBox(width: 14),
+          Expanded(
+            child: Text(
+              'Rezultatet dhe pjesëmarrja sipas komunave.',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 17,
+                fontWeight: FontWeight.w800,
+                height: 1.25,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _MunicipalityDataNotice extends StatelessWidget {
+  final ElectionSource source;
+
+  const _MunicipalityDataNotice({
+    required this.source,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final isParliamentary =
+        source.type == ElectionSourceType.parliamentary2025;
+
+    final message = isParliamentary
+        ? 'Të dhënat e komunave për zgjedhjet parlamentare 2025 janë të përgatitura në strukturë, por detajet reale sipas komunave ende nuk janë lidhur.'
+        : 'Kjo faqe është e përgatitur për të dhënat e komunave nga platforma zyrtare e KQZ për zgjedhjet lokale. Aktualisht shfaqen të dhëna strukturore/testuese.';
+
+    return Container(
+      padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+      decoration: BoxDecoration(
+        color: const Color(0xFFFFFBEB),
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: const Color(0xFFFEDC7A)),
+      ),
+      child: Row(
+        children: [
+          const Icon(
+            Icons.info_outline_rounded,
+            color: Color(0xFFB54708),
+            size: 21,
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Text(
+              message,
+              style: const TextStyle(
+                color: Color(0xFF7A4B00),
+                fontSize: 12.8,
+                height: 1.3,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _SummaryCard extends StatelessWidget {
+  final int municipalitiesCount;
+  final int totalVoters;
+  final int totalVotesCast;
+  final double averageTurnout;
+
+  const _SummaryCard({
+    required this.municipalitiesCount,
+    required this.totalVoters,
+    required this.totalVotesCast,
+    required this.averageTurnout,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final voters = AppFormatters.number(totalVoters);
+    final votesCast = AppFormatters.number(totalVotesCast);
+    final turnout = AppFormatters.percent(averageTurnout);
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(15, 15, 15, 15),
+        child: Row(
+          children: [
+            Expanded(
+              child: _SummaryItem(
+                label: 'Komuna',
+                value: '$municipalitiesCount',
+                icon: Icons.map_rounded,
+              ),
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: _SummaryItem(
+                label: 'Votues',
+                value: voters,
+                icon: Icons.people_alt_rounded,
+              ),
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: _SummaryItem(
+                label: 'Dalja',
+                value: turnout,
+                icon: Icons.percent_rounded,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _SummaryItem extends StatelessWidget {
+  final String label;
+  final String value;
+  final IconData icon;
+
+  const _SummaryItem({
+    required this.label,
+    required this.value,
+    required this.icon,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.fromLTRB(8, 12, 8, 12),
+      decoration: BoxDecoration(
+        color: AppTheme.softBlue,
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Column(
+        children: [
+          Icon(
+            icon,
+            color: AppTheme.primaryBlue,
+            size: 22,
+          ),
+          const SizedBox(height: 8),
+          Text(
+            value,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: const TextStyle(
+              color: AppTheme.textDark,
+              fontSize: 15.5,
+              fontWeight: FontWeight.w900,
+            ),
+          ),
+          const SizedBox(height: 3),
+          Text(
+            label,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: const TextStyle(
+              color: AppTheme.textMuted,
+              fontSize: 11.2,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _SearchAndSortCard extends StatelessWidget {
+  final TextEditingController controller;
+  final MunicipalitySortMode sortMode;
+  final ValueChanged<String> onSearchChanged;
+  final ValueChanged<MunicipalitySortMode?> onSortChanged;
+
+  const _SearchAndSortCard({
+    required this.controller,
+    required this.sortMode,
+    required this.onSearchChanged,
+    required this.onSortChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(14, 14, 14, 14),
+        child: Column(
+          children: [
+            TextField(
+              controller: controller,
+              onChanged: onSearchChanged,
+              decoration: InputDecoration(
+                hintText: 'Kërko komunë ose subjekt...',
+                prefixIcon: const Icon(Icons.search_rounded),
+                suffixIcon: controller.text.isEmpty
+                    ? null
+                    : IconButton(
+                  onPressed: () {
+                    controller.clear();
+                    onSearchChanged('');
+                  },
+                  icon: const Icon(Icons.close_rounded),
+                ),
+                filled: true,
+                fillColor: AppTheme.softBlue,
+                contentPadding: const EdgeInsets.symmetric(
+                  horizontal: 14,
+                  vertical: 12,
+                ),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(16),
+                  borderSide: const BorderSide(color: AppTheme.border),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(16),
+                  borderSide: const BorderSide(color: AppTheme.border),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(16),
+                  borderSide: const BorderSide(
+                    color: AppTheme.primaryBlue,
+                    width: 1.4,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 12),
+            DropdownButtonFormField<MunicipalitySortMode>(
+              value: sortMode,
+              decoration: InputDecoration(
+                labelText: 'Renditja',
+                filled: true,
+                fillColor: Colors.white,
+                contentPadding: const EdgeInsets.symmetric(
+                  horizontal: 14,
+                  vertical: 12,
+                ),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(16),
+                  borderSide: const BorderSide(color: AppTheme.border),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(16),
+                  borderSide: const BorderSide(color: AppTheme.border),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(16),
+                  borderSide: const BorderSide(
+                    color: AppTheme.primaryBlue,
+                    width: 1.4,
+                  ),
+                ),
+              ),
+              items: const [
+                DropdownMenuItem(
+                  value: MunicipalitySortMode.name,
+                  child: Text('Sipas emrit'),
+                ),
+                DropdownMenuItem(
+                  value: MunicipalitySortMode.turnout,
+                  child: Text('Sipas daljes'),
+                ),
+                DropdownMenuItem(
+                  value: MunicipalitySortMode.voters,
+                  child: Text('Sipas votuesve'),
+                ),
+                DropdownMenuItem(
+                  value: MunicipalitySortMode.votesCast,
+                  child: Text('Sipas votave'),
+                ),
+              ],
+              onChanged: onSortChanged,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _MunicipalityCard extends StatelessWidget {
+  final int rank;
+  final MunicipalityResult result;
+
+  const _MunicipalityCard({
+    required this.rank,
+    required this.result,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final voters = AppFormatters.number(result.voters);
+    final votesCast = AppFormatters.number(result.votesCast);
+    final turnout = AppFormatters.percent(result.turnoutPercentage);
+
+    return Card(
+      margin: const EdgeInsets.only(bottom: 12),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(14, 14, 14, 14),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _RankBadge(rank: rank),
+            const SizedBox(width: 11),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    result.name,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: Theme.of(context).textTheme.titleLarge,
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    'Udhëheq: ${result.leadingSubject}',
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      color: AppTheme.primaryBlue,
+                      fontSize: 13,
+                      fontWeight: FontWeight.w900,
+                      height: 1.25,
+                    ),
+                  ),
+                  const SizedBox(height: 9),
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      _InfoChip(
+                        icon: Icons.percent_rounded,
+                        label: 'Dalja $turnout',
+                      ),
+                      _InfoChip(
+                        icon: Icons.people_alt_rounded,
+                        label: '$voters votues',
+                      ),
+                      _InfoChip(
+                        icon: Icons.how_to_vote_rounded,
+                        label: '$votesCast vota',
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _RankBadge extends StatelessWidget {
+  final int rank;
+
+  const _RankBadge({required this.rank});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 42,
+      width: 42,
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+        color: AppTheme.softBlue,
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: AppTheme.border),
+      ),
+      child: Text(
+        '$rank',
+        style: const TextStyle(
+          color: AppTheme.primaryBlue,
+          fontSize: 15,
+          fontWeight: FontWeight.w900,
+        ),
+      ),
+    );
+  }
+}
+
+class _InfoChip extends StatelessWidget {
+  final IconData icon;
+  final String label;
+
+  const _InfoChip({
+    required this.icon,
+    required this.label,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.fromLTRB(9, 6, 10, 6),
+      decoration: BoxDecoration(
+        color: AppTheme.background,
+        borderRadius: BorderRadius.circular(999),
+        border: Border.all(color: AppTheme.border),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(
+            icon,
+            color: AppTheme.textMuted,
+            size: 15,
+          ),
+          const SizedBox(width: 5),
+          Text(
+            label,
+            style: const TextStyle(
+              color: AppTheme.textDark,
+              fontSize: 12,
+              fontWeight: FontWeight.w800,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
