@@ -24,6 +24,8 @@ class KqzResultsService {
         return Election(id: 'parliamentary-2021', title: source.title, type: 'Parlamentare', status: 'Rezultatet dhe kandidatët nga dokumentet zyrtare të KQZ', date: DateTime(2021, 2, 14), lastUpdated: DateTime.now());
       case ElectionSourceType.parliamentary2019:
         return Election(id: 'parliamentary-2019', title: source.title, type: 'Parlamentare', status: 'Rezultatet dhe kandidatët nga dokumentet zyrtare të KQZ', date: DateTime(2019, 10, 6), lastUpdated: DateTime.now());
+      case ElectionSourceType.parliamentary2017:
+        return Election(id: 'parliamentary-2017', title: source.title, type: 'Parlamentare', status: 'Burimet zyrtare janë regjistruar - importi në përgatitje', date: DateTime(2017, 6, 11), lastUpdated: DateTime.now());
       case ElectionSourceType.local2025:
         return Election(id: 'local-2025', title: source.title, type: 'Lokale', status: 'Burim zyrtar i përgatitur - test UI', date: DateTime(2025, 10, 12), lastUpdated: DateTime.now());
       case ElectionSourceType.local2025Round2:
@@ -40,6 +42,8 @@ class KqzResultsService {
         return Parliamentary2021PartyData.results;
       case ElectionSourceType.parliamentary2019:
         return Parliamentary2019PartyData.results;
+      case ElectionSourceType.parliamentary2017:
+        return const <PartyResult>[];
       case ElectionSourceType.local2025:
         return Local2025PlaceholderData.localPartyResults;
       case ElectionSourceType.local2025Round2:
@@ -53,6 +57,7 @@ class KqzResultsService {
       case ElectionSourceType.parliamentary2025:
       case ElectionSourceType.parliamentary2021:
       case ElectionSourceType.parliamentary2019:
+      case ElectionSourceType.parliamentary2017:
         return Local2025PlaceholderData.parliamentaryMunicipalitiesPlaceholder;
       case ElectionSourceType.local2025:
         return Local2025PlaceholderData.localMunicipalitiesPlaceholder;
@@ -70,6 +75,8 @@ class KqzResultsService {
         return Parliamentary2021CandidateData.results;
       case ElectionSourceType.parliamentary2019:
         return Parliamentary2019CandidateData.results;
+      case ElectionSourceType.parliamentary2017:
+        return const <CandidateResult>[];
       case ElectionSourceType.local2025:
         return Local2025PlaceholderData.localCandidatesPlaceholder;
       case ElectionSourceType.local2025Round2:

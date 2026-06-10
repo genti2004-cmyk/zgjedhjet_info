@@ -15,6 +15,8 @@ class KqzRemoteConfig {
         return 'Rezultatet Parlamentare 2021';
       case ElectionSourceType.parliamentary2019:
         return 'Rezultatet Parlamentare 2019';
+      case ElectionSourceType.parliamentary2017:
+        return 'Rezultatet Parlamentare 2017';
       case ElectionSourceType.local2025:
         return 'Rezultatet Lokale 2025';
       case ElectionSourceType.local2025Round2:

@@ -2,6 +2,7 @@ enum ElectionSourceType {
   parliamentary2025,
   parliamentary2021,
   parliamentary2019,
+  parliamentary2017,
   local2025,
   local2025Round2,
 }
@@ -50,6 +51,15 @@ class ElectionSource {
     dateLabel: '06.10.2019',
   );
 
+  static const ElectionSource parliamentary2017 = ElectionSource(
+    type: ElectionSourceType.parliamentary2017,
+    title: 'Zgjedhjet për Kuvendin e Kosovës 2017',
+    shortTitle: 'Parlamentare 2017',
+    description: 'Burimet zyrtare të KQZ janë regjistruar. Rezultatet numerike do të vendosen vetëm pas verifikimit të plotë të skedarëve.',
+    officialUrl: 'https://kqz-ks.org/zgjedhjet-e-pergjithshme/zgjedhjet-per-kuvend-te-kosoves-2017/',
+    dateLabel: '11.06.2017',
+  );
+
   static const ElectionSource local2025 = ElectionSource(
     type: ElectionSourceType.local2025,
     title: 'Zgjedhjet Lokale 2025',
@@ -72,6 +82,7 @@ class ElectionSource {
     parliamentary2025,
     parliamentary2021,
     parliamentary2019,
+    parliamentary2017,
     local2025,
     local2025Round2,
   ];
