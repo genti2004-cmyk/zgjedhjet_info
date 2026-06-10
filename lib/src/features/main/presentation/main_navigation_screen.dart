@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/theme/app_theme.dart';
 import '../../candidates/presentation/candidates_screen.dart';
+import '../../election_archive/presentation/election_archive_screen.dart';
 import '../../home/presentation/home_screen.dart';
 import '../../info/presentation/info_screen.dart';
 import '../../municipalities/presentation/municipalities_screen.dart';
@@ -19,7 +20,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   int _currentIndex = 0;
 
   void _selectTab(int index) {
-    if (index < 0 || index > 5) return;
+    if (index < 0 || index > 6) return;
 
     setState(() {
       _currentIndex = index;
@@ -30,6 +31,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   Widget build(BuildContext context) {
     final pages = [
       HomeScreen(onNavigateTab: _selectTab),
+      const ElectionArchiveScreen(),
       const ResultsScreen(),
       const MunicipalitiesScreen(),
       const CandidatesScreen(),
@@ -46,7 +48,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
         selectedIndex: _currentIndex,
         backgroundColor: Colors.white,
         surfaceTintColor: Colors.transparent,
-        indicatorColor: AppTheme.softBlue,
+        indicatorColor: AppTheme.softGreen,
         labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
         onDestinationSelected: _selectTab,
         destinations: const [
@@ -54,6 +56,11 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
             icon: Icon(Icons.home_outlined),
             selectedIcon: Icon(Icons.home_rounded),
             label: 'Ballina',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.archive_outlined),
+            selectedIcon: Icon(Icons.archive_rounded),
+            label: 'Zgjedhjet',
           ),
           NavigationDestination(
             icon: Icon(Icons.bar_chart_outlined),
