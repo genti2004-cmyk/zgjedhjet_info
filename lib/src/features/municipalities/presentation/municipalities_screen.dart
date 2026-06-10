@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 import '../../../core/models/election_source.dart';
 import '../../../core/models/municipality_result.dart';
@@ -52,9 +52,26 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
     setState(_loadMunicipalities);
   }
 
+  bool _isParliamentary(ElectionSource source) {
+    return source.type == ElectionSourceType.parliamentary2025 ||
+        source.type == ElectionSourceType.parliamentary2021 ||
+        source.type == ElectionSourceType.parliamentary2019 ||
+        source.type == ElectionSourceType.parliamentary2017 ||
+        source.type == ElectionSourceType.parliamentary2014 ||
+        source.type == ElectionSourceType.parliamentary2010;
+  }
+
+  bool _hasRegisteredMunicipalitySources(ElectionSource source) {
+    return source.type == ElectionSourceType.parliamentary2021 ||
+        source.type == ElectionSourceType.parliamentary2019 ||
+        source.type == ElectionSourceType.parliamentary2017 ||
+        source.type == ElectionSourceType.parliamentary2014 ||
+        source.type == ElectionSourceType.parliamentary2010;
+  }
+
   List<MunicipalityResult> _filterAndSort(
-      List<MunicipalityResult> municipalities,
-      ) {
+    List<MunicipalityResult> municipalities,
+  ) {
     final query = _searchQuery.trim().toLowerCase();
 
     final filtered = municipalities.where((item) {
@@ -71,7 +88,7 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
         break;
       case MunicipalitySortMode.turnout:
         filtered.sort(
-              (a, b) => b.turnoutPercentage.compareTo(a.turnoutPercentage),
+          (a, b) => b.turnoutPercentage.compareTo(a.turnoutPercentage),
         );
         break;
       case MunicipalitySortMode.voters:
@@ -98,7 +115,7 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
 
     final total = municipalities.fold<double>(
       0,
-          (sum, item) => sum + item.turnoutPercentage,
+      (sum, item) => sum + item.turnoutPercentage,
     );
 
     return total / municipalities.length;
@@ -140,7 +157,12 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                     const SizedBox(height: 12),
                     ElectionPickerCard(onChanged: _refresh),
                     const SizedBox(height: 12),
-                    _MunicipalityDataNotice(source: selectedElection),
+                    _MunicipalityDataNotice(
+                      source: selectedElection,
+                      isParliamentary: _isParliamentary(selectedElection),
+                      hasRegisteredMunicipalitySources:
+                          _hasRegisteredMunicipalitySources(selectedElection),
+                    ),
                     const SizedBox(height: 12),
                     _SummaryCard(
                       municipalitiesCount: allMunicipalities.length,
@@ -172,20 +194,22 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                     else if (snapshot.hasError)
                       AppErrorCard(
                         message:
-                        'Ju lutem kontrolloni lidhjen me internetin ose provoni përsëri.',
+                            'Ju lutem kontrolloni lidhjen me internetin ose provoni përsëri.',
                         onRetry: _refresh,
                       )
                     else if (allMunicipalities.isEmpty)
-                        const AppEmptyCard(
-                          message: 'Nuk ka ende komuna për t’u shfaqur.',
-                        )
-                      else if (visibleMunicipalities.isEmpty)
-                          const AppEmptyCard(
-                            message: 'Nuk u gjet asnjë komunë me këtë kërkim.',
-                          )
-                        else
-                          ...visibleMunicipalities.asMap().entries.map(
-                                (entry) => _MunicipalityCard(
+                      AppEmptyCard(
+                        message: _isParliamentary(selectedElection)
+                            ? 'Të dhënat sipas komunave për ${selectedElection.shortTitle} nuk janë importuar ende. Burimet zyrtare janë në arkiv dhe do të lidhen pas verifikimit të plotë.'
+                            : 'Nuk ka ende komuna për t’u shfaqur.',
+                      )
+                    else if (visibleMunicipalities.isEmpty)
+                      const AppEmptyCard(
+                        message: 'Nuk u gjet asnjë komunë me këtë kërkim.',
+                      )
+                    else
+                      ...visibleMunicipalities.asMap().entries.map(
+                            (entry) => _MunicipalityCard(
                               rank: entry.key + 1,
                               result: entry.value,
                             ),
@@ -240,21 +264,21 @@ class _PageHeader extends StatelessWidget {
 
 class _MunicipalityDataNotice extends StatelessWidget {
   final ElectionSource source;
+  final bool isParliamentary;
+  final bool hasRegisteredMunicipalitySources;
 
   const _MunicipalityDataNotice({
     required this.source,
+    required this.isParliamentary,
+    required this.hasRegisteredMunicipalitySources,
   });
 
   @override
   Widget build(BuildContext context) {
-    final isParliamentary =
-        source.type == ElectionSourceType.parliamentary2025 ||
-        source.type == ElectionSourceType.parliamentary2021 ||
-        source.type == ElectionSourceType.parliamentary2019 ||
-        source.type == ElectionSourceType.parliamentary2014;
-
     final message = isParliamentary
-        ? 'Të dhënat e komunave për zgjedhjet parlamentare janë të përgatitura në strukturë, por detajet reale sipas komunave ende nuk janë lidhur.'
+        ? hasRegisteredMunicipalitySources
+            ? 'Për ${source.shortTitle} burimet zyrtare të komunave janë regjistruar në arkiv. Të dhënat numerike sipas komunave ende nuk janë importuar, sepse duhet verifikim i plotë i skedarëve të KQZ.'
+            : 'Për ${source.shortTitle} rezultatet sipas komunave ende nuk janë lidhur plotësisht. Do të shtohen vetëm nga burime zyrtare të verifikuara.'
         : 'Kjo faqe është e përgatitur për të dhënat e komunave nga platforma zyrtare e KQZ për zgjedhjet lokale. Aktualisht shfaqen të dhëna strukturore/testuese.';
 
     return Container(
@@ -434,12 +458,12 @@ class _SearchAndSortCard extends StatelessWidget {
                 suffixIcon: controller.text.isEmpty
                     ? null
                     : IconButton(
-                  onPressed: () {
-                    controller.clear();
-                    onSearchChanged('');
-                  },
-                  icon: const Icon(Icons.close_rounded),
-                ),
+                        onPressed: () {
+                          controller.clear();
+                          onSearchChanged('');
+                        },
+                        icon: const Icon(Icons.close_rounded),
+                      ),
               ),
             ),
             const SizedBox(height: 12),
@@ -618,6 +642,3 @@ class _InfoChip extends StatelessWidget {
     );
   }
 }
-
-
-

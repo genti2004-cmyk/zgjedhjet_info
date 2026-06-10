@@ -257,7 +257,6 @@ class _OfficialDataNotice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isGreen = isOfficial;
-    final isAmber = !isOfficial;
 
     final message = isOfficial
         ? 'Për ${source.shortTitle} shfaqen rezultatet e subjekteve politike, votat, përqindjet dhe mandatet nga dokumentet zyrtare të KQZ.'
