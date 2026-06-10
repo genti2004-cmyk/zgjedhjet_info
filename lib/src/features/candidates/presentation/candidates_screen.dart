@@ -113,6 +113,12 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
     return subjects.length;
   }
 
+  CandidateResult? _topCandidate(List<CandidateResult> candidates) {
+    if (candidates.isEmpty) return null;
+    final sorted = [...candidates]..sort((a, b) => b.votes.compareTo(a.votes));
+    return sorted.first;
+  }
+
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<ElectionSource>(
@@ -135,6 +141,7 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
             builder: (context, snapshot) {
               final allCandidates = snapshot.data ?? const <CandidateResult>[];
               final visibleCandidates = _filterAndSort(allCandidates);
+              final topCandidate = _topCandidate(allCandidates);
 
               return RefreshIndicator(
                 onRefresh: () async {
@@ -144,7 +151,12 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
                 child: ListView(
                   padding: const EdgeInsets.fromLTRB(18, 12, 18, 24),
                   children: [
-                    const _PageHeader(),
+                    _PremiumHeader(
+                      source: selectedElection,
+                      topCandidate: topCandidate,
+                      isOfficial: _hasOfficialCandidates(selectedElection),
+                      isSourceOnly: _hasRegisteredSourcesOnly(selectedElection),
+                    ),
                     const SizedBox(height: 12),
                     ElectionPickerCard(onChanged: _refresh),
                     const SizedBox(height: 12),
@@ -158,6 +170,7 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
                       candidatesCount: allCandidates.length,
                       subjectsCount: _subjectCount(allCandidates),
                       totalVotes: _totalVotes(allCandidates),
+                      topCandidate: topCandidate,
                     ),
                     const SizedBox(height: 12),
                     _SearchAndSortCard(
@@ -194,13 +207,21 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
                       const AppEmptyCard(
                         message: 'Nuk u gjet asnjë kandidat me këtë kërkim.',
                       )
-                    else
+                    else ...[
+                      _ListHeader(
+                        count: visibleCandidates.length,
+                        sortMode: _sortMode,
+                      ),
+                      const SizedBox(height: 10),
                       ...visibleCandidates.asMap().entries.map(
                             (entry) => _CandidateCard(
                               rank: entry.key + 1,
                               result: entry.value,
+                              maxVotes:
+                                  topCandidate == null ? 0 : topCandidate.votes,
                             ),
                           ),
+                    ],
                   ],
                 ),
               );
@@ -212,34 +233,199 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
   }
 }
 
-class _PageHeader extends StatelessWidget {
-  const _PageHeader();
+class _PremiumHeader extends StatelessWidget {
+  final ElectionSource source;
+  final CandidateResult? topCandidate;
+  final bool isOfficial;
+  final bool isSourceOnly;
+
+  const _PremiumHeader({
+    required this.source,
+    required this.topCandidate,
+    required this.isOfficial,
+    required this.isSourceOnly,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final status = isOfficial
+        ? 'KQZ të dhëna aktive'
+        : isSourceOnly
+            ? 'Burime zyrtare'
+            : 'Në përgatitje';
+
+    return Container(
+      padding: const EdgeInsets.fromLTRB(18, 18, 18, 18),
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Color(0xFF0F7A4C),
+            Color(0xFF095D3A),
+            Color(0xFF063F2B),
+          ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        borderRadius: BorderRadius.circular(28),
+        boxShadow: AppTheme.greenShadow,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Container(
+                height: 46,
+                width: 46,
+                decoration: BoxDecoration(
+                  color: Colors.white.withValues(alpha: 0.16),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(
+                    color: Colors.white.withValues(alpha: 0.22),
+                  ),
+                ),
+                child: const Icon(
+                  Icons.people_alt_rounded,
+                  color: Colors.white,
+                  size: 27,
+                ),
+              ),
+              const SizedBox(width: 12),
+              const Expanded(
+                child: Text(
+                  'Kandidatët',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 25,
+                    fontWeight: FontWeight.w900,
+                    height: 1.05,
+                    letterSpacing: -0.35,
+                  ),
+                ),
+              ),
+              _HeaderStatusPill(label: status, isOfficial: isOfficial),
+            ],
+          ),
+          const SizedBox(height: 16),
+          Text(
+            source.shortTitle,
+            style: const TextStyle(
+              color: Colors.white,
+              fontSize: 19,
+              fontWeight: FontWeight.w900,
+              height: 1.12,
+            ),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            source.title,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            style: const TextStyle(
+              color: Color(0xFFEAF7F0),
+              fontSize: 13.3,
+              fontWeight: FontWeight.w700,
+              height: 1.32,
+            ),
+          ),
+          const SizedBox(height: 13),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              _WhitePill(
+                icon: Icons.calendar_month_rounded,
+                label: source.dateLabel,
+              ),
+              _WhitePill(
+                icon: Icons.emoji_events_rounded,
+                label: topCandidate == null
+                    ? 'Pa kandidatë'
+                    : 'Top: ${topCandidate!.fullName}',
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _HeaderStatusPill extends StatelessWidget {
+  final String label;
+  final bool isOfficial;
+
+  const _HeaderStatusPill({
+    required this.label,
+    required this.isOfficial,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.fromLTRB(18, 18, 18, 18),
+      padding: const EdgeInsets.fromLTRB(9, 6, 9, 6),
       decoration: BoxDecoration(
-        color: AppTheme.primaryGreen,
-        borderRadius: BorderRadius.circular(24),
-        boxShadow: AppTheme.greenShadow,
+        color: Colors.white.withValues(alpha: 0.14),
+        borderRadius: BorderRadius.circular(999),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: 0.22),
+        ),
       ),
-      child: const Row(
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
           Icon(
-            Icons.people_alt_rounded,
+            isOfficial ? Icons.verified_rounded : Icons.info_outline_rounded,
             color: Colors.white,
-            size: 36,
+            size: 15,
           ),
-          SizedBox(width: 14),
-          Expanded(
+          const SizedBox(width: 5),
+          Text(
+            label,
+            style: const TextStyle(
+              color: Colors.white,
+              fontSize: 11.2,
+              fontWeight: FontWeight.w900,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _WhitePill extends StatelessWidget {
+  final IconData icon;
+  final String label;
+
+  const _WhitePill({
+    required this.icon,
+    required this.label,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      constraints: const BoxConstraints(maxWidth: 280),
+      padding: const EdgeInsets.fromLTRB(9, 6, 10, 6),
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.13),
+        borderRadius: BorderRadius.circular(999),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(icon, color: Colors.white, size: 14),
+          const SizedBox(width: 5),
+          Flexible(
             child: Text(
-              'Kandidatët, subjektet politike dhe votat.',
-              style: TextStyle(
+              label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(
                 color: Colors.white,
-                fontSize: 17,
+                fontSize: 11.6,
                 fontWeight: FontWeight.w800,
-                height: 1.25,
               ),
             ),
           ),
@@ -306,11 +492,13 @@ class _SummaryCard extends StatelessWidget {
   final int candidatesCount;
   final int subjectsCount;
   final int totalVotes;
+  final CandidateResult? topCandidate;
 
   const _SummaryCard({
     required this.candidatesCount,
     required this.subjectsCount,
     required this.totalVotes,
+    required this.topCandidate,
   });
 
   @override
@@ -320,31 +508,67 @@ class _SummaryCard extends StatelessWidget {
     return Card(
       child: Padding(
         padding: const EdgeInsets.fromLTRB(15, 15, 15, 15),
-        child: Row(
+        child: Column(
           children: [
-            Expanded(
-              child: _SummaryItem(
-                label: 'Kandidatë',
-                value: '$candidatesCount',
-                icon: Icons.person_rounded,
-              ),
+            Row(
+              children: [
+                Expanded(
+                  child: _SummaryItem(
+                    label: 'Kandidatë',
+                    value: '$candidatesCount',
+                    icon: Icons.person_rounded,
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: _SummaryItem(
+                    label: 'Subjekte',
+                    value: '$subjectsCount',
+                    icon: Icons.account_balance_rounded,
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: _SummaryItem(
+                    label: 'Vota',
+                    value: votes,
+                    icon: Icons.how_to_vote_rounded,
+                  ),
+                ),
+              ],
             ),
-            const SizedBox(width: 10),
-            Expanded(
-              child: _SummaryItem(
-                label: 'Subjekte',
-                value: '$subjectsCount',
-                icon: Icons.account_balance_rounded,
+            if (topCandidate != null) ...[
+              const SizedBox(height: 12),
+              Container(
+                padding: const EdgeInsets.fromLTRB(13, 12, 13, 12),
+                decoration: BoxDecoration(
+                  color: AppTheme.softGreen,
+                  borderRadius: BorderRadius.circular(18),
+                  border: Border.all(color: const Color(0xFFABEFC6)),
+                ),
+                child: Row(
+                  children: [
+                    const Icon(
+                      Icons.emoji_events_rounded,
+                      color: AppTheme.primaryGreen,
+                      size: 23,
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Text(
+                        '${topCandidate!.fullName} • ${AppFormatters.number(topCandidate!.votes)} vota',
+                        style: const TextStyle(
+                          color: AppTheme.primaryGreen,
+                          fontSize: 13.2,
+                          fontWeight: FontWeight.w900,
+                          height: 1.25,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
-            const SizedBox(width: 10),
-            Expanded(
-              child: _SummaryItem(
-                label: 'Vota',
-                value: votes,
-                icon: Icons.how_to_vote_rounded,
-              ),
-            ),
+            ],
           ],
         ),
       ),
@@ -476,18 +700,56 @@ class _SearchAndSortCard extends StatelessWidget {
   }
 }
 
+class _ListHeader extends StatelessWidget {
+  final int count;
+  final CandidateSortMode sortMode;
+
+  const _ListHeader({
+    required this.count,
+    required this.sortMode,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final sortLabel = switch (sortMode) {
+      CandidateSortMode.votes => 'sipas votave',
+      CandidateSortMode.name => 'sipas emrit',
+      CandidateSortMode.subject => 'sipas subjektit',
+      CandidateSortMode.municipality => 'sipas komunës',
+    };
+
+    return Row(
+      children: [
+        Expanded(
+          child: Text(
+            '$count kandidatë • $sortLabel',
+            style: const TextStyle(
+              color: AppTheme.textDark,
+              fontSize: 14.2,
+              fontWeight: FontWeight.w900,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
 class _CandidateCard extends StatelessWidget {
   final int rank;
   final CandidateResult result;
+  final int maxVotes;
 
   const _CandidateCard({
     required this.rank,
     required this.result,
+    required this.maxVotes,
   });
 
   @override
   Widget build(BuildContext context) {
     final votes = AppFormatters.number(result.votes);
+    final progress = maxVotes <= 0 ? 0.0 : result.votes / maxVotes;
 
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
@@ -520,7 +782,19 @@ class _CandidateCard extends StatelessWidget {
                       height: 1.25,
                     ),
                   ),
-                  const SizedBox(height: 9),
+                  const SizedBox(height: 10),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(99),
+                    child: LinearProgressIndicator(
+                      minHeight: 7,
+                      value: progress.clamp(0, 1),
+                      backgroundColor: AppTheme.softGreen,
+                      valueColor: const AlwaysStoppedAnimation<Color>(
+                        AppTheme.primaryGreen,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 10),
                   Wrap(
                     spacing: 8,
                     runSpacing: 8,
@@ -552,19 +826,23 @@ class _RankBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final top = rank <= 3;
+
     return Container(
-      height: 42,
-      width: 42,
+      height: 43,
+      width: 43,
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        color: AppTheme.softGreen,
-        borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: AppTheme.border),
+        color: top ? AppTheme.primaryGreen : AppTheme.softGreen,
+        borderRadius: BorderRadius.circular(15),
+        border: Border.all(
+          color: top ? AppTheme.primaryGreen : AppTheme.border,
+        ),
       ),
       child: Text(
         '$rank',
-        style: const TextStyle(
-          color: AppTheme.primaryGreen,
+        style: TextStyle(
+          color: top ? Colors.white : AppTheme.primaryGreen,
           fontSize: 15,
           fontWeight: FontWeight.w900,
         ),
