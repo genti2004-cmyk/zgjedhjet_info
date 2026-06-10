@@ -19,75 +19,90 @@ class MainNavigationScreen extends StatefulWidget {
 class _MainNavigationScreenState extends State<MainNavigationScreen> {
   int _currentIndex = 0;
 
-  void _selectTab(int index) {
-    if (index < 0 || index > 6) return;
+  void _setTab(int index) {
+    if (index == _currentIndex) return;
 
     setState(() {
       _currentIndex = index;
     });
   }
 
+  List<Widget> get _pages => [
+        HomeScreen(onNavigateTab: _setTab),
+        const ElectionArchiveScreen(),
+        const ResultsScreen(),
+        const MunicipalitiesScreen(),
+        const CandidatesScreen(),
+        const SourcesScreen(),
+        const InfoScreen(),
+      ];
+
   @override
   Widget build(BuildContext context) {
-    final pages = <Widget>[
-      HomeScreen(onNavigateTab: _selectTab),
-      const ElectionArchiveScreen(),
-      const ResultsScreen(),
-      const MunicipalitiesScreen(),
-      const CandidatesScreen(),
-      const SourcesScreen(),
-      const InfoScreen(),
-    ];
-
     return Scaffold(
+      backgroundColor: AppTheme.background,
       body: IndexedStack(
         index: _currentIndex,
-        children: pages,
+        children: _pages,
       ),
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: _currentIndex,
-        backgroundColor: Colors.white,
-        surfaceTintColor: Colors.transparent,
-        indicatorColor: AppTheme.softGreen,
-        labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
-        onDestinationSelected: _selectTab,
-        destinations: const [
-          NavigationDestination(
-            icon: Icon(Icons.home_outlined),
-            selectedIcon: Icon(Icons.home_rounded),
-            label: 'Ballina',
+      bottomNavigationBar: SafeArea(
+        top: false,
+        child: Container(
+          decoration: BoxDecoration(
+            color: AppTheme.surface,
+            border: const Border(
+              top: BorderSide(color: AppTheme.border),
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: const Color(0xFF0F172A).withValues(alpha: 0.055),
+                blurRadius: 24,
+                offset: const Offset(0, -10),
+              ),
+            ],
           ),
-          NavigationDestination(
-            icon: Icon(Icons.archive_outlined),
-            selectedIcon: Icon(Icons.archive_rounded),
-            label: 'Zgjedhjet',
+          child: NavigationBar(
+            selectedIndex: _currentIndex,
+            onDestinationSelected: _setTab,
+            destinations: const [
+              NavigationDestination(
+                icon: Icon(Icons.home_outlined),
+                selectedIcon: Icon(Icons.home_rounded),
+                label: 'Ballina',
+              ),
+              NavigationDestination(
+                icon: Icon(Icons.archive_outlined),
+                selectedIcon: Icon(Icons.archive_rounded),
+                label: 'Zgjedhjet',
+              ),
+              NavigationDestination(
+                icon: Icon(Icons.bar_chart_outlined),
+                selectedIcon: Icon(Icons.bar_chart_rounded),
+                label: 'Rezultatet',
+              ),
+              NavigationDestination(
+                icon: Icon(Icons.location_city_outlined),
+                selectedIcon: Icon(Icons.location_city_rounded),
+                label: 'Komunat',
+              ),
+              NavigationDestination(
+                icon: Icon(Icons.people_alt_outlined),
+                selectedIcon: Icon(Icons.people_alt_rounded),
+                label: 'Kandidatët',
+              ),
+              NavigationDestination(
+                icon: Icon(Icons.source_outlined),
+                selectedIcon: Icon(Icons.source_rounded),
+                label: 'Burimet',
+              ),
+              NavigationDestination(
+                icon: Icon(Icons.info_outline_rounded),
+                selectedIcon: Icon(Icons.info_rounded),
+                label: 'Info',
+              ),
+            ],
           ),
-          NavigationDestination(
-            icon: Icon(Icons.bar_chart_outlined),
-            selectedIcon: Icon(Icons.bar_chart_rounded),
-            label: 'Rezultatet',
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.location_city_outlined),
-            selectedIcon: Icon(Icons.location_city_rounded),
-            label: 'Komunat',
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.people_alt_outlined),
-            selectedIcon: Icon(Icons.people_alt_rounded),
-            label: 'Kandidatët',
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.source_outlined),
-            selectedIcon: Icon(Icons.source_rounded),
-            label: 'Burimet',
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.info_outline_rounded),
-            selectedIcon: Icon(Icons.info_rounded),
-            label: 'Info',
-          ),
-        ],
+        ),
       ),
     );
   }

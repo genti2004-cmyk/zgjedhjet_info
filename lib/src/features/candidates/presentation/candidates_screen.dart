@@ -290,23 +290,24 @@ class _PremiumHeader extends StatelessWidget {
                   size: 27,
                 ),
               ),
-              const SizedBox(width: 12),
-              const Expanded(
-                child: Text(
-                  'Kandidatët',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 25,
-                    fontWeight: FontWeight.w900,
-                    height: 1.05,
-                    letterSpacing: -0.35,
-                  ),
-                ),
-              ),
+              const Spacer(),
               _HeaderStatusPill(label: status, isOfficial: isOfficial),
             ],
           ),
           const SizedBox(height: 16),
+          const Text(
+            'Kandidatët',
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 27,
+              fontWeight: FontWeight.w900,
+              height: 1.05,
+              letterSpacing: -0.35,
+            ),
+          ),
+          const SizedBox(height: 8),
           Text(
             source.shortTitle,
             style: const TextStyle(

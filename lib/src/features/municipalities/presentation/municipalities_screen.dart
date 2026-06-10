@@ -164,56 +164,58 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                           _hasRegisteredMunicipalitySources(selectedElection),
                     ),
                     const SizedBox(height: 12),
-                    _SummaryCard(
-                      municipalitiesCount: allMunicipalities.length,
-                      totalVoters: _totalVoters(allMunicipalities),
-                      totalVotesCast: _totalVotesCast(allMunicipalities),
-                      averageTurnout: _averageTurnout(allMunicipalities),
-                    ),
-                    const SizedBox(height: 12),
-                    _SearchAndSortCard(
-                      controller: _searchController,
-                      sortMode: _sortMode,
-                      onSearchChanged: (value) {
-                        setState(() {
-                          _searchQuery = value;
-                        });
-                      },
-                      onSortChanged: (value) {
-                        if (value == null) return;
-                        setState(() {
-                          _sortMode = value;
-                        });
-                      },
-                    ),
-                    const SizedBox(height: 18),
-                    if (snapshot.connectionState == ConnectionState.waiting)
-                      const AppLoadingCard(
-                        message: 'Duke ngarkuar komunat...',
-                      )
-                    else if (snapshot.hasError)
-                      AppErrorCard(
-                        message:
-                            'Ju lutem kontrolloni lidhjen me internetin ose provoni përsëri.',
-                        onRetry: _refresh,
-                      )
-                    else if (allMunicipalities.isEmpty)
-                      AppEmptyCard(
-                        message: _isParliamentary(selectedElection)
-                            ? 'Të dhënat sipas komunave për ${selectedElection.shortTitle} nuk janë importuar ende. Burimet zyrtare janë në arkiv dhe do të lidhen pas verifikimit të plotë.'
-                            : 'Nuk ka ende komuna për t’u shfaqur.',
-                      )
-                    else if (visibleMunicipalities.isEmpty)
-                      const AppEmptyCard(
-                        message: 'Nuk u gjet asnjë komunë me këtë kërkim.',
-                      )
-                    else
-                      ...visibleMunicipalities.asMap().entries.map(
-                            (entry) => _MunicipalityCard(
-                              rank: entry.key + 1,
-                              result: entry.value,
+                    if (_isParliamentary(selectedElection))
+                      _MunicipalityPendingCard(source: selectedElection)
+                    else ...[
+                      _SummaryCard(
+                        municipalitiesCount: allMunicipalities.length,
+                        totalVoters: _totalVoters(allMunicipalities),
+                        totalVotesCast: _totalVotesCast(allMunicipalities),
+                        averageTurnout: _averageTurnout(allMunicipalities),
+                      ),
+                      const SizedBox(height: 12),
+                      _SearchAndSortCard(
+                        controller: _searchController,
+                        sortMode: _sortMode,
+                        onSearchChanged: (value) {
+                          setState(() {
+                            _searchQuery = value;
+                          });
+                        },
+                        onSortChanged: (value) {
+                          if (value == null) return;
+                          setState(() {
+                            _sortMode = value;
+                          });
+                        },
+                      ),
+                      const SizedBox(height: 18),
+                      if (snapshot.connectionState == ConnectionState.waiting)
+                        const AppLoadingCard(
+                          message: 'Duke ngarkuar komunat...',
+                        )
+                      else if (snapshot.hasError)
+                        AppErrorCard(
+                          message:
+                              'Ju lutem kontrolloni lidhjen me internetin ose provoni përsëri.',
+                          onRetry: _refresh,
+                        )
+                      else if (allMunicipalities.isEmpty)
+                        const AppEmptyCard(
+                          message: 'Nuk ka ende komuna për t’u shfaqur.',
+                        )
+                      else if (visibleMunicipalities.isEmpty)
+                        const AppEmptyCard(
+                          message: 'Nuk u gjet asnjë komunë me këtë kërkim.',
+                        )
+                      else
+                        ...visibleMunicipalities.asMap().entries.map(
+                              (entry) => _MunicipalityCard(
+                                rank: entry.key + 1,
+                                result: entry.value,
+                              ),
                             ),
-                          ),
+                    ],
                   ],
                 ),
               );
@@ -308,6 +310,81 @@ class _MunicipalityDataNotice extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+
+class _MunicipalityPendingCard extends StatelessWidget {
+  final ElectionSource source;
+
+  const _MunicipalityPendingCard({
+    required this.source,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 18, 16, 18),
+        child: Column(
+          children: [
+            Container(
+              height: 54,
+              width: 54,
+              decoration: BoxDecoration(
+                color: const Color(0xFFFFFBEB),
+                borderRadius: BorderRadius.circular(18),
+                border: Border.all(color: const Color(0xFFFEDC7A)),
+              ),
+              child: const Icon(
+                Icons.pending_actions_rounded,
+                color: Color(0xFFB54708),
+                size: 28,
+              ),
+            ),
+            const SizedBox(height: 14),
+            Text(
+              'Të dhënat sipas komunave nuk janë importuar ende',
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Për ${source.shortTitle} nuk shfaqen karta, statistika ose numra provë. Burimet zyrtare janë në arkiv dhe të dhënat do të lidhen vetëm pas verifikimit të plotë.',
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.bodyMedium,
+            ),
+            const SizedBox(height: 14),
+            Container(
+              padding: const EdgeInsets.fromLTRB(12, 9, 12, 9),
+              decoration: BoxDecoration(
+                color: AppTheme.softGreen,
+                borderRadius: BorderRadius.circular(999),
+              ),
+              child: const Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(
+                    Icons.verified_rounded,
+                    color: AppTheme.primaryGreen,
+                    size: 17,
+                  ),
+                  SizedBox(width: 7),
+                  Text(
+                    'Pa të dhëna të shpikura',
+                    style: TextStyle(
+                      color: AppTheme.primaryGreen,
+                      fontSize: 12.5,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
