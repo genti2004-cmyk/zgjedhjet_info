@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 import '../../../core/models/candidate_result.dart';
 import '../../../core/models/election_source.dart';
@@ -52,6 +52,26 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
     setState(_loadCandidates);
   }
 
+  bool _hasOfficialCandidates(ElectionSource source) {
+    return source.type == ElectionSourceType.parliamentary2025 ||
+        source.type == ElectionSourceType.parliamentary2021 ||
+        source.type == ElectionSourceType.parliamentary2019 ||
+        source.type == ElectionSourceType.parliamentary2014;
+  }
+
+  bool _hasRegisteredSourcesOnly(ElectionSource source) {
+    return source.type == ElectionSourceType.parliamentary2017 ||
+        source.type == ElectionSourceType.parliamentary2010;
+  }
+
+  String _emptyMessage(ElectionSource source) {
+    if (_hasRegisteredSourcesOnly(source)) {
+      return 'Burimet zyrtare për kandidatët e ${source.shortTitle} janë regjistruar. Kandidatët do të shfaqen pasi skedarët e KQZ të verifikohen plotësisht.';
+    }
+
+    return 'Nuk ka ende kandidatë për t’u shfaqur.';
+  }
+
   List<CandidateResult> _filterAndSort(List<CandidateResult> candidates) {
     final query = _searchQuery.trim().toLowerCase();
 
@@ -93,12 +113,6 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
     return subjects.length;
   }
 
-  int _municipalityCount(List<CandidateResult> candidates) {
-    final municipalities =
-        candidates.map((item) => item.municipalityName).toSet();
-    return municipalities.length;
-  }
-
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<ElectionSource>(
@@ -134,12 +148,15 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
                     const SizedBox(height: 12),
                     ElectionPickerCard(onChanged: _refresh),
                     const SizedBox(height: 12),
-                    _CandidateDataNotice(source: selectedElection),
+                    _CandidateDataNotice(
+                      source: selectedElection,
+                      isOfficial: _hasOfficialCandidates(selectedElection),
+                      isSourceOnly: _hasRegisteredSourcesOnly(selectedElection),
+                    ),
                     const SizedBox(height: 12),
                     _SummaryCard(
                       candidatesCount: allCandidates.length,
                       subjectsCount: _subjectCount(allCandidates),
-                      municipalitiesCount: _municipalityCount(allCandidates),
                       totalVotes: _totalVotes(allCandidates),
                     ),
                     const SizedBox(height: 12),
@@ -170,8 +187,8 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
                         onRetry: _refresh,
                       )
                     else if (allCandidates.isEmpty)
-                      const AppEmptyCard(
-                        message: 'Nuk ka ende kandidatë për t’u shfaqur.',
+                      AppEmptyCard(
+                        message: _emptyMessage(selectedElection),
                       )
                     else if (visibleCandidates.isEmpty)
                       const AppEmptyCard(
@@ -234,21 +251,22 @@ class _PageHeader extends StatelessWidget {
 
 class _CandidateDataNotice extends StatelessWidget {
   final ElectionSource source;
+  final bool isOfficial;
+  final bool isSourceOnly;
 
   const _CandidateDataNotice({
     required this.source,
+    required this.isOfficial,
+    required this.isSourceOnly,
   });
 
   @override
   Widget build(BuildContext context) {
-    final isOfficial = source.type == ElectionSourceType.parliamentary2025 ||
-        source.type == ElectionSourceType.parliamentary2021 ||
-        source.type == ElectionSourceType.parliamentary2019 ||
-        source.type == ElectionSourceType.parliamentary2014;
-
     final message = isOfficial
         ? 'Për ${source.shortTitle} shfaqen kandidatët e zgjedhur dhe votat nga dokumentet zyrtare të KQZ.'
-        : 'Kjo faqe është e përgatitur për kandidatët e kësaj zgjedhjeje. Aktualisht shfaqen të dhëna strukturore/testuese deri në lidhjen reale me KQZ.';
+        : isSourceOnly
+            ? 'Për ${source.shortTitle} burimet zyrtare të kandidatëve janë regjistruar. Kandidatët nuk shfaqen ende, sepse skedarët duhet të verifikohen plotësisht.'
+            : 'Kjo faqe është e përgatitur për kandidatët e kësaj zgjedhjeje. Aktualisht shfaqen të dhëna strukturore/testuese deri në lidhjen reale me KQZ.';
 
     return Container(
       padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
@@ -271,8 +289,7 @@ class _CandidateDataNotice extends StatelessWidget {
             child: Text(
               message,
               style: TextStyle(
-                color:
-                    isOfficial ? const Color(0xFF067647) : const Color(0xFF7A4B00),
+                color: isOfficial ? const Color(0xFF067647) : const Color(0xFF7A4B00),
                 fontSize: 12.8,
                 height: 1.3,
                 fontWeight: FontWeight.w700,
@@ -288,13 +305,11 @@ class _CandidateDataNotice extends StatelessWidget {
 class _SummaryCard extends StatelessWidget {
   final int candidatesCount;
   final int subjectsCount;
-  final int municipalitiesCount;
   final int totalVotes;
 
   const _SummaryCard({
     required this.candidatesCount,
     required this.subjectsCount,
-    required this.municipalitiesCount,
     required this.totalVotes,
   });
 
@@ -598,6 +613,3 @@ class _InfoChip extends StatelessWidget {
     );
   }
 }
-
-
-

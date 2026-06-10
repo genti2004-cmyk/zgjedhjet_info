@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 import '../../../core/models/election_source.dart';
 import '../../../core/models/party_result.dart';
@@ -50,6 +50,26 @@ class _ResultsScreenState extends State<ResultsScreen> {
 
   void _refresh() {
     setState(_loadResults);
+  }
+
+  bool _hasOfficialResults(ElectionSource source) {
+    return source.type == ElectionSourceType.parliamentary2025 ||
+        source.type == ElectionSourceType.parliamentary2021 ||
+        source.type == ElectionSourceType.parliamentary2019 ||
+        source.type == ElectionSourceType.parliamentary2014;
+  }
+
+  bool _hasRegisteredSourcesOnly(ElectionSource source) {
+    return source.type == ElectionSourceType.parliamentary2017 ||
+        source.type == ElectionSourceType.parliamentary2010;
+  }
+
+  String _emptyMessage(ElectionSource source) {
+    if (_hasRegisteredSourcesOnly(source)) {
+      return 'Burimet zyrtare për ${source.shortTitle} janë regjistruar. Rezultatet do të shfaqen pasi skedarët e KQZ të verifikohen plotësisht.';
+    }
+
+    return 'Nuk ka ende rezultate për t’u shfaqur.';
   }
 
   List<PartyResult> _filterAndSort(List<PartyResult> results) {
@@ -124,7 +144,11 @@ class _ResultsScreenState extends State<ResultsScreen> {
                     const SizedBox(height: 12),
                     ElectionPickerCard(onChanged: _refresh),
                     const SizedBox(height: 12),
-                    _OfficialDataNotice(source: selectedElection),
+                    _OfficialDataNotice(
+                      source: selectedElection,
+                      isOfficial: _hasOfficialResults(selectedElection),
+                      isSourceOnly: _hasRegisteredSourcesOnly(selectedElection),
+                    ),
                     const SizedBox(height: 12),
                     _SummaryCard(
                       totalVotes: _totalVotes(allResults),
@@ -157,8 +181,8 @@ class _ResultsScreenState extends State<ResultsScreen> {
                         onRetry: _refresh,
                       )
                     else if (allResults.isEmpty)
-                      const AppEmptyCard(
-                        message: 'Nuk ka ende rezultate për t’u shfaqur.',
+                      AppEmptyCard(
+                        message: _emptyMessage(selectedElection),
                       )
                     else if (visibleResults.isEmpty)
                       const AppEmptyCard(
@@ -221,36 +245,40 @@ class _PageHeader extends StatelessWidget {
 
 class _OfficialDataNotice extends StatelessWidget {
   final ElectionSource source;
+  final bool isOfficial;
+  final bool isSourceOnly;
 
   const _OfficialDataNotice({
     required this.source,
+    required this.isOfficial,
+    required this.isSourceOnly,
   });
 
   @override
   Widget build(BuildContext context) {
-    final isOfficial = source.type == ElectionSourceType.parliamentary2025 ||
-        source.type == ElectionSourceType.parliamentary2021 ||
-        source.type == ElectionSourceType.parliamentary2019 ||
-        source.type == ElectionSourceType.parliamentary2014;
+    final isGreen = isOfficial;
+    final isAmber = !isOfficial;
 
     final message = isOfficial
         ? 'Për ${source.shortTitle} shfaqen rezultatet e subjekteve politike, votat, përqindjet dhe mandatet nga dokumentet zyrtare të KQZ.'
-        : 'Për ${source.shortTitle} lidhja reale me rezultatet e KQZ është ende në përgatitje. Aktualisht shfaqen të dhëna strukturore/testuese.';
+        : isSourceOnly
+            ? 'Për ${source.shortTitle} burimet zyrtare të KQZ janë regjistruar. Rezultatet nuk shfaqen ende, sepse skedarët duhet të verifikohen plotësisht.'
+            : 'Për ${source.shortTitle} lidhja reale me rezultatet e KQZ është ende në përgatitje. Aktualisht shfaqen të dhëna strukturore/testuese.';
 
     return Container(
       padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
       decoration: BoxDecoration(
-        color: isOfficial ? const Color(0xFFECFDF3) : const Color(0xFFFFFBEB),
+        color: isGreen ? const Color(0xFFECFDF3) : const Color(0xFFFFFBEB),
         borderRadius: BorderRadius.circular(18),
         border: Border.all(
-          color: isOfficial ? const Color(0xFFABEFC6) : const Color(0xFFFEDC7A),
+          color: isGreen ? const Color(0xFFABEFC6) : const Color(0xFFFEDC7A),
         ),
       ),
       child: Row(
         children: [
           Icon(
-            isOfficial ? Icons.verified_rounded : Icons.info_outline_rounded,
-            color: isOfficial ? const Color(0xFF079455) : const Color(0xFFB54708),
+            isGreen ? Icons.verified_rounded : Icons.info_outline_rounded,
+            color: isGreen ? const Color(0xFF079455) : const Color(0xFFB54708),
             size: 21,
           ),
           const SizedBox(width: 10),
@@ -258,8 +286,7 @@ class _OfficialDataNotice extends StatelessWidget {
             child: Text(
               message,
               style: TextStyle(
-                color:
-                    isOfficial ? const Color(0xFF067647) : const Color(0xFF7A4B00),
+                color: isGreen ? const Color(0xFF067647) : const Color(0xFF7A4B00),
                 fontSize: 12.8,
                 height: 1.3,
                 fontWeight: FontWeight.w700,
@@ -587,6 +614,3 @@ class _InfoChip extends StatelessWidget {
     );
   }
 }
-
-
-
