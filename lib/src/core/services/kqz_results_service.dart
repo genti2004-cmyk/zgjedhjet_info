@@ -1,4 +1,5 @@
 import '../../features/local_2025/data/local_2025_placeholder_data.dart';
+import '../../features/parliamentary_2019/data/parliamentary_2019_candidate_data.dart';
 import '../../features/parliamentary_2019/data/parliamentary_2019_party_data.dart';
 import '../../features/parliamentary_2021/data/parliamentary_2021_candidate_data.dart';
 import '../../features/parliamentary_2021/data/parliamentary_2021_party_data.dart';
@@ -22,7 +23,7 @@ class KqzResultsService {
       case ElectionSourceType.parliamentary2021:
         return Election(id: 'parliamentary-2021', title: source.title, type: 'Parlamentare', status: 'Rezultatet dhe kandidatët nga dokumentet zyrtare të KQZ', date: DateTime(2021, 2, 14), lastUpdated: DateTime.now());
       case ElectionSourceType.parliamentary2019:
-        return Election(id: 'parliamentary-2019', title: source.title, type: 'Parlamentare', status: 'Rezultatet e subjekteve nga dokumentet zyrtare të KQZ', date: DateTime(2019, 10, 6), lastUpdated: DateTime.now());
+        return Election(id: 'parliamentary-2019', title: source.title, type: 'Parlamentare', status: 'Rezultatet dhe kandidatët nga dokumentet zyrtare të KQZ', date: DateTime(2019, 10, 6), lastUpdated: DateTime.now());
       case ElectionSourceType.local2025:
         return Election(id: 'local-2025', title: source.title, type: 'Lokale', status: 'Burim zyrtar i përgatitur - test UI', date: DateTime(2025, 10, 12), lastUpdated: DateTime.now());
       case ElectionSourceType.local2025Round2:
@@ -32,7 +33,6 @@ class KqzResultsService {
 
   Future<List<PartyResult>> fetchPartyResults(ElectionSource source) async {
     await Future<void>.delayed(const Duration(milliseconds: 250));
-
     switch (source.type) {
       case ElectionSourceType.parliamentary2025:
         return Parliamentary2025PartyData.results;
@@ -49,7 +49,6 @@ class KqzResultsService {
 
   Future<List<MunicipalityResult>> fetchMunicipalityResults(ElectionSource source) async {
     await Future<void>.delayed(const Duration(milliseconds: 250));
-
     switch (source.type) {
       case ElectionSourceType.parliamentary2025:
       case ElectionSourceType.parliamentary2021:
@@ -64,14 +63,13 @@ class KqzResultsService {
 
   Future<List<CandidateResult>> fetchCandidateResults(ElectionSource source) async {
     await Future<void>.delayed(const Duration(milliseconds: 250));
-
     switch (source.type) {
       case ElectionSourceType.parliamentary2025:
         return Parliamentary2025CandidateData.results;
       case ElectionSourceType.parliamentary2021:
         return Parliamentary2021CandidateData.results;
       case ElectionSourceType.parliamentary2019:
-        return const <CandidateResult>[];
+        return Parliamentary2019CandidateData.results;
       case ElectionSourceType.local2025:
         return Local2025PlaceholderData.localCandidatesPlaceholder;
       case ElectionSourceType.local2025Round2:
