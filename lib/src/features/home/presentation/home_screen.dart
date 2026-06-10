@@ -65,7 +65,8 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   bool _hasOfficialParliamentaryData(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2025;
+    return source.type == ElectionSourceType.parliamentary2025 ||
+        source.type == ElectionSourceType.parliamentary2021;
   }
 
   @override
@@ -152,7 +153,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 icon: Icons.archive_rounded,
                                 title: 'Zgjedhjet',
                                 description:
-                                'Arkivi i zgjedhjeve nga 2008 deri sot, me statusin e të dhënave.',
+                                    'Arkivi i zgjedhjeve nga 2008 deri sot, me statusin e të dhënave.',
                                 onTap: () => _goToTab(1),
                               ),
                               const SizedBox(height: 12),
@@ -160,7 +161,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 icon: Icons.bar_chart_rounded,
                                 title: 'Rezultatet zgjedhore',
                                 description:
-                                'Subjektet politike, votat, përqindjet dhe mandatet.',
+                                    'Subjektet politike, votat, përqindjet dhe mandatet.',
                                 onTap: () => _goToTab(2),
                               ),
                               const SizedBox(height: 12),
@@ -168,7 +169,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 icon: Icons.location_city_rounded,
                                 title: 'Komunat',
                                 description:
-                                'Pamje sipas komunave, pjesëmarrje dhe strukturë rezultatesh.',
+                                    'Pamje sipas komunave, pjesëmarrje dhe strukturë rezultatesh.',
                                 onTap: () => _goToTab(3),
                               ),
                               const SizedBox(height: 12),
@@ -176,7 +177,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 icon: Icons.people_alt_rounded,
                                 title: 'Kandidatët',
                                 description:
-                                'Kandidatët e zgjedhur, votat dhe kërkimi sipas subjektit.',
+                                    'Kandidatët e zgjedhur, votat dhe kërkimi sipas subjektit.',
                                 onTap: () => _goToTab(4),
                               ),
                               const SizedBox(height: 12),
@@ -184,7 +185,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 icon: Icons.source_rounded,
                                 title: 'Burimet zyrtare',
                                 description:
-                                'Lidhjet zyrtare të KQZ dhe kontrolli i burimit online.',
+                                    'Lidhjet zyrtare të KQZ dhe kontrolli i burimit online.',
                                 onTap: () => _goToTab(5),
                               ),
                               const SizedBox(height: 22),
@@ -219,7 +220,7 @@ class _HeroHeader extends StatelessWidget {
     final title = election?.title ?? source.title;
     final status = election?.status ?? 'Në pritje';
     final date =
-    election == null ? source.dateLabel : AppFormatters.date(election!.date);
+        election == null ? source.dateLabel : AppFormatters.date(election!.date);
 
     return Container(
       margin: const EdgeInsets.fromLTRB(16, 14, 16, 0),
@@ -380,16 +381,16 @@ class _DataStatusCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final backgroundColor =
-    isOfficial ? const Color(0xFFECFDF3) : const Color(0xFFFFFBEB);
+        isOfficial ? const Color(0xFFECFDF3) : const Color(0xFFFFFBEB);
     final borderColor =
-    isOfficial ? const Color(0xFFABEFC6) : const Color(0xFFFEDC7A);
+        isOfficial ? const Color(0xFFABEFC6) : const Color(0xFFFEDC7A);
     final iconColor =
-    isOfficial ? const Color(0xFF079455) : const Color(0xFFB54708);
+        isOfficial ? const Color(0xFF079455) : const Color(0xFFB54708);
     final textColor =
-    isOfficial ? const Color(0xFF067647) : const Color(0xFF7A4B00);
+        isOfficial ? const Color(0xFF067647) : const Color(0xFF7A4B00);
 
     final title = isOfficial
-        ? 'Të dhëna zyrtare të vendosura'
+        ? 'Të dhëna zyrtare të KQZ'
         : 'Strukturë e përgatitur';
 
     final description = isOfficial

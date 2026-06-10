@@ -76,7 +76,7 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
         break;
       case CandidateSortMode.municipality:
         filtered.sort(
-              (a, b) => a.municipalityName.compareTo(b.municipalityName),
+          (a, b) => a.municipalityName.compareTo(b.municipalityName),
         );
         break;
     }
@@ -95,7 +95,7 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
 
   int _municipalityCount(List<CandidateResult> candidates) {
     final municipalities =
-    candidates.map((item) => item.municipalityName).toSet();
+        candidates.map((item) => item.municipalityName).toSet();
     return municipalities.length;
   }
 
@@ -166,20 +166,20 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
                     else if (snapshot.hasError)
                       AppErrorCard(
                         message:
-                        'Ju lutem kontrolloni lidhjen me internetin ose provoni përsëri.',
+                            'Ju lutem kontrolloni lidhjen me internetin ose provoni përsëri.',
                         onRetry: _refresh,
                       )
                     else if (allCandidates.isEmpty)
-                        const AppEmptyCard(
-                          message: 'Nuk ka ende kandidatë për t’u shfaqur.',
-                        )
-                      else if (visibleCandidates.isEmpty)
-                          const AppEmptyCard(
-                            message: 'Nuk u gjet asnjë kandidat me këtë kërkim.',
-                          )
-                        else
-                          ...visibleCandidates.asMap().entries.map(
-                                (entry) => _CandidateCard(
+                      const AppEmptyCard(
+                        message: 'Nuk ka ende kandidatë për t’u shfaqur.',
+                      )
+                    else if (visibleCandidates.isEmpty)
+                      const AppEmptyCard(
+                        message: 'Nuk u gjet asnjë kandidat me këtë kërkim.',
+                      )
+                    else
+                      ...visibleCandidates.asMap().entries.map(
+                            (entry) => _CandidateCard(
                               rank: entry.key + 1,
                               result: entry.value,
                             ),
@@ -203,15 +203,9 @@ class _PageHeader extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(18, 18, 18, 18),
       decoration: BoxDecoration(
-        color: AppTheme.primaryBlue,
+        color: AppTheme.primaryGreen,
         borderRadius: BorderRadius.circular(24),
-        boxShadow: [
-          BoxShadow(
-            color: AppTheme.primaryBlue.withValues(alpha: 0.18),
-            blurRadius: 22,
-            offset: const Offset(0, 12),
-          ),
-        ],
+        boxShadow: AppTheme.greenShadow,
       ),
       child: const Row(
         children: [
@@ -247,45 +241,27 @@ class _CandidateDataNotice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isOfficial =
-        source.type == ElectionSourceType.parliamentary2025;
-
-    final icon = isOfficial
-        ? Icons.verified_rounded
-        : Icons.info_outline_rounded;
-
-    final iconColor = isOfficial
-        ? const Color(0xFF079455)
-        : const Color(0xFFB54708);
-
-    final backgroundColor = isOfficial
-        ? const Color(0xFFECFDF3)
-        : const Color(0xFFFFFBEB);
-
-    final borderColor = isOfficial
-        ? const Color(0xFFABEFC6)
-        : const Color(0xFFFEDC7A);
-
-    final textColor = isOfficial
-        ? const Color(0xFF067647)
-        : const Color(0xFF7A4B00);
+    final isOfficial = source.type == ElectionSourceType.parliamentary2025 ||
+        source.type == ElectionSourceType.parliamentary2021;
 
     final message = isOfficial
-        ? 'Për zgjedhjet parlamentare 2025 shfaqen kandidatët e zgjedhur dhe votat nga dokumentet zyrtare të KQZ.'
+        ? 'Për ${source.shortTitle} shfaqen kandidatët e zgjedhur dhe votat nga dokumentet zyrtare të KQZ.'
         : 'Kjo faqe është e përgatitur për kandidatët e kësaj zgjedhjeje. Aktualisht shfaqen të dhëna strukturore/testuese deri në lidhjen reale me KQZ.';
 
     return Container(
       padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
       decoration: BoxDecoration(
-        color: backgroundColor,
+        color: isOfficial ? const Color(0xFFECFDF3) : const Color(0xFFFFFBEB),
         borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: borderColor),
+        border: Border.all(
+          color: isOfficial ? const Color(0xFFABEFC6) : const Color(0xFFFEDC7A),
+        ),
       ),
       child: Row(
         children: [
           Icon(
-            icon,
-            color: iconColor,
+            isOfficial ? Icons.verified_rounded : Icons.info_outline_rounded,
+            color: isOfficial ? const Color(0xFF079455) : const Color(0xFFB54708),
             size: 21,
           ),
           const SizedBox(width: 10),
@@ -293,7 +269,8 @@ class _CandidateDataNotice extends StatelessWidget {
             child: Text(
               message,
               style: TextStyle(
-                color: textColor,
+                color:
+                    isOfficial ? const Color(0xFF067647) : const Color(0xFF7A4B00),
                 fontSize: 12.8,
                 height: 1.3,
                 fontWeight: FontWeight.w700,
@@ -374,14 +351,14 @@ class _SummaryItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(8, 12, 8, 12),
       decoration: BoxDecoration(
-        color: AppTheme.softBlue,
+        color: AppTheme.softGreen,
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
         children: [
           Icon(
             icon,
-            color: AppTheme.primaryBlue,
+            color: AppTheme.primaryGreen,
             size: 22,
           ),
           const SizedBox(height: 8),
@@ -441,61 +418,19 @@ class _SearchAndSortCard extends StatelessWidget {
                 suffixIcon: controller.text.isEmpty
                     ? null
                     : IconButton(
-                  onPressed: () {
-                    controller.clear();
-                    onSearchChanged('');
-                  },
-                  icon: const Icon(Icons.close_rounded),
-                ),
-                filled: true,
-                fillColor: AppTheme.softBlue,
-                contentPadding: const EdgeInsets.symmetric(
-                  horizontal: 14,
-                  vertical: 12,
-                ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(color: AppTheme.border),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(color: AppTheme.border),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(
-                    color: AppTheme.primaryBlue,
-                    width: 1.4,
-                  ),
-                ),
+                        onPressed: () {
+                          controller.clear();
+                          onSearchChanged('');
+                        },
+                        icon: const Icon(Icons.close_rounded),
+                      ),
               ),
             ),
             const SizedBox(height: 12),
             DropdownButtonFormField<CandidateSortMode>(
               value: sortMode,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Renditja',
-                filled: true,
-                fillColor: Colors.white,
-                contentPadding: const EdgeInsets.symmetric(
-                  horizontal: 14,
-                  vertical: 12,
-                ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(color: AppTheme.border),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(color: AppTheme.border),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(
-                    color: AppTheme.primaryBlue,
-                    width: 1.4,
-                  ),
-                ),
               ),
               items: const [
                 DropdownMenuItem(
@@ -562,7 +497,7 @@ class _CandidateCard extends StatelessWidget {
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                     style: const TextStyle(
-                      color: AppTheme.primaryBlue,
+                      color: AppTheme.primaryGreen,
                       fontSize: 13,
                       fontWeight: FontWeight.w900,
                       height: 1.25,
@@ -605,14 +540,14 @@ class _RankBadge extends StatelessWidget {
       width: 42,
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        color: AppTheme.softBlue,
+        color: AppTheme.softGreen,
         borderRadius: BorderRadius.circular(14),
         border: Border.all(color: AppTheme.border),
       ),
       child: Text(
         '$rank',
         style: const TextStyle(
-          color: AppTheme.primaryBlue,
+          color: AppTheme.primaryGreen,
           fontSize: 15,
           fontWeight: FontWeight.w900,
         ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/models/election_source.dart';
 import '../../../core/models/party_result.dart';
+import '../../../core/services/selected_election_controller.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/utils/app_formatters.dart';
 import '../../../core/widgets/app_state_cards.dart';
@@ -89,88 +91,93 @@ class _ResultsScreenState extends State<ResultsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppTheme.background,
-      appBar: AppBar(
-        title: const Text('Rezultatet'),
-        actions: [
-          IconButton(
-            tooltip: 'Përditëso',
-            onPressed: _refresh,
-            icon: const Icon(Icons.refresh_rounded),
+    return ValueListenableBuilder<ElectionSource>(
+      valueListenable: SelectedElectionController.selectedElection,
+      builder: (context, selectedElection, _) {
+        return Scaffold(
+          backgroundColor: AppTheme.background,
+          appBar: AppBar(
+            title: const Text('Rezultatet'),
+            actions: [
+              IconButton(
+                tooltip: 'Përditëso',
+                onPressed: _refresh,
+                icon: const Icon(Icons.refresh_rounded),
+              ),
+            ],
           ),
-        ],
-      ),
-      body: FutureBuilder<List<PartyResult>>(
-        future: _partyResultsFuture,
-        builder: (context, snapshot) {
-          final allResults = snapshot.data ?? const <PartyResult>[];
-          final visibleResults = _filterAndSort(allResults);
+          body: FutureBuilder<List<PartyResult>>(
+            future: _partyResultsFuture,
+            builder: (context, snapshot) {
+              final allResults = snapshot.data ?? const <PartyResult>[];
+              final visibleResults = _filterAndSort(allResults);
 
-          return RefreshIndicator(
-            onRefresh: () async {
-              _refresh();
-              await _partyResultsFuture;
-            },
-            child: ListView(
-              padding: const EdgeInsets.fromLTRB(18, 12, 18, 24),
-              children: [
-                const _PageHeader(),
-                const SizedBox(height: 12),
-                ElectionPickerCard(onChanged: _refresh),
-                const SizedBox(height: 12),
-                const _OfficialDataNotice(),
-                const SizedBox(height: 12),
-                _SummaryCard(
-                  totalVotes: _totalVotes(allResults),
-                  totalSeats: _totalSeats(allResults),
-                  subjectsCount: allResults.length,
-                ),
-                const SizedBox(height: 12),
-                _SearchAndSortCard(
-                  controller: _searchController,
-                  sortMode: _sortMode,
-                  onSearchChanged: (value) {
-                    setState(() {
-                      _searchQuery = value;
-                    });
-                  },
-                  onSortChanged: (value) {
-                    if (value == null) return;
-                    setState(() {
-                      _sortMode = value;
-                    });
-                  },
-                ),
-                const SizedBox(height: 18),
-                if (snapshot.connectionState == ConnectionState.waiting)
-                  const AppLoadingCard(message: 'Duke ngarkuar rezultatet...')
-                else if (snapshot.hasError)
-                  AppErrorCard(
-                    message:
-                    'Ju lutem kontrolloni lidhjen me internetin ose provoni përsëri.',
-                    onRetry: _refresh,
-                  )
-                else if (allResults.isEmpty)
-                    const AppEmptyCard(
-                      message: 'Nuk ka ende rezultate për t’u shfaqur.',
-                    )
-                  else if (visibleResults.isEmpty)
+              return RefreshIndicator(
+                onRefresh: () async {
+                  _refresh();
+                  await _partyResultsFuture;
+                },
+                child: ListView(
+                  padding: const EdgeInsets.fromLTRB(18, 12, 18, 24),
+                  children: [
+                    const _PageHeader(),
+                    const SizedBox(height: 12),
+                    ElectionPickerCard(onChanged: _refresh),
+                    const SizedBox(height: 12),
+                    _OfficialDataNotice(source: selectedElection),
+                    const SizedBox(height: 12),
+                    _SummaryCard(
+                      totalVotes: _totalVotes(allResults),
+                      totalSeats: _totalSeats(allResults),
+                      subjectsCount: allResults.length,
+                    ),
+                    const SizedBox(height: 12),
+                    _SearchAndSortCard(
+                      controller: _searchController,
+                      sortMode: _sortMode,
+                      onSearchChanged: (value) {
+                        setState(() {
+                          _searchQuery = value;
+                        });
+                      },
+                      onSortChanged: (value) {
+                        if (value == null) return;
+                        setState(() {
+                          _sortMode = value;
+                        });
+                      },
+                    ),
+                    const SizedBox(height: 18),
+                    if (snapshot.connectionState == ConnectionState.waiting)
+                      const AppLoadingCard(message: 'Duke ngarkuar rezultatet...')
+                    else if (snapshot.hasError)
+                      AppErrorCard(
+                        message:
+                            'Ju lutem kontrolloni lidhjen me internetin ose provoni përsëri.',
+                        onRetry: _refresh,
+                      )
+                    else if (allResults.isEmpty)
+                      const AppEmptyCard(
+                        message: 'Nuk ka ende rezultate për t’u shfaqur.',
+                      )
+                    else if (visibleResults.isEmpty)
                       const AppEmptyCard(
                         message: 'Nuk u gjet asnjë subjekt me këtë kërkim.',
                       )
                     else
                       ...visibleResults.asMap().entries.map(
                             (entry) => _PartyResultCard(
-                          rank: entry.key + 1,
-                          result: entry.value,
-                        ),
-                      ),
-              ],
-            ),
-          );
-        },
-      ),
+                              rank: entry.key + 1,
+                              result: entry.value,
+                            ),
+                          ),
+                  ],
+                ),
+              );
+            },
+          ),
+        );
+      },
     );
   }
 }
@@ -183,15 +190,9 @@ class _PageHeader extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(18, 18, 18, 18),
       decoration: BoxDecoration(
-        color: AppTheme.primaryBlue,
+        color: AppTheme.primaryGreen,
         borderRadius: BorderRadius.circular(24),
-        boxShadow: [
-          BoxShadow(
-            color: AppTheme.primaryBlue.withValues(alpha: 0.18),
-            blurRadius: 22,
-            offset: const Offset(0, 12),
-          ),
-        ],
+        boxShadow: AppTheme.greenShadow,
       ),
       child: const Row(
         children: [
@@ -219,30 +220,44 @@ class _PageHeader extends StatelessWidget {
 }
 
 class _OfficialDataNotice extends StatelessWidget {
-  const _OfficialDataNotice();
+  final ElectionSource source;
+
+  const _OfficialDataNotice({
+    required this.source,
+  });
 
   @override
   Widget build(BuildContext context) {
+    final isOfficial = source.type == ElectionSourceType.parliamentary2025 ||
+        source.type == ElectionSourceType.parliamentary2021;
+
+    final message = isOfficial
+        ? 'Për ${source.shortTitle} shfaqen rezultatet e subjekteve politike, votat, përqindjet dhe mandatet nga dokumentet zyrtare të KQZ.'
+        : 'Për ${source.shortTitle} lidhja reale me rezultatet e KQZ është ende në përgatitje. Aktualisht shfaqen të dhëna strukturore/testuese.';
+
     return Container(
       padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
       decoration: BoxDecoration(
-        color: const Color(0xFFECFDF3),
+        color: isOfficial ? const Color(0xFFECFDF3) : const Color(0xFFFFFBEB),
         borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: const Color(0xFFABEFC6)),
+        border: Border.all(
+          color: isOfficial ? const Color(0xFFABEFC6) : const Color(0xFFFEDC7A),
+        ),
       ),
-      child: const Row(
+      child: Row(
         children: [
           Icon(
-            Icons.verified_rounded,
-            color: Color(0xFF079455),
+            isOfficial ? Icons.verified_rounded : Icons.info_outline_rounded,
+            color: isOfficial ? const Color(0xFF079455) : const Color(0xFFB54708),
             size: 21,
           ),
-          SizedBox(width: 10),
+          const SizedBox(width: 10),
           Expanded(
             child: Text(
-              'Për zgjedhjet parlamentare 2025 janë vendosur rezultatet e përgjithshme nga dokumentet zyrtare të KQZ. Për zgjedhjet lokale lidhja reale është ende në përgatitje.',
+              message,
               style: TextStyle(
-                color: Color(0xFF067647),
+                color:
+                    isOfficial ? const Color(0xFF067647) : const Color(0xFF7A4B00),
                 fontSize: 12.8,
                 height: 1.3,
                 fontWeight: FontWeight.w700,
@@ -321,14 +336,14 @@ class _SummaryItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(10, 12, 10, 12),
       decoration: BoxDecoration(
-        color: AppTheme.softBlue,
+        color: AppTheme.softGreen,
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
         children: [
           Icon(
             icon,
-            color: AppTheme.primaryBlue,
+            color: AppTheme.primaryGreen,
             size: 22,
           ),
           const SizedBox(height: 8),
@@ -388,61 +403,19 @@ class _SearchAndSortCard extends StatelessWidget {
                 suffixIcon: controller.text.isEmpty
                     ? null
                     : IconButton(
-                  onPressed: () {
-                    controller.clear();
-                    onSearchChanged('');
-                  },
-                  icon: const Icon(Icons.close_rounded),
-                ),
-                filled: true,
-                fillColor: AppTheme.softBlue,
-                contentPadding: const EdgeInsets.symmetric(
-                  horizontal: 14,
-                  vertical: 12,
-                ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(color: AppTheme.border),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(color: AppTheme.border),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(
-                    color: AppTheme.primaryBlue,
-                    width: 1.4,
-                  ),
-                ),
+                        onPressed: () {
+                          controller.clear();
+                          onSearchChanged('');
+                        },
+                        icon: const Icon(Icons.close_rounded),
+                      ),
               ),
             ),
             const SizedBox(height: 12),
             DropdownButtonFormField<ResultSortMode>(
               value: sortMode,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Renditja',
-                filled: true,
-                fillColor: Colors.white,
-                contentPadding: const EdgeInsets.symmetric(
-                  horizontal: 14,
-                  vertical: 12,
-                ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(color: AppTheme.border),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(color: AppTheme.border),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(
-                    color: AppTheme.primaryBlue,
-                    width: 1.4,
-                  ),
-                ),
               ),
               items: const [
                 DropdownMenuItem(
@@ -503,7 +476,7 @@ class _PartyResultCard extends StatelessWidget {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: const TextStyle(
-                      color: AppTheme.primaryBlue,
+                      color: AppTheme.primaryGreen,
                       fontSize: 13,
                       fontWeight: FontWeight.w900,
                     ),
@@ -556,14 +529,14 @@ class _RankBadge extends StatelessWidget {
       width: 42,
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        color: AppTheme.softBlue,
+        color: AppTheme.softGreen,
         borderRadius: BorderRadius.circular(14),
         border: Border.all(color: AppTheme.border),
       ),
       child: Text(
         '$rank',
         style: const TextStyle(
-          color: AppTheme.primaryBlue,
+          color: AppTheme.primaryGreen,
           fontSize: 15,
           fontWeight: FontWeight.w900,
         ),
