@@ -29,7 +29,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final pages = [
+    final pages = <Widget>[
       HomeScreen(onNavigateTab: _selectTab),
       const ElectionArchiveScreen(),
       const ResultsScreen(),
