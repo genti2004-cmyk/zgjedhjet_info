@@ -139,20 +139,29 @@ class _HomeScreenState extends State<HomeScreen> {
                               const _SectionTitle(title: 'Qasje e shpejtë'),
                               const SizedBox(height: 12),
                               _QuickActionsGrid(
-                                onResultsTap: () => _goToTab(1),
-                                onCandidatesTap: () => _goToTab(3),
-                                onMunicipalitiesTap: () => _goToTab(2),
-                                onSourcesTap: () => _goToTab(4),
+                                onArchiveTap: () => _goToTab(1),
+                                onResultsTap: () => _goToTab(2),
+                                onMunicipalitiesTap: () => _goToTab(3),
+                                onCandidatesTap: () => _goToTab(4),
+                                onSourcesTap: () => _goToTab(5),
                               ),
                               const SizedBox(height: 22),
                               const _SectionTitle(title: 'Modulet kryesore'),
+                              const SizedBox(height: 12),
+                              _MainActionCard(
+                                icon: Icons.archive_rounded,
+                                title: 'Zgjedhjet',
+                                description:
+                                'Arkivi i zgjedhjeve nga 2008 deri sot, me statusin e të dhënave.',
+                                onTap: () => _goToTab(1),
+                              ),
                               const SizedBox(height: 12),
                               _MainActionCard(
                                 icon: Icons.bar_chart_rounded,
                                 title: 'Rezultatet zgjedhore',
                                 description:
                                 'Subjektet politike, votat, përqindjet dhe mandatet.',
-                                onTap: () => _goToTab(1),
+                                onTap: () => _goToTab(2),
                               ),
                               const SizedBox(height: 12),
                               _MainActionCard(
@@ -160,7 +169,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 title: 'Komunat',
                                 description:
                                 'Pamje sipas komunave, pjesëmarrje dhe strukturë rezultatesh.',
-                                onTap: () => _goToTab(2),
+                                onTap: () => _goToTab(3),
                               ),
                               const SizedBox(height: 12),
                               _MainActionCard(
@@ -168,7 +177,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 title: 'Kandidatët',
                                 description:
                                 'Kandidatët e zgjedhur, votat dhe kërkimi sipas subjektit.',
-                                onTap: () => _goToTab(3),
+                                onTap: () => _goToTab(4),
                               ),
                               const SizedBox(height: 12),
                               _MainActionCard(
@@ -176,7 +185,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 title: 'Burimet zyrtare',
                                 description:
                                 'Lidhjet zyrtare të KQZ dhe kontrolli i burimit online.',
-                                onTap: () => _goToTab(4),
+                                onTap: () => _goToTab(5),
                               ),
                               const SizedBox(height: 22),
                               const _SourceInfoCard(),
@@ -218,20 +227,14 @@ class _HeroHeader extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
-            AppTheme.primaryBlue,
-            AppTheme.darkBlue,
+            AppTheme.primaryGreen,
+            AppTheme.deepGreen,
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(28),
-        boxShadow: [
-          BoxShadow(
-            color: AppTheme.primaryBlue.withValues(alpha: 0.24),
-            blurRadius: 26,
-            offset: const Offset(0, 14),
-          ),
-        ],
+        boxShadow: AppTheme.greenShadow,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -254,7 +257,7 @@ class _HeroHeader extends StatelessWidget {
             style: TextStyle(
               fontSize: 15.5,
               fontWeight: FontWeight.w600,
-              color: Color(0xFFEAF2FF),
+              color: Color(0xFFEAF7F0),
               height: 1.35,
             ),
           ),
@@ -274,7 +277,7 @@ class _HeroHeader extends StatelessWidget {
             style: const TextStyle(
               fontSize: 13.2,
               fontWeight: FontWeight.w700,
-              color: Color(0xFFEAF2FF),
+              color: Color(0xFFEAF7F0),
             ),
           ),
           const SizedBox(height: 14),
@@ -507,15 +510,17 @@ class _DashboardSummary extends StatelessWidget {
 }
 
 class _QuickActionsGrid extends StatelessWidget {
+  final VoidCallback onArchiveTap;
   final VoidCallback onResultsTap;
-  final VoidCallback onCandidatesTap;
   final VoidCallback onMunicipalitiesTap;
+  final VoidCallback onCandidatesTap;
   final VoidCallback onSourcesTap;
 
   const _QuickActionsGrid({
+    required this.onArchiveTap,
     required this.onResultsTap,
-    required this.onCandidatesTap,
     required this.onMunicipalitiesTap,
+    required this.onCandidatesTap,
     required this.onSourcesTap,
   });
 
@@ -527,17 +532,17 @@ class _QuickActionsGrid extends StatelessWidget {
           children: [
             Expanded(
               child: _QuickActionTile(
-                icon: Icons.bar_chart_rounded,
-                title: 'Rezultatet',
-                onTap: onResultsTap,
+                icon: Icons.archive_rounded,
+                title: 'Zgjedhjet',
+                onTap: onArchiveTap,
               ),
             ),
             const SizedBox(width: 12),
             Expanded(
               child: _QuickActionTile(
-                icon: Icons.people_alt_rounded,
-                title: 'Kandidatët',
-                onTap: onCandidatesTap,
+                icon: Icons.bar_chart_rounded,
+                title: 'Rezultatet',
+                onTap: onResultsTap,
               ),
             ),
           ],
@@ -555,10 +560,26 @@ class _QuickActionsGrid extends StatelessWidget {
             const SizedBox(width: 12),
             Expanded(
               child: _QuickActionTile(
+                icon: Icons.people_alt_rounded,
+                title: 'Kandidatët',
+                onTap: onCandidatesTap,
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 12),
+        Row(
+          children: [
+            Expanded(
+              child: _QuickActionTile(
                 icon: Icons.source_rounded,
                 title: 'Burimet',
                 onTap: onSourcesTap,
               ),
+            ),
+            const SizedBox(width: 12),
+            const Expanded(
+              child: SizedBox.shrink(),
             ),
           ],
         ),
@@ -592,12 +613,12 @@ class _QuickActionTile extends StatelessWidget {
                 height: 46,
                 width: 46,
                 decoration: BoxDecoration(
-                  color: AppTheme.softBlue,
+                  color: AppTheme.softGreen,
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: Icon(
                   icon,
-                  color: AppTheme.primaryBlue,
+                  color: AppTheme.primaryGreen,
                   size: 24,
                 ),
               ),
@@ -651,18 +672,12 @@ class _MetricCard extends StatelessWidget {
         padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(22),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withValues(alpha: 0.035),
-              blurRadius: 16,
-              offset: const Offset(0, 8),
-            ),
-          ],
+          boxShadow: AppTheme.softShadow,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Icon(icon, color: AppTheme.primaryBlue, size: 24),
+            Icon(icon, color: AppTheme.primaryGreen, size: 24),
             const SizedBox(height: 12),
             Text(
               value,
@@ -719,12 +734,12 @@ class _MainActionCard extends StatelessWidget {
                 height: 48,
                 width: 48,
                 decoration: BoxDecoration(
-                  color: AppTheme.softBlue,
+                  color: AppTheme.softGreen,
                   borderRadius: BorderRadius.circular(16),
                 ),
                 child: Icon(
                   icon,
-                  color: AppTheme.primaryBlue,
+                  color: AppTheme.primaryGreen,
                   size: 25,
                 ),
               ),
