@@ -230,7 +230,8 @@ class _OfficialDataNotice extends StatelessWidget {
   Widget build(BuildContext context) {
     final isOfficial = source.type == ElectionSourceType.parliamentary2025 ||
         source.type == ElectionSourceType.parliamentary2021 ||
-        source.type == ElectionSourceType.parliamentary2019;
+        source.type == ElectionSourceType.parliamentary2019 ||
+        source.type == ElectionSourceType.parliamentary2014;
 
     final message = isOfficial
         ? 'Për ${source.shortTitle} shfaqen rezultatet e subjekteve politike, votat, përqindjet dhe mandatet nga dokumentet zyrtare të KQZ.'
@@ -586,4 +587,6 @@ class _InfoChip extends StatelessWidget {
     );
   }
 }
+
+
 

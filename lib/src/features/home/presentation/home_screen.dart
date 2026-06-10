@@ -67,7 +67,8 @@ class _HomeScreenState extends State<HomeScreen> {
   bool _hasOfficialParliamentaryData(ElectionSource source) {
     return source.type == ElectionSourceType.parliamentary2025 ||
         source.type == ElectionSourceType.parliamentary2021 ||
-        source.type == ElectionSourceType.parliamentary2019;
+        source.type == ElectionSourceType.parliamentary2019 ||
+        source.type == ElectionSourceType.parliamentary2014;
   }
 
   @override
@@ -812,4 +813,6 @@ class _SourceInfoCard extends StatelessWidget {
     );
   }
 }
+
+
 
