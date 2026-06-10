@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../core/models/election_archive_item.dart';
+import '../../../core/models/election_official_file.dart';
 import '../../../core/theme/app_theme.dart';
 import '../data/election_archive_catalog.dart';
+import '../data/election_official_file_catalog.dart';
 
 enum ElectionArchiveFilter {
   all,
@@ -51,7 +53,7 @@ class _ElectionArchiveScreenState extends State<ElectionArchiveScreen> {
     }).toList();
   }
 
-  Future<void> _openSource(BuildContext context, String url) async {
+  Future<void> _openUrl(BuildContext context, String url) async {
     final uri = Uri.parse(url);
 
     final opened = await launchUrl(
@@ -66,6 +68,10 @@ class _ElectionArchiveScreenState extends State<ElectionArchiveScreen> {
         ),
       );
     }
+  }
+
+  int _officialFileCount() {
+    return ElectionOfficialFileCatalog.all.length;
   }
 
   @override
@@ -89,6 +95,7 @@ class _ElectionArchiveScreenState extends State<ElectionArchiveScreen> {
             officialInApp: ElectionArchiveCatalog.items
                 .where((item) => item.hasOfficialResultsInApp)
                 .length,
+            officialFiles: _officialFileCount(),
           ),
           const SizedBox(height: 12),
           _SearchAndFilterCard(
@@ -111,10 +118,16 @@ class _ElectionArchiveScreenState extends State<ElectionArchiveScreen> {
             const _EmptyArchiveCard()
           else
             ...visibleItems.map(
-              (item) => _ArchiveCard(
-                item: item,
-                onOpenSource: () => _openSource(context, item.sourceUrl),
-              ),
+                  (item) {
+                final files = ElectionOfficialFileCatalog.byElectionId(item.id);
+
+                return _ArchiveCard(
+                  item: item,
+                  officialFiles: files,
+                  onOpenSource: () => _openUrl(context, item.sourceUrl),
+                  onOpenFile: (file) => _openUrl(context, file.url),
+                );
+              },
             ),
         ],
       ),
@@ -189,7 +202,7 @@ class _ArchiveNotice extends StatelessWidget {
           SizedBox(width: 10),
           Expanded(
             child: Text(
-              'Arkivi është struktura bazë. Rezultatet do të vendosen vetëm me burime zyrtare të KQZ ose dokumente të verifikueshme.',
+              'Arkivi tregon statusin dhe dokumentet zyrtare të regjistruara. Rezultatet numerike shtohen vetëm pas verifikimit nga burimet e KQZ.',
               style: TextStyle(
                 color: Color(0xFF7A4B00),
                 fontSize: 12.8,
@@ -207,10 +220,12 @@ class _ArchiveNotice extends StatelessWidget {
 class _SummaryCard extends StatelessWidget {
   final int total;
   final int officialInApp;
+  final int officialFiles;
 
   const _SummaryCard({
     required this.total,
     required this.officialInApp,
+    required this.officialFiles,
   });
 
   @override
@@ -236,11 +251,11 @@ class _SummaryCard extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 10),
-            const Expanded(
+            Expanded(
               child: _SummaryItem(
-                icon: Icons.source_rounded,
-                label: 'Burimi',
-                value: 'KQZ',
+                icon: Icons.description_rounded,
+                label: 'Dosje',
+                value: '$officialFiles',
               ),
             ),
           ],
@@ -333,12 +348,12 @@ class _SearchAndFilterCard extends StatelessWidget {
                 suffixIcon: controller.text.isEmpty
                     ? null
                     : IconButton(
-                        onPressed: () {
-                          controller.clear();
-                          onSearchChanged('');
-                        },
-                        icon: const Icon(Icons.close_rounded),
-                      ),
+                  onPressed: () {
+                    controller.clear();
+                    onSearchChanged('');
+                  },
+                  icon: const Icon(Icons.close_rounded),
+                ),
               ),
             ),
             const SizedBox(height: 12),
@@ -372,11 +387,15 @@ class _SearchAndFilterCard extends StatelessWidget {
 
 class _ArchiveCard extends StatelessWidget {
   final ElectionArchiveItem item;
+  final List<ElectionOfficialFile> officialFiles;
   final VoidCallback onOpenSource;
+  final ValueChanged<ElectionOfficialFile> onOpenFile;
 
   const _ArchiveCard({
     required this.item,
+    required this.officialFiles,
     required this.onOpenSource,
+    required this.onOpenFile,
   });
 
   @override
@@ -443,6 +462,10 @@ class _ArchiveCard extends StatelessWidget {
                       ? Icons.verified_rounded
                       : Icons.hourglass_empty_rounded,
                 ),
+                _Chip(
+                  label: '${officialFiles.length} dosje',
+                  icon: Icons.description_rounded,
+                ),
               ],
             ),
             const SizedBox(height: 12),
@@ -451,15 +474,170 @@ class _ArchiveCard extends StatelessWidget {
               style: Theme.of(context).textTheme.bodyMedium,
             ),
             const SizedBox(height: 12),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: FilledButton.icon(
-                onPressed: onOpenSource,
-                icon: const Icon(Icons.open_in_new_rounded),
-                label: const Text('Hap burimin'),
-              ),
+            Row(
+              children: [
+                FilledButton.icon(
+                  onPressed: onOpenSource,
+                  icon: const Icon(Icons.open_in_new_rounded),
+                  label: const Text('Hap burimin'),
+                ),
+              ],
             ),
+            if (officialFiles.isNotEmpty) ...[
+              const SizedBox(height: 12),
+              _OfficialFilesSection(
+                files: officialFiles,
+                onOpenFile: onOpenFile,
+              ),
+            ],
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class _OfficialFilesSection extends StatelessWidget {
+  final List<ElectionOfficialFile> files;
+  final ValueChanged<ElectionOfficialFile> onOpenFile;
+
+  const _OfficialFilesSection({
+    required this.files,
+    required this.onOpenFile,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ExpansionTile(
+      tilePadding: EdgeInsets.zero,
+      childrenPadding: const EdgeInsets.only(top: 6),
+      iconColor: AppTheme.primaryGreen,
+      collapsedIconColor: AppTheme.textMuted,
+      title: Text(
+        'Dosjet zyrtare të KQZ (${files.length})',
+        style: const TextStyle(
+          color: AppTheme.textDark,
+          fontSize: 14.5,
+          fontWeight: FontWeight.w900,
+        ),
+      ),
+      children: files.map(
+            (file) {
+          return _OfficialFileTile(
+            file: file,
+            onOpen: () => onOpenFile(file),
+          );
+        },
+      ).toList(),
+    );
+  }
+}
+
+class _OfficialFileTile extends StatelessWidget {
+  final ElectionOfficialFile file;
+  final VoidCallback onOpen;
+
+  const _OfficialFileTile({
+    required this.file,
+    required this.onOpen,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 8),
+      padding: const EdgeInsets.fromLTRB(12, 12, 10, 12),
+      decoration: BoxDecoration(
+        color: AppTheme.background,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: AppTheme.border),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            height: 38,
+            width: 38,
+            decoration: BoxDecoration(
+              color: AppTheme.softGreen,
+              borderRadius: BorderRadius.circular(13),
+            ),
+            child: Icon(
+              file.fileType.toUpperCase() == 'PDF'
+                  ? Icons.picture_as_pdf_rounded
+                  : Icons.table_chart_rounded,
+              color: AppTheme.primaryGreen,
+              size: 20,
+            ),
+          ),
+          const SizedBox(width: 11),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  file.title,
+                  style: const TextStyle(
+                    color: AppTheme.textDark,
+                    fontSize: 13.5,
+                    fontWeight: FontWeight.w900,
+                    height: 1.2,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  file.description,
+                  style: const TextStyle(
+                    color: AppTheme.textMuted,
+                    fontSize: 12.2,
+                    fontWeight: FontWeight.w600,
+                    height: 1.3,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Wrap(
+                  spacing: 7,
+                  runSpacing: 7,
+                  children: [
+                    _MiniChip(label: file.fileType),
+                    if (file.isResultData) const _MiniChip(label: 'Rezultate'),
+                    if (file.isCandidateData) const _MiniChip(label: 'Kandidatë'),
+                    if (file.isMunicipalityData) const _MiniChip(label: 'Komuna'),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          IconButton(
+            tooltip: 'Hap dosjen',
+            onPressed: onOpen,
+            icon: const Icon(Icons.open_in_new_rounded),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _MiniChip extends StatelessWidget {
+  final String label;
+
+  const _MiniChip({required this.label});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.fromLTRB(8, 4, 8, 4),
+      decoration: BoxDecoration(
+        color: AppTheme.softGreen,
+        borderRadius: BorderRadius.circular(999),
+      ),
+      child: Text(
+        label,
+        style: const TextStyle(
+          color: AppTheme.primaryGreen,
+          fontSize: 11,
+          fontWeight: FontWeight.w900,
         ),
       ),
     );
