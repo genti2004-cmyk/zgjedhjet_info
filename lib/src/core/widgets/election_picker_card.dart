@@ -16,75 +16,57 @@ class ElectionPickerCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return ValueListenableBuilder<ElectionSource>(
       valueListenable: SelectedElectionController.selectedElection,
-      builder: (context, selected, _) {
+      builder: (context, selectedElection, _) {
         return Card(
           child: Padding(
             padding: const EdgeInsets.fromLTRB(14, 14, 14, 14),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            child: Row(
               children: [
-                const Text(
-                  'Zgjedhja aktive',
-                  style: TextStyle(
-                    color: AppTheme.textDark,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w900,
+                Container(
+                  height: 42,
+                  width: 42,
+                  decoration: BoxDecoration(
+                    color: AppTheme.softGreen,
+                    borderRadius: BorderRadius.circular(14),
+                  ),
+                  child: const Icon(
+                    Icons.how_to_vote_rounded,
+                    color: AppTheme.primaryGreen,
+                    size: 22,
                   ),
                 ),
-                const SizedBox(height: 10),
-                DropdownButtonFormField<ElectionSourceType>(
-                  value: selected.type,
-                  decoration: InputDecoration(
-                    filled: true,
-                    fillColor: AppTheme.softBlue,
-                    contentPadding: const EdgeInsets.symmetric(
-                      horizontal: 14,
-                      vertical: 12,
-                    ),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(16),
-                      borderSide: const BorderSide(color: AppTheme.border),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(16),
-                      borderSide: const BorderSide(color: AppTheme.border),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(16),
-                      borderSide: const BorderSide(
-                        color: AppTheme.primaryBlue,
-                        width: 1.4,
+                const SizedBox(width: 12),
+                Expanded(
+                  child: DropdownButtonFormField<ElectionSource>(
+                    initialValue: selectedElection,
+                    isExpanded: true,
+                    decoration: const InputDecoration(
+                      labelText: 'Zgjedhja',
+                      contentPadding: EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 10,
                       ),
                     ),
-                  ),
-                  items: ElectionSource.all.map((source) {
-                    return DropdownMenuItem<ElectionSourceType>(
-                      value: source.type,
-                      child: Text(
-                        source.shortTitle,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    );
-                  }).toList(),
-                  onChanged: (value) {
-                    if (value == null) return;
+                    icon: const Icon(
+                      Icons.keyboard_arrow_down_rounded,
+                      color: AppTheme.primaryGreen,
+                    ),
+                    items: ElectionSource.all.map((source) {
+                      return DropdownMenuItem<ElectionSource>(
+                        value: source,
+                        child: Text(
+                          source.shortTitle,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      );
+                    }).toList(),
+                    onChanged: (value) {
+                      if (value == null) return;
 
-                    final source = ElectionSource.all.firstWhere(
-                          (item) => item.type == value,
-                    );
-
-                    SelectedElectionController.select(source);
-                    onChanged?.call();
-                  },
-                ),
-                const SizedBox(height: 10),
-                Text(
-                  selected.description,
-                  style: const TextStyle(
-                    color: AppTheme.textMuted,
-                    fontSize: 13,
-                    fontWeight: FontWeight.w600,
-                    height: 1.35,
+                      SelectedElectionController.selectedElection.value = value;
+                      onChanged?.call();
+                    },
                   ),
                 ),
               ],
