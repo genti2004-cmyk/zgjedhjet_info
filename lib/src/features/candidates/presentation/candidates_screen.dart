@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/models/candidate_result.dart';
 import '../../../core/models/election_source.dart';
+import '../../../core/services/election_data_status.dart';
 import '../../../core/services/selected_election_controller.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/utils/app_formatters.dart';
@@ -53,23 +54,15 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
   }
 
   bool _hasOfficialCandidates(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2025 ||
-        source.type == ElectionSourceType.parliamentary2021 ||
-        source.type == ElectionSourceType.parliamentary2019 ||
-        source.type == ElectionSourceType.parliamentary2014;
+    return ElectionDataStatus.hasOfficialElectedCandidates(source);
   }
 
   bool _hasRegisteredSourcesOnly(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2017 ||
-        source.type == ElectionSourceType.parliamentary2010;
+    return ElectionDataStatus.isSourceOnly(source);
   }
 
   String _emptyMessage(ElectionSource source) {
-    if (_hasRegisteredSourcesOnly(source)) {
-      return 'Burimet zyrtare për kandidatët e ${source.shortTitle} janë regjistruar. Kandidatët do të shfaqen pasi skedarët e KQZ të verifikohen plotësisht.';
-    }
-
-    return 'Nuk ka ende kandidatë për t’u shfaqur.';
+    return ElectionDataStatus.candidateEmptyMessage(source);
   }
 
   List<CandidateResult> _filterAndSort(List<CandidateResult> candidates) {

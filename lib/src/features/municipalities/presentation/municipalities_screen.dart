@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/models/election_source.dart';
+import '../../../core/services/election_data_status.dart';
 import '../../../core/models/municipality_result.dart';
 import '../../../core/services/selected_election_controller.dart';
 import '../../../core/theme/app_theme.dart';
@@ -53,20 +54,11 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
   }
 
   bool _isParliamentary(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2025 ||
-        source.type == ElectionSourceType.parliamentary2021 ||
-        source.type == ElectionSourceType.parliamentary2019 ||
-        source.type == ElectionSourceType.parliamentary2017 ||
-        source.type == ElectionSourceType.parliamentary2014 ||
-        source.type == ElectionSourceType.parliamentary2010;
+    return ElectionDataStatus.isParliamentary(source);
   }
 
   bool _hasRegisteredMunicipalitySources(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2021 ||
-        source.type == ElectionSourceType.parliamentary2019 ||
-        source.type == ElectionSourceType.parliamentary2017 ||
-        source.type == ElectionSourceType.parliamentary2014 ||
-        source.type == ElectionSourceType.parliamentary2010;
+    return ElectionDataStatus.hasRegisteredMunicipalitySources(source);
   }
 
   List<MunicipalityResult> _filterAndSort(

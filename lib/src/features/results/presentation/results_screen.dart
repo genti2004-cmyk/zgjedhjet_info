@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/models/election_source.dart';
+import '../../../core/services/election_data_status.dart';
 import '../../../core/models/party_result.dart';
 import '../../../core/services/selected_election_controller.dart';
 import '../../../core/theme/app_theme.dart';
@@ -53,23 +54,15 @@ class _ResultsScreenState extends State<ResultsScreen> {
   }
 
   bool _hasOfficialResults(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2025 ||
-        source.type == ElectionSourceType.parliamentary2021 ||
-        source.type == ElectionSourceType.parliamentary2019 ||
-        source.type == ElectionSourceType.parliamentary2014;
+    return ElectionDataStatus.hasOfficialPartyResults(source);
   }
 
   bool _hasRegisteredSourcesOnly(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2017 ||
-        source.type == ElectionSourceType.parliamentary2010;
+    return ElectionDataStatus.isSourceOnly(source);
   }
 
   String _emptyMessage(ElectionSource source) {
-    if (_hasRegisteredSourcesOnly(source)) {
-      return 'Burimet zyrtare për ${source.shortTitle} janë regjistruar. Rezultatet do të shfaqen pasi skedarët e KQZ të verifikohen plotësisht.';
-    }
-
-    return 'Nuk ka ende rezultate për t’u shfaqur.';
+    return ElectionDataStatus.resultEmptyMessage(source);
   }
 
   List<PartyResult> _filterAndSort(List<PartyResult> results) {

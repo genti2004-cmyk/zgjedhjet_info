@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/models/candidate_result.dart';
 import '../../../core/models/election.dart';
 import '../../../core/models/election_source.dart';
+import '../../../core/services/election_data_status.dart';
 import '../../../core/models/party_result.dart';
 import '../../../core/services/selected_election_controller.dart';
 import '../../../core/theme/app_theme.dart';
@@ -65,22 +66,15 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   bool _hasOfficialPartyData(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2025 ||
-        source.type == ElectionSourceType.parliamentary2021 ||
-        source.type == ElectionSourceType.parliamentary2019 ||
-        source.type == ElectionSourceType.parliamentary2014;
+    return ElectionDataStatus.hasOfficialPartyResults(source);
   }
 
   bool _hasOfficialCandidateData(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2025 ||
-        source.type == ElectionSourceType.parliamentary2021 ||
-        source.type == ElectionSourceType.parliamentary2019 ||
-        source.type == ElectionSourceType.parliamentary2014;
+    return ElectionDataStatus.hasOfficialElectedCandidates(source);
   }
 
   bool _sourceOnly(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2017 ||
-        source.type == ElectionSourceType.parliamentary2010;
+    return ElectionDataStatus.isSourceOnly(source);
   }
 
   @override
