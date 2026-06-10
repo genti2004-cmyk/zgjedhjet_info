@@ -1,4 +1,5 @@
 import '../../../core/models/election_official_file.dart';
+import '../../parliamentary_2010/data/parliamentary_2010_official_files.dart';
 import '../../parliamentary_2014/data/parliamentary_2014_official_files.dart';
 import '../../parliamentary_2017/data/parliamentary_2017_official_files.dart';
 import '../../parliamentary_2019/data/parliamentary_2019_official_files.dart';
@@ -12,6 +13,7 @@ class ElectionOfficialFileCatalog {
     ...Parliamentary2019OfficialFiles.files,
     ...Parliamentary2017OfficialFiles.files,
     ...Parliamentary2014OfficialFiles.files,
+    ...Parliamentary2010OfficialFiles.files,
   ];
 
   static List<ElectionOfficialFile> byElectionId(String electionId) {
