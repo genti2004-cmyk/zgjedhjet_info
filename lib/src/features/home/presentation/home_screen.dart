@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 
 import '../../../core/models/candidate_result.dart';
 import '../../../core/models/election.dart';
@@ -66,7 +66,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   bool _hasOfficialParliamentaryData(ElectionSource source) {
     return source.type == ElectionSourceType.parliamentary2025 ||
-        source.type == ElectionSourceType.parliamentary2021;
+        source.type == ElectionSourceType.parliamentary2021 ||
+        source.type == ElectionSourceType.parliamentary2019;
   }
 
   @override
@@ -811,3 +812,4 @@ class _SourceInfoCard extends StatelessWidget {
     );
   }
 }
+

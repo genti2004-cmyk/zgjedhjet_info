@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 
 import '../../../core/models/election_source.dart';
 import '../../../core/models/municipality_result.dart';
@@ -249,7 +249,8 @@ class _MunicipalityDataNotice extends StatelessWidget {
   Widget build(BuildContext context) {
     final isParliamentary =
         source.type == ElectionSourceType.parliamentary2025 ||
-            source.type == ElectionSourceType.parliamentary2021;
+        source.type == ElectionSourceType.parliamentary2021 ||
+        source.type == ElectionSourceType.parliamentary2019;
 
     final message = isParliamentary
         ? 'Të dhënat e komunave për zgjedhjet parlamentare janë të përgatitura në strukturë, por detajet reale sipas komunave ende nuk janë lidhur.'
@@ -616,3 +617,4 @@ class _InfoChip extends StatelessWidget {
     );
   }
 }
+

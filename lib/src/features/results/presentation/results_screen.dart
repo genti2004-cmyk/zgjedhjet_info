@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 
 import '../../../core/models/election_source.dart';
 import '../../../core/models/party_result.dart';
@@ -229,7 +229,8 @@ class _OfficialDataNotice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isOfficial = source.type == ElectionSourceType.parliamentary2025 ||
-        source.type == ElectionSourceType.parliamentary2021;
+        source.type == ElectionSourceType.parliamentary2021 ||
+        source.type == ElectionSourceType.parliamentary2019;
 
     final message = isOfficial
         ? 'Për ${source.shortTitle} shfaqen rezultatet e subjekteve politike, votat, përqindjet dhe mandatet nga dokumentet zyrtare të KQZ.'
@@ -585,3 +586,4 @@ class _InfoChip extends StatelessWidget {
     );
   }
 }
+
