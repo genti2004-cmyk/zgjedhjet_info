@@ -1,4 +1,5 @@
 import '../../features/local_2025/data/local_2025_placeholder_data.dart';
+import '../../features/parliamentary_2021/data/parliamentary_2021_party_data.dart';
 import '../../features/parliamentary_2025/data/parliamentary_2025_candidate_data.dart';
 import '../../features/parliamentary_2025/data/parliamentary_2025_party_data.dart';
 import '../models/candidate_result.dart';
@@ -21,6 +22,16 @@ class KqzResultsService {
           type: 'Parlamentare',
           status: 'Të dhëna nga dokumentet zyrtare të KQZ',
           date: DateTime(2025, 2, 9),
+          lastUpdated: DateTime.now(),
+        );
+
+      case ElectionSourceType.parliamentary2021:
+        return Election(
+          id: 'parliamentary-2021',
+          title: source.title,
+          type: 'Parlamentare',
+          status: 'Rezultatet e subjekteve nga dokumentet zyrtare të KQZ',
+          date: DateTime(2021, 2, 14),
           lastUpdated: DateTime.now(),
         );
 
@@ -53,6 +64,9 @@ class KqzResultsService {
       case ElectionSourceType.parliamentary2025:
         return Parliamentary2025PartyData.results;
 
+      case ElectionSourceType.parliamentary2021:
+        return Parliamentary2021PartyData.results;
+
       case ElectionSourceType.local2025:
         return Local2025PlaceholderData.localPartyResults;
 
@@ -68,6 +82,7 @@ class KqzResultsService {
 
     switch (source.type) {
       case ElectionSourceType.parliamentary2025:
+      case ElectionSourceType.parliamentary2021:
         return Local2025PlaceholderData.parliamentaryMunicipalitiesPlaceholder;
 
       case ElectionSourceType.local2025:
@@ -86,6 +101,9 @@ class KqzResultsService {
     switch (source.type) {
       case ElectionSourceType.parliamentary2025:
         return Parliamentary2025CandidateData.results;
+
+      case ElectionSourceType.parliamentary2021:
+        return const <CandidateResult>[];
 
       case ElectionSourceType.local2025:
         return Local2025PlaceholderData.localCandidatesPlaceholder;
