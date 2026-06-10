@@ -70,7 +70,9 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
         filtered.sort((a, b) => a.name.compareTo(b.name));
         break;
       case MunicipalitySortMode.turnout:
-        filtered.sort((a, b) => b.turnoutPercentage.compareTo(a.turnoutPercentage));
+        filtered.sort(
+              (a, b) => b.turnoutPercentage.compareTo(a.turnoutPercentage),
+        );
         break;
       case MunicipalitySortMode.voters:
         filtered.sort((a, b) => b.voters.compareTo(a.voters));
@@ -124,8 +126,7 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
             builder: (context, snapshot) {
               final allMunicipalities =
                   snapshot.data ?? const <MunicipalityResult>[];
-              final visibleMunicipalities =
-              _filterAndSort(allMunicipalities);
+              final visibleMunicipalities = _filterAndSort(allMunicipalities);
 
               return RefreshIndicator(
                 onRefresh: () async {
@@ -208,15 +209,9 @@ class _PageHeader extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(18, 18, 18, 18),
       decoration: BoxDecoration(
-        color: AppTheme.primaryBlue,
+        color: AppTheme.primaryGreen,
         borderRadius: BorderRadius.circular(24),
-        boxShadow: [
-          BoxShadow(
-            color: AppTheme.primaryBlue.withValues(alpha: 0.18),
-            blurRadius: 22,
-            offset: const Offset(0, 12),
-          ),
-        ],
+        boxShadow: AppTheme.greenShadow,
       ),
       child: const Row(
         children: [
@@ -253,10 +248,11 @@ class _MunicipalityDataNotice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isParliamentary =
-        source.type == ElectionSourceType.parliamentary2025;
+        source.type == ElectionSourceType.parliamentary2025 ||
+            source.type == ElectionSourceType.parliamentary2021;
 
     final message = isParliamentary
-        ? 'Të dhënat e komunave për zgjedhjet parlamentare 2025 janë të përgatitura në strukturë, por detajet reale sipas komunave ende nuk janë lidhur.'
+        ? 'Të dhënat e komunave për zgjedhjet parlamentare janë të përgatitura në strukturë, por detajet reale sipas komunave ende nuk janë lidhur.'
         : 'Kjo faqe është e përgatitur për të dhënat e komunave nga platforma zyrtare e KQZ për zgjedhjet lokale. Aktualisht shfaqen të dhëna strukturore/testuese.';
 
     return Container(
@@ -333,6 +329,14 @@ class _SummaryCard extends StatelessWidget {
             const SizedBox(width: 10),
             Expanded(
               child: _SummaryItem(
+                label: 'Vota',
+                value: votesCast,
+                icon: Icons.how_to_vote_rounded,
+              ),
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: _SummaryItem(
                 label: 'Dalja',
                 value: turnout,
                 icon: Icons.percent_rounded,
@@ -361,14 +365,14 @@ class _SummaryItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(8, 12, 8, 12),
       decoration: BoxDecoration(
-        color: AppTheme.softBlue,
+        color: AppTheme.softGreen,
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
         children: [
           Icon(
             icon,
-            color: AppTheme.primaryBlue,
+            color: AppTheme.primaryGreen,
             size: 22,
           ),
           const SizedBox(height: 8),
@@ -434,55 +438,13 @@ class _SearchAndSortCard extends StatelessWidget {
                   },
                   icon: const Icon(Icons.close_rounded),
                 ),
-                filled: true,
-                fillColor: AppTheme.softBlue,
-                contentPadding: const EdgeInsets.symmetric(
-                  horizontal: 14,
-                  vertical: 12,
-                ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(color: AppTheme.border),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(color: AppTheme.border),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(
-                    color: AppTheme.primaryBlue,
-                    width: 1.4,
-                  ),
-                ),
               ),
             ),
             const SizedBox(height: 12),
             DropdownButtonFormField<MunicipalitySortMode>(
               value: sortMode,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Renditja',
-                filled: true,
-                fillColor: Colors.white,
-                contentPadding: const EdgeInsets.symmetric(
-                  horizontal: 14,
-                  vertical: 12,
-                ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(color: AppTheme.border),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(color: AppTheme.border),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
-                  borderSide: const BorderSide(
-                    color: AppTheme.primaryBlue,
-                    width: 1.4,
-                  ),
-                ),
               ),
               items: const [
                 DropdownMenuItem(
@@ -551,7 +513,7 @@ class _MunicipalityCard extends StatelessWidget {
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                     style: const TextStyle(
-                      color: AppTheme.primaryBlue,
+                      color: AppTheme.primaryGreen,
                       fontSize: 13,
                       fontWeight: FontWeight.w900,
                       height: 1.25,
@@ -598,14 +560,14 @@ class _RankBadge extends StatelessWidget {
       width: 42,
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        color: AppTheme.softBlue,
+        color: AppTheme.softGreen,
         borderRadius: BorderRadius.circular(14),
         border: Border.all(color: AppTheme.border),
       ),
       child: Text(
         '$rank',
         style: const TextStyle(
-          color: AppTheme.primaryBlue,
+          color: AppTheme.primaryGreen,
           fontSize: 15,
           fontWeight: FontWeight.w900,
         ),
