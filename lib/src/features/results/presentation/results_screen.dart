@@ -66,6 +66,18 @@ class _ResultsScreenState extends State<ResultsScreen> {
     return ElectionDataStatus.resultEmptyMessage(source);
   }
 
+  String _resultNoticeMessage(ElectionSource source) {
+    if (_hasOfficialResults(source)) {
+      return 'Për ${source.shortTitle} shfaqen rezultatet e subjekteve politike, votat, përqindjet dhe mandatet nga dokumentet zyrtare të KQZ.';
+    }
+
+    if (_hasRegisteredSourcesOnly(source)) {
+      return 'Për ${source.shortTitle} burimet zyrtare të KQZ janë regjistruar. Rezultatet nuk shfaqen ende, sepse skedarët duhet të verifikohen plotësisht.';
+    }
+
+    return 'Për ${source.shortTitle} lidhja reale me rezultatet e KQZ është ende në përgatitje. Aktualisht shfaqen të dhëna strukturore/testuese.';
+  }
+
   List<PartyResult> _filterAndSort(List<PartyResult> results) {
     final query = _searchQuery.trim().toLowerCase();
 
@@ -150,10 +162,12 @@ class _ResultsScreenState extends State<ResultsScreen> {
                     const SizedBox(height: 12),
                     ElectionPickerCard(onChanged: _refresh),
                     const SizedBox(height: 12),
-                    _OfficialDataNotice(
-                      source: selectedElection,
-                      isOfficial: _hasOfficialResults(selectedElection),
-                      isSourceOnly: _hasRegisteredSourcesOnly(selectedElection),
+                    PremiumStatusNotice(
+                      icon: _hasOfficialResults(selectedElection)
+                          ? Icons.verified_rounded
+                          : Icons.info_outline_rounded,
+                      verified: _hasOfficialResults(selectedElection),
+                      message: _resultNoticeMessage(selectedElection),
                     ),
                     const SizedBox(height: 12),
                     _SummaryCard(
@@ -329,59 +343,6 @@ class _PremiumHeader extends StatelessWidget {
                 label: winner == null ? 'Pa rezultate' : 'Fitues: ${winner!.shortName}',
               ),
             ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _OfficialDataNotice extends StatelessWidget {
-  final ElectionSource source;
-  final bool isOfficial;
-  final bool isSourceOnly;
-
-  const _OfficialDataNotice({
-    required this.source,
-    required this.isOfficial,
-    required this.isSourceOnly,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final message = isOfficial
-        ? 'Për ${source.shortTitle} shfaqen rezultatet e subjekteve politike, votat, përqindjet dhe mandatet nga dokumentet zyrtare të KQZ.'
-        : isSourceOnly
-            ? 'Për ${source.shortTitle} burimet zyrtare të KQZ janë regjistruar. Rezultatet nuk shfaqen ende, sepse skedarët duhet të verifikohen plotësisht.'
-            : 'Për ${source.shortTitle} lidhja reale me rezultatet e KQZ është ende në përgatitje. Aktualisht shfaqen të dhëna strukturore/testuese.';
-
-    return Container(
-      padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
-      decoration: BoxDecoration(
-        color: isOfficial ? const Color(0xFFECFDF3) : const Color(0xFFFFFBEB),
-        borderRadius: BorderRadius.circular(18),
-        border: Border.all(
-          color: isOfficial ? const Color(0xFFABEFC6) : const Color(0xFFFEDC7A),
-        ),
-      ),
-      child: Row(
-        children: [
-          Icon(
-            isOfficial ? Icons.verified_rounded : Icons.info_outline_rounded,
-            color: isOfficial ? const Color(0xFF079455) : const Color(0xFFB54708),
-            size: 21,
-          ),
-          const SizedBox(width: 10),
-          Expanded(
-            child: Text(
-              message,
-              style: TextStyle(
-                color: isOfficial ? const Color(0xFF067647) : const Color(0xFF7A4B00),
-                fontSize: 12.8,
-                height: 1.3,
-                fontWeight: FontWeight.w700,
-              ),
-            ),
           ),
         ],
       ),

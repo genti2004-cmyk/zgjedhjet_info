@@ -66,6 +66,18 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
     return ElectionDataStatus.candidateEmptyMessage(source);
   }
 
+  String _candidateNoticeMessage(ElectionSource source) {
+    if (_hasOfficialCandidates(source)) {
+      return 'Për ${source.shortTitle} shfaqen kandidatët e zgjedhur dhe votat nga dokumentet zyrtare të KQZ.';
+    }
+
+    if (_hasRegisteredSourcesOnly(source)) {
+      return 'Për ${source.shortTitle} burimet zyrtare të kandidatëve janë regjistruar. Kandidatët nuk shfaqen ende, sepse skedarët duhet të verifikohen plotësisht.';
+    }
+
+    return 'Kjo faqe është e përgatitur për kandidatët e kësaj zgjedhjeje. Aktualisht shfaqen të dhëna strukturore/testuese deri në lidhjen reale me KQZ.';
+  }
+
   List<CandidateResult> _filterAndSort(List<CandidateResult> candidates) {
     final query = _searchQuery.trim().toLowerCase();
 
@@ -154,10 +166,12 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
                     const SizedBox(height: 12),
                     ElectionPickerCard(onChanged: _refresh),
                     const SizedBox(height: 12),
-                    _CandidateDataNotice(
-                      source: selectedElection,
-                      isOfficial: _hasOfficialCandidates(selectedElection),
-                      isSourceOnly: _hasRegisteredSourcesOnly(selectedElection),
+                    PremiumStatusNotice(
+                      icon: _hasOfficialCandidates(selectedElection)
+                          ? Icons.verified_rounded
+                          : Icons.info_outline_rounded,
+                      verified: _hasOfficialCandidates(selectedElection),
+                      message: _candidateNoticeMessage(selectedElection),
                     ),
                     const SizedBox(height: 12),
                     _SummaryCard(
@@ -339,59 +353,6 @@ class _PremiumHeader extends StatelessWidget {
                     : 'Top: ${topCandidate!.fullName}',
               ),
             ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _CandidateDataNotice extends StatelessWidget {
-  final ElectionSource source;
-  final bool isOfficial;
-  final bool isSourceOnly;
-
-  const _CandidateDataNotice({
-    required this.source,
-    required this.isOfficial,
-    required this.isSourceOnly,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final message = isOfficial
-        ? 'Për ${source.shortTitle} shfaqen kandidatët e zgjedhur dhe votat nga dokumentet zyrtare të KQZ.'
-        : isSourceOnly
-            ? 'Për ${source.shortTitle} burimet zyrtare të kandidatëve janë regjistruar. Kandidatët nuk shfaqen ende, sepse skedarët duhet të verifikohen plotësisht.'
-            : 'Kjo faqe është e përgatitur për kandidatët e kësaj zgjedhjeje. Aktualisht shfaqen të dhëna strukturore/testuese deri në lidhjen reale me KQZ.';
-
-    return Container(
-      padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
-      decoration: BoxDecoration(
-        color: isOfficial ? const Color(0xFFECFDF3) : const Color(0xFFFFFBEB),
-        borderRadius: BorderRadius.circular(18),
-        border: Border.all(
-          color: isOfficial ? const Color(0xFFABEFC6) : const Color(0xFFFEDC7A),
-        ),
-      ),
-      child: Row(
-        children: [
-          Icon(
-            isOfficial ? Icons.verified_rounded : Icons.info_outline_rounded,
-            color: isOfficial ? const Color(0xFF079455) : const Color(0xFFB54708),
-            size: 21,
-          ),
-          const SizedBox(width: 10),
-          Expanded(
-            child: Text(
-              message,
-              style: TextStyle(
-                color: isOfficial ? const Color(0xFF067647) : const Color(0xFF7A4B00),
-                fontSize: 12.8,
-                height: 1.3,
-                fontWeight: FontWeight.w700,
-              ),
-            ),
           ),
         ],
       ),

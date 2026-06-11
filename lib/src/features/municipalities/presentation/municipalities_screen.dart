@@ -62,6 +62,18 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
     return ElectionDataStatus.hasRegisteredMunicipalitySources(source);
   }
 
+  String _municipalityNoticeMessage(ElectionSource source) {
+    if (_isParliamentary(source)) {
+      if (_hasRegisteredMunicipalitySources(source)) {
+        return 'Për ${source.shortTitle} burimet zyrtare të komunave janë regjistruar në arkiv. Të dhënat numerike sipas komunave ende nuk janë importuar, sepse duhet verifikim i plotë i skedarëve të KQZ.';
+      }
+
+      return 'Për ${source.shortTitle} rezultatet sipas komunave ende nuk janë lidhur plotësisht. Do të shtohen vetëm nga burime zyrtare të verifikuara.';
+    }
+
+    return 'Kjo faqe është e përgatitur për të dhënat e komunave nga platforma zyrtare e KQZ për zgjedhjet lokale. Aktualisht shfaqen të dhëna strukturore/testuese.';
+  }
+
   List<MunicipalityResult> _filterAndSort(
     List<MunicipalityResult> municipalities,
   ) {
@@ -150,11 +162,10 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                     const SizedBox(height: 12),
                     ElectionPickerCard(onChanged: _refresh),
                     const SizedBox(height: 12),
-                    _MunicipalityDataNotice(
-                      source: selectedElection,
-                      isParliamentary: _isParliamentary(selectedElection),
-                      hasRegisteredMunicipalitySources:
-                          _hasRegisteredMunicipalitySources(selectedElection),
+                    PremiumStatusNotice(
+                      icon: Icons.info_outline_rounded,
+                      verified: false,
+                      message: _municipalityNoticeMessage(selectedElection),
                     ),
                     const SizedBox(height: 12),
                     if (_isParliamentary(selectedElection))
@@ -256,58 +267,6 @@ class _PageHeader extends StatelessWidget {
     );
   }
 }
-
-class _MunicipalityDataNotice extends StatelessWidget {
-  final ElectionSource source;
-  final bool isParliamentary;
-  final bool hasRegisteredMunicipalitySources;
-
-  const _MunicipalityDataNotice({
-    required this.source,
-    required this.isParliamentary,
-    required this.hasRegisteredMunicipalitySources,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final message = isParliamentary
-        ? hasRegisteredMunicipalitySources
-            ? 'Për ${source.shortTitle} burimet zyrtare të komunave janë regjistruar në arkiv. Të dhënat numerike sipas komunave ende nuk janë importuar, sepse duhet verifikim i plotë i skedarëve të KQZ.'
-            : 'Për ${source.shortTitle} rezultatet sipas komunave ende nuk janë lidhur plotësisht. Do të shtohen vetëm nga burime zyrtare të verifikuara.'
-        : 'Kjo faqe është e përgatitur për të dhënat e komunave nga platforma zyrtare e KQZ për zgjedhjet lokale. Aktualisht shfaqen të dhëna strukturore/testuese.';
-
-    return Container(
-      padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
-      decoration: BoxDecoration(
-        color: const Color(0xFFFFFBEB),
-        borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: const Color(0xFFFEDC7A)),
-      ),
-      child: Row(
-        children: [
-          const Icon(
-            Icons.info_outline_rounded,
-            color: Color(0xFFB54708),
-            size: 21,
-          ),
-          const SizedBox(width: 10),
-          Expanded(
-            child: Text(
-              message,
-              style: const TextStyle(
-                color: Color(0xFF7A4B00),
-                fontSize: 12.8,
-                height: 1.3,
-                fontWeight: FontWeight.w700,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
 
 class _MunicipalityPendingCard extends StatelessWidget {
   final ElectionSource source;
