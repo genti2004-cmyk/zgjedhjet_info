@@ -7,6 +7,7 @@ class ElectionDataStatus {
     return source.type == ElectionSourceType.parliamentary2025 ||
         source.type == ElectionSourceType.parliamentary2021 ||
         source.type == ElectionSourceType.parliamentary2019 ||
+        source.type == ElectionSourceType.parliamentary2017 ||
         source.type == ElectionSourceType.parliamentary2014 ||
         source.type == ElectionSourceType.parliamentary2010;
   }
@@ -19,7 +20,7 @@ class ElectionDataStatus {
   }
 
   static bool isSourceOnly(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2017;
+    return false;
   }
 
   static bool hasCandidateSourcesOnly(ElectionSource source) {
@@ -32,6 +33,7 @@ class ElectionDataStatus {
         source.type == ElectionSourceType.parliamentary2021 ||
         source.type == ElectionSourceType.parliamentary2019 ||
         source.type == ElectionSourceType.parliamentary2017 ||
+        source.type == ElectionSourceType.parliamentary2017 ||
         source.type == ElectionSourceType.parliamentary2014 ||
         source.type == ElectionSourceType.parliamentary2010;
   }
@@ -39,6 +41,7 @@ class ElectionDataStatus {
   static bool hasRegisteredMunicipalitySources(ElectionSource source) {
     return source.type == ElectionSourceType.parliamentary2021 ||
         source.type == ElectionSourceType.parliamentary2019 ||
+        source.type == ElectionSourceType.parliamentary2017 ||
         source.type == ElectionSourceType.parliamentary2017 ||
         source.type == ElectionSourceType.parliamentary2014 ||
         source.type == ElectionSourceType.parliamentary2010;

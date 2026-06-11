@@ -2,6 +2,7 @@ import '../../features/local_2025/data/local_2025_placeholder_data.dart';
 import '../../features/parliamentary_2010/data/parliamentary_2010_party_data.dart';
 import '../../features/parliamentary_2014/data/parliamentary_2014_candidate_data.dart';
 import '../../features/parliamentary_2014/data/parliamentary_2014_party_data.dart';
+import '../../features/parliamentary_2017/data/parliamentary_2017_party_data.dart';
 import '../../features/parliamentary_2019/data/parliamentary_2019_candidate_data.dart';
 import '../../features/parliamentary_2019/data/parliamentary_2019_party_data.dart';
 import '../../features/parliamentary_2021/data/parliamentary_2021_candidate_data.dart';
@@ -27,7 +28,7 @@ class KqzResultsService {
       case ElectionSourceType.parliamentary2019:
         return Election(id: 'parliamentary-2019', title: source.title, type: 'Parlamentare', status: 'Rezultatet dhe kandidatët nga dokumentet zyrtare të KQZ', date: DateTime(2019, 10, 6), lastUpdated: DateTime.now());
       case ElectionSourceType.parliamentary2017:
-        return Election(id: 'parliamentary-2017', title: source.title, type: 'Parlamentare', status: 'Burimet zyrtare janë regjistruar - importi në përgatitje', date: DateTime(2017, 6, 11), lastUpdated: DateTime.now());
+        return Election(id: 'parliamentary-2017', title: source.title, type: 'Parlamentare', status: 'Rezultatet e subjekteve nga dokument zyrtar i KQZ', date: DateTime(2017, 6, 11), lastUpdated: DateTime.now());
       case ElectionSourceType.parliamentary2014:
         return Election(id: 'parliamentary-2014', title: source.title, type: 'Parlamentare', status: 'Rezultatet dhe kandidatët nga dokumentet zyrtare të KQZ', date: DateTime(2014, 6, 8), lastUpdated: DateTime.now());
       case ElectionSourceType.parliamentary2010:
@@ -49,7 +50,7 @@ class KqzResultsService {
       case ElectionSourceType.parliamentary2019:
         return Parliamentary2019PartyData.results;
       case ElectionSourceType.parliamentary2017:
-        return const <PartyResult>[];
+        return Parliamentary2017PartyData.results;
       case ElectionSourceType.parliamentary2014:
         return Parliamentary2014PartyData.results;
       case ElectionSourceType.parliamentary2010:
