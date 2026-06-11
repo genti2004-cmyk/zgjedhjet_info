@@ -11,29 +11,46 @@ class ElectionDataImportPlanRegistry {
       category: 'A',
       officialUrl:
           'https://kqz-ks.org/zgjedhjet-e-pergjithshme/zgjedhjet-per-kuvend-te-kosoves-2017/',
-      status: 'Burim zyrtar i gjetur, import i bllokuar',
+      status: 'Importuar',
       sourceVerified: true,
-      directFileVerified: false,
-      importAllowed: false,
+      directFileVerified: true,
+      importAllowed: true,
       nextAction:
-          'Gjej dhe kontrollo skedarin konkret PDF/XLS/XLSX të rezultateve sipas subjekteve për 2017.',
+          'Të dhënat e subjekteve 2017 janë importuar. Hapi tjetër: kandidatët ose komunat.',
       note:
-          'Faqja zyrtare e KQZ për 2017 është verifikuar. Numrat nuk importohen derisa skedari konkret i rezultateve të jetë plotësisht i lexueshëm dhe i kontrolluar.',
+          'Rezultatet e subjekteve 2017 janë importuar nga dokument zyrtar i KQZ.',
     ),
     ElectionDataImportPlan(
       id: 'b-2010-party-results',
       electionId: 'parliamentary-2010',
       title: '2010 – Rezultatet e subjekteve politike',
       category: 'B',
-      officialUrl: 'https://kqz-ks.org/rezultatet/zgjedhjet-per-kuvend-te-kosoves/',
+      officialUrl:
+          'https://kqz-ks.org/wp-content/uploads/2018/04/1.-Rezultatet-e-p%C3%ABrgjithshme-sipas-Subjekteve-2010.pdf',
+      status: 'Importuar',
+      sourceVerified: true,
+      directFileVerified: true,
+      importAllowed: true,
+      nextAction:
+          'Të dhënat e subjekteve 2010 janë importuar. Hapi tjetër: kandidatët ose komunat.',
+      note:
+          'Rezultatet e subjekteve 2010 janë importuar nga dokument zyrtar i KQZ.',
+    ),
+    ElectionDataImportPlan(
+      id: 'b-2010-elected-candidates',
+      electionId: 'parliamentary-2010',
+      title: '2010 – Kandidatët e zgjedhur sipas subjekteve',
+      category: 'B',
+      officialUrl:
+          'https://kqz-ks.org/wp-content/uploads/2018/04/2.-Kandidat%C3%ABt-e-zgjedhur-sipas-Subjekteve-2010.pdf',
       status: 'Burim zyrtar i gjetur, import i bllokuar',
       sourceVerified: true,
       directFileVerified: false,
       importAllowed: false,
       nextAction:
-          'Hap skedarin konkret "Rezultatet e përgjithshme sipas Subjekteve 2010" dhe kontrollo tabelat para importit.',
+          'Ngarko PDF-në zyrtare ose siguro qasje të plotë në dokument për të lexuar 120 kandidatët e zgjedhur dhe votat e tyre.',
       note:
-          'Faqja zyrtare e rezultateve të Kuvendit përmban seksionin 2010 dhe dokumente për subjektet, ulëset, kandidatët dhe komunat. Importi mbetet i bllokuar pa skedarin konkret.',
+          'Dokumenti zyrtar ekziston, por importi nuk bëhet pa lexim të plotë të tabelës. Nuk lejohen emra/vota të improvizuara.',
     ),
     ElectionDataImportPlan(
       id: 'b-2010-official-report',
