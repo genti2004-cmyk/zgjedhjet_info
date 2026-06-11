@@ -23,105 +23,14 @@ class InfoScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(18, 12, 18, 24),
         children: const [
-          _PremiumHeader(),
-          SizedBox(height: 12),
-          _VersionCard(),
-          SizedBox(height: 12),
-          _DataStatusCard(),
-          SizedBox(height: 12),
-          _RulesCard(),
-          SizedBox(height: 12),
-          _CoverageCard(),
-          SizedBox(height: 12),
-          _DisclaimerCard(),
-        ],
-      ),
-    );
-  }
-}
-
-class _PremiumHeader extends StatelessWidget {
-  const _PremiumHeader();
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(18, 18, 18, 18),
-      decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [
-            Color(0xFF0F7A4C),
-            Color(0xFF095D3A),
-            Color(0xFF063F2B),
-          ],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-        borderRadius: BorderRadius.circular(28),
-        boxShadow: AppTheme.greenShadow,
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Container(
-                height: 46,
-                width: 46,
-                decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: 0.16),
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(
-                    color: Colors.white.withValues(alpha: 0.22),
-                  ),
-                ),
-                child: const Icon(
-                  Icons.info_outline_rounded,
-                  color: Colors.white,
-                  size: 27,
-                ),
-              ),
-              const SizedBox(width: 12),
-              const Expanded(
-                child: Text(
-                  InfoScreen.appName,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 25,
-                    fontWeight: FontWeight.w900,
-                    height: 1.05,
-                    letterSpacing: -0.35,
-                  ),
-                ),
-              ),
-              const PremiumHeroStatusPill(label: InfoScreen.version, verified: true),
-            ],
-          ),
-          const SizedBox(height: 16),
-          const Text(
-            InfoScreen.subtitle,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 19,
-              fontWeight: FontWeight.w900,
-              height: 1.12,
-            ),
-          ),
-          const SizedBox(height: 6),
-          const Text(
-            'App për shfaqjen dhe verifikimin e rezultateve zgjedhore të Kosovës me burime të dokumentuara.',
-            style: TextStyle(
-              color: Color(0xFFEAF7F0),
-              fontSize: 13.3,
-              fontWeight: FontWeight.w700,
-              height: 1.32,
-            ),
-          ),
-          const SizedBox(height: 13),
-          const Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: [
+          PremiumHeroCard(
+            icon: Icons.info_outline_rounded,
+            title: InfoScreen.appName,
+            subtitle:
+                'App për shfaqjen dhe verifikimin e rezultateve zgjedhore të Kosovës me burime të dokumentuara.',
+            statusLabel: InfoScreen.version,
+            verified: true,
+            pills: const [
               PremiumWhitePill(
                 icon: Icons.verified_rounded,
                 label: 'Burime zyrtare',
@@ -132,6 +41,16 @@ class _PremiumHeader extends StatelessWidget {
               ),
             ],
           ),
+          SizedBox(height: 12),
+          _VersionCard(),
+          SizedBox(height: 12),
+          _DataStatusCard(),
+          SizedBox(height: 12),
+          _RulesCard(),
+          SizedBox(height: 12),
+          _CoverageCard(),
+          SizedBox(height: 12),
+          _DisclaimerCard(),
         ],
       ),
     );
