@@ -1,3 +1,5 @@
+import '../../features/local_2017/data/local_2017_assembly_subject_data.dart';
+import '../../features/local_2017/data/local_2017_assembly_candidate_data.dart';
 import '../../features/local_2025/data/local_2025_placeholder_data.dart';
 import '../../features/parliamentary_2010/data/parliamentary_2010_party_data.dart';
 import '../../features/parliamentary_2010/data/parliamentary_2010_candidate_data.dart';
@@ -35,6 +37,8 @@ class KqzResultsService {
         return Election(id: 'parliamentary-2014', title: source.title, type: 'Parlamentare', status: 'Rezultatet dhe kandidatët nga dokumentet zyrtare të KQZ', date: DateTime(2014, 6, 8), lastUpdated: DateTime.now());
       case ElectionSourceType.parliamentary2010:
         return Election(id: 'parliamentary-2010', title: source.title, type: 'Parlamentare', status: 'Rezultatet e subjekteve nga dokument zyrtar i KQZ', date: DateTime(2010, 12, 12), lastUpdated: DateTime.now());
+      case ElectionSourceType.local2017:
+        return Election(id: 'local-2017', title: source.title, type: 'Lokale - Kuvende Komunale', status: 'Rezultatet e subjekteve dhe kandidatët sipas komunave nga dokumentet zyrtare të KQZ', date: DateTime(2017, 10, 22), lastUpdated: DateTime.now());
       case ElectionSourceType.local2025:
         return Election(id: 'local-2025', title: source.title, type: 'Lokale', status: 'Burim zyrtar i përgatitur - test UI', date: DateTime(2025, 10, 12), lastUpdated: DateTime.now());
       case ElectionSourceType.local2025Round2:
@@ -57,6 +61,8 @@ class KqzResultsService {
         return Parliamentary2014PartyData.results;
       case ElectionSourceType.parliamentary2010:
         return Parliamentary2010PartyData.results;
+      case ElectionSourceType.local2017:
+        return Local2017AssemblySubjectData.results;
       case ElectionSourceType.local2025:
         return Local2025PlaceholderData.localPartyResults;
       case ElectionSourceType.local2025Round2:
@@ -73,6 +79,8 @@ class KqzResultsService {
       case ElectionSourceType.parliamentary2017:
       case ElectionSourceType.parliamentary2014:
       case ElectionSourceType.parliamentary2010:
+        return const <MunicipalityResult>[];
+      case ElectionSourceType.local2017:
         return const <MunicipalityResult>[];
       case ElectionSourceType.local2025:
         return Local2025PlaceholderData.localMunicipalitiesPlaceholder;
@@ -96,6 +104,8 @@ class KqzResultsService {
         return Parliamentary2010CandidateData.results;
       case ElectionSourceType.parliamentary2014:
         return Parliamentary2014CandidateData.results;
+      case ElectionSourceType.local2017:
+        return Local2017AssemblyCandidateData.results;
       case ElectionSourceType.local2025:
         return Local2025PlaceholderData.localCandidatesPlaceholder;
       case ElectionSourceType.local2025Round2:

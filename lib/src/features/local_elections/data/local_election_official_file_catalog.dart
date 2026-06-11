@@ -5,6 +5,30 @@ class LocalElectionOfficialFileCatalog {
 
   static const List<ElectionOfficialFile> files = [
     ElectionOfficialFile(
+      id: 'local-2017-assembly-subject-results',
+      electionId: 'local-2017',
+      title: 'Rezultatet e komunave – ndarja e vendeve 2017',
+      description:
+          'Dokument zyrtar i KQZ me rezultatet për kuvende komunale sipas komunave, subjekteve, votave, përqindjes dhe ndarjes së vendeve.',
+      url: 'local-file:1.pdf',
+      fileType: 'PDF',
+      isResultData: true,
+      isCandidateData: false,
+      isMunicipalityData: true,
+    ),
+    ElectionOfficialFile(
+      id: 'local-2017-assembly-candidate-results',
+      electionId: 'local-2017',
+      title: 'Rezultatet e kandidatëve nëpër komuna 2017',
+      description:
+          'Dokument zyrtar i KQZ me listën totale të kandidatëve për kuvende komunale sipas komunave në zgjedhjet lokale 2017.',
+      url: 'local-file:2017-Komunal-3.xls',
+      fileType: 'XLS',
+      isResultData: true,
+      isCandidateData: true,
+      isMunicipalityData: true,
+    ),
+    ElectionOfficialFile(
       id: 'local-2025-mayor-round-1-results',
       electionId: 'local-2025',
       title: 'Rezultatet për Kryetarë të Komunave – Raundi I',

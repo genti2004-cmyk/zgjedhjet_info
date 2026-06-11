@@ -9,7 +9,8 @@ class ElectionDataStatus {
         source.type == ElectionSourceType.parliamentary2019 ||
         source.type == ElectionSourceType.parliamentary2017 ||
         source.type == ElectionSourceType.parliamentary2014 ||
-        source.type == ElectionSourceType.parliamentary2010;
+        source.type == ElectionSourceType.parliamentary2010 ||
+        source.type == ElectionSourceType.local2017;
   }
 
   static bool hasOfficialElectedCandidates(ElectionSource source) {
@@ -18,7 +19,8 @@ class ElectionDataStatus {
         source.type == ElectionSourceType.parliamentary2019 ||
         source.type == ElectionSourceType.parliamentary2017 ||
         source.type == ElectionSourceType.parliamentary2014 ||
-        source.type == ElectionSourceType.parliamentary2010;
+        source.type == ElectionSourceType.parliamentary2010 ||
+        source.type == ElectionSourceType.local2017;
   }
 
   static bool isSourceOnly(ElectionSource source) {
@@ -26,14 +28,13 @@ class ElectionDataStatus {
   }
 
   static bool hasCandidateSourcesOnly(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2017;
+    return false;
   }
 
   static bool isParliamentary(ElectionSource source) {
     return source.type == ElectionSourceType.parliamentary2025 ||
         source.type == ElectionSourceType.parliamentary2021 ||
         source.type == ElectionSourceType.parliamentary2019 ||
-        source.type == ElectionSourceType.parliamentary2017 ||
         source.type == ElectionSourceType.parliamentary2017 ||
         source.type == ElectionSourceType.parliamentary2014 ||
         source.type == ElectionSourceType.parliamentary2010;
@@ -42,7 +43,6 @@ class ElectionDataStatus {
   static bool hasRegisteredMunicipalitySources(ElectionSource source) {
     return source.type == ElectionSourceType.parliamentary2021 ||
         source.type == ElectionSourceType.parliamentary2019 ||
-        source.type == ElectionSourceType.parliamentary2017 ||
         source.type == ElectionSourceType.parliamentary2017 ||
         source.type == ElectionSourceType.parliamentary2014 ||
         source.type == ElectionSourceType.parliamentary2010;
