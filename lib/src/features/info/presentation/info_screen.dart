@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/premium_components.dart';
 
 class InfoScreen extends StatelessWidget {
   const InfoScreen({super.key});
@@ -93,7 +94,7 @@ class _PremiumHeader extends StatelessWidget {
                   ),
                 ),
               ),
-              const _HeaderStatusPill(),
+              const PremiumHeroStatusPill(label: InfoScreen.version, verified: true),
             ],
           ),
           const SizedBox(height: 16),
@@ -121,88 +122,15 @@ class _PremiumHeader extends StatelessWidget {
             spacing: 8,
             runSpacing: 8,
             children: [
-              _WhitePill(
+              PremiumWhitePill(
                 icon: Icons.verified_rounded,
                 label: 'Burime zyrtare',
               ),
-              _WhitePill(
+              PremiumWhitePill(
                 icon: Icons.lock_outline_rounded,
                 label: 'Pa të dhëna të shpikura',
               ),
             ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _HeaderStatusPill extends StatelessWidget {
-  const _HeaderStatusPill();
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(9, 6, 9, 6),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.14),
-        borderRadius: BorderRadius.circular(999),
-        border: Border.all(
-          color: Colors.white.withValues(alpha: 0.22),
-        ),
-      ),
-      child: const Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            Icons.check_circle_rounded,
-            color: Colors.white,
-            size: 15,
-          ),
-          SizedBox(width: 5),
-          Text(
-            InfoScreen.version,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 11.2,
-              fontWeight: FontWeight.w900,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _WhitePill extends StatelessWidget {
-  final IconData icon;
-  final String label;
-
-  const _WhitePill({
-    required this.icon,
-    required this.label,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(9, 6, 10, 6),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.13),
-        borderRadius: BorderRadius.circular(999),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(icon, color: Colors.white, size: 14),
-          const SizedBox(width: 5),
-          Text(
-            label,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 11.6,
-              fontWeight: FontWeight.w800,
-            ),
           ),
         ],
       ),
