@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../core/models/election_official_file.dart';
 import '../../../core/models/election_source.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/premium_components.dart';
 import '../../election_archive/data/election_official_file_catalog.dart';
 
 enum SourceFilter {
@@ -134,7 +135,7 @@ class _SourcesScreenState extends State<SourcesScreen> {
           ),
           const SizedBox(height: 18),
           if (_filter != SourceFilter.files) ...[
-            const _SectionHeader(
+            const PremiumSectionHeader(
               title: 'Faqet zyrtare',
               subtitle: 'Burimet kryesore për çdo zgjedhje.',
             ),
@@ -154,7 +155,7 @@ class _SourcesScreenState extends State<SourcesScreen> {
             const SizedBox(height: 18),
           ],
           if (_filter != SourceFilter.elections) ...[
-            const _SectionHeader(
+            const PremiumSectionHeader(
               title: 'Dosjet zyrtare',
               subtitle: 'Dokumentet e regjistruara nga burimet e KQZ.',
             ),
@@ -250,7 +251,7 @@ class _PremiumHeader extends StatelessWidget {
                   ),
                 ),
               ),
-              const _HeaderStatusPill(),
+              const PremiumHeroStatusPill(label: 'Verifikim', verified: true),
             ],
           ),
           const SizedBox(height: 16),
@@ -278,88 +279,15 @@ class _PremiumHeader extends StatelessWidget {
             spacing: 8,
             runSpacing: 8,
             children: [
-              _WhitePill(
+              PremiumWhitePill(
                 icon: Icons.verified_rounded,
                 label: 'KQZ / burime zyrtare',
               ),
-              _WhitePill(
+              PremiumWhitePill(
                 icon: Icons.no_accounts_rounded,
                 label: 'Jo app zyrtar i KQZ',
               ),
             ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _HeaderStatusPill extends StatelessWidget {
-  const _HeaderStatusPill();
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(9, 6, 9, 6),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.14),
-        borderRadius: BorderRadius.circular(999),
-        border: Border.all(
-          color: Colors.white.withValues(alpha: 0.22),
-        ),
-      ),
-      child: const Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            Icons.verified_rounded,
-            color: Colors.white,
-            size: 15,
-          ),
-          SizedBox(width: 5),
-          Text(
-            'Verifikim',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 11.2,
-              fontWeight: FontWeight.w900,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _WhitePill extends StatelessWidget {
-  final IconData icon;
-  final String label;
-
-  const _WhitePill({
-    required this.icon,
-    required this.label,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(9, 6, 10, 6),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.13),
-        borderRadius: BorderRadius.circular(999),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(icon, color: Colors.white, size: 14),
-          const SizedBox(width: 5),
-          Text(
-            label,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 11.6,
-              fontWeight: FontWeight.w800,
-            ),
           ),
         ],
       ),
@@ -573,41 +501,6 @@ class _SearchAndFilterCard extends StatelessWidget {
   }
 }
 
-class _SectionHeader extends StatelessWidget {
-  final String title;
-  final String subtitle;
-
-  const _SectionHeader({
-    required this.title,
-    required this.subtitle,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(title, style: Theme.of(context).textTheme.headlineMedium),
-              const SizedBox(height: 3),
-              Text(
-                subtitle,
-                style: const TextStyle(
-                  color: AppTheme.textMuted,
-                  fontSize: 12.6,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ],
-    );
-  }
-}
-
 class _ElectionSourceCard extends StatelessWidget {
   final ElectionSource source;
   final int fileCount;
@@ -664,11 +557,11 @@ class _ElectionSourceCard extends StatelessWidget {
                       spacing: 8,
                       runSpacing: 8,
                       children: [
-                        _InfoChip(
+                        PremiumInfoChip(
                           icon: Icons.calendar_month_rounded,
                           label: source.dateLabel,
                         ),
-                        _InfoChip(
+                        PremiumInfoChip(
                           icon: Icons.description_rounded,
                           label: '$fileCount dosje',
                         ),
@@ -746,22 +639,22 @@ class _OfficialFileCard extends StatelessWidget {
                       spacing: 8,
                       runSpacing: 8,
                       children: [
-                        _InfoChip(
+                        PremiumInfoChip(
                           icon: Icons.insert_drive_file_rounded,
                           label: file.fileType,
                         ),
                         if (file.isResultData)
-                          const _InfoChip(
+                          const PremiumInfoChip(
                             icon: Icons.bar_chart_rounded,
                             label: 'Rezultate',
                           ),
                         if (file.isCandidateData)
-                          const _InfoChip(
+                          const PremiumInfoChip(
                             icon: Icons.people_alt_rounded,
                             label: 'Kandidatë',
                           ),
                         if (file.isMunicipalityData)
-                          const _InfoChip(
+                          const PremiumInfoChip(
                             icon: Icons.location_city_rounded,
                             label: 'Komuna',
                           ),
@@ -777,47 +670,6 @@ class _OfficialFileCard extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-class _InfoChip extends StatelessWidget {
-  final IconData icon;
-  final String label;
-
-  const _InfoChip({
-    required this.icon,
-    required this.label,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(9, 6, 10, 6),
-      decoration: BoxDecoration(
-        color: AppTheme.background,
-        borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: AppTheme.border),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            icon,
-            color: AppTheme.textMuted,
-            size: 15,
-          ),
-          const SizedBox(width: 5),
-          Text(
-            label,
-            style: const TextStyle(
-              color: AppTheme.textDark,
-              fontSize: 12,
-              fontWeight: FontWeight.w800,
-            ),
-          ),
-        ],
       ),
     );
   }
