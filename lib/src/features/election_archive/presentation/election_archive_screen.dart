@@ -631,7 +631,7 @@ class _ElectionDetailSheet extends StatelessWidget {
                   if (_hasImportedResults &&
                       _hasImportedCandidates &&
                       _hasImportedMunicipalities)
-                    const _MissingRow(text: 'Nuk mungon asgjë kryesore.'),
+                    const _MissingRow(text: 'Të dhënat kryesore janë të importuara sipas statusit aktual.'),
                 ],
               ),
               const SizedBox(height: 14),
@@ -965,7 +965,7 @@ class _OfficialFilesBlock extends StatelessWidget {
       return const Card(
         child: Padding(
           padding: EdgeInsets.all(16),
-          child: Text('Ende nuk ka dosje zyrtare të regjistruara për këtë zgjedhje.'),
+          child: Text('Ende nuk ka dosje zyrtare të regjistruara për këtë zgjedhje. Të dhënat do të shtohen vetëm pasi burimi zyrtar të jetë i verifikueshëm.'),
         ),
       );
     }
