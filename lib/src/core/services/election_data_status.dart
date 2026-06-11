@@ -7,7 +7,8 @@ class ElectionDataStatus {
     return source.type == ElectionSourceType.parliamentary2025 ||
         source.type == ElectionSourceType.parliamentary2021 ||
         source.type == ElectionSourceType.parliamentary2019 ||
-        source.type == ElectionSourceType.parliamentary2014;
+        source.type == ElectionSourceType.parliamentary2014 ||
+        source.type == ElectionSourceType.parliamentary2010;
   }
 
   static bool hasOfficialElectedCandidates(ElectionSource source) {
@@ -18,6 +19,10 @@ class ElectionDataStatus {
   }
 
   static bool isSourceOnly(ElectionSource source) {
+    return source.type == ElectionSourceType.parliamentary2017;
+  }
+
+  static bool hasCandidateSourcesOnly(ElectionSource source) {
     return source.type == ElectionSourceType.parliamentary2017 ||
         source.type == ElectionSourceType.parliamentary2010;
   }
@@ -52,7 +57,7 @@ class ElectionDataStatus {
   }
 
   static String candidateEmptyMessage(ElectionSource source) {
-    if (isSourceOnly(source)) {
+    if (hasCandidateSourcesOnly(source)) {
       return 'Burimet zyrtare për kandidatët e ${source.shortTitle} janë regjistruar. Kandidatët do të shfaqen pasi skedarët e KQZ të verifikohen plotësisht.';
     }
 
