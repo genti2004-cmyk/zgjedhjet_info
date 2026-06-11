@@ -108,7 +108,24 @@ class _SourcesScreenState extends State<SourcesScreen> {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(18, 12, 18, 24),
         children: [
-          const _PremiumHeader(),
+          const PremiumHeroCard(
+            icon: Icons.source_rounded,
+            title: 'Burimet',
+            subtitle:
+                'Këtu ruhen lidhjet zyrtare dhe dosjet që përdoren për verifikimin e të dhënave në app.',
+            statusLabel: 'Verifikim',
+            verified: true,
+            pills: [
+              PremiumWhitePill(
+                icon: Icons.verified_rounded,
+                label: 'KQZ / burime zyrtare',
+              ),
+              PremiumWhitePill(
+                icon: Icons.no_accounts_rounded,
+                label: 'Jo app zyrtar i KQZ',
+              ),
+            ],
+          ),
           const SizedBox(height: 12),
           _SummaryCard(
             sourceCount: _officialElectionCount(),
@@ -194,104 +211,6 @@ class _SourcesScreenState extends State<SourcesScreen> {
       case ElectionSourceType.local2025Round2:
         return 'local-2025-r2';
     }
-  }
-}
-
-class _PremiumHeader extends StatelessWidget {
-  const _PremiumHeader();
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(18, 18, 18, 18),
-      decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [
-            Color(0xFF0F7A4C),
-            Color(0xFF095D3A),
-            Color(0xFF063F2B),
-          ],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-        borderRadius: BorderRadius.circular(28),
-        boxShadow: AppTheme.greenShadow,
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Container(
-                height: 46,
-                width: 46,
-                decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: 0.16),
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(
-                    color: Colors.white.withValues(alpha: 0.22),
-                  ),
-                ),
-                child: const Icon(
-                  Icons.source_rounded,
-                  color: Colors.white,
-                  size: 27,
-                ),
-              ),
-              const SizedBox(width: 12),
-              const Expanded(
-                child: Text(
-                  'Burimet',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 25,
-                    fontWeight: FontWeight.w900,
-                    height: 1.05,
-                    letterSpacing: -0.35,
-                  ),
-                ),
-              ),
-              const PremiumHeroStatusPill(label: 'Verifikim', verified: true),
-            ],
-          ),
-          const SizedBox(height: 16),
-          const Text(
-            'Faqet dhe dokumentet zyrtare',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 19,
-              fontWeight: FontWeight.w900,
-              height: 1.12,
-            ),
-          ),
-          const SizedBox(height: 6),
-          const Text(
-            'Këtu ruhen lidhjet zyrtare dhe dosjet që përdoren për verifikimin e të dhënave në app.',
-            style: TextStyle(
-              color: Color(0xFFEAF7F0),
-              fontSize: 13.3,
-              fontWeight: FontWeight.w700,
-              height: 1.32,
-            ),
-          ),
-          const SizedBox(height: 13),
-          const Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: [
-              PremiumWhitePill(
-                icon: Icons.verified_rounded,
-                label: 'KQZ / burime zyrtare',
-              ),
-              PremiumWhitePill(
-                icon: Icons.no_accounts_rounded,
-                label: 'Jo app zyrtar i KQZ',
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
   }
 }
 
