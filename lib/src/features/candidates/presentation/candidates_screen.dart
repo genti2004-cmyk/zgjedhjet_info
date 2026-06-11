@@ -8,6 +8,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/utils/app_formatters.dart';
 import '../../../core/widgets/app_state_cards.dart';
 import '../../../core/widgets/election_picker_card.dart';
+import '../../../core/widgets/premium_components.dart';
 import '../../results/data/election_repository.dart';
 
 enum CandidateSortMode {
@@ -284,7 +285,7 @@ class _PremiumHeader extends StatelessWidget {
                 ),
               ),
               const Spacer(),
-              _HeaderStatusPill(label: status, isOfficial: isOfficial),
+              PremiumHeroStatusPill(label: status, verified: isOfficial),
             ],
           ),
           const SizedBox(height: 16),
@@ -327,101 +328,17 @@ class _PremiumHeader extends StatelessWidget {
             spacing: 8,
             runSpacing: 8,
             children: [
-              _WhitePill(
+              PremiumWhitePill(
                 icon: Icons.calendar_month_rounded,
                 label: source.dateLabel,
               ),
-              _WhitePill(
+              PremiumWhitePill(
                 icon: Icons.emoji_events_rounded,
                 label: topCandidate == null
                     ? 'Pa kandidatë'
                     : 'Top: ${topCandidate!.fullName}',
               ),
             ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _HeaderStatusPill extends StatelessWidget {
-  final String label;
-  final bool isOfficial;
-
-  const _HeaderStatusPill({
-    required this.label,
-    required this.isOfficial,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(9, 6, 9, 6),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.14),
-        borderRadius: BorderRadius.circular(999),
-        border: Border.all(
-          color: Colors.white.withValues(alpha: 0.22),
-        ),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            isOfficial ? Icons.verified_rounded : Icons.info_outline_rounded,
-            color: Colors.white,
-            size: 15,
-          ),
-          const SizedBox(width: 5),
-          Text(
-            label,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 11.2,
-              fontWeight: FontWeight.w900,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _WhitePill extends StatelessWidget {
-  final IconData icon;
-  final String label;
-
-  const _WhitePill({
-    required this.icon,
-    required this.label,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      constraints: const BoxConstraints(maxWidth: 280),
-      padding: const EdgeInsets.fromLTRB(9, 6, 10, 6),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.13),
-        borderRadius: BorderRadius.circular(999),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(icon, color: Colors.white, size: 14),
-          const SizedBox(width: 5),
-          Flexible(
-            child: Text(
-              label,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 11.6,
-                fontWeight: FontWeight.w800,
-              ),
-            ),
           ),
         ],
       ),
@@ -793,11 +710,11 @@ class _CandidateCard extends StatelessWidget {
                     spacing: 8,
                     runSpacing: 8,
                     children: [
-                      _InfoChip(
+                      PremiumInfoChip(
                         icon: Icons.how_to_vote_rounded,
                         label: '$votes vota',
                       ),
-                      _InfoChip(
+                      PremiumInfoChip(
                         icon: Icons.location_city_rounded,
                         label: result.municipalityName,
                       ),
@@ -845,43 +762,3 @@ class _RankBadge extends StatelessWidget {
   }
 }
 
-class _InfoChip extends StatelessWidget {
-  final IconData icon;
-  final String label;
-
-  const _InfoChip({
-    required this.icon,
-    required this.label,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(9, 6, 10, 6),
-      decoration: BoxDecoration(
-        color: AppTheme.background,
-        borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: AppTheme.border),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            icon,
-            color: AppTheme.textMuted,
-            size: 15,
-          ),
-          const SizedBox(width: 5),
-          Text(
-            label,
-            style: const TextStyle(
-              color: AppTheme.textDark,
-              fontSize: 12,
-              fontWeight: FontWeight.w800,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
