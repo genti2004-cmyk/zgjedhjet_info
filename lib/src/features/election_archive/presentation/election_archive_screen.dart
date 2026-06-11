@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../core/models/election_archive_item.dart';
 import '../../../core/models/election_official_file.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/premium_components.dart';
 import '../data/election_archive_catalog.dart';
 import '../data/election_official_file_catalog.dart';
 
@@ -480,15 +481,15 @@ class _ArchiveCard extends StatelessWidget {
                 spacing: 8,
                 runSpacing: 8,
                 children: [
-                  _Chip(label: item.type, icon: Icons.category_rounded),
-                  _Chip(label: item.dateLabel, icon: Icons.calendar_month_rounded),
-                  _Chip(
+                  PremiumInfoChip(label: item.type, icon: Icons.category_rounded),
+                  PremiumInfoChip(label: item.dateLabel, icon: Icons.calendar_month_rounded),
+                  PremiumInfoChip(
                     label: hasAnyData ? 'Në app' : 'Në pritje',
                     icon: hasAnyData
                         ? Icons.verified_rounded
                         : Icons.hourglass_empty_rounded,
                   ),
-                  _Chip(
+                  PremiumInfoChip(
                     label: '${officialFiles.length} dosje',
                     icon: Icons.description_rounded,
                   ),
@@ -708,48 +709,9 @@ class _DetailHeader extends StatelessWidget {
             spacing: 8,
             runSpacing: 8,
             children: [
-              _WhitePill(icon: Icons.calendar_month_rounded, label: item.dateLabel),
-              _WhitePill(icon: Icons.category_rounded, label: item.type),
+              PremiumWhitePill(icon: Icons.calendar_month_rounded, label: item.dateLabel),
+              PremiumWhitePill(icon: Icons.category_rounded, label: item.type),
             ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _WhitePill extends StatelessWidget {
-  final IconData icon;
-  final String label;
-
-  const _WhitePill({
-    required this.icon,
-    required this.label,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(10, 7, 11, 7),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.16),
-        borderRadius: BorderRadius.circular(999),
-        border: Border.all(
-          color: Colors.white.withValues(alpha: 0.22),
-        ),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(icon, color: Colors.white, size: 15),
-          const SizedBox(width: 6),
-          Text(
-            label,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 12,
-              fontWeight: FontWeight.w900,
-            ),
           ),
         ],
       ),
@@ -1106,10 +1068,10 @@ class _OfficialFileTile extends StatelessWidget {
                   spacing: 7,
                   runSpacing: 7,
                   children: [
-                    _MiniChip(label: file.fileType),
-                    if (file.isResultData) const _MiniChip(label: 'Rezultate'),
-                    if (file.isCandidateData) const _MiniChip(label: 'Kandidatë'),
-                    if (file.isMunicipalityData) const _MiniChip(label: 'Komuna'),
+                    PremiumInfoChip(icon: Icons.label_rounded, label: file.fileType),
+                    if (file.isResultData) const PremiumInfoChip(icon: Icons.label_rounded, label: 'Rezultate'),
+                    if (file.isCandidateData) const PremiumInfoChip(icon: Icons.label_rounded, label: 'Kandidatë'),
+                    if (file.isMunicipalityData) const PremiumInfoChip(icon: Icons.label_rounded, label: 'Komuna'),
                   ],
                 ),
               ],
@@ -1119,72 +1081,6 @@ class _OfficialFileTile extends StatelessWidget {
             tooltip: 'Hap dosjen',
             onPressed: onOpen,
             icon: const Icon(Icons.open_in_new_rounded),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _MiniChip extends StatelessWidget {
-  final String label;
-
-  const _MiniChip({required this.label});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(8, 4, 8, 4),
-      decoration: BoxDecoration(
-        color: AppTheme.softGreen,
-        borderRadius: BorderRadius.circular(999),
-      ),
-      child: Text(
-        label,
-        style: const TextStyle(
-          color: AppTheme.primaryGreen,
-          fontSize: 11,
-          fontWeight: FontWeight.w900,
-        ),
-      ),
-    );
-  }
-}
-
-class _Chip extends StatelessWidget {
-  final String label;
-  final IconData icon;
-
-  const _Chip({
-    required this.label,
-    required this.icon,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(9, 6, 10, 6),
-      decoration: BoxDecoration(
-        color: AppTheme.background,
-        borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: AppTheme.border),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            icon,
-            color: AppTheme.textMuted,
-            size: 15,
-          ),
-          const SizedBox(width: 5),
-          Text(
-            label,
-            style: const TextStyle(
-              color: AppTheme.textDark,
-              fontSize: 12,
-              fontWeight: FontWeight.w800,
-            ),
           ),
         ],
       ),
