@@ -8,6 +8,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/utils/app_formatters.dart';
 import '../../../core/widgets/app_state_cards.dart';
 import '../../../core/widgets/election_picker_card.dart';
+import '../../../core/widgets/premium_components.dart';
 import '../../results/data/election_repository.dart';
 
 enum MunicipalitySortMode {
@@ -619,15 +620,15 @@ class _MunicipalityCard extends StatelessWidget {
                     spacing: 8,
                     runSpacing: 8,
                     children: [
-                      _InfoChip(
+                      PremiumInfoChip(
                         icon: Icons.percent_rounded,
                         label: 'Dalja $turnout',
                       ),
-                      _InfoChip(
+                      PremiumInfoChip(
                         icon: Icons.people_alt_rounded,
                         label: '$voters votues',
                       ),
-                      _InfoChip(
+                      PremiumInfoChip(
                         icon: Icons.how_to_vote_rounded,
                         label: '$votesCast vota',
                       ),
@@ -671,43 +672,3 @@ class _RankBadge extends StatelessWidget {
   }
 }
 
-class _InfoChip extends StatelessWidget {
-  final IconData icon;
-  final String label;
-
-  const _InfoChip({
-    required this.icon,
-    required this.label,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(9, 6, 10, 6),
-      decoration: BoxDecoration(
-        color: AppTheme.background,
-        borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: AppTheme.border),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            icon,
-            color: AppTheme.textMuted,
-            size: 15,
-          ),
-          const SizedBox(width: 5),
-          Text(
-            label,
-            style: const TextStyle(
-              color: AppTheme.textDark,
-              fontSize: 12,
-              fontWeight: FontWeight.w800,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
