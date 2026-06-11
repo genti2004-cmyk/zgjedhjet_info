@@ -9,8 +9,8 @@ class LocalElectionOfficialFileCatalog {
       electionId: 'local-2025',
       title: 'Rezultatet për Kryetarë të Komunave – Raundi I',
       description:
-          'Burim zyrtar i përgatitur për rezultatet e kryetarëve të komunave. Të dhënat numerike nuk janë importuar ende.',
-      url: 'https://kqz-ks.org/rezultatet/',
+          'Faqja zyrtare e KQZ për rezultatet e zgjedhjeve për kryetarë të komunave. Të dhënat numerike nuk janë importuar ende.',
+      url: 'https://kqz-ks.org/rezultatet/zgjedhjet-per-kryetare-te-komunave/',
       fileType: 'WEB',
       isResultData: true,
       isCandidateData: false,
@@ -21,8 +21,8 @@ class LocalElectionOfficialFileCatalog {
       electionId: 'local-2025-r2',
       title: 'Rezultatet për Kryetarë të Komunave – Raundi II',
       description:
-          'Burim zyrtar i përgatitur për balotazhin. Të dhënat numerike nuk janë importuar ende.',
-      url: 'https://kqz-ks.org/rezultatet/',
+          'Platforma zyrtare e KQZ për rezultatet/statistikat preliminare të raundit të dytë. Të dhënat numerike nuk janë importuar ende.',
+      url: 'https://resultslocal2025r2.kqz-ks.org/',
       fileType: 'WEB',
       isResultData: true,
       isCandidateData: false,
@@ -33,8 +33,8 @@ class LocalElectionOfficialFileCatalog {
       electionId: 'local-2025',
       title: 'Rezultatet për Kuvende Komunale sipas Subjekteve',
       description:
-          'Burim zyrtar i përgatitur për rezultatet e subjekteve në kuvende komunale. Të dhënat numerike nuk janë importuar ende.',
-      url: 'https://kqz-ks.org/rezultatet/',
+          'Faqja zyrtare e KQZ për rezultatet e zgjedhjeve për kuvende komunale. Të dhënat numerike nuk janë importuar ende.',
+      url: 'https://kqz-ks.org/rezultatet/zgjedhjet-per-kuvende-komunale/',
       fileType: 'WEB',
       isResultData: true,
       isCandidateData: false,
@@ -45,8 +45,8 @@ class LocalElectionOfficialFileCatalog {
       electionId: 'local-2025',
       title: 'Rezultatet për Kandidatë të Kuvendeve Komunale',
       description:
-          'Burim zyrtar i përgatitur për kandidatët e kuvendeve komunale. Kandidatët nuk janë importuar ende.',
-      url: 'https://kqz-ks.org/rezultatet/',
+          'Faqja zyrtare e KQZ për zgjedhjet për kuvende komunale. Kandidatët nuk janë importuar ende.',
+      url: 'https://kqz-ks.org/rezultatet/zgjedhjet-per-kuvende-komunale/',
       fileType: 'WEB',
       isResultData: true,
       isCandidateData: true,
