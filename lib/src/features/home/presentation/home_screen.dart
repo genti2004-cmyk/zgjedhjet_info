@@ -9,6 +9,7 @@ import '../../../core/services/selected_election_controller.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/utils/app_formatters.dart';
 import '../../../core/widgets/election_picker_card.dart';
+import '../../../core/widgets/premium_components.dart';
 import '../../results/data/election_repository.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -156,7 +157,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 onSourcesTap: () => _goToTab(5),
                               ),
                               const SizedBox(height: 22),
-                              _SectionHeader(
+                              PremiumSectionHeader(
                                 title: 'Modulet',
                                 subtitle: 'Hap shpejt pjesët kryesore të app-it.',
                               ),
@@ -516,7 +517,7 @@ class _PremiumStatsGrid extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _SectionHeader(
+        PremiumSectionHeader(
           title: 'Përmbledhje',
           subtitle: 'Pamje e shkurtër e zgjedhjes së zgjedhur.',
         ),
@@ -524,7 +525,7 @@ class _PremiumStatsGrid extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: _PremiumMetricCard(
+              child: PremiumMetricCard(
                 label: 'Subjekte',
                 value: '$partiesCount',
                 icon: Icons.account_balance_rounded,
@@ -532,7 +533,7 @@ class _PremiumStatsGrid extends StatelessWidget {
             ),
             const SizedBox(width: 10),
             Expanded(
-              child: _PremiumMetricCard(
+              child: PremiumMetricCard(
                 label: 'Mandate',
                 value: '$totalSeats',
                 icon: Icons.event_seat_rounded,
@@ -544,7 +545,7 @@ class _PremiumStatsGrid extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: _PremiumMetricCard(
+              child: PremiumMetricCard(
                 label: 'Kandidatë',
                 value: '$candidatesCount',
                 icon: Icons.people_alt_rounded,
@@ -552,7 +553,7 @@ class _PremiumStatsGrid extends StatelessWidget {
             ),
             const SizedBox(width: 10),
             Expanded(
-              child: _PremiumMetricCard(
+              child: PremiumMetricCard(
                 label: 'Vota',
                 value: votes,
                 icon: Icons.how_to_vote_rounded,
@@ -561,75 +562,6 @@ class _PremiumStatsGrid extends StatelessWidget {
           ],
         ),
       ],
-    );
-  }
-}
-
-class _PremiumMetricCard extends StatelessWidget {
-  final String label;
-  final String value;
-  final IconData icon;
-
-  const _PremiumMetricCard({
-    required this.label,
-    required this.value,
-    required this.icon,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      elevation: 0,
-      child: Container(
-        padding: const EdgeInsets.all(14),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(22),
-          border: Border.all(color: AppTheme.border),
-          boxShadow: AppTheme.softShadow,
-        ),
-        child: Row(
-          children: [
-            Container(
-              height: 42,
-              width: 42,
-              decoration: BoxDecoration(
-                color: AppTheme.softGreen,
-                borderRadius: BorderRadius.circular(14),
-              ),
-              child: Icon(icon, color: AppTheme.primaryGreen, size: 22),
-            ),
-            const SizedBox(width: 11),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    value,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(
-                      color: AppTheme.textDark,
-                      fontSize: 17,
-                      fontWeight: FontWeight.w900,
-                    ),
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    label,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(
-                      color: AppTheme.textMuted,
-                      fontSize: 12.2,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
     );
   }
 }
@@ -653,7 +585,7 @@ class _QuickAccessPanel extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        _SectionHeader(
+        PremiumSectionHeader(
           title: 'Qasje e shpejtë',
           subtitle: 'Hap direkt atë që të duhet.',
         ),
@@ -913,41 +845,6 @@ class _ModuleTile extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
-
-class _SectionHeader extends StatelessWidget {
-  final String title;
-  final String subtitle;
-
-  const _SectionHeader({
-    required this.title,
-    required this.subtitle,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(title, style: Theme.of(context).textTheme.headlineMedium),
-              const SizedBox(height: 3),
-              Text(
-                subtitle,
-                style: const TextStyle(
-                  color: AppTheme.textMuted,
-                  fontSize: 12.6,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ],
     );
   }
 }
