@@ -3,6 +3,7 @@ import '../../features/parliamentary_2010/data/parliamentary_2010_party_data.dar
 import '../../features/parliamentary_2010/data/parliamentary_2010_candidate_data.dart';
 import '../../features/parliamentary_2014/data/parliamentary_2014_candidate_data.dart';
 import '../../features/parliamentary_2014/data/parliamentary_2014_party_data.dart';
+import '../../features/parliamentary_2017/data/parliamentary_2017_candidate_data.dart';
 import '../../features/parliamentary_2017/data/parliamentary_2017_party_data.dart';
 import '../../features/parliamentary_2019/data/parliamentary_2019_candidate_data.dart';
 import '../../features/parliamentary_2019/data/parliamentary_2019_party_data.dart';
@@ -90,7 +91,7 @@ class KqzResultsService {
       case ElectionSourceType.parliamentary2019:
         return Parliamentary2019CandidateData.results;
       case ElectionSourceType.parliamentary2017:
-        return const <CandidateResult>[];
+        return Parliamentary2017CandidateData.results;
       case ElectionSourceType.parliamentary2010:
         return Parliamentary2010CandidateData.results;
       case ElectionSourceType.parliamentary2014:
