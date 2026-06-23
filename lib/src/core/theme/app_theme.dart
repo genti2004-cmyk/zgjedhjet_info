@@ -169,7 +169,7 @@ class AppTheme {
         ),
       ),
       navigationBarTheme: NavigationBarThemeData(
-        height: 82,
+        height: 80,
         elevation: 0,
         backgroundColor: surface,
         surfaceTintColor: Colors.transparent,
@@ -249,7 +249,7 @@ class AppTheme {
         ),
         bodyMedium: TextStyle(
           color: textMuted,
-          fontSize: 12.8,
+          fontSize: 13.2,
           fontWeight: FontWeight.w600,
           height: 1.35,
         ),
