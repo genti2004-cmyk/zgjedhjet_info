@@ -169,7 +169,7 @@ class AppTheme {
         ),
       ),
       navigationBarTheme: NavigationBarThemeData(
-        height: 72,
+        height: 76,
         elevation: 0,
         backgroundColor: surface,
         surfaceTintColor: Colors.transparent,

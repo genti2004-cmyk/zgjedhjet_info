@@ -233,6 +233,7 @@ class _PremiumHero extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
                 height: 48,
@@ -253,23 +254,30 @@ class _PremiumHero extends StatelessWidget {
               const SizedBox(width: 12),
               const Expanded(
                 child: Text(
-                  HomeScreen.appName,
+                  'Zgjedhjet\nInfo',
+                  maxLines: 2,
+                  overflow: TextOverflow.visible,
+                  softWrap: false,
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 25,
                     fontWeight: FontWeight.w900,
-                    height: 1.05,
+                    height: 1.02,
                     letterSpacing: -0.35,
                   ),
                 ),
               ),
-              _HeroStatusPill(
-                label: statusText,
-                isOfficial: isOfficial,
-              ),
             ],
           ),
-          const SizedBox(height: 18),
+          const SizedBox(height: 10),
+          Align(
+            alignment: Alignment.centerRight,
+            child: _HeroStatusPill(
+              label: statusText,
+              isOfficial: isOfficial,
+            ),
+          ),
+          const SizedBox(height: 16),
           const Text(
             HomeScreen.subtitle,
             style: TextStyle(
