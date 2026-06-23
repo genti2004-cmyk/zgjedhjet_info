@@ -154,7 +154,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 onResultsTap: () => _goToTab(2),
                                 onMunicipalitiesTap: () => _goToTab(3),
                                 onCandidatesTap: () => _goToTab(4),
-                                onSourcesTap: () => _goToTab(5),
+                                onSourcesTap: () => _goToTab(4),
                               ),
                               const SizedBox(height: 22),
                               PremiumSectionHeader(
@@ -167,7 +167,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 onResultsTap: () => _goToTab(2),
                                 onMunicipalitiesTap: () => _goToTab(3),
                                 onCandidatesTap: () => _goToTab(4),
-                                onSourcesTap: () => _goToTab(5),
+                                onSourcesTap: () => _goToTab(4),
                               ),
                               const SizedBox(height: 18),
                               const _SourceInfoCard(),
@@ -208,7 +208,7 @@ class _PremiumHero extends StatelessWidget {
         election == null ? source.dateLabel : AppFormatters.date(election!.date);
 
     final statusText = isOfficial
-        ? 'KQZ të dhëna aktive'
+        ? 'Të dhëna aktive nga KQZ'
         : isSourceOnly
             ? 'Burime zyrtare'
             : 'Në përgatitje';
@@ -220,8 +220,8 @@ class _PremiumHero extends StatelessWidget {
         gradient: const LinearGradient(
           colors: [
             Color(0xFF102A43),
-            Color(0xFF1677FF),
-            Color(0xFF071A2D),
+            Color(0xFF1559A8),
+            Color(0xFF0B2137),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -450,17 +450,17 @@ class _StatusStrip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(15, 14, 15, 14),
       decoration: BoxDecoration(
-        color: isOfficial ? const Color(0xFFECFDF3) : const Color(0xFFFFFBEB),
+        color: isOfficial ? AppTheme.successBackground : const Color(0xFFFFFBEB),
         borderRadius: BorderRadius.circular(22),
         border: Border.all(
-          color: isOfficial ? const Color(0xFFABEFC6) : const Color(0xFFFEDC7A),
+          color: isOfficial ? AppTheme.successBorder : const Color(0xFFFEDC7A),
         ),
       ),
       child: Row(
         children: [
           Icon(
             isOfficial ? Icons.verified_rounded : Icons.info_outline_rounded,
-            color: isOfficial ? const Color(0xFF079455) : const Color(0xFFB54708),
+            color: isOfficial ? AppTheme.successIcon : const Color(0xFFB54708),
             size: 24,
           ),
           const SizedBox(width: 11),
@@ -472,7 +472,7 @@ class _StatusStrip extends StatelessWidget {
                   title,
                   style: TextStyle(
                     color:
-                        isOfficial ? const Color(0xFF067647) : const Color(0xFF7A4B00),
+                        isOfficial ? AppTheme.successText : const Color(0xFF7A4B00),
                     fontSize: 14.8,
                     fontWeight: FontWeight.w900,
                   ),
@@ -482,7 +482,7 @@ class _StatusStrip extends StatelessWidget {
                   message,
                   style: TextStyle(
                     color:
-                        isOfficial ? const Color(0xFF067647) : const Color(0xFF7A4B00),
+                        isOfficial ? AppTheme.successText : const Color(0xFF7A4B00),
                     fontSize: 12.6,
                     fontWeight: FontWeight.w700,
                     height: 1.3,

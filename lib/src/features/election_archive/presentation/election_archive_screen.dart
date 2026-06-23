@@ -165,8 +165,9 @@ class _PageHeader extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
-            AppTheme.primaryGreen,
-            AppTheme.deepGreen,
+            Color(0xFF102A43),
+            Color(0xFF1559A8),
+            Color(0xFF0B2137),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -301,7 +302,7 @@ class _SummaryItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(8, 12, 8, 12),
       decoration: BoxDecoration(
-        color: AppTheme.softGreen,
+        color: AppTheme.softNavy,
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
@@ -441,7 +442,7 @@ class _ArchiveCard extends StatelessWidget {
                     height: 46,
                     width: 46,
                     decoration: BoxDecoration(
-                      color: AppTheme.softGreen,
+                      color: AppTheme.softNavy,
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child: Icon(
@@ -489,10 +490,11 @@ class _ArchiveCard extends StatelessWidget {
                         ? Icons.verified_rounded
                         : Icons.hourglass_empty_rounded,
                   ),
-                  PremiumInfoChip(
-                    label: '${officialFiles.length} dosje',
-                    icon: Icons.description_rounded,
-                  ),
+                  if (officialFiles.isNotEmpty)
+                    PremiumInfoChip(
+                      label: '${officialFiles.length} dosje',
+                      icon: Icons.description_rounded,
+                    ),
                 ],
               ),
               const SizedBox(height: 12),
@@ -665,8 +667,9 @@ class _DetailHeader extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
-            AppTheme.primaryGreen,
-            AppTheme.deepGreen,
+            Color(0xFF102A43),
+            Color(0xFF1559A8),
+            Color(0xFF0B2137),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -698,7 +701,7 @@ class _DetailHeader extends StatelessWidget {
           Text(
             item.title,
             style: const TextStyle(
-              color: Color(0xFFEAF7F0),
+              color: Color(0xFFEAF2FF),
               fontSize: 14.5,
               fontWeight: FontWeight.w700,
               height: 1.3,
@@ -785,10 +788,10 @@ class _DetailMetric extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(10, 12, 10, 12),
       decoration: BoxDecoration(
-        color: isDone ? AppTheme.softGreen : const Color(0xFFFFFBEB),
+        color: isDone ? AppTheme.softNavy : const Color(0xFFFFFBEB),
         borderRadius: BorderRadius.circular(18),
         border: Border.all(
-          color: isDone ? const Color(0xFFABEFC6) : const Color(0xFFFEDC7A),
+          color: isDone ? AppTheme.successBorder : const Color(0xFFFEDC7A),
         ),
       ),
       child: Column(
@@ -1028,7 +1031,7 @@ class _OfficialFileTile extends StatelessWidget {
             height: 38,
             width: 38,
             decoration: BoxDecoration(
-              color: AppTheme.softGreen,
+              color: AppTheme.softNavy,
               borderRadius: BorderRadius.circular(13),
             ),
             child: Icon(

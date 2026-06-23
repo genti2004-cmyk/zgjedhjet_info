@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/theme/app_theme.dart';
-import '../../candidates/presentation/candidates_screen.dart';
 import '../../election_archive/presentation/election_archive_screen.dart';
 import '../../home/presentation/home_screen.dart';
-import '../../info/presentation/info_screen.dart';
 import '../../municipalities/presentation/municipalities_screen.dart';
+import '../../more/presentation/more_screen.dart';
 import '../../results/presentation/results_screen.dart';
-import '../../sources/presentation/sources_screen.dart';
 
 class MainNavigationScreen extends StatefulWidget {
   const MainNavigationScreen({super.key});
@@ -20,10 +18,12 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   int _currentIndex = 0;
 
   void _setTab(int index) {
-    if (index == _currentIndex) return;
+    final targetIndex = index.clamp(0, 4);
+
+    if (targetIndex == _currentIndex) return;
 
     setState(() {
-      _currentIndex = index;
+      _currentIndex = targetIndex;
     });
   }
 
@@ -32,9 +32,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
         const ElectionArchiveScreen(),
         const ResultsScreen(),
         const MunicipalitiesScreen(),
-        const CandidatesScreen(),
-        const SourcesScreen(),
-        const InfoScreen(),
+        const MoreScreen(),
       ];
 
   @override
@@ -86,19 +84,9 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                 label: 'Komunat',
               ),
               NavigationDestination(
-                icon: Icon(Icons.people_alt_outlined),
-                selectedIcon: Icon(Icons.people_alt_rounded),
-                label: 'Kandidatët',
-              ),
-              NavigationDestination(
-                icon: Icon(Icons.source_outlined),
-                selectedIcon: Icon(Icons.source_rounded),
-                label: 'Burimet',
-              ),
-              NavigationDestination(
-                icon: Icon(Icons.info_outline_rounded),
-                selectedIcon: Icon(Icons.info_rounded),
-                label: 'Info',
+                icon: Icon(Icons.more_horiz_rounded),
+                selectedIcon: Icon(Icons.apps_rounded),
+                label: 'Më shumë',
               ),
             ],
           ),

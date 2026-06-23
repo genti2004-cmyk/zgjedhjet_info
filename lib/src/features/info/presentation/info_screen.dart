@@ -7,7 +7,7 @@ class InfoScreen extends StatelessWidget {
   const InfoScreen({super.key});
 
   static const String appName = 'Zgjedhjet Info';
-  static const String version = 'v0.3.7';
+  static const String version = 'v0.7.0+7';
   static const String subtitle =
       'Rezultatet dhe informacionet zgjedhore në një vend';
   static const String disclaimer =
@@ -68,7 +68,7 @@ class _VersionCard extends StatelessWidget {
       children: [
         _InfoRow(label: 'Version', value: InfoScreen.version),
         _InfoRow(label: 'Status', value: 'Stabil'),
-        _InfoRow(label: 'Dizajn', value: 'Apple Green Premium'),
+        _InfoRow(label: 'Dizajn', value: 'Apple Navy Premium'),
         _InfoRow(label: 'Të dhënat', value: 'Vetëm nga burime zyrtare'),
       ],
     );
@@ -106,13 +106,18 @@ class _DataStatusCard extends StatelessWidget {
         ),
         _StatusLine(
           label: 'Parlamentare 2017',
-          value: 'Burime të regjistruara',
-          done: false,
+          value: 'Aktive',
+          done: true,
         ),
         _StatusLine(
           label: 'Parlamentare 2010',
-          value: 'Burime të regjistruara',
-          done: false,
+          value: 'Aktive',
+          done: true,
+        ),
+        _StatusLine(
+          label: 'Lokale 2017',
+          value: 'Rezultate dhe kandidatë aktive',
+          done: true,
         ),
       ],
     );
@@ -147,11 +152,26 @@ class _CoverageCard extends StatelessWidget {
       icon: Icons.map_rounded,
       title: 'Mbulimi aktual',
       children: [
-        _InfoRow(label: 'Rezultate', value: '2025, 2021, 2019, 2014'),
-        _InfoRow(label: 'Kandidatë', value: '2025, 2021, 2019, 2014'),
-        _InfoRow(label: 'Burime', value: '2025, 2021, 2019, 2017, 2014, 2010'),
-        _InfoRow(label: 'Komuna', value: 'Në përgatitje / pa import të plotë'),
-        _InfoRow(label: 'Lokale', value: 'Strukturë e përgatitur'),
+        _InfoRow(
+          label: 'Rezultate',
+          value: '2025, 2021, 2019, 2017, 2014, 2010',
+        ),
+        _InfoRow(
+          label: 'Kandidatë',
+          value: '2025, 2021, 2019, 2017, 2014, 2010',
+        ),
+        _InfoRow(
+          label: 'Burime',
+          value: 'Parlamentare 2010–2025 dhe Lokale 2017',
+        ),
+        _InfoRow(
+          label: 'Komuna',
+          value: 'Pa të dhëna parlamentare të importuara',
+        ),
+        _InfoRow(
+          label: 'Lokale 2017',
+          value: 'Rezultate dhe kandidatë sipas komunës',
+        ),
       ],
     );
   }

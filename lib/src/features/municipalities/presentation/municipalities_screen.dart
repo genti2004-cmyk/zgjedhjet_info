@@ -71,7 +71,7 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
       return 'Për ${source.shortTitle} rezultatet sipas komunave ende nuk janë lidhur plotësisht. Do të shtohen vetëm nga burime zyrtare të verifikuara.';
     }
 
-    return 'Kjo faqe është e përgatitur për të dhënat e komunave nga platforma zyrtare e KQZ për zgjedhjet lokale. Aktualisht shfaqen të dhëna strukturore/testuese.';
+    return 'Të dhënat zyrtare për komunat nuk janë importuar ende. Ato do të shfaqen vetëm pas verifikimit nga dokumentet zyrtare të KQZ.';
   }
 
   List<MunicipalityResult> _filterAndSort(
@@ -170,6 +170,19 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                     const SizedBox(height: 12),
                     if (_isParliamentary(selectedElection))
                       _MunicipalityPendingCard(source: selectedElection)
+                    else if (snapshot.connectionState ==
+                        ConnectionState.waiting)
+                      const AppLoadingCard(
+                        message: 'Duke ngarkuar komunat...',
+                      )
+                    else if (snapshot.hasError)
+                      AppErrorCard(
+                        message:
+                            'Ju lutem kontrolloni lidhjen me internetin ose provoni përsëri.',
+                        onRetry: _refresh,
+                      )
+                    else if (allMunicipalities.isEmpty)
+                      const _LocalMunicipalityEmptyCard()
                     else ...[
                       _SummaryCard(
                         municipalitiesCount: allMunicipalities.length,
@@ -194,21 +207,7 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                         },
                       ),
                       const SizedBox(height: 18),
-                      if (snapshot.connectionState == ConnectionState.waiting)
-                        const AppLoadingCard(
-                          message: 'Duke ngarkuar komunat...',
-                        )
-                      else if (snapshot.hasError)
-                        AppErrorCard(
-                          message:
-                              'Ju lutem kontrolloni lidhjen me internetin ose provoni përsëri.',
-                          onRetry: _refresh,
-                        )
-                      else if (allMunicipalities.isEmpty)
-                        const AppEmptyCard(
-                          message: 'Nuk ka ende komuna për t’u shfaqur.',
-                        )
-                      else if (visibleMunicipalities.isEmpty)
+                      if (visibleMunicipalities.isEmpty)
                         const AppEmptyCard(
                           message: 'Nuk u gjet asnjë komunë me këtë kërkim.',
                         )
@@ -239,7 +238,15 @@ class _PageHeader extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(18, 18, 18, 18),
       decoration: BoxDecoration(
-        color: AppTheme.primaryGreen,
+        gradient: const LinearGradient(
+          colors: [
+            Color(0xFF102A43),
+            Color(0xFF1559A8),
+            Color(0xFF0B2137),
+          ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
         borderRadius: BorderRadius.circular(24),
         boxShadow: AppTheme.greenShadow,
       ),
@@ -263,6 +270,80 @@ class _PageHeader extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _LocalMunicipalityEmptyCard extends StatelessWidget {
+  const _LocalMunicipalityEmptyCard();
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(20, 22, 20, 22),
+        child: Column(
+          children: [
+            Container(
+              height: 58,
+              width: 58,
+              decoration: BoxDecoration(
+                color: AppTheme.softNavy,
+                borderRadius: BorderRadius.circular(19),
+                border: Border.all(color: AppTheme.border),
+              ),
+              child: const Icon(
+                Icons.location_city_outlined,
+                color: AppTheme.primaryNavy,
+                size: 29,
+              ),
+            ),
+            const SizedBox(height: 15),
+            Text(
+              'Të dhënat zyrtare për komunat nuk janë importuar ende',
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Statistikat, kërkimi dhe renditja do të shfaqen vetëm pasi të dhënat të jenë verifikuar nga dokumentet zyrtare të KQZ.',
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.bodyMedium,
+            ),
+            const SizedBox(height: 14),
+            Container(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 12,
+                vertical: 8,
+              ),
+              decoration: BoxDecoration(
+                color: AppTheme.successBackground,
+                borderRadius: BorderRadius.circular(999),
+                border: Border.all(color: AppTheme.successBorder),
+              ),
+              child: const Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(
+                    Icons.verified_user_outlined,
+                    color: AppTheme.successIcon,
+                    size: 17,
+                  ),
+                  SizedBox(width: 7),
+                  Text(
+                    'Vetëm të dhëna të verifikuara',
+                    style: TextStyle(
+                      color: AppTheme.successText,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

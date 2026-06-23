@@ -482,10 +482,11 @@ class _ElectionSourceCard extends StatelessWidget {
                           icon: Icons.calendar_month_rounded,
                           label: source.dateLabel,
                         ),
-                        PremiumInfoChip(
-                          icon: Icons.description_rounded,
-                          label: '$fileCount dosje',
-                        ),
+                        if (fileCount > 0)
+                          PremiumInfoChip(
+                            icon: Icons.description_rounded,
+                            label: '$fileCount dosje',
+                          ),
                       ],
                     ),
                   ],

@@ -28,8 +28,8 @@ class PremiumHeroCard extends StatelessWidget {
         gradient: const LinearGradient(
           colors: [
             Color(0xFF102A43),
-            Color(0xFF1677FF),
-            Color(0xFF071A2D),
+            Color(0xFF1559A8),
+            Color(0xFF0B2137),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,

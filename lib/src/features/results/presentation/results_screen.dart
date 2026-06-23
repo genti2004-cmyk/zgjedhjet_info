@@ -75,7 +75,7 @@ class _ResultsScreenState extends State<ResultsScreen> {
       return 'Për ${source.shortTitle} burimet zyrtare të KQZ janë regjistruar. Rezultatet nuk shfaqen ende, sepse skedarët duhet të verifikohen plotësisht.';
     }
 
-    return 'Për ${source.shortTitle} lidhja reale me rezultatet e KQZ është ende në përgatitje. Aktualisht shfaqen të dhëna strukturore/testuese.';
+    return 'Për ${source.shortTitle} rezultatet zyrtare nuk janë importuar ende. Ato do të shfaqen vetëm pas verifikimit të plotë të dokumenteve zyrtare të KQZ.';
   }
 
   List<PartyResult> _filterAndSort(List<PartyResult> results) {
@@ -249,7 +249,7 @@ class _PremiumHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final status = isOfficial
-        ? 'KQZ të dhëna aktive'
+        ? 'Të dhëna aktive nga KQZ'
         : isSourceOnly
             ? 'Burime zyrtare'
             : 'Në përgatitje';

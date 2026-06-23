@@ -9,8 +9,8 @@ class AppTheme {
   // Neue neutrale Wahl-App-Farbwelt.
   static const Color primaryNavy = Color(0xFF102A43);
   static const Color deepNavy = Color(0xFF071A2D);
-  static const Color accentBlue = Color(0xFF1677FF);
-  static const Color accentTurquoise = Color(0xFF18A999);
+  static const Color accentBlue = Color(0xFF1559A8);
+  static const Color accentTurquoise = Color(0xFF087F78);
   static const Color winnerGold = Color(0xFFD6A84B);
   static const Color softNavy = Color(0xFFEAF2FF);
 
@@ -34,10 +34,10 @@ class AppTheme {
   static const Color warningText = Color(0xFF7A4B00);
   static const Color warningIcon = Color(0xFFB54708);
 
-  static const Color successBackground = Color(0xFFECFDF3);
-  static const Color successBorder = Color(0xFFABEFC6);
-  static const Color successText = Color(0xFF067647);
-  static const Color successIcon = Color(0xFF079455);
+  static const Color successBackground = Color(0xFFE8F7F6);
+  static const Color successBorder = Color(0xFF9EDFD8);
+  static const Color successText = Color(0xFF087F78);
+  static const Color successIcon = Color(0xFF087F78);
 
   static List<BoxShadow> get navyShadow => [
         BoxShadow(
@@ -169,7 +169,7 @@ class AppTheme {
         ),
       ),
       navigationBarTheme: NavigationBarThemeData(
-        height: 70,
+        height: 72,
         elevation: 0,
         backgroundColor: surface,
         surfaceTintColor: Colors.transparent,
@@ -186,14 +186,14 @@ class AppTheme {
           if (states.contains(WidgetState.selected)) {
             return const TextStyle(
               color: primaryGreen,
-              fontSize: 11,
+              fontSize: 9.6,
               fontWeight: FontWeight.w900,
             );
           }
 
           return const TextStyle(
             color: textMuted,
-            fontSize: 10.7,
+            fontSize: 9.4,
             fontWeight: FontWeight.w700,
           );
         }),
