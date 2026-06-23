@@ -10,11 +10,11 @@ class ElectionArchiveCatalog {
       shortTitle: 'Parlamentare 2025',
       type: 'Parlamentare',
       dateLabel: '09.02.2025',
-      statusLabel: 'Rezultatet dhe kandidatët janë vendosur nga dokumentet zyrtare të KQZ.',
+      statusLabel: 'Rezultatet, kandidatët dhe rezultatet sipas komunave janë vendosur nga dokumentet zyrtare të KQZ.',
       sourceUrl: 'https://kqz-ks.org/zgjedhjet-e-pergjithshme/zgjedhjet-per-kuvend-te-kosoves-2025/',
       hasOfficialResultsInApp: true,
       hasCandidateDataInApp: true,
-      hasMunicipalityDataInApp: false,
+      hasMunicipalityDataInApp: true,
     ),
     ElectionArchiveItem(
       id: 'local-2025',

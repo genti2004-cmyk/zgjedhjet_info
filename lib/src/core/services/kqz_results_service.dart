@@ -12,6 +12,7 @@ import '../../features/parliamentary_2019/data/parliamentary_2019_party_data.dar
 import '../../features/parliamentary_2021/data/parliamentary_2021_candidate_data.dart';
 import '../../features/parliamentary_2021/data/parliamentary_2021_party_data.dart';
 import '../../features/parliamentary_2025/data/parliamentary_2025_candidate_data.dart';
+import '../../features/parliamentary_2025/data/parliamentary_2025_municipality_data.dart';
 import '../../features/parliamentary_2025/data/parliamentary_2025_party_data.dart';
 import '../models/candidate_result.dart';
 import '../models/election.dart';
@@ -74,6 +75,7 @@ class KqzResultsService {
     await Future<void>.delayed(const Duration(milliseconds: 250));
     switch (source.type) {
       case ElectionSourceType.parliamentary2025:
+        return Parliamentary2025MunicipalityData.results;
       case ElectionSourceType.parliamentary2021:
       case ElectionSourceType.parliamentary2019:
       case ElectionSourceType.parliamentary2017:

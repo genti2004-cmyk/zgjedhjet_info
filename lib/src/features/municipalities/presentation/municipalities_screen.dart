@@ -10,6 +10,7 @@ import '../../../core/widgets/app_state_cards.dart';
 import '../../../core/widgets/election_picker_card.dart';
 import '../../../core/widgets/premium_components.dart';
 import '../../results/data/election_repository.dart';
+import 'parliamentary_2025_municipality_detail_screen.dart';
 
 enum MunicipalitySortMode {
   name,
@@ -62,7 +63,15 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
     return ElectionDataStatus.hasRegisteredMunicipalitySources(source);
   }
 
+  bool _hasOfficialMunicipalityResults(ElectionSource source) {
+    return ElectionDataStatus.hasOfficialMunicipalityResults(source);
+  }
+
   String _municipalityNoticeMessage(ElectionSource source) {
+    if (_hasOfficialMunicipalityResults(source)) {
+      return 'Rezultatet sipas komunave janë importuar nga skedari zyrtar i KQZ. Statistikat e votuesve dhe daljes nuk shfaqen, sepse nuk gjenden në këtë skedar.';
+    }
+
     if (_isParliamentary(source)) {
       if (_hasRegisteredMunicipalitySources(source)) {
         return 'Për ${source.shortTitle} burimet zyrtare të komunave janë regjistruar në arkiv. Të dhënat numerike sipas komunave ende nuk janë importuar, sepse duhet verifikim i plotë i skedarëve të KQZ.';
@@ -168,7 +177,8 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                       message: _municipalityNoticeMessage(selectedElection),
                     ),
                     const SizedBox(height: 12),
-                    if (_isParliamentary(selectedElection))
+                    if (_isParliamentary(selectedElection) &&
+                        !_hasOfficialMunicipalityResults(selectedElection))
                       _MunicipalityPendingCard(source: selectedElection)
                     else if (snapshot.connectionState ==
                         ConnectionState.waiting)
@@ -189,6 +199,9 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                         totalVoters: _totalVoters(allMunicipalities),
                         totalVotesCast: _totalVotesCast(allMunicipalities),
                         averageTurnout: _averageTurnout(allMunicipalities),
+                        hasVoterStatistics: allMunicipalities.any(
+                          (item) => item.hasVoterStatistics,
+                        ),
                       ),
                       const SizedBox(height: 12),
                       _SearchAndSortCard(
@@ -216,6 +229,20 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                               (entry) => _MunicipalityCard(
                                 rank: entry.key + 1,
                                 result: entry.value,
+                                onTap: selectedElection.type ==
+                                        ElectionSourceType.parliamentary2025
+                                    ? () {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute<void>(
+                                            builder: (_) =>
+                                                Parliamentary2025MunicipalityDetailScreen(
+                                              municipalityName:
+                                                  entry.value.name,
+                                            ),
+                                          ),
+                                        );
+                                      }
+                                    : null,
                               ),
                             ),
                     ],
@@ -428,12 +455,14 @@ class _SummaryCard extends StatelessWidget {
   final int totalVoters;
   final int totalVotesCast;
   final double averageTurnout;
+  final bool hasVoterStatistics;
 
   const _SummaryCard({
     required this.municipalitiesCount,
     required this.totalVoters,
     required this.totalVotesCast,
     required this.averageTurnout,
+    required this.hasVoterStatistics,
   });
 
   @override
@@ -457,27 +486,29 @@ class _SummaryCard extends StatelessWidget {
             const SizedBox(width: 10),
             Expanded(
               child: _SummaryItem(
-                label: 'Votues',
-                value: voters,
-                icon: Icons.people_alt_rounded,
-              ),
-            ),
-            const SizedBox(width: 10),
-            Expanded(
-              child: _SummaryItem(
                 label: 'Vota',
                 value: votesCast,
                 icon: Icons.how_to_vote_rounded,
               ),
             ),
-            const SizedBox(width: 10),
-            Expanded(
-              child: _SummaryItem(
-                label: 'Dalja',
-                value: turnout,
-                icon: Icons.percent_rounded,
+            if (hasVoterStatistics) ...[
+              const SizedBox(width: 10),
+              Expanded(
+                child: _SummaryItem(
+                  label: 'Votues',
+                  value: voters,
+                  icon: Icons.people_alt_rounded,
+                ),
               ),
-            ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: _SummaryItem(
+                  label: 'Dalja',
+                  value: turnout,
+                  icon: Icons.percent_rounded,
+                ),
+              ),
+            ],
           ],
         ),
       ),
@@ -612,10 +643,12 @@ class _SearchAndSortCard extends StatelessWidget {
 class _MunicipalityCard extends StatelessWidget {
   final int rank;
   final MunicipalityResult result;
+  final VoidCallback? onTap;
 
   const _MunicipalityCard({
     required this.rank,
     required this.result,
+    this.onTap,
   });
 
   @override
@@ -626,9 +659,12 @@ class _MunicipalityCard extends StatelessWidget {
 
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(14, 14, 14, 14),
-        child: Row(
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(22),
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(14, 14, 14, 14),
+          child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             _RankBadge(rank: rank),
@@ -661,23 +697,33 @@ class _MunicipalityCard extends StatelessWidget {
                     runSpacing: 8,
                     children: [
                       PremiumInfoChip(
-                        icon: Icons.percent_rounded,
-                        label: 'Dalja $turnout',
-                      ),
-                      PremiumInfoChip(
-                        icon: Icons.people_alt_rounded,
-                        label: '$voters votues',
-                      ),
-                      PremiumInfoChip(
                         icon: Icons.how_to_vote_rounded,
                         label: '$votesCast vota',
                       ),
+                      if (result.hasVoterStatistics) ...[
+                        PremiumInfoChip(
+                          icon: Icons.percent_rounded,
+                          label: 'Dalja $turnout',
+                        ),
+                        PremiumInfoChip(
+                          icon: Icons.people_alt_rounded,
+                          label: '$voters votues',
+                        ),
+                      ],
                     ],
                   ),
                 ],
               ),
             ),
+            if (onTap != null) ...[
+              const SizedBox(width: 7),
+              const Icon(
+                Icons.chevron_right_rounded,
+                color: AppTheme.textMuted,
+              ),
+            ],
           ],
+        ),
         ),
       ),
     );

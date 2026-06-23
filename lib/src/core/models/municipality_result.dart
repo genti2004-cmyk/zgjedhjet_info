@@ -5,6 +5,7 @@ class MunicipalityResult {
   final int votesCast;
   final double turnoutPercentage;
   final String leadingSubject;
+  final bool hasVoterStatistics;
 
   const MunicipalityResult({
     required this.id,
@@ -13,5 +14,6 @@ class MunicipalityResult {
     required this.votesCast,
     required this.turnoutPercentage,
     required this.leadingSubject,
+    this.hasVoterStatistics = true,
   });
 }
