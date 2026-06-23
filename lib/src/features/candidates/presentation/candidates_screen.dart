@@ -10,6 +10,7 @@ import '../../../core/widgets/app_state_cards.dart';
 import '../../../core/widgets/election_picker_card.dart';
 import '../../../core/widgets/premium_components.dart';
 import '../../results/data/election_repository.dart';
+import '../../local_2017/presentation/local_2017_municipality_detail_screen.dart';
 
 enum CandidateSortMode {
   votes,
@@ -209,6 +210,18 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
                             _selectedMunicipality = value;
                           });
                         },
+                        onOpenDetails: _selectedMunicipality == null
+                            ? null
+                            : () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute<void>(
+                                    builder: (_) =>
+                                        Local2017MunicipalityDetailScreen(
+                                      municipality: _selectedMunicipality!,
+                                    ),
+                                  ),
+                                );
+                              },
                       ),
                     ],
                     const SizedBox(height: 12),
@@ -552,11 +565,13 @@ class _MunicipalityFilterCard extends StatelessWidget {
   final List<String> municipalities;
   final String? selectedMunicipality;
   final ValueChanged<String?> onChanged;
+  final VoidCallback? onOpenDetails;
 
   const _MunicipalityFilterCard({
     required this.municipalities,
     required this.selectedMunicipality,
     required this.onChanged,
+    required this.onOpenDetails,
   });
 
   @override
@@ -610,6 +625,16 @@ class _MunicipalityFilterCard extends StatelessWidget {
                 onChanged: onChanged,
               ),
             ),
+            if (onOpenDetails != null) ...[
+              const SizedBox(width: 9),
+              Tooltip(
+                message: 'Hap detajet e komunës',
+                child: IconButton.filledTonal(
+                  onPressed: onOpenDetails,
+                  icon: const Icon(Icons.arrow_forward_rounded),
+                ),
+              ),
+            ],
           ],
         ),
       ),
