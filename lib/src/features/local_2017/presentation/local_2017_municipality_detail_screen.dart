@@ -311,8 +311,8 @@ class _MunicipalityHeader extends StatelessWidget {
 
     return Container(
       width: double.infinity,
-      margin: const EdgeInsets.fromLTRB(16, 16, 16, 10),
-      padding: const EdgeInsets.all(17),
+      margin: const EdgeInsets.fromLTRB(16, 16, 16, 12),
+      padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -364,7 +364,7 @@ class _MunicipalityHeader extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: 13),
+          const SizedBox(height: 15),
           Wrap(
             spacing: 7,
             runSpacing: 7,
@@ -388,16 +388,67 @@ class _MunicipalityHeader extends StatelessWidget {
             ],
           ),
           if (winner != null) ...[
-            const SizedBox(height: 11),
-            Text(
-              'Kryeson: ${subjectName(winner)} · '
-              '${AppFormatters.number(winner.votes)} vota',
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 12.7,
-                fontWeight: FontWeight.w900,
+            const SizedBox(height: 14),
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(
+                horizontal: 12,
+                vertical: 10,
+              ),
+              decoration: BoxDecoration(
+                color: Colors.white.withValues(alpha: 0.14),
+                borderRadius: BorderRadius.circular(16),
+                border: Border.all(
+                  color: Colors.white.withValues(alpha: 0.22),
+                ),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Icon(
+                    Icons.emoji_events_rounded,
+                    color: Color(0xFFFFE082),
+                    size: 22,
+                  ),
+                  const SizedBox(width: 9),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          'Subjekti kryesues',
+                          style: TextStyle(
+                            color: Color(0xFFEAF7F0),
+                            fontSize: 11.2,
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
+                        const SizedBox(height: 3),
+                        Text(
+                          subjectName(winner),
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 13.5,
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                        const SizedBox(height: 3),
+                        Text(
+                          '${AppFormatters.number(winner.votes)} vota · '
+                          '${AppFormatters.percent(winner.percentage)} · '
+                          '${winner.seats} mandate',
+                          style: const TextStyle(
+                            color: Color(0xFFF4FBF7),
+                            fontSize: 11.6,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
@@ -504,13 +555,27 @@ class _PartyResultsTab extends StatelessWidget {
                       'Nuk u gjet asnjë subjekt për kërkimin e zgjedhur.',
                 )
               : ListView.builder(
-                  padding: const EdgeInsets.fromLTRB(16, 4, 16, 22),
+                  padding: const EdgeInsets.fromLTRB(16, 2, 16, 24),
                   itemCount: results.length,
                   itemBuilder: (context, index) {
                     final result = results[index];
 
+                    final isWinner = index == 0 &&
+                        sortMode == _PartySortMode.votes &&
+                        query.trim().isEmpty;
+
                     return Card(
-                      margin: const EdgeInsets.only(bottom: 9),
+                      margin: const EdgeInsets.only(bottom: 10),
+                      color: isWinner ? const Color(0xFFF1FBF5) : null,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18),
+                        side: BorderSide(
+                          color: isWinner
+                              ? AppTheme.primaryGreen.withValues(alpha: 0.30)
+                              : Colors.transparent,
+                          width: 1.2,
+                        ),
+                      ),
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
                           horizontal: 13,
@@ -525,17 +590,61 @@ class _PartyResultsTab extends StatelessWidget {
                                 crossAxisAlignment:
                                     CrossAxisAlignment.start,
                                 children: [
-                                  Text(
-                                    subjectName(result),
-                                    maxLines: 2,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: const TextStyle(
-                                      color: AppTheme.textDark,
-                                      fontSize: 14.2,
-                                      fontWeight: FontWeight.w900,
-                                    ),
+                                  Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Expanded(
+                                        child: Text(
+                                          subjectName(result),
+                                          maxLines: 2,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: const TextStyle(
+                                            color: AppTheme.textDark,
+                                            fontSize: 14.2,
+                                            fontWeight: FontWeight.w900,
+                                          ),
+                                        ),
+                                      ),
+                                      if (isWinner) ...[
+                                        const SizedBox(width: 6),
+                                        Container(
+                                          padding: const EdgeInsets.symmetric(
+                                            horizontal: 7,
+                                            vertical: 4,
+                                          ),
+                                          decoration: BoxDecoration(
+                                            color: AppTheme.softGreen,
+                                            borderRadius:
+                                                BorderRadius.circular(999),
+                                          ),
+                                          child: const Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            children: [
+                                              Icon(
+                                                Icons.emoji_events_rounded,
+                                                size: 13,
+                                                color:
+                                                    AppTheme.primaryGreen,
+                                              ),
+                                              SizedBox(width: 4),
+                                              Text(
+                                                'Kryeson',
+                                                style: TextStyle(
+                                                  color:
+                                                      AppTheme.primaryGreen,
+                                                  fontSize: 9.8,
+                                                  fontWeight:
+                                                      FontWeight.w900,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ],
                                   ),
-                                  const SizedBox(height: 4),
+                                  const SizedBox(height: 5),
                                   Text(
                                     '${AppFormatters.number(result.votes)} vota · '
                                     '${AppFormatters.percent(result.percentage)}',
@@ -618,13 +727,13 @@ class _CandidatesTab extends StatelessWidget {
                       'Nuk u gjet asnjë kandidat për kërkimin e zgjedhur.',
                 )
               : ListView.builder(
-                  padding: const EdgeInsets.fromLTRB(16, 4, 16, 22),
+                  padding: const EdgeInsets.fromLTRB(16, 2, 16, 24),
                   itemCount: candidates.length,
                   itemBuilder: (context, index) {
                     final candidate = candidates[index];
 
                     return Card(
-                      margin: const EdgeInsets.only(bottom: 9),
+                      margin: const EdgeInsets.only(bottom: 10),
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
                           horizontal: 13,
@@ -707,7 +816,7 @@ class _SearchAndSortBar<T> extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 2, 16, 10),
+      padding: const EdgeInsets.fromLTRB(16, 4, 16, 12),
       child: Row(
         children: [
           Expanded(
