@@ -69,7 +69,7 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
 
   String _municipalityNoticeMessage(ElectionSource source) {
     if (_hasOfficialMunicipalityResults(source)) {
-      return 'Rezultatet sipas komunave janë importuar nga skedari zyrtar i KQZ. Statistikat e votuesve dhe daljes nuk shfaqen, sepse nuk gjenden në këtë skedar.';
+      return 'Të dhënat janë importuar nga skedari zyrtar i KQZ. Votuesit dhe dalja nuk shfaqen, sepse skedari nuk i përmban.';
     }
 
     if (_isParliamentary(source)) {
@@ -165,18 +165,16 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                   await _municipalityResultsFuture;
                 },
                 child: ListView(
-                  padding: const EdgeInsets.fromLTRB(18, 12, 18, 24),
+                  padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
                   children: [
                     const _PageHeader(),
-                    const SizedBox(height: 12),
+                    const SizedBox(height: 9),
                     ElectionPickerCard(onChanged: _refresh),
-                    const SizedBox(height: 12),
-                    PremiumStatusNotice(
-                      icon: Icons.info_outline_rounded,
-                      verified: false,
+                    const SizedBox(height: 9),
+                    _CompactMunicipalityNotice(
                       message: _municipalityNoticeMessage(selectedElection),
                     ),
-                    const SizedBox(height: 12),
+                    const SizedBox(height: 9),
                     if (_isParliamentary(selectedElection) &&
                         !_hasOfficialMunicipalityResults(selectedElection))
                       _MunicipalityPendingCard(source: selectedElection)
@@ -203,7 +201,7 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                           (item) => item.hasVoterStatistics,
                         ),
                       ),
-                      const SizedBox(height: 12),
+                      const SizedBox(height: 9),
                       _SearchAndSortCard(
                         controller: _searchController,
                         sortMode: _sortMode,
@@ -219,7 +217,7 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                           });
                         },
                       ),
-                      const SizedBox(height: 18),
+                      const SizedBox(height: 12),
                       if (visibleMunicipalities.isEmpty)
                         const AppEmptyCard(
                           message: 'Nuk u gjet asnjë komunë me këtë kërkim.',
@@ -293,6 +291,51 @@ class _PageHeader extends StatelessWidget {
                 fontSize: 17,
                 fontWeight: FontWeight.w800,
                 height: 1.25,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _CompactMunicipalityNotice extends StatelessWidget {
+  final String message;
+
+  const _CompactMunicipalityNotice({
+    required this.message,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.fromLTRB(13, 10, 13, 10),
+      decoration: BoxDecoration(
+        color: const Color(0xFFFFFBEB),
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: const Color(0xFFF2D26B)),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Padding(
+            padding: EdgeInsets.only(top: 1),
+            child: Icon(
+              Icons.info_outline_rounded,
+              color: Color(0xFFB54708),
+              size: 20,
+            ),
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Text(
+              message,
+              style: const TextStyle(
+                color: Color(0xFF8A5300),
+                fontSize: 12.2,
+                height: 1.30,
+                fontWeight: FontWeight.w800,
               ),
             ),
           ),
@@ -473,7 +516,7 @@ class _SummaryCard extends StatelessWidget {
 
     return Card(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(15, 15, 15, 15),
+        padding: const EdgeInsets.fromLTRB(11, 11, 11, 11),
         child: Row(
           children: [
             Expanded(
@@ -530,7 +573,7 @@ class _SummaryItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.fromLTRB(8, 12, 8, 12),
+      padding: const EdgeInsets.fromLTRB(8, 9, 8, 9),
       decoration: BoxDecoration(
         color: AppTheme.softGreen,
         borderRadius: BorderRadius.circular(16),
@@ -540,20 +583,20 @@ class _SummaryItem extends StatelessWidget {
           Icon(
             icon,
             color: AppTheme.primaryGreen,
-            size: 22,
+            size: 20,
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: 5),
           Text(
             value,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: const TextStyle(
               color: AppTheme.textDark,
-              fontSize: 15.5,
+              fontSize: 15,
               fontWeight: FontWeight.w900,
             ),
           ),
-          const SizedBox(height: 3),
+          const SizedBox(height: 2),
           Text(
             label,
             maxLines: 1,
@@ -587,7 +630,7 @@ class _SearchAndSortCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(14, 14, 14, 14),
+        padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
         child: Column(
           children: [
             TextField(
@@ -607,7 +650,7 @@ class _SearchAndSortCard extends StatelessWidget {
                       ),
               ),
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: 8),
             DropdownButtonFormField<MunicipalitySortMode>(
               value: sortMode,
               decoration: const InputDecoration(
