@@ -10,7 +10,6 @@ import '../../../core/widgets/app_state_cards.dart';
 import '../../../core/widgets/election_picker_card.dart';
 import '../../../core/widgets/premium_components.dart';
 import '../../results/data/election_repository.dart';
-import '../../local_2017/presentation/local_2017_municipality_detail_screen.dart';
 
 enum CandidateSortMode {
   votes,
@@ -34,7 +33,6 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
 
   String _searchQuery = '';
   CandidateSortMode _sortMode = CandidateSortMode.votes;
-  String? _selectedMunicipality;
 
   @override
   void initState() {
@@ -54,35 +52,6 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
 
   void _refresh() {
     setState(_loadCandidates);
-  }
-
-  void _onElectionChanged() {
-    _searchController.clear();
-    setState(() {
-      _searchQuery = '';
-      _selectedMunicipality = null;
-      _loadCandidates();
-    });
-  }
-
-  List<String> _municipalities(List<CandidateResult> candidates) {
-    final values = candidates
-        .map((item) => item.municipalityName.trim())
-        .where((value) => value.isNotEmpty)
-        .toSet()
-        .toList()
-      ..sort();
-    return values;
-  }
-
-  List<CandidateResult> _filterByMunicipality(
-    List<CandidateResult> candidates,
-  ) {
-    final selected = _selectedMunicipality;
-    if (selected == null || selected.isEmpty) return candidates;
-    return candidates
-        .where((item) => item.municipalityName.trim() == selected)
-        .toList();
   }
 
   bool _hasOfficialCandidates(ElectionSource source) {
@@ -110,10 +79,9 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
   }
 
   List<CandidateResult> _filterAndSort(List<CandidateResult> candidates) {
-    final municipalityFiltered = _filterByMunicipality(candidates);
     final query = _searchQuery.trim().toLowerCase();
 
-    final filtered = municipalityFiltered.where((item) {
+    final filtered = candidates.where((item) {
       if (query.isEmpty) return true;
 
       return item.fullName.toLowerCase().contains(query) ||
@@ -178,11 +146,8 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
             future: _candidateResultsFuture,
             builder: (context, snapshot) {
               final allCandidates = snapshot.data ?? const <CandidateResult>[];
-              final municipalityCandidates = _filterByMunicipality(allCandidates);
               final visibleCandidates = _filterAndSort(allCandidates);
-              final topCandidate = _topCandidate(municipalityCandidates);
-              final municipalityOptions = _municipalities(allCandidates);
-              final isLocal2017 = selectedElection.type == ElectionSourceType.local2017;
+              final topCandidate = _topCandidate(allCandidates);
 
               return RefreshIndicator(
                 onRefresh: () async {
@@ -199,31 +164,7 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
                       isSourceOnly: _hasRegisteredSourcesOnly(selectedElection),
                     ),
                     const SizedBox(height: 12),
-                    ElectionPickerCard(onChanged: _onElectionChanged),
-                    if (isLocal2017) ...[
-                      const SizedBox(height: 12),
-                      _MunicipalityFilterCard(
-                        municipalities: municipalityOptions,
-                        selectedMunicipality: _selectedMunicipality,
-                        onChanged: (value) {
-                          setState(() {
-                            _selectedMunicipality = value;
-                          });
-                        },
-                        onOpenDetails: _selectedMunicipality == null
-                            ? null
-                            : () {
-                                Navigator.of(context).push(
-                                  MaterialPageRoute<void>(
-                                    builder: (_) =>
-                                        Local2017MunicipalityDetailScreen(
-                                      municipality: _selectedMunicipality!,
-                                    ),
-                                  ),
-                                );
-                              },
-                      ),
-                    ],
+                    ElectionPickerCard(onChanged: _refresh),
                     const SizedBox(height: 12),
                     PremiumStatusNotice(
                       icon: _hasOfficialCandidates(selectedElection)
@@ -234,9 +175,9 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
                     ),
                     const SizedBox(height: 12),
                     _SummaryCard(
-                      candidatesCount: municipalityCandidates.length,
-                      subjectsCount: _subjectCount(municipalityCandidates),
-                      totalVotes: _totalVotes(municipalityCandidates),
+                      candidatesCount: allCandidates.length,
+                      subjectsCount: _subjectCount(allCandidates),
+                      totalVotes: _totalVotes(allCandidates),
                       topCandidate: topCandidate,
                     ),
                     const SizedBox(height: 12),
@@ -326,9 +267,9 @@ class _PremiumHeader extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
-            Color(0xFF0F7A4C),
-            Color(0xFF095D3A),
-            Color(0xFF063F2B),
+            Color(0xFF102A43),
+            Color(0xFF1677FF),
+            Color(0xFF071A2D),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -390,7 +331,7 @@ class _PremiumHeader extends StatelessWidget {
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             style: const TextStyle(
-              color: Color(0xFFEAF7F0),
+              color: Color(0xFFEAF2FF),
               fontSize: 13.3,
               fontWeight: FontWeight.w700,
               height: 1.32,
@@ -556,87 +497,6 @@ class _SummaryItem extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class _MunicipalityFilterCard extends StatelessWidget {
-  final List<String> municipalities;
-  final String? selectedMunicipality;
-  final ValueChanged<String?> onChanged;
-  final VoidCallback? onOpenDetails;
-
-  const _MunicipalityFilterCard({
-    required this.municipalities,
-    required this.selectedMunicipality,
-    required this.onChanged,
-    required this.onOpenDetails,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(14, 14, 14, 14),
-        child: Row(
-          children: [
-            Container(
-              height: 42,
-              width: 42,
-              decoration: BoxDecoration(
-                color: AppTheme.softGreen,
-                borderRadius: BorderRadius.circular(14),
-              ),
-              child: const Icon(
-                Icons.location_city_rounded,
-                color: AppTheme.primaryGreen,
-                size: 22,
-              ),
-            ),
-            const SizedBox(width: 12),
-            Expanded(
-              child: DropdownButtonFormField<String?>(
-                initialValue: selectedMunicipality,
-                isExpanded: true,
-                decoration: const InputDecoration(
-                  labelText: 'Komuna',
-                  contentPadding: EdgeInsets.symmetric(
-                    horizontal: 12,
-                    vertical: 10,
-                  ),
-                ),
-                items: [
-                  const DropdownMenuItem<String?>(
-                    value: null,
-                    child: Text('Të gjitha komunat'),
-                  ),
-                  ...municipalities.map(
-                    (municipality) => DropdownMenuItem<String?>(
-                      value: municipality,
-                      child: Text(
-                        municipality,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                  ),
-                ],
-                onChanged: onChanged,
-              ),
-            ),
-            if (onOpenDetails != null) ...[
-              const SizedBox(width: 9),
-              Tooltip(
-                message: 'Hap detajet e komunës',
-                child: IconButton.filledTonal(
-                  onPressed: onOpenDetails,
-                  icon: const Icon(Icons.arrow_forward_rounded),
-                ),
-              ),
-            ],
-          ],
-        ),
       ),
     );
   }

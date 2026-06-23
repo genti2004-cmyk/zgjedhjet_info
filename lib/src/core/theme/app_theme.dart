@@ -3,25 +3,31 @@ import 'package:flutter/material.dart';
 class AppTheme {
   const AppTheme._();
 
-  static const Color background = Color(0xFFF6F8F5);
+  static const Color background = Color(0xFFF5F7FA);
   static const Color surface = Color(0xFFFFFFFF);
 
-  static const Color primaryGreen = Color(0xFF0F7A4C);
-  static const Color deepGreen = Color(0xFF063F2B);
-  static const Color mediumGreen = Color(0xFF178E5D);
-  static const Color softGreen = Color(0xFFEAF7F0);
+  // Neue neutrale Wahl-App-Farbwelt.
+  static const Color primaryNavy = Color(0xFF102A43);
+  static const Color deepNavy = Color(0xFF071A2D);
+  static const Color accentBlue = Color(0xFF1677FF);
+  static const Color accentTurquoise = Color(0xFF18A999);
+  static const Color winnerGold = Color(0xFFD6A84B);
+  static const Color softNavy = Color(0xFFEAF2FF);
 
-  // Kompatibilität für ältere Widgets.
-  // Diese Aliase bleiben absichtlich erhalten, damit alte Dateien nicht brechen.
-  static const Color primaryBlue = primaryGreen;
-  static const Color softBlue = softGreen;
+  // Kompatibilitäts-Aliase für bestehende Widgets.
+  static const Color primaryGreen = primaryNavy;
+  static const Color deepGreen = deepNavy;
+  static const Color mediumGreen = accentBlue;
+  static const Color softGreen = softNavy;
+  static const Color primaryBlue = accentBlue;
+  static const Color softBlue = softNavy;
   static const Color redAccent = Color(0xFFE5484D);
 
-  static const Color textDark = Color(0xFF10231A);
-  static const Color textMuted = Color(0xFF66756D);
+  static const Color textDark = Color(0xFF172B4D);
+  static const Color textMuted = Color(0xFF66788A);
 
-  static const Color border = Color(0xFFE3EAE5);
-  static const Color borderStrong = Color(0xFFC8D6CE);
+  static const Color border = Color(0xFFE1E7EF);
+  static const Color borderStrong = Color(0xFFC7D2E1);
 
   static const Color warningBackground = Color(0xFFFFFBEB);
   static const Color warningBorder = Color(0xFFFEDC7A);
@@ -33,13 +39,15 @@ class AppTheme {
   static const Color successText = Color(0xFF067647);
   static const Color successIcon = Color(0xFF079455);
 
-  static List<BoxShadow> get greenShadow => [
+  static List<BoxShadow> get navyShadow => [
         BoxShadow(
-          color: primaryGreen.withValues(alpha: 0.22),
+          color: primaryNavy.withValues(alpha: 0.20),
           blurRadius: 26,
           offset: const Offset(0, 14),
         ),
       ];
+
+  static List<BoxShadow> get greenShadow => navyShadow;
 
   static List<BoxShadow> get softShadow => [
         BoxShadow(

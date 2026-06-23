@@ -316,9 +316,9 @@ class _MunicipalityHeader extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
-            Color(0xFF0F7A4C),
-            Color(0xFF095D3A),
-            Color(0xFF063F2B),
+            Color(0xFF102A43),
+            Color(0xFF1677FF),
+            Color(0xFF071A2D),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -354,7 +354,7 @@ class _MunicipalityHeader extends StatelessWidget {
                     const Text(
                       'Zgjedhjet Lokale 2017 · Kuvendi Komunal',
                       style: TextStyle(
-                        color: Color(0xFFEAF7F0),
+                        color: Color(0xFFEAF2FF),
                         fontSize: 12.5,
                         fontWeight: FontWeight.w700,
                       ),
@@ -418,7 +418,7 @@ class _MunicipalityHeader extends StatelessWidget {
                         const Text(
                           'Subjekti kryesues',
                           style: TextStyle(
-                            color: Color(0xFFEAF7F0),
+                            color: Color(0xFFEAF2FF),
                             fontSize: 11.2,
                             fontWeight: FontWeight.w800,
                           ),

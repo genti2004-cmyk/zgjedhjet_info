@@ -27,9 +27,9 @@ class PremiumHeroCard extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
-            Color(0xFF0F7A4C),
-            Color(0xFF095D3A),
-            Color(0xFF063F2B),
+            Color(0xFF102A43),
+            Color(0xFF1677FF),
+            Color(0xFF071A2D),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -69,7 +69,7 @@ class PremiumHeroCard extends StatelessWidget {
             maxLines: 3,
             overflow: TextOverflow.ellipsis,
             style: const TextStyle(
-              color: Color(0xFFEAF7F0),
+              color: Color(0xFFEAF2FF),
               fontSize: 13.3,
               fontWeight: FontWeight.w700,
               height: 1.32,
