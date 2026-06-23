@@ -130,7 +130,12 @@ class _SectionLabel extends StatelessWidget {
         children: [
           Text(
             title,
-            style: Theme.of(context).textTheme.headlineSmall,
+            style: const TextStyle(
+              color: AppTheme.textDark,
+              fontSize: 22,
+              fontWeight: FontWeight.w900,
+              letterSpacing: -0.25,
+            ),
           ),
           const SizedBox(height: 3),
           Text(

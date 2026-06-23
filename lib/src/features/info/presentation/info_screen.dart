@@ -100,12 +100,12 @@ class _DataStatusCard extends StatelessWidget {
           done: true,
         ),
         _StatusLine(
-          label: 'Parlamentare 2014',
+          label: 'Parlamentare 2017',
           value: 'Aktive',
           done: true,
         ),
         _StatusLine(
-          label: 'Parlamentare 2017',
+          label: 'Parlamentare 2014',
           value: 'Aktive',
           done: true,
         ),
@@ -236,7 +236,7 @@ class _InfoCard extends StatelessWidget {
           children: [
             Row(
               children: [
-                Icon(icon, color: AppTheme.primaryGreen),
+                Icon(icon, color: AppTheme.primaryNavy),
                 const SizedBox(width: 9),
                 Expanded(
                   child: Text(
@@ -316,17 +316,17 @@ class _StatusLine extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 9),
       padding: const EdgeInsets.fromLTRB(11, 10, 11, 10),
       decoration: BoxDecoration(
-        color: done ? AppTheme.softGreen : const Color(0xFFFFFBEB),
+        color: done ? AppTheme.softNavy : const Color(0xFFFFFBEB),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: done ? const Color(0xFFABEFC6) : const Color(0xFFFEDC7A),
+          color: done ? AppTheme.successBorder : const Color(0xFFFEDC7A),
         ),
       ),
       child: Row(
         children: [
           Icon(
             done ? Icons.check_circle_rounded : Icons.pending_actions_rounded,
-            color: done ? AppTheme.primaryGreen : const Color(0xFFB54708),
+            color: done ? AppTheme.primaryNavy : const Color(0xFFB54708),
             size: 19,
           ),
           const SizedBox(width: 9),
@@ -346,7 +346,7 @@ class _StatusLine extends StatelessWidget {
               value,
               textAlign: TextAlign.right,
               style: TextStyle(
-                color: done ? AppTheme.primaryGreen : const Color(0xFF7A4B00),
+                color: done ? AppTheme.primaryNavy : const Color(0xFF7A4B00),
                 fontWeight: FontWeight.w900,
                 fontSize: 12,
               ),
@@ -374,7 +374,7 @@ class _BulletLine extends StatelessWidget {
         children: [
           const Icon(
             Icons.check_circle_outline_rounded,
-            color: AppTheme.primaryGreen,
+            color: AppTheme.primaryNavy,
             size: 18,
           ),
           const SizedBox(width: 9),

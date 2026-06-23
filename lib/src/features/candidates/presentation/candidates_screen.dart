@@ -257,7 +257,7 @@ class _PremiumHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final status = isOfficial
-        ? 'KQZ të dhëna aktive'
+        ? 'Të dhëna aktive nga KQZ'
         : isSourceOnly
             ? 'Burime zyrtare'
             : 'Në përgatitje';
