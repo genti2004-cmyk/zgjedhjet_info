@@ -68,7 +68,7 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
         return 'Për ${source.shortTitle} burimet zyrtare të komunave janë regjistruar në arkiv. Të dhënat numerike sipas komunave ende nuk janë importuar, sepse duhet verifikim i plotë i skedarëve të KQZ.';
       }
 
-      return 'Për ${source.shortTitle} rezultatet sipas komunave ende nuk janë lidhur plotësisht. Do të shtohen vetëm nga burime zyrtare të verifikuara.';
+      return 'Rezultatet sipas komunave do të shfaqen vetëm pas importimit dhe verifikimit të të dhënave zyrtare të KQZ.';
     }
 
     return 'Të dhënat zyrtare për komunat nuk janë importuar ende. Ato do të shfaqen vetëm pas verifikimit nga dokumentet zyrtare të KQZ.';

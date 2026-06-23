@@ -340,7 +340,7 @@ class _PremiumHeader extends StatelessWidget {
               ),
               PremiumWhitePill(
                 icon: Icons.emoji_events_rounded,
-                label: winner == null ? 'Pa rezultate' : 'Fitues: ${winner!.shortName}',
+                label: winner == null ? 'Pa rezultate' : 'Fituesi: ${winner!.shortName}',
               ),
             ],
           ),
