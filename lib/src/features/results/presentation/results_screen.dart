@@ -33,6 +33,7 @@ class _ResultsScreenState extends State<ResultsScreen> {
 
   String _searchQuery = '';
   ResultSortMode _sortMode = ResultSortMode.votes;
+  String? _selectedMunicipality;
 
   @override
   void initState() {
@@ -52,6 +53,40 @@ class _ResultsScreenState extends State<ResultsScreen> {
 
   void _refresh() {
     setState(_loadResults);
+  }
+
+  void _onElectionChanged() {
+    _searchController.clear();
+    setState(() {
+      _searchQuery = '';
+      _selectedMunicipality = null;
+      _loadResults();
+    });
+  }
+
+  String _municipalityFromPartyResult(PartyResult result) {
+    const separator = ' · ';
+    final separatorIndex = result.name.indexOf(separator);
+    if (separatorIndex <= 0) return '';
+    return result.name.substring(0, separatorIndex).trim();
+  }
+
+  List<String> _municipalities(List<PartyResult> results) {
+    final values = results
+        .map(_municipalityFromPartyResult)
+        .where((value) => value.isNotEmpty)
+        .toSet()
+        .toList()
+      ..sort();
+    return values;
+  }
+
+  List<PartyResult> _filterByMunicipality(List<PartyResult> results) {
+    final selected = _selectedMunicipality;
+    if (selected == null || selected.isEmpty) return results;
+    return results
+        .where((item) => _municipalityFromPartyResult(item) == selected)
+        .toList();
   }
 
   bool _hasOfficialResults(ElectionSource source) {
@@ -79,9 +114,10 @@ class _ResultsScreenState extends State<ResultsScreen> {
   }
 
   List<PartyResult> _filterAndSort(List<PartyResult> results) {
+    final municipalityFiltered = _filterByMunicipality(results);
     final query = _searchQuery.trim().toLowerCase();
 
-    final filtered = results.where((item) {
+    final filtered = municipalityFiltered.where((item) {
       if (query.isEmpty) return true;
 
       return item.name.toLowerCase().contains(query) ||
@@ -142,8 +178,11 @@ class _ResultsScreenState extends State<ResultsScreen> {
             future: _partyResultsFuture,
             builder: (context, snapshot) {
               final allResults = snapshot.data ?? const <PartyResult>[];
+              final municipalityResults = _filterByMunicipality(allResults);
               final visibleResults = _filterAndSort(allResults);
-              final winner = _winner(allResults);
+              final winner = _winner(municipalityResults);
+              final municipalityOptions = _municipalities(allResults);
+              final isLocal2017 = selectedElection.type == ElectionSourceType.local2017;
 
               return RefreshIndicator(
                 onRefresh: () async {
@@ -160,7 +199,19 @@ class _ResultsScreenState extends State<ResultsScreen> {
                       isSourceOnly: _hasRegisteredSourcesOnly(selectedElection),
                     ),
                     const SizedBox(height: 12),
-                    ElectionPickerCard(onChanged: _refresh),
+                    ElectionPickerCard(onChanged: _onElectionChanged),
+                    if (isLocal2017) ...[
+                      const SizedBox(height: 12),
+                      _MunicipalityFilterCard(
+                        municipalities: municipalityOptions,
+                        selectedMunicipality: _selectedMunicipality,
+                        onChanged: (value) {
+                          setState(() {
+                            _selectedMunicipality = value;
+                          });
+                        },
+                      ),
+                    ],
                     const SizedBox(height: 12),
                     PremiumStatusNotice(
                       icon: _hasOfficialResults(selectedElection)
@@ -171,9 +222,9 @@ class _ResultsScreenState extends State<ResultsScreen> {
                     ),
                     const SizedBox(height: 12),
                     _SummaryCard(
-                      totalVotes: _totalVotes(allResults),
-                      totalSeats: _totalSeats(allResults),
-                      subjectsCount: allResults.length,
+                      totalVotes: _totalVotes(municipalityResults),
+                      totalSeats: _totalSeats(municipalityResults),
+                      subjectsCount: municipalityResults.length,
                       winner: winner,
                     ),
                     const SizedBox(height: 12),
@@ -489,6 +540,75 @@ class _SummaryItem extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _MunicipalityFilterCard extends StatelessWidget {
+  final List<String> municipalities;
+  final String? selectedMunicipality;
+  final ValueChanged<String?> onChanged;
+
+  const _MunicipalityFilterCard({
+    required this.municipalities,
+    required this.selectedMunicipality,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(14, 14, 14, 14),
+        child: Row(
+          children: [
+            Container(
+              height: 42,
+              width: 42,
+              decoration: BoxDecoration(
+                color: AppTheme.softGreen,
+                borderRadius: BorderRadius.circular(14),
+              ),
+              child: const Icon(
+                Icons.location_city_rounded,
+                color: AppTheme.primaryGreen,
+                size: 22,
+              ),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: DropdownButtonFormField<String?>(
+                initialValue: selectedMunicipality,
+                isExpanded: true,
+                decoration: const InputDecoration(
+                  labelText: 'Komuna',
+                  contentPadding: EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 10,
+                  ),
+                ),
+                items: [
+                  const DropdownMenuItem<String?>(
+                    value: null,
+                    child: Text('Të gjitha komunat'),
+                  ),
+                  ...municipalities.map(
+                    (municipality) => DropdownMenuItem<String?>(
+                      value: municipality,
+                      child: Text(
+                        municipality,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                  ),
+                ],
+                onChanged: onChanged,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
