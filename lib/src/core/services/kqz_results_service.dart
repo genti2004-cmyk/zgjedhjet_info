@@ -10,6 +10,7 @@ import '../../features/parliamentary_2017/data/parliamentary_2017_party_data.dar
 import '../../features/parliamentary_2019/data/parliamentary_2019_candidate_data.dart';
 import '../../features/parliamentary_2019/data/parliamentary_2019_party_data.dart';
 import '../../features/parliamentary_2021/data/parliamentary_2021_candidate_data.dart';
+import '../../features/parliamentary_2021/data/parliamentary_2021_municipality_data.dart';
 import '../../features/parliamentary_2021/data/parliamentary_2021_party_data.dart';
 import '../../features/parliamentary_2025/data/parliamentary_2025_candidate_data.dart';
 import '../../features/parliamentary_2025/data/parliamentary_2025_municipality_data.dart';
@@ -77,6 +78,7 @@ class KqzResultsService {
       case ElectionSourceType.parliamentary2025:
         return Parliamentary2025MunicipalityData.results;
       case ElectionSourceType.parliamentary2021:
+        return Parliamentary2021MunicipalityData.results;
       case ElectionSourceType.parliamentary2019:
       case ElectionSourceType.parliamentary2017:
       case ElectionSourceType.parliamentary2014:

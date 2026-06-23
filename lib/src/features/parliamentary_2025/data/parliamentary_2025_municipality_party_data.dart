@@ -6,7 +6,7 @@ class Parliamentary2025MunicipalityPartyData {
   static const List<MunicipalityPartyResult> results = [
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-137',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -16,7 +16,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-118',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -26,7 +26,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-124',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -36,7 +36,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-131',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -46,7 +46,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-129',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -56,7 +56,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-115',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -66,7 +66,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-136',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -76,7 +76,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-138',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -86,7 +86,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-111',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -96,7 +96,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-121',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -106,7 +106,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-117',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -116,7 +116,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-119',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -126,7 +126,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-127',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -136,7 +136,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-135',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -146,7 +146,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-123',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -156,7 +156,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-112',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -166,7 +166,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-113',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -176,7 +176,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-125',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -186,7 +186,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-134',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -196,7 +196,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-114',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -206,7 +206,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-128',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -216,7 +216,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-130',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -226,7 +226,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-126',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -236,7 +236,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-116',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -246,7 +246,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-120',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -256,7 +256,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-122',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -266,7 +266,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-132',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -276,7 +276,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-01-133',
-      municipalityName: 'Deçan/ Dečane',
+      municipalityName: 'Deçan',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -286,7 +286,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-118',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -296,7 +296,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-124',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -306,7 +306,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-131',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -316,7 +316,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-127',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -326,7 +326,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-113',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -336,7 +336,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-135',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -346,7 +346,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-129',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -356,7 +356,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-119',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -366,7 +366,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-137',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -376,7 +376,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-112',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -386,7 +386,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-132',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -396,7 +396,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-111',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -406,7 +406,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-114',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -416,7 +416,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-116',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -426,7 +426,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-121',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -436,7 +436,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-130',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -446,7 +446,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-125',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -456,7 +456,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-134',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -466,7 +466,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-115',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -476,7 +476,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-123',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -486,7 +486,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-126',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -496,7 +496,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-133',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -506,7 +506,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-138',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -516,7 +516,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-117',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -526,7 +526,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-120',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -536,7 +536,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-122',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -546,7 +546,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-128',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -556,7 +556,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-02-136',
-      municipalityName: 'Dragash/ Dragaš',
+      municipalityName: 'Dragash',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -566,7 +566,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-118',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -576,7 +576,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-131',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -586,7 +586,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-124',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -596,7 +596,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-137',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -606,7 +606,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-129',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -616,7 +616,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-125',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -626,7 +626,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-123',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -636,7 +636,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-111',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -646,7 +646,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-119',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -656,7 +656,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-115',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -666,7 +666,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-138',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -676,7 +676,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-117',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -686,7 +686,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-114',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -696,7 +696,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-130',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -706,7 +706,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-113',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -716,7 +716,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-128',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -726,7 +726,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-127',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -736,7 +736,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-134',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -746,7 +746,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-132',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -756,7 +756,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-135',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -766,7 +766,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-116',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -776,7 +776,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-121',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -786,7 +786,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-126',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -796,7 +796,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-136',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -806,7 +806,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-122',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -816,7 +816,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-133',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -826,7 +826,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-112',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -836,7 +836,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-03-120',
-      municipalityName: 'Ferizaj/ Uroševac',
+      municipalityName: 'Ferizaj',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -846,7 +846,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-118',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -856,7 +856,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-131',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -866,7 +866,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-124',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -876,7 +876,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-115',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -886,7 +886,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-137',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -896,7 +896,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-129',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -906,7 +906,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-123',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -916,7 +916,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-112',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -926,7 +926,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-125',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -936,7 +936,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-111',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -946,7 +946,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-132',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -956,7 +956,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-114',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -966,7 +966,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-136',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -976,7 +976,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-138',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -986,7 +986,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-113',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -996,7 +996,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-130',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -1006,7 +1006,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-133',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -1016,7 +1016,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-117',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -1026,7 +1026,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-116',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -1036,7 +1036,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-127',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -1046,7 +1046,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-119',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -1056,7 +1056,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-134',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -1066,7 +1066,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-121',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -1076,7 +1076,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-135',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -1086,7 +1086,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-122',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -1096,7 +1096,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-126',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -1106,7 +1106,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-128',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -1116,7 +1116,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-04-120',
-      municipalityName: 'Fushë Kosovë/ Kosovo Polje',
+      municipalityName: 'Fushë Kosovë',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -1126,7 +1126,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-118',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -1136,7 +1136,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-137',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -1146,7 +1146,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-124',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -1156,7 +1156,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-131',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -1166,7 +1166,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-111',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -1176,7 +1176,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-115',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -1186,7 +1186,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-129',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -1196,7 +1196,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-114',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -1206,7 +1206,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-117',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -1216,7 +1216,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-123',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -1226,7 +1226,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-138',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -1236,7 +1236,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-125',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -1246,7 +1246,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-136',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -1256,7 +1256,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-113',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -1266,7 +1266,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-112',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -1276,7 +1276,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-119',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -1286,7 +1286,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-130',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -1296,7 +1296,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-135',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -1306,7 +1306,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-128',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -1316,7 +1316,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-132',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -1326,7 +1326,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-127',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -1336,7 +1336,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-116',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -1346,7 +1346,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-126',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -1356,7 +1356,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-134',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -1366,7 +1366,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-121',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -1376,7 +1376,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-120',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -1386,7 +1386,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-122',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -1396,7 +1396,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-05-133',
-      municipalityName: 'Gjakovë/ Đakovica',
+      municipalityName: 'Gjakovë',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -1406,7 +1406,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-118',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -1416,7 +1416,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-124',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -1426,7 +1426,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-131',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -1436,7 +1436,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-129',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -1446,7 +1446,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-137',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -1456,7 +1456,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-112',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -1466,7 +1466,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-134',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -1476,7 +1476,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-111',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -1486,7 +1486,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-132',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -1496,7 +1496,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-117',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -1506,7 +1506,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-130',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -1516,7 +1516,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-138',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -1526,7 +1526,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-119',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -1536,7 +1536,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-125',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -1546,7 +1546,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-113',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -1556,7 +1556,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-133',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -1566,7 +1566,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-114',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -1576,7 +1576,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-123',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -1586,7 +1586,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-135',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -1596,7 +1596,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-122',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -1606,7 +1606,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-116',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -1616,7 +1616,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-115',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -1626,7 +1626,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-128',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -1636,7 +1636,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-136',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -1646,7 +1646,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-127',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -1656,7 +1656,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-121',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -1666,7 +1666,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-120',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -1676,7 +1676,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-06-126',
-      municipalityName: 'Gjilan/ Gnjilane',
+      municipalityName: 'Gjilan',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -1686,7 +1686,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-131',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -1696,7 +1696,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-118',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -1706,7 +1706,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-124',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -1716,7 +1716,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-137',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -1726,7 +1726,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-129',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -1736,7 +1736,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-111',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -1746,7 +1746,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-113',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -1756,7 +1756,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-130',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -1766,7 +1766,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-138',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -1776,7 +1776,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-123',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -1786,7 +1786,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-132',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -1796,7 +1796,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-115',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -1806,7 +1806,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-125',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -1816,7 +1816,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-117',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -1826,7 +1826,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-135',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -1836,7 +1836,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-112',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -1846,7 +1846,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-128',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -1856,7 +1856,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-119',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -1866,7 +1866,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-134',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -1876,7 +1876,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-116',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -1886,7 +1886,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-126',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -1896,7 +1896,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-133',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -1906,7 +1906,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-136',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -1916,7 +1916,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-121',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -1926,7 +1926,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-114',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -1936,7 +1936,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-120',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -1946,7 +1946,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-122',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -1956,7 +1956,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-07-127',
-      municipalityName: 'Gllogovc/ Glogovac',
+      municipalityName: 'Gllogoc',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -1966,7 +1966,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-112',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -1976,7 +1976,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-132',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -1986,7 +1986,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-118',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -1996,7 +1996,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-133',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -2006,7 +2006,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-124',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -2016,7 +2016,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-131',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -2026,7 +2026,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-116',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -2036,7 +2036,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-137',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -2046,7 +2046,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-136',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -2056,7 +2056,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-129',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -2066,7 +2066,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-113',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -2076,7 +2076,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-120',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -2086,7 +2086,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-134',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -2096,7 +2096,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-111',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -2106,7 +2106,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-123',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -2116,7 +2116,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-114',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -2126,7 +2126,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-119',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -2136,7 +2136,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-125',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -2146,7 +2146,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-121',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -2156,7 +2156,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-122',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -2166,7 +2166,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-126',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -2176,7 +2176,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-130',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -2186,7 +2186,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-115',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -2196,7 +2196,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-127',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -2206,7 +2206,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-138',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -2216,7 +2216,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-135',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -2226,7 +2226,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-117',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -2236,7 +2236,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-08-128',
-      municipalityName: 'Graçanicë/ Gračanica',
+      municipalityName: 'Graçanicë',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -2246,7 +2246,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-118',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -2256,7 +2256,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-131',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -2266,7 +2266,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-124',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -2276,7 +2276,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-137',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -2286,7 +2286,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-129',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -2296,7 +2296,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-119',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -2306,7 +2306,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-113',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -2316,7 +2316,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-111',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -2326,7 +2326,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-127',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -2336,7 +2336,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-128',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -2346,7 +2346,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-130',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -2356,7 +2356,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-134',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -2366,7 +2366,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-117',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -2376,7 +2376,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-123',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -2386,7 +2386,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-125',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -2396,7 +2396,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-132',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -2406,7 +2406,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-114',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -2416,7 +2416,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-133',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -2426,7 +2426,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-135',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -2436,7 +2436,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-138',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -2446,7 +2446,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-112',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -2456,7 +2456,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-115',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -2466,7 +2466,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-116',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -2476,7 +2476,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-120',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -2486,7 +2486,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-121',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -2496,7 +2496,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-122',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -2506,7 +2506,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-126',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -2516,7 +2516,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-09-136',
-      municipalityName: 'Hani Elezit/ Elez Han',
+      municipalityName: 'Hani i Elezit',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -2526,7 +2526,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-118',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -2536,7 +2536,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-124',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -2546,7 +2546,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-131',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -2556,7 +2556,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-137',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -2566,7 +2566,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-111',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -2576,7 +2576,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-119',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -2586,7 +2586,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-112',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -2596,7 +2596,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-121',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -2606,7 +2606,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-129',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -2616,7 +2616,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-115',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -2626,7 +2626,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-132',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -2636,7 +2636,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-133',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -2646,7 +2646,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-117',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -2656,7 +2656,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-116',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -2666,7 +2666,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-123',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -2676,7 +2676,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-114',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -2686,7 +2686,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-113',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -2696,7 +2696,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-127',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -2706,7 +2706,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-125',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -2716,7 +2716,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-135',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -2726,7 +2726,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-128',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -2736,7 +2736,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-130',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -2746,7 +2746,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-138',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -2756,7 +2756,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-134',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -2766,7 +2766,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-122',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -2776,7 +2776,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-126',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -2786,7 +2786,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-136',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -2796,7 +2796,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-10-120',
-      municipalityName: 'Istog/ Istok',
+      municipalityName: 'Istog',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -2806,7 +2806,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-124',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -2816,7 +2816,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-137',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -2826,7 +2826,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-118',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -2836,7 +2836,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-131',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -2846,7 +2846,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-129',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -2856,7 +2856,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-115',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -2866,7 +2866,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-136',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -2876,7 +2876,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-111',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -2886,7 +2886,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-112',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -2896,7 +2896,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-117',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -2906,7 +2906,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-123',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -2916,7 +2916,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-138',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -2926,7 +2926,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-113',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -2936,7 +2936,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-114',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -2946,7 +2946,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-121',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -2956,7 +2956,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-126',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -2966,7 +2966,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-134',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -2976,7 +2976,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-116',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -2986,7 +2986,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-119',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -2996,7 +2996,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-120',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -3006,7 +3006,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-122',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -3016,7 +3016,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-125',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -3026,7 +3026,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-127',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -3036,7 +3036,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-128',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -3046,7 +3046,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-130',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -3056,7 +3056,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-132',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -3066,7 +3066,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-133',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -3076,7 +3076,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-11-135',
-      municipalityName: 'Junik/ Junik',
+      municipalityName: 'Junik',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -3086,7 +3086,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-118',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -3096,7 +3096,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-131',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -3106,7 +3106,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-124',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -3116,7 +3116,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-137',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -3126,7 +3126,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-112',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -3136,7 +3136,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-129',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -3146,7 +3146,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-132',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -3156,7 +3156,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-133',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -3166,7 +3166,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-116',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -3176,7 +3176,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-136',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -3186,7 +3186,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-111',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -3196,7 +3196,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-134',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -3206,7 +3206,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-113',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -3216,7 +3216,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-117',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -3226,7 +3226,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-114',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -3236,7 +3236,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-135',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -3246,7 +3246,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-123',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -3256,7 +3256,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-128',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -3266,7 +3266,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-130',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -3276,7 +3276,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-138',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -3286,7 +3286,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-115',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -3296,7 +3296,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-121',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -3306,7 +3306,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-125',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -3316,7 +3316,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-119',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -3326,7 +3326,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-120',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -3336,7 +3336,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-122',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -3346,7 +3346,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-126',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -3356,7 +3356,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-12-127',
-      municipalityName: 'Kamenicë/ Kamenica',
+      municipalityName: 'Kamenicë',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -3366,7 +3366,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-118',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -3376,7 +3376,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-131',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -3386,7 +3386,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-124',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -3396,7 +3396,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-137',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -3406,7 +3406,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-129',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -3416,7 +3416,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-111',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -3426,7 +3426,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-113',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -3436,7 +3436,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-125',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -3446,7 +3446,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-130',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -3456,7 +3456,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-119',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -3466,7 +3466,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-123',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -3476,7 +3476,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-138',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -3486,7 +3486,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-117',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -3496,7 +3496,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-132',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -3506,7 +3506,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-135',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -3516,7 +3516,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-128',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -3526,7 +3526,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-134',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -3536,7 +3536,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-136',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -3546,7 +3546,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-112',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -3556,7 +3556,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-114',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -3566,7 +3566,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-115',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -3576,7 +3576,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-122',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -3586,7 +3586,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-126',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -3596,7 +3596,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-116',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -3606,7 +3606,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-120',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -3616,7 +3616,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-121',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -3626,7 +3626,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-127',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -3636,7 +3636,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-13-133',
-      municipalityName: 'Kaçanik/ Kačanik',
+      municipalityName: 'Kaçanik',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -3646,7 +3646,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-118',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -3656,7 +3656,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-131',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -3666,7 +3666,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-137',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -3676,7 +3676,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-124',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -3686,7 +3686,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-111',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -3696,7 +3696,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-129',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -3706,7 +3706,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-115',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -3716,7 +3716,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-112',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -3726,7 +3726,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-132',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -3736,7 +3736,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-117',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -3746,7 +3746,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-113',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -3756,7 +3756,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-138',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -3766,7 +3766,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-130',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -3776,7 +3776,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-125',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -3786,7 +3786,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-136',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -3796,7 +3796,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-123',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -3806,7 +3806,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-119',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -3816,7 +3816,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-135',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -3826,7 +3826,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-114',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -3836,7 +3836,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-127',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -3846,7 +3846,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-128',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -3856,7 +3856,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-133',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -3866,7 +3866,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-121',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -3876,7 +3876,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-134',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -3886,7 +3886,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-116',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -3896,7 +3896,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-120',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -3906,7 +3906,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-122',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -3916,7 +3916,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-14-126',
-      municipalityName: 'Klinë/ Klina',
+      municipalityName: 'Klinë',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -3926,7 +3926,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-112',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -3936,7 +3936,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-118',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -3946,7 +3946,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-124',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -3956,7 +3956,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-131',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -3966,7 +3966,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-132',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -3976,7 +3976,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-133',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -3986,7 +3986,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-137',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -3996,7 +3996,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-129',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -4006,7 +4006,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-116',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -4016,7 +4016,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-113',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -4026,7 +4026,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-130',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -4036,7 +4036,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-121',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -4046,7 +4046,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-123',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -4056,7 +4056,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-111',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -4066,7 +4066,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-115',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -4076,7 +4076,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-119',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -4086,7 +4086,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-122',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -4096,7 +4096,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-125',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -4106,7 +4106,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-136',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -4116,7 +4116,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-114',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -4126,7 +4126,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-117',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -4136,7 +4136,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-120',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -4146,7 +4146,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-126',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -4156,7 +4156,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-127',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -4166,7 +4166,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-128',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -4176,7 +4176,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-134',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -4186,7 +4186,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-135',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -4196,7 +4196,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-15-138',
-      municipalityName: 'Kllokot/ Klokot',
+      municipalityName: 'Kllokot',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -4206,7 +4206,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-112',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -4216,7 +4216,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-116',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -4226,7 +4226,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-126',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -4236,7 +4236,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-132',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -4246,7 +4246,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-120',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -4256,7 +4256,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-118',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -4266,7 +4266,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-133',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -4276,7 +4276,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-131',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -4286,7 +4286,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-124',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -4296,7 +4296,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-121',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -4306,7 +4306,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-111',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -4316,7 +4316,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-113',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -4326,7 +4326,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-119',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -4336,7 +4336,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-135',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -4346,7 +4346,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-127',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -4356,7 +4356,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-123',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -4366,7 +4366,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-117',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -4376,7 +4376,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-125',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -4386,7 +4386,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-129',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -4396,7 +4396,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-137',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -4406,7 +4406,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-115',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -4416,7 +4416,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-122',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -4426,7 +4426,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-114',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -4436,7 +4436,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-128',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -4446,7 +4446,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-134',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -4456,7 +4456,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-138',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -4466,7 +4466,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-130',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -4476,7 +4476,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-16-136',
-      municipalityName: 'Leposaviq/ Leposavić',
+      municipalityName: 'Leposaviq',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -4486,7 +4486,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-118',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -4496,7 +4496,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-124',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -4506,7 +4506,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-131',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -4516,7 +4516,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-137',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -4526,7 +4526,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-129',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -4536,7 +4536,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-123',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -4546,7 +4546,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-112',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -4556,7 +4556,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-125',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -4566,7 +4566,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-132',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -4576,7 +4576,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-111',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -4586,7 +4586,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-115',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -4596,7 +4596,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-130',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -4606,7 +4606,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-136',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -4616,7 +4616,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-119',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -4626,7 +4626,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-134',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -4636,7 +4636,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-113',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -4646,7 +4646,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-138',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -4656,7 +4656,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-117',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -4666,7 +4666,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-127',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -4676,7 +4676,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-114',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -4686,7 +4686,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-133',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -4696,7 +4696,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-128',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -4706,7 +4706,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-116',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -4716,7 +4716,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-120',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -4726,7 +4726,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-121',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -4736,7 +4736,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-135',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -4746,7 +4746,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-122',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -4756,7 +4756,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-17-126',
-      municipalityName: 'Lipjan/ Lipljan',
+      municipalityName: 'Lipjan',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -4766,7 +4766,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-137',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -4776,7 +4776,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-118',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -4786,7 +4786,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-131',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -4796,7 +4796,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-124',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -4806,7 +4806,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-129',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -4816,7 +4816,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-138',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -4826,7 +4826,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-136',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -4836,7 +4836,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-111',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -4846,7 +4846,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-125',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -4856,7 +4856,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-135',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -4866,7 +4866,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-121',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -4876,7 +4876,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-123',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -4886,7 +4886,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-113',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -4896,7 +4896,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-117',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -4906,7 +4906,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-130',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -4916,7 +4916,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-127',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -4926,7 +4926,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-112',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -4936,7 +4936,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-119',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -4946,7 +4946,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-115',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -4956,7 +4956,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-128',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -4966,7 +4966,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-132',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -4976,7 +4976,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-134',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -4986,7 +4986,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-114',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -4996,7 +4996,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-133',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -5006,7 +5006,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-116',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -5016,7 +5016,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-120',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -5026,7 +5026,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-122',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -5036,7 +5036,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-18-126',
-      municipalityName: 'Malishevë/ Mališevo',
+      municipalityName: 'Malishevë',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -5046,7 +5046,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-134',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -5056,7 +5056,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-122',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -5066,7 +5066,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-118',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -5076,7 +5076,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-131',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -5086,7 +5086,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-124',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -5096,7 +5096,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-137',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -5106,7 +5106,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-119',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -5116,7 +5116,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-114',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -5126,7 +5126,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-130',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -5136,7 +5136,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-132',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -5146,7 +5146,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-133',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -5156,7 +5156,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-135',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -5166,7 +5166,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-112',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -5176,7 +5176,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-121',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -5186,7 +5186,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-111',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -5196,7 +5196,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-129',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -5206,7 +5206,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-136',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -5216,7 +5216,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-115',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -5226,7 +5226,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-116',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -5236,7 +5236,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-117',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -5246,7 +5246,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-123',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -5256,7 +5256,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-138',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -5266,7 +5266,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-113',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -5276,7 +5276,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-120',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -5286,7 +5286,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-125',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -5296,7 +5296,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-126',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -5306,7 +5306,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-127',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -5316,7 +5316,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-19-128',
-      municipalityName: 'Mamushë/ Mamuša',
+      municipalityName: 'Mamushë',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -5326,7 +5326,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-118',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -5336,7 +5336,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-131',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -5346,7 +5346,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-124',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -5356,7 +5356,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-129',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -5366,7 +5366,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-137',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -5376,7 +5376,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-111',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -5386,7 +5386,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-134',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -5396,7 +5396,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-125',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -5406,7 +5406,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-138',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -5416,7 +5416,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-112',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -5426,7 +5426,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-130',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -5436,7 +5436,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-119',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -5446,7 +5446,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-132',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -5456,7 +5456,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-113',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -5466,7 +5466,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-121',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -5476,7 +5476,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-123',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -5486,7 +5486,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-127',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -5496,7 +5496,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-115',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -5506,7 +5506,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-117',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -5516,7 +5516,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-136',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -5526,7 +5526,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-128',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -5536,7 +5536,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-135',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -5546,7 +5546,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-114',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -5556,7 +5556,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-122',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -5566,7 +5566,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-133',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -5576,7 +5576,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-116',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -5586,7 +5586,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-120',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -5596,7 +5596,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-20-126',
-      municipalityName: 'Mitrovicë E Jugut/ Južna Mitrovica',
+      municipalityName: 'Mitrovicë e Jugut',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -5606,7 +5606,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-112',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -5616,7 +5616,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-116',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -5626,7 +5626,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-118',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -5636,7 +5636,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-131',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -5646,7 +5646,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-133',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -5656,7 +5656,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-132',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -5666,7 +5666,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-124',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -5676,7 +5676,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-129',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -5686,7 +5686,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-121',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -5696,7 +5696,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-126',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -5706,7 +5706,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-119',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -5716,7 +5716,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-120',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -5726,7 +5726,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-137',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -5736,7 +5736,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-111',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -5746,7 +5746,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-113',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -5756,7 +5756,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-135',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -5766,7 +5766,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-130',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -5776,7 +5776,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-134',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -5786,7 +5786,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-127',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -5796,7 +5796,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-114',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -5806,7 +5806,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-117',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -5816,7 +5816,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-125',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -5826,7 +5826,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-122',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -5836,7 +5836,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-115',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -5846,7 +5846,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-136',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -5856,7 +5856,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-128',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -5866,7 +5866,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-138',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -5876,7 +5876,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-21-123',
-      municipalityName: 'Mitrovicë E Veriut/ Severna Mitrovica',
+      municipalityName: 'Mitrovicë e Veriut',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -5886,7 +5886,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-112',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -5896,7 +5896,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-118',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -5906,7 +5906,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-124',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -5916,7 +5916,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-131',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -5926,7 +5926,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-132',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -5936,7 +5936,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-137',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -5946,7 +5946,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-116',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -5956,7 +5956,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-129',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -5966,7 +5966,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-133',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -5976,7 +5976,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-111',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -5986,7 +5986,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-113',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -5996,7 +5996,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-123',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -6006,7 +6006,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-114',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -6016,7 +6016,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-117',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -6026,7 +6026,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-122',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -6036,7 +6036,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-134',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -6046,7 +6046,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-136',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -6056,7 +6056,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-119',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -6066,7 +6066,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-120',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -6076,7 +6076,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-125',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -6086,7 +6086,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-126',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -6096,7 +6096,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-130',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -6106,7 +6106,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-115',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -6116,7 +6116,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-121',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -6126,7 +6126,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-127',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -6136,7 +6136,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-128',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -6146,7 +6146,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-135',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -6156,7 +6156,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-22-138',
-      municipalityName: 'Novobërdë/ Novo Brdo',
+      municipalityName: 'Novobërdë',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -6166,7 +6166,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-118',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -6176,7 +6176,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-124',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -6186,7 +6186,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-131',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -6196,7 +6196,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-112',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -6206,7 +6206,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-129',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -6216,7 +6216,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-137',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -6226,7 +6226,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-132',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -6236,7 +6236,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-123',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -6246,7 +6246,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-115',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -6256,7 +6256,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-111',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -6266,7 +6266,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-133',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -6276,7 +6276,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-116',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -6286,7 +6286,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-120',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -6296,7 +6296,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-136',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -6306,7 +6306,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-127',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -6316,7 +6316,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-125',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -6326,7 +6326,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-114',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -6336,7 +6336,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-138',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -6346,7 +6346,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-117',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -6356,7 +6356,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-135',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -6366,7 +6366,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-119',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -6376,7 +6376,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-113',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -6386,7 +6386,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-126',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -6396,7 +6396,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-122',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -6406,7 +6406,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-128',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -6416,7 +6416,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-130',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -6426,7 +6426,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-134',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -6436,7 +6436,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-23-121',
-      municipalityName: 'Obiliq/ Obilić',
+      municipalityName: 'Obiliq',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -6446,7 +6446,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-112',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -6456,7 +6456,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-132',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -6466,7 +6466,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-133',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -6476,7 +6476,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-118',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -6486,7 +6486,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-116',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -6496,7 +6496,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-124',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -6506,7 +6506,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-131',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -6516,7 +6516,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-111',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -6526,7 +6526,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-119',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -6536,7 +6536,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-120',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -6546,7 +6546,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-129',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -6556,7 +6556,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-113',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -6566,7 +6566,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-117',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -6576,7 +6576,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-121',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -6586,7 +6586,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-123',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -6596,7 +6596,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-130',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -6606,7 +6606,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-138',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -6616,7 +6616,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-114',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -6626,7 +6626,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-115',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -6636,7 +6636,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-122',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -6646,7 +6646,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-125',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -6656,7 +6656,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-126',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -6666,7 +6666,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-127',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -6676,7 +6676,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-128',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -6686,7 +6686,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-134',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -6696,7 +6696,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-135',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -6706,7 +6706,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-136',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -6716,7 +6716,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-24-137',
-      municipalityName: 'Partesh/ Parteš',
+      municipalityName: 'Partesh',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -6726,7 +6726,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-118',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -6736,7 +6736,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-124',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -6746,7 +6746,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-137',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -6756,7 +6756,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-131',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -6766,7 +6766,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-111',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -6776,7 +6776,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-121',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -6786,7 +6786,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-115',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -6796,7 +6796,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-119',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -6806,7 +6806,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-129',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -6816,7 +6816,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-112',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -6826,7 +6826,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-138',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -6836,7 +6836,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-127',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -6846,7 +6846,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-135',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -6856,7 +6856,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-117',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -6866,7 +6866,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-114',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -6876,7 +6876,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-136',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -6886,7 +6886,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-123',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -6896,7 +6896,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-113',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -6906,7 +6906,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-132',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -6916,7 +6916,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-125',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -6926,7 +6926,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-130',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -6936,7 +6936,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-116',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -6946,7 +6946,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-128',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -6956,7 +6956,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-133',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -6966,7 +6966,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-134',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -6976,7 +6976,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-120',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -6986,7 +6986,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-126',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -6996,7 +6996,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-25-122',
-      municipalityName: 'Pejë/ Peć',
+      municipalityName: 'Pejë',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -7006,7 +7006,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-118',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -7016,7 +7016,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-124',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -7026,7 +7026,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-131',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -7036,7 +7036,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-129',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -7046,7 +7046,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-137',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -7056,7 +7056,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-123',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -7066,7 +7066,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-125',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -7076,7 +7076,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-115',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -7086,7 +7086,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-111',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -7096,7 +7096,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-114',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -7106,7 +7106,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-138',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -7116,7 +7116,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-117',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -7126,7 +7126,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-112',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -7136,7 +7136,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-132',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -7146,7 +7146,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-119',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -7156,7 +7156,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-113',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -7166,7 +7166,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-130',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -7176,7 +7176,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-128',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -7186,7 +7186,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-135',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -7196,7 +7196,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-116',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -7206,7 +7206,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-122',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -7216,7 +7216,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-134',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -7226,7 +7226,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-127',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -7236,7 +7236,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-120',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -7246,7 +7246,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-121',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -7256,7 +7256,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-126',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -7266,7 +7266,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-133',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -7276,7 +7276,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-26-136',
-      municipalityName: 'Podujevë/ Podujevo',
+      municipalityName: 'Podujevë',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -7286,7 +7286,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-118',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -7296,7 +7296,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-124',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -7306,7 +7306,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-131',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -7316,7 +7316,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-129',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -7326,7 +7326,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-137',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -7336,7 +7336,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-134',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -7346,7 +7346,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-112',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -7356,7 +7356,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-111',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -7366,7 +7366,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-130',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -7376,7 +7376,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-119',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -7386,7 +7386,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-138',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -7396,7 +7396,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-132',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -7406,7 +7406,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-127',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -7416,7 +7416,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-117',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -7426,7 +7426,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-123',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -7436,7 +7436,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-125',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -7446,7 +7446,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-135',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -7456,7 +7456,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-115',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -7466,7 +7466,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-113',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -7476,7 +7476,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-114',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -7486,7 +7486,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-128',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -7496,7 +7496,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-116',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -7506,7 +7506,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-121',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -7516,7 +7516,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-122',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -7526,7 +7526,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-133',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -7536,7 +7536,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-136',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -7546,7 +7546,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-126',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -7556,7 +7556,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-27-120',
-      municipalityName: 'Prishtinë/ Priština',
+      municipalityName: 'Prishtinë',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -7566,7 +7566,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-118',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -7576,7 +7576,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-131',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -7586,7 +7586,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-124',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -7596,7 +7596,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-137',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -7606,7 +7606,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-135',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -7616,7 +7616,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-134',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -7626,7 +7626,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-119',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -7636,7 +7636,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-129',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -7646,7 +7646,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-127',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -7656,7 +7656,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-130',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -7666,7 +7666,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-114',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -7676,7 +7676,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-121',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -7686,7 +7686,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-111',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -7696,7 +7696,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-132',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -7706,7 +7706,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-113',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -7716,7 +7716,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-115',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -7726,7 +7726,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-138',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -7736,7 +7736,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-123',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -7746,7 +7746,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-125',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -7756,7 +7756,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-112',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -7766,7 +7766,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-117',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -7776,7 +7776,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-122',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -7786,7 +7786,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-128',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -7796,7 +7796,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-136',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -7806,7 +7806,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-116',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -7816,7 +7816,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-126',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -7826,7 +7826,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-133',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -7836,7 +7836,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-28-120',
-      municipalityName: 'Prizren/ Prizren',
+      municipalityName: 'Prizren',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -7846,7 +7846,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-118',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -7856,7 +7856,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-131',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -7866,7 +7866,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-137',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -7876,7 +7876,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-124',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -7886,7 +7886,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-129',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -7896,7 +7896,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-112',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -7906,7 +7906,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-111',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -7916,7 +7916,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-115',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -7926,7 +7926,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-138',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -7936,7 +7936,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-132',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -7946,7 +7946,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-114',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -7956,7 +7956,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-116',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -7966,7 +7966,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-119',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -7976,7 +7976,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-113',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -7986,7 +7986,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-135',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -7996,7 +7996,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-123',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -8006,7 +8006,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-133',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -8016,7 +8016,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-125',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -8026,7 +8026,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-127',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -8036,7 +8036,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-134',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -8046,7 +8046,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-136',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -8056,7 +8056,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-117',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -8066,7 +8066,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-130',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -8076,7 +8076,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-128',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -8086,7 +8086,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-121',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -8096,7 +8096,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-120',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -8106,7 +8106,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-126',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -8116,7 +8116,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-29-122',
-      municipalityName: 'Rahovec/ Orahovac',
+      municipalityName: 'Rahovec',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -8126,7 +8126,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-112',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -8136,7 +8136,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-132',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -8146,7 +8146,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-133',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -8156,7 +8156,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-116',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -8166,7 +8166,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-118',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -8176,7 +8176,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-121',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -8186,7 +8186,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-124',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -8196,7 +8196,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-111',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -8206,7 +8206,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-131',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -8216,7 +8216,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-113',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -8226,7 +8226,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-120',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -8236,7 +8236,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-123',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -8246,7 +8246,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-137',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -8256,7 +8256,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-119',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -8266,7 +8266,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-126',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -8276,7 +8276,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-114',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -8286,7 +8286,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-115',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -8296,7 +8296,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-129',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -8306,7 +8306,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-136',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -8316,7 +8316,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-117',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -8326,7 +8326,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-122',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -8336,7 +8336,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-125',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -8346,7 +8346,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-127',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -8356,7 +8356,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-128',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -8366,7 +8366,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-130',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -8376,7 +8376,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-134',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -8386,7 +8386,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-135',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -8396,7 +8396,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-30-138',
-      municipalityName: 'Ranillug/ Ranilug',
+      municipalityName: 'Ranillug',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -8406,7 +8406,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-118',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -8416,7 +8416,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-131',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -8426,7 +8426,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-124',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -8436,7 +8436,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-137',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -8446,7 +8446,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-129',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -8456,7 +8456,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-123',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -8466,7 +8466,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-111',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -8476,7 +8476,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-125',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -8486,7 +8486,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-113',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -8496,7 +8496,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-138',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -8506,7 +8506,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-115',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -8516,7 +8516,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-114',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -8526,7 +8526,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-130',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -8536,7 +8536,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-117',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -8546,7 +8546,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-132',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -8556,7 +8556,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-136',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -8566,7 +8566,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-119',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -8576,7 +8576,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-135',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -8586,7 +8586,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-127',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -8596,7 +8596,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-112',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -8606,7 +8606,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-116',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -8616,7 +8616,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-121',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -8626,7 +8626,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-122',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -8636,7 +8636,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-126',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -8646,7 +8646,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-128',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -8656,7 +8656,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-133',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -8666,7 +8666,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-134',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -8676,7 +8676,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-31-120',
-      municipalityName: 'Shtime/ Štimlje',
+      municipalityName: 'Shtime',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -8686,7 +8686,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-112',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -8696,7 +8696,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-118',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -8706,7 +8706,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-132',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -8716,7 +8716,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-131',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -8726,7 +8726,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-124',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -8736,7 +8736,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-133',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -8746,7 +8746,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-116',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -8756,7 +8756,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-137',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -8766,7 +8766,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-129',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -8776,7 +8776,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-111',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -8786,7 +8786,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-117',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -8796,7 +8796,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-120',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -8806,7 +8806,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-113',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -8816,7 +8816,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-123',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -8826,7 +8826,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-126',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -8836,7 +8836,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-121',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -8846,7 +8846,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-115',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -8856,7 +8856,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-127',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -8866,7 +8866,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-130',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -8876,7 +8876,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-125',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -8886,7 +8886,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-119',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -8896,7 +8896,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-122',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -8906,7 +8906,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-128',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -8916,7 +8916,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-135',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -8926,7 +8926,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-136',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -8936,7 +8936,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-114',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -8946,7 +8946,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-134',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -8956,7 +8956,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-32-138',
-      municipalityName: 'Shtërpcë/ Štrpce',
+      municipalityName: 'Shtërpcë',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -8966,7 +8966,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-131',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -8976,7 +8976,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-118',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -8986,7 +8986,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-137',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -8996,7 +8996,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-124',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -9006,7 +9006,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-129',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -9016,7 +9016,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-112',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -9026,7 +9026,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-111',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -9036,7 +9036,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-113',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -9046,7 +9046,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-130',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -9056,7 +9056,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-138',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -9066,7 +9066,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-132',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -9076,7 +9076,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-115',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -9086,7 +9086,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-123',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -9096,7 +9096,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-116',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -9106,7 +9106,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-125',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -9116,7 +9116,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-126',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -9126,7 +9126,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-133',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -9136,7 +9136,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-117',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -9146,7 +9146,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-121',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -9156,7 +9156,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-135',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -9166,7 +9166,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-136',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -9176,7 +9176,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-114',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -9186,7 +9186,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-119',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -9196,7 +9196,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-128',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -9206,7 +9206,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-134',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -9216,7 +9216,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-120',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -9226,7 +9226,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-122',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -9236,7 +9236,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-33-127',
-      municipalityName: 'Skenderaj/ Srbica',
+      municipalityName: 'Skenderaj',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -9246,7 +9246,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-118',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -9256,7 +9256,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-124',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -9266,7 +9266,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-131',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -9276,7 +9276,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-137',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -9286,7 +9286,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-129',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -9296,7 +9296,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-125',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -9306,7 +9306,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-111',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -9316,7 +9316,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-115',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -9326,7 +9326,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-114',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -9336,7 +9336,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-123',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -9346,7 +9346,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-138',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -9356,7 +9356,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-136',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -9366,7 +9366,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-117',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -9376,7 +9376,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-119',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -9386,7 +9386,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-113',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -9396,7 +9396,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-135',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -9406,7 +9406,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-127',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -9416,7 +9416,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-130',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -9426,7 +9426,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-128',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -9436,7 +9436,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-132',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -9446,7 +9446,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-134',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -9456,7 +9456,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-112',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -9466,7 +9466,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-121',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -9476,7 +9476,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-116',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -9486,7 +9486,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-126',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -9496,7 +9496,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-120',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -9506,7 +9506,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-122',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -9516,7 +9516,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-34-133',
-      municipalityName: 'Suharekë/ Suvareka',
+      municipalityName: 'Suharekë',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -9526,7 +9526,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-118',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -9536,7 +9536,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-124',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -9546,7 +9546,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-131',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -9556,7 +9556,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-137',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -9566,7 +9566,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-129',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -9576,7 +9576,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-112',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -9586,7 +9586,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-111',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -9596,7 +9596,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-117',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -9606,7 +9606,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-113',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -9616,7 +9616,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-138',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -9626,7 +9626,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-125',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -9636,7 +9636,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-123',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -9646,7 +9646,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-119',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -9656,7 +9656,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-130',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -9666,7 +9666,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-133',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -9676,7 +9676,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-135',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -9686,7 +9686,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-127',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -9696,7 +9696,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-132',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -9706,7 +9706,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-114',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -9716,7 +9716,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-116',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -9726,7 +9726,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-121',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -9736,7 +9736,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-134',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -9746,7 +9746,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-122',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -9756,7 +9756,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-128',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -9766,7 +9766,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-136',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -9776,7 +9776,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-115',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -9786,7 +9786,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-120',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -9796,7 +9796,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-35-126',
-      municipalityName: 'Viti/ Vitina',
+      municipalityName: 'Viti',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -9806,7 +9806,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-118',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -9816,7 +9816,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-131',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -9826,7 +9826,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-124',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -9836,7 +9836,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-129',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -9846,7 +9846,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-137',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -9856,7 +9856,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-112',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -9866,7 +9866,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-134',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -9876,7 +9876,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-127',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -9886,7 +9886,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-132',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -9896,7 +9896,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-111',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -9906,7 +9906,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-116',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -9916,7 +9916,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-117',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -9926,7 +9926,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-113',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -9936,7 +9936,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-138',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -9946,7 +9946,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-125',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -9956,7 +9956,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-123',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -9966,7 +9966,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-133',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -9976,7 +9976,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-114',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -9986,7 +9986,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-119',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -9996,7 +9996,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-130',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -10006,7 +10006,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-115',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -10016,7 +10016,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-136',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -10026,7 +10026,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-122',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -10036,7 +10036,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-120',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -10046,7 +10046,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-128',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -10056,7 +10056,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-135',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -10066,7 +10066,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-121',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -10076,7 +10076,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-36-126',
-      municipalityName: 'Vushtrri/ Vučitrn',
+      municipalityName: 'Vushtrri',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -10086,7 +10086,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-112',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -10096,7 +10096,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-133',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -10106,7 +10106,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-118',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -10116,7 +10116,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-116',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -10126,7 +10126,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-132',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -10136,7 +10136,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-131',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -10146,7 +10146,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-126',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -10156,7 +10156,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-124',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -10166,7 +10166,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-137',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -10176,7 +10176,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-111',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -10186,7 +10186,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-129',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -10196,7 +10196,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-120',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -10206,7 +10206,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-113',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -10216,7 +10216,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-119',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -10226,7 +10226,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-121',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -10236,7 +10236,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-122',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -10246,7 +10246,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-123',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -10256,7 +10256,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-114',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -10266,7 +10266,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-127',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -10276,7 +10276,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-135',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -10286,7 +10286,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-115',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -10296,7 +10296,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-117',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -10306,7 +10306,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-125',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -10316,7 +10316,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-128',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -10326,7 +10326,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-130',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -10336,7 +10336,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-134',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -10346,7 +10346,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-136',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -10356,7 +10356,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-37-138',
-      municipalityName: 'Zubin Potok/ Zubin Potok',
+      municipalityName: 'Zubin Potok',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -10366,7 +10366,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-112',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '112',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -10376,7 +10376,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-116',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '116',
       subjectName: 'SRPSKA DEMOKRATIJA',
       shortName: 'SD',
@@ -10386,7 +10386,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-118',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '118',
       subjectName: 'Lëvizja VETËVENDOSJE!',
       shortName: 'LVV',
@@ -10396,7 +10396,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-133',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '133',
       subjectName: 'Srpski narodni pokret',
       shortName: 'SNP',
@@ -10406,7 +10406,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-131',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '131',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK',
       shortName: 'PDK',
@@ -10416,7 +10416,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-126',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '126',
       subjectName: 'GRADJANSKA INICIJATIVA NARODNA PRAVDA',
       shortName: 'GINP',
@@ -10426,7 +10426,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-132',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '132',
       subjectName: 'Za Slobodu Pravdu i Opstanak',
       shortName: 'ZSPO',
@@ -10436,7 +10436,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-120',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '120',
       subjectName: 'Partija kosovskih Srba',
       shortName: 'PKS',
@@ -10446,7 +10446,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-124',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '124',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK',
       shortName: 'LDK',
@@ -10456,7 +10456,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-111',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '111',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS - IRDK',
       shortName: 'IRDK',
@@ -10466,7 +10466,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-119',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '119',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'NDS',
@@ -10476,7 +10476,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-121',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '121',
       subjectName: 'Naša Bošnjačka Koalicija (Naša Inicijativa i Bošnjačka stranka)',
       shortName: 'NBK',
@@ -10486,7 +10486,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-113',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '113',
       subjectName: 'Jedinstvena Goranska Partija',
       shortName: 'JGP',
@@ -10496,7 +10496,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-129',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '129',
       subjectName: 'Koalicioni për Familje',
       shortName: 'Koalicioni për Familje',
@@ -10506,7 +10506,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-137',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '137',
       subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS NISMA - Nisma Socialdemokrate, Konservatorët, Intelektualët',
       shortName: 'AAK–NISMA',
@@ -10516,7 +10516,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-122',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '122',
       subjectName: 'Kosova Adalet Türk Partisi',
       shortName: 'KATP',
@@ -10526,7 +10526,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-128',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '128',
       subjectName: 'Fatmir Bytyqi',
       shortName: 'Fatmir Bytyqi',
@@ -10536,7 +10536,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-135',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '135',
       subjectName: 'Koalicija Vakat',
       shortName: 'VAKAT',
@@ -10546,7 +10546,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-117',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '117',
       subjectName: 'Partia Balli Kombëtar Demokrat Shqiptar',
       shortName: 'PBKDSH',
@@ -10556,7 +10556,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-123',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '123',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'PAI',
@@ -10566,7 +10566,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-127',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '127',
       subjectName: 'SOCIJALDEMOKRATSKA UNIJA - SDU',
       shortName: 'SDU',
@@ -10576,7 +10576,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-114',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '114',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'PREBK',
@@ -10586,7 +10586,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-115',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '115',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE-PLE',
       shortName: 'PLE',
@@ -10596,7 +10596,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-125',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '125',
       subjectName: 'PDAK-LPB',
       shortName: 'PDAK-LPB',
@@ -10606,7 +10606,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-130',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '130',
       subjectName: 'Yenilikçi Türk Hareket Partisi',
       shortName: 'YTHP',
@@ -10616,7 +10616,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-134',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '134',
       subjectName: 'KOSOVA DEMOKRATİK TÜRK PARTİSİ',
       shortName: 'KDTP',
@@ -10626,7 +10626,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-136',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '136',
       subjectName: 'Opre Roma Kosova',
       shortName: 'Opre Roma',
@@ -10636,7 +10636,7 @@ class Parliamentary2025MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2025-38-138',
-      municipalityName: 'Zveçan/ Zvečan',
+      municipalityName: 'Zveçan',
       subjectCode: '138',
       subjectName: 'FJALA',
       shortName: 'FJALA',

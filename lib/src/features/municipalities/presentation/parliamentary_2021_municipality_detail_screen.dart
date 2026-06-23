@@ -3,23 +3,23 @@ import 'package:flutter/material.dart';
 import '../../../core/models/municipality_party_result.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/utils/app_formatters.dart';
-import '../../parliamentary_2025/data/parliamentary_2025_municipality_party_data.dart';
+import '../../parliamentary_2021/data/parliamentary_2021_municipality_party_data.dart';
 
-class Parliamentary2025MunicipalityDetailScreen extends StatefulWidget {
+class Parliamentary2021MunicipalityDetailScreen extends StatefulWidget {
   final String municipalityName;
 
-  const Parliamentary2025MunicipalityDetailScreen({
+  const Parliamentary2021MunicipalityDetailScreen({
     super.key,
     required this.municipalityName,
   });
 
   @override
-  State<Parliamentary2025MunicipalityDetailScreen> createState() =>
-      _Parliamentary2025MunicipalityDetailScreenState();
+  State<Parliamentary2021MunicipalityDetailScreen> createState() =>
+      _Parliamentary2021MunicipalityDetailScreenState();
 }
 
-class _Parliamentary2025MunicipalityDetailScreenState
-    extends State<Parliamentary2025MunicipalityDetailScreen> {
+class _Parliamentary2021MunicipalityDetailScreenState
+    extends State<Parliamentary2021MunicipalityDetailScreen> {
   final TextEditingController _searchController = TextEditingController();
 
   String _query = '';
@@ -45,7 +45,7 @@ class _Parliamentary2025MunicipalityDetailScreenState
   }
 
   List<MunicipalityPartyResult> get _allResults {
-    return Parliamentary2025MunicipalityPartyData.forMunicipality(
+    return Parliamentary2021MunicipalityPartyData.forMunicipality(
       widget.municipalityName,
     );
   }
@@ -120,7 +120,7 @@ class _Parliamentary2025MunicipalityDetailScreenState
                 ),
                 const SizedBox(height: 5),
                 const Text(
-                  'Parlamentare 2025 · Rezultatet sipas subjekteve',
+                  'Parlamentare 2021 · Rezultatet sipas subjekteve',
                   style: TextStyle(
                     color: Color(0xFFEAF2FF),
                     fontSize: 12.8,

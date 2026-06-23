@@ -6,10 +6,12 @@ import '../../../core/models/municipality_result.dart';
 import '../../../core/services/selected_election_controller.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/utils/app_formatters.dart';
+import '../../../core/utils/municipality_name_helper.dart';
 import '../../../core/widgets/app_state_cards.dart';
 import '../../../core/widgets/election_picker_card.dart';
 import '../../../core/widgets/premium_components.dart';
 import '../../results/data/election_repository.dart';
+import 'parliamentary_2021_municipality_detail_screen.dart';
 import 'parliamentary_2025_municipality_detail_screen.dart';
 
 enum MunicipalitySortMode {
@@ -38,13 +40,30 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
   @override
   void initState() {
     super.initState();
+    SelectedElectionController.selectedElection.addListener(
+      _handleElectionChanged,
+    );
     _loadMunicipalities();
   }
 
   @override
   void dispose() {
+    SelectedElectionController.selectedElection.removeListener(
+      _handleElectionChanged,
+    );
     _searchController.dispose();
     super.dispose();
+  }
+
+  void _handleElectionChanged() {
+    if (!mounted) return;
+
+    _searchController.clear();
+    setState(() {
+      _searchQuery = '';
+      _sortMode = MunicipalitySortMode.name;
+      _loadMunicipalities();
+    });
   }
 
   void _loadMunicipalities() {
@@ -67,6 +86,20 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
     return ElectionDataStatus.hasOfficialMunicipalityResults(source);
   }
 
+  String _normalizeSearchText(String value) {
+    return value
+        .toLowerCase()
+        .replaceAll('ë', 'e')
+        .replaceAll('ç', 'c')
+        .replaceAll('č', 'c')
+        .replaceAll('ć', 'c')
+        .replaceAll('š', 's')
+        .replaceAll('ž', 'z')
+        .replaceAll('đ', 'd')
+        .replaceAll(RegExp(r'[^a-z0-9]+'), ' ')
+        .trim();
+  }
+
   String _municipalityNoticeMessage(ElectionSource source) {
     if (_hasOfficialMunicipalityResults(source)) {
       return 'Të dhënat janë importuar nga skedari zyrtar i KQZ. Votuesit dhe dalja nuk shfaqen, sepse skedari nuk i përmban.';
@@ -86,14 +119,17 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
   List<MunicipalityResult> _filterAndSort(
     List<MunicipalityResult> municipalities,
   ) {
-    final query = _searchQuery.trim().toLowerCase();
+    final query = _normalizeSearchText(_searchQuery);
 
     final filtered = municipalities.where((item) {
       if (query.isEmpty) return true;
 
-      return item.name.toLowerCase().contains(query) ||
-          item.leadingSubject.toLowerCase().contains(query) ||
-          item.id.toLowerCase().contains(query);
+      final searchable = _normalizeSearchText(
+        '${MunicipalityNameHelper.searchableText(item.name)} '
+        '${item.leadingSubject} ${item.id}',
+      );
+
+      return searchable.contains(query);
     }).toList();
 
     switch (_sortMode) {
@@ -169,7 +205,7 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                   children: [
                     const _PageHeader(),
                     const SizedBox(height: 9),
-                    ElectionPickerCard(onChanged: _refresh),
+                    const ElectionPickerCard(),
                     const SizedBox(height: 9),
                     _CompactMunicipalityNotice(
                       message: _municipalityNoticeMessage(selectedElection),
@@ -227,20 +263,29 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                               (entry) => _MunicipalityCard(
                                 rank: entry.key + 1,
                                 result: entry.value,
-                                onTap: selectedElection.type ==
-                                        ElectionSourceType.parliamentary2025
-                                    ? () {
-                                        Navigator.of(context).push(
-                                          MaterialPageRoute<void>(
-                                            builder: (_) =>
-                                                Parliamentary2025MunicipalityDetailScreen(
-                                              municipalityName:
-                                                  entry.value.name,
-                                            ),
+                                onTap: switch (selectedElection.type) {
+                                  ElectionSourceType.parliamentary2025 => () {
+                                      Navigator.of(context).push(
+                                        MaterialPageRoute<void>(
+                                          builder: (_) =>
+                                              Parliamentary2025MunicipalityDetailScreen(
+                                            municipalityName: entry.value.name,
                                           ),
-                                        );
-                                      }
-                                    : null,
+                                        ),
+                                      );
+                                    },
+                                  ElectionSourceType.parliamentary2021 => () {
+                                      Navigator.of(context).push(
+                                        MaterialPageRoute<void>(
+                                          builder: (_) =>
+                                              Parliamentary2021MunicipalityDetailScreen(
+                                            municipalityName: entry.value.name,
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  _ => null,
+                                },
                               ),
                             ),
                     ],

@@ -49,7 +49,8 @@ class ElectionDataStatus {
   }
 
   static bool hasOfficialMunicipalityResults(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2025;
+    return source.type == ElectionSourceType.parliamentary2025 ||
+        source.type == ElectionSourceType.parliamentary2021;
   }
 
   static String resultEmptyMessage(ElectionSource source) {
