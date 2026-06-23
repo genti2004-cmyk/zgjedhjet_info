@@ -103,7 +103,7 @@ class AppTheme {
         prefixIconColor: textMuted,
         suffixIconColor: textMuted,
         labelStyle: const TextStyle(
-          color: textMuted,
+          color: Color(0xFF536579),
           fontWeight: FontWeight.w700,
         ),
         hintStyle: const TextStyle(
@@ -169,7 +169,7 @@ class AppTheme {
         ),
       ),
       navigationBarTheme: NavigationBarThemeData(
-        height: 76,
+        height: 82,
         elevation: 0,
         backgroundColor: surface,
         surfaceTintColor: Colors.transparent,

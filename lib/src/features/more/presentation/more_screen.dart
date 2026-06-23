@@ -24,10 +24,10 @@ class MoreScreen extends StatelessWidget {
         title: const Text('Më shumë'),
       ),
       body: ListView(
-        padding: const EdgeInsets.fromLTRB(18, 12, 18, 24),
+        padding: const EdgeInsets.fromLTRB(18, 14, 18, 26),
         children: [
           Container(
-            padding: const EdgeInsets.fromLTRB(18, 18, 18, 18),
+            padding: const EdgeInsets.fromLTRB(18, 20, 18, 20),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
                 colors: [
@@ -57,7 +57,7 @@ class MoreScreen extends StatelessWidget {
                         'Më shumë',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 22,
+                          fontSize: 24,
                           fontWeight: FontWeight.w900,
                         ),
                       ),
@@ -77,7 +77,12 @@ class MoreScreen extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 18),
+          const _SectionLabel(
+            title: 'Shërbimet',
+            subtitle: 'Qasje e shpejtë në funksionet shtesë.',
+          ),
+          const SizedBox(height: 10),
           _MoreTile(
             icon: Icons.people_alt_rounded,
             title: 'Kandidatët',
@@ -107,6 +112,37 @@ class MoreScreen extends StatelessWidget {
   }
 }
 
+class _SectionLabel extends StatelessWidget {
+  final String title;
+  final String subtitle;
+
+  const _SectionLabel({
+    required this.title,
+    required this.subtitle,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 2),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            title,
+            style: Theme.of(context).textTheme.headlineSmall,
+          ),
+          const SizedBox(height: 3),
+          Text(
+            subtitle,
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class _MoreTile extends StatelessWidget {
   final IconData icon;
   final String title;
@@ -127,12 +163,12 @@ class _MoreTile extends StatelessWidget {
         onTap: onTap,
         borderRadius: BorderRadius.circular(22),
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(15, 15, 13, 15),
+          padding: const EdgeInsets.fromLTRB(14, 14, 12, 14),
           child: Row(
             children: [
               Container(
-                height: 48,
-                width: 48,
+                height: 50,
+                width: 50,
                 decoration: BoxDecoration(
                   color: AppTheme.softNavy,
                   borderRadius: BorderRadius.circular(16),

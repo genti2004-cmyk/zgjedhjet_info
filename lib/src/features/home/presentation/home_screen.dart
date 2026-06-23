@@ -271,10 +271,13 @@ class _PremiumHero extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Align(
-            alignment: Alignment.centerRight,
-            child: _HeroStatusPill(
-              label: statusText,
-              isOfficial: isOfficial,
+            alignment: Alignment.centerLeft,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 60),
+              child: _HeroStatusPill(
+                label: statusText,
+                isOfficial: isOfficial,
+              ),
             ),
           ),
           const SizedBox(height: 16),
