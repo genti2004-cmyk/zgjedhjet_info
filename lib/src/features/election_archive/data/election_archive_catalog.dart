@@ -18,8 +18,8 @@ class ElectionArchiveCatalog {
     ),
     ElectionArchiveItem(
       id: 'parliamentary-2025',
-      title: 'Zgjedhjet për Kuvendin e Kosovës 2025',
-      shortTitle: 'Parlamentare 2025',
+      title: 'Zgjedhjet për Kuvendin e Kosovës - 9 Shkurt 2025',
+      shortTitle: 'Parlamentare 9 Shkurt 2025',
       type: 'Parlamentare',
       dateLabel: '09.02.2025',
       statusLabel: 'Rezultatet, kandidatët dhe rezultatet sipas komunave janë vendosur nga dokumentet zyrtare të KQZ.',

@@ -120,7 +120,7 @@ class _Parliamentary2025DecemberMunicipalityDetailScreenState
                 ),
                 const SizedBox(height: 5),
                 const Text(
-                  'Parlamentare 2025 · Rezultatet sipas subjekteve',
+                  '28 Dhjetor 2025 · Rezultatet sipas subjekteve',
                   style: TextStyle(
                     color: Color(0xFFEAF2FF),
                     fontSize: 12.8,

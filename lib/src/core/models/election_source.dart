@@ -59,9 +59,9 @@ class ElectionSource {
 
   static final ElectionSource parliamentary2025 = ElectionSource(
     id: 'parliamentary-2025',
-    title: 'Zgjedhjet për Kuvend të Kosovës 2025',
-    shortTitle: 'Parlamentare 2025',
-    description: 'Rezultatet zyrtare për zgjedhjet parlamentare 2025.',
+    title: 'Zgjedhjet për Kuvendin e Kosovës - 9 Shkurt 2025',
+    shortTitle: 'Parlamentare 9 Shkurt 2025',
+    description: 'Rezultatet përfundimtare zyrtare të KQZ për zgjedhjet e 9 shkurtit 2025.',
     type: ElectionSourceType.parliamentary2025,
     officialUrl: 'https://resultsparliamentary2025.kqz-ks.org/',
     date: DateTime(2025, 2, 9),

@@ -85,7 +85,12 @@ class _DataStatusCard extends StatelessWidget {
       title: 'Statusi i të dhënave',
       children: [
         _StatusLine(
-          label: 'Parlamentare 2025',
+          label: 'Parlamentare 28 Dhjetor 2025',
+          value: 'Aktive',
+          done: true,
+        ),
+        _StatusLine(
+          label: 'Parlamentare 9 Shkurt 2025',
           value: 'Aktive',
           done: true,
         ),
@@ -154,19 +159,19 @@ class _CoverageCard extends StatelessWidget {
       children: [
         _InfoRow(
           label: 'Rezultate',
-          value: '2025, 2021, 2019, 2017, 2014, 2010',
+          value: '28 Dhjetor 2025, 9 Shkurt 2025, 2021–2010',
         ),
         _InfoRow(
           label: 'Kandidatë',
-          value: '2025, 2021, 2019, 2017, 2014, 2010',
+          value: '28 Dhjetor 2025, 9 Shkurt 2025, 2021–2010',
         ),
         _InfoRow(
           label: 'Burime',
-          value: 'Parlamentare 2010–2025 dhe Lokale 2017',
+          value: 'Parlamentare 2001–2025 dhe Lokale 2017',
         ),
         _InfoRow(
           label: 'Komuna',
-          value: 'Pa të dhëna parlamentare të importuara',
+          value: 'Rezultate parlamentare sipas komunave 2001–2025',
         ),
         _InfoRow(
           label: 'Lokale 2017',

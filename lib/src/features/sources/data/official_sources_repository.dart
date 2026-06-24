@@ -22,10 +22,18 @@ class OfficialSourcesRepository {
         type: 'Rezultate',
       ),
       OfficialSource(
-        id: 'parliamentary-2025',
-        title: 'Rezultatet Parlamentare 2025',
+        id: 'parliamentary-2025-december',
+        title: 'Parlamentare 28 Dhjetor 2025',
         description:
-        'Platforma elektronike e KQZ për rezultatet e zgjedhjeve parlamentare 2025.',
+        'Dokumentet dhe rezultatet zyrtare të KQZ për zgjedhjet e parakohshme të 28 dhjetorit 2025.',
+        url: 'https://kqz-ks.org/zgjedhjet-e-pergjithshme/',
+        type: 'Dokumente zyrtare',
+      ),
+      OfficialSource(
+        id: 'parliamentary-2025-february',
+        title: 'Parlamentare 9 Shkurt 2025',
+        description:
+        'Platforma elektronike e KQZ për rezultatet e zgjedhjeve të 9 shkurtit 2025.',
         url: 'https://resultsparliamentary2025.kqz-ks.org/',
         type: 'Platformë rezultatesh',
       ),
