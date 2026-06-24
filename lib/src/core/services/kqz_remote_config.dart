@@ -9,8 +9,10 @@ class KqzRemoteConfig {
 
   static String sourceNameFor(ElectionSource source) {
     switch (source.type) {
+      case ElectionSourceType.parliamentary2025December:
+        return 'KQZ Parlamentare 28 Dhjetor 2025';
       case ElectionSourceType.parliamentary2025:
-        return 'KQZ Parlamentare 2025';
+        return 'KQZ Parlamentare 9 Shkurt 2025';
       case ElectionSourceType.parliamentary2021:
         return 'KQZ Parlamentare 2021';
       case ElectionSourceType.parliamentary2019:
@@ -38,6 +40,8 @@ class KqzRemoteConfig {
 
   static String endpointFor(ElectionSourceType type) {
     switch (type) {
+      case ElectionSourceType.parliamentary2025December:
+        return 'https://kqz-ks.org/zgjedhjet-e-pergjithshme/';
       case ElectionSourceType.parliamentary2025:
         return 'https://resultsparliamentary2025.kqz-ks.org/';
       case ElectionSourceType.parliamentary2021:

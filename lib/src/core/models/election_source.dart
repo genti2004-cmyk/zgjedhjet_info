@@ -1,4 +1,5 @@
 enum ElectionSourceType {
+  parliamentary2025December,
   parliamentary2025,
   parliamentary2021,
   parliamentary2019,
@@ -44,6 +45,17 @@ class ElectionSource {
     final month = date.month.toString().padLeft(2, '0');
     return '$day.$month.${date.year}';
   }
+
+
+  static final ElectionSource parliamentary2025December = ElectionSource(
+    id: 'parliamentary-2025-december',
+    title: 'Zgjedhjet e parakohshme për Kuvendin e Kosovës - 28 Dhjetor 2025',
+    shortTitle: 'Parlamentare 28 Dhjetor 2025',
+    description: 'Rezultatet përfundimtare zyrtare të KQZ për zgjedhjet e parakohshme të 28 dhjetorit 2025.',
+    type: ElectionSourceType.parliamentary2025December,
+    officialUrl: 'https://kqz-ks.org/zgjedhjet-e-pergjithshme/',
+    date: DateTime(2025, 12, 28),
+  );
 
   static final ElectionSource parliamentary2025 = ElectionSource(
     id: 'parliamentary-2025',
@@ -161,6 +173,7 @@ class ElectionSource {
   );
 
   static final List<ElectionSource> all = [
+    parliamentary2025December,
     parliamentary2025,
     parliamentary2021,
     parliamentary2019,

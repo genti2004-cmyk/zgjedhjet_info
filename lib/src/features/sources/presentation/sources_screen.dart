@@ -194,6 +194,8 @@ class _SourcesScreenState extends State<SourcesScreen> {
 
   String _sourceId(ElectionSource source) {
     switch (source.type) {
+      case ElectionSourceType.parliamentary2025December:
+        return 'parliamentary-2025-december';
       case ElectionSourceType.parliamentary2025:
         return 'parliamentary-2025';
       case ElectionSourceType.parliamentary2021:

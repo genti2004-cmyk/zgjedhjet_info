@@ -19,6 +19,7 @@ import 'parliamentary_2014_municipality_detail_screen.dart';
 import 'parliamentary_2010_municipality_detail_screen.dart';
 import 'parliamentary_2019_municipality_detail_screen.dart';
 import 'parliamentary_2021_municipality_detail_screen.dart';
+import 'parliamentary_2025_december_municipality_detail_screen.dart';
 import 'parliamentary_2025_municipality_detail_screen.dart';
 
 enum MunicipalitySortMode {
@@ -274,6 +275,16 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                                 rank: entry.key + 1,
                                 result: entry.value,
                                 onTap: switch (selectedElection.type) {
+                                  ElectionSourceType.parliamentary2025December => () {
+                                      Navigator.of(context).push(
+                                        MaterialPageRoute<void>(
+                                          builder: (_) =>
+                                              Parliamentary2025DecemberMunicipalityDetailScreen(
+                                            municipalityName: entry.value.name,
+                                          ),
+                                        ),
+                                      );
+                                    },
                                   ElectionSourceType.parliamentary2025 => () {
                                       Navigator.of(context).push(
                                         MaterialPageRoute<void>(

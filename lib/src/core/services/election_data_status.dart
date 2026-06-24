@@ -4,7 +4,8 @@ class ElectionDataStatus {
   const ElectionDataStatus._();
 
   static bool hasOfficialPartyResults(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2025 ||
+    return source.type == ElectionSourceType.parliamentary2025December ||
+        source.type == ElectionSourceType.parliamentary2025 ||
         source.type == ElectionSourceType.parliamentary2021 ||
         source.type == ElectionSourceType.parliamentary2019 ||
         source.type == ElectionSourceType.parliamentary2017 ||
@@ -14,7 +15,8 @@ class ElectionDataStatus {
   }
 
   static bool hasOfficialElectedCandidates(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2025 ||
+    return source.type == ElectionSourceType.parliamentary2025December ||
+        source.type == ElectionSourceType.parliamentary2025 ||
         source.type == ElectionSourceType.parliamentary2021 ||
         source.type == ElectionSourceType.parliamentary2019 ||
         source.type == ElectionSourceType.parliamentary2017 ||
@@ -32,7 +34,8 @@ class ElectionDataStatus {
   }
 
   static bool isParliamentary(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2025 ||
+    return source.type == ElectionSourceType.parliamentary2025December ||
+        source.type == ElectionSourceType.parliamentary2025 ||
         source.type == ElectionSourceType.parliamentary2021 ||
         source.type == ElectionSourceType.parliamentary2019 ||
         source.type == ElectionSourceType.parliamentary2017 ||
@@ -55,7 +58,8 @@ class ElectionDataStatus {
   }
 
   static bool hasOfficialMunicipalityResults(ElectionSource source) {
-    return source.type == ElectionSourceType.parliamentary2025 ||
+    return source.type == ElectionSourceType.parliamentary2025December ||
+        source.type == ElectionSourceType.parliamentary2025 ||
         source.type == ElectionSourceType.parliamentary2021 ||
         source.type == ElectionSourceType.parliamentary2019 ||
         source.type == ElectionSourceType.parliamentary2017 ||

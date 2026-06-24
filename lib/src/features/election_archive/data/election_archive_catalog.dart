@@ -5,6 +5,18 @@ class ElectionArchiveCatalog {
 
   static const List<ElectionArchiveItem> items = [
     ElectionArchiveItem(
+      id: 'parliamentary-2025-december',
+      title: 'Zgjedhjet e parakohshme për Kuvendin e Kosovës 2025',
+      shortTitle: 'Parlamentare 28 Dhjetor 2025',
+      type: 'Parlamentare',
+      dateLabel: '28.12.2025',
+      statusLabel: 'Rezultatet, 120 kandidatët e zgjedhur dhe rezultatet sipas komunave janë vendosur nga dokumentet zyrtare të KQZ.',
+      sourceUrl: 'https://kqz-ks.org/zgjedhjet-e-pergjithshme/',
+      hasOfficialResultsInApp: true,
+      hasCandidateDataInApp: true,
+      hasMunicipalityDataInApp: true,
+    ),
+    ElectionArchiveItem(
       id: 'parliamentary-2025',
       title: 'Zgjedhjet për Kuvendin e Kosovës 2025',
       shortTitle: 'Parlamentare 2025',
