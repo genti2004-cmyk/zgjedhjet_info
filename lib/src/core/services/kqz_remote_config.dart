@@ -21,6 +21,12 @@ class KqzRemoteConfig {
         return 'KQZ Parlamentare 2014';
       case ElectionSourceType.parliamentary2010:
         return 'KQZ Parlamentare 2010';
+      case ElectionSourceType.parliamentary2007:
+        return 'OSBE/CEC Parlamentare 2007';
+      case ElectionSourceType.parliamentary2004:
+        return 'OSBE/CEC Parlamentare 2004';
+      case ElectionSourceType.parliamentary2001:
+        return 'OSBE/OMiK Parlamentare 2001';
       case ElectionSourceType.local2017:
         return 'KQZ Lokale 2017';
       case ElectionSourceType.local2025:
@@ -44,6 +50,10 @@ class KqzRemoteConfig {
         return 'https://kqz-ks.org/zgjedhjet-e-pergjithshme/zgjedhjet-per-kuvend-te-kosoves-2014/';
       case ElectionSourceType.parliamentary2010:
         return 'https://kqz-ks.org/rezultatet/zgjedhjet-per-kuvend-te-kosoves/';
+      case ElectionSourceType.parliamentary2007:
+      case ElectionSourceType.parliamentary2004:
+      case ElectionSourceType.parliamentary2001:
+        return 'https://www.osce.org/mission-in-kosovo';
       case ElectionSourceType.local2017:
         return 'https://kqz-ks.org/rezultatet/zgjedhjet-per-kuvende-komunale/';
       case ElectionSourceType.local2025:

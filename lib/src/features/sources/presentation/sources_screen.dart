@@ -206,6 +206,12 @@ class _SourcesScreenState extends State<SourcesScreen> {
         return 'parliamentary-2014';
       case ElectionSourceType.parliamentary2010:
         return 'parliamentary-2010';
+      case ElectionSourceType.parliamentary2007:
+        return 'parliamentary-2007';
+      case ElectionSourceType.parliamentary2004:
+        return 'parliamentary-2004';
+      case ElectionSourceType.parliamentary2001:
+        return 'parliamentary-2001';
       case ElectionSourceType.local2017:
         return 'Zgjedhjet Lokale 2017';
       case ElectionSourceType.local2025:

@@ -1,3 +1,6 @@
+import 'parliamentary_2001_municipality_detail_screen.dart';
+import 'parliamentary_2004_municipality_detail_screen.dart';
+import 'parliamentary_2007_municipality_detail_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/models/election_source.dart';
@@ -324,12 +327,18 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                                   ElectionSourceType.parliamentary2010 => () {
                                       Navigator.of(context).push(
                                         MaterialPageRoute<void>(
-                                          builder: (_) =>
-                                              Parliamentary2010MunicipalityDetailScreen(
-                                            municipalityName: entry.value.name,
-                                          ),
+                                          builder: (_) => Parliamentary2010MunicipalityDetailScreen(municipalityName: entry.value.name),
                                         ),
                                       );
+                                    },
+                                  ElectionSourceType.parliamentary2007 => () {
+                                      Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => Parliamentary2007MunicipalityDetailScreen(municipalityName: entry.value.name)));
+                                    },
+                                  ElectionSourceType.parliamentary2004 => () {
+                                      Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => Parliamentary2004MunicipalityDetailScreen(municipalityName: entry.value.name)));
+                                    },
+                                  ElectionSourceType.parliamentary2001 => () {
+                                      Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => Parliamentary2001MunicipalityDetailScreen(municipalityName: entry.value.name)));
                                     },
                                   _ => null,
                                 },

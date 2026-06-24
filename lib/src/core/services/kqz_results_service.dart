@@ -1,3 +1,6 @@
+import '../../features/parliamentary_2001/data/parliamentary_2001_municipality_data.dart';
+import '../../features/parliamentary_2004/data/parliamentary_2004_municipality_data.dart';
+import '../../features/parliamentary_2007/data/parliamentary_2007_municipality_data.dart';
 import '../../features/local_2017/data/local_2017_assembly_subject_data.dart';
 import '../../features/local_2017/data/local_2017_assembly_candidate_data.dart';
 import '../../features/local_2025/data/local_2025_placeholder_data.dart';
@@ -41,6 +44,12 @@ class KqzResultsService {
         return Election(id: 'parliamentary-2017', title: source.title, type: 'Parlamentare', status: 'Rezultatet e subjekteve nga dokument zyrtar i KQZ', date: DateTime(2017, 6, 11), lastUpdated: DateTime.now());
       case ElectionSourceType.parliamentary2014:
         return Election(id: 'parliamentary-2014', title: source.title, type: 'Parlamentare', status: 'Rezultatet dhe kandidatët nga dokumentet zyrtare të KQZ', date: DateTime(2014, 6, 8), lastUpdated: DateTime.now());
+      case ElectionSourceType.parliamentary2007:
+        return Election(id: 'parliamentary-2007', title: source.title, type: 'Parlamentare', status: 'Rezultatet komunale nga dokumentet zyrtare të OSBE/CEC', date: DateTime(2007, 11, 17), lastUpdated: DateTime.now());
+      case ElectionSourceType.parliamentary2004:
+        return Election(id: 'parliamentary-2004', title: source.title, type: 'Parlamentare', status: 'Rezultatet komunale nga dokumentet zyrtare të OSBE/CEC', date: DateTime(2004, 10, 23), lastUpdated: DateTime.now());
+      case ElectionSourceType.parliamentary2001:
+        return Election(id: 'parliamentary-2001', title: source.title, type: 'Parlamentare', status: 'Rezultatet komunale të certifikuara nga OSBE/OMiK', date: DateTime(2001, 11, 17), lastUpdated: DateTime.now());
       case ElectionSourceType.parliamentary2010:
         return Election(id: 'parliamentary-2010', title: source.title, type: 'Parlamentare', status: 'Rezultatet e subjekteve nga dokument zyrtar i KQZ', date: DateTime(2010, 12, 12), lastUpdated: DateTime.now());
       case ElectionSourceType.local2017:
@@ -67,6 +76,10 @@ class KqzResultsService {
         return Parliamentary2014PartyData.results;
       case ElectionSourceType.parliamentary2010:
         return Parliamentary2010PartyData.results;
+      case ElectionSourceType.parliamentary2007:
+      case ElectionSourceType.parliamentary2004:
+      case ElectionSourceType.parliamentary2001:
+        return const <PartyResult>[];
       case ElectionSourceType.local2017:
         return Local2017AssemblySubjectData.results;
       case ElectionSourceType.local2025:
@@ -91,6 +104,12 @@ class KqzResultsService {
         return Parliamentary2014MunicipalityData.results;
       case ElectionSourceType.parliamentary2010:
         return Parliamentary2010MunicipalityData.results;
+      case ElectionSourceType.parliamentary2007:
+        return Parliamentary2007MunicipalityData.results;
+      case ElectionSourceType.parliamentary2004:
+        return Parliamentary2004MunicipalityData.results;
+      case ElectionSourceType.parliamentary2001:
+        return Parliamentary2001MunicipalityData.results;
       case ElectionSourceType.local2017:
         return const <MunicipalityResult>[];
       case ElectionSourceType.local2025:
@@ -115,6 +134,10 @@ class KqzResultsService {
         return Parliamentary2010CandidateData.results;
       case ElectionSourceType.parliamentary2014:
         return Parliamentary2014CandidateData.results;
+      case ElectionSourceType.parliamentary2007:
+      case ElectionSourceType.parliamentary2004:
+      case ElectionSourceType.parliamentary2001:
+        return const <CandidateResult>[];
       case ElectionSourceType.local2017:
         return Local2017AssemblyCandidateData.results;
       case ElectionSourceType.local2025:

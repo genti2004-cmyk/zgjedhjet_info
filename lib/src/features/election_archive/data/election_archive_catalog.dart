@@ -112,6 +112,10 @@ class ElectionArchiveCatalog {
       hasCandidateDataInApp: false,
       hasMunicipalityDataInApp: false,
     ),
+
+    ElectionArchiveItem(id: 'parliamentary-2007', title: 'Zgjedhjet për Kuvendin e Kosovës 2007', shortTitle: 'Parlamentare 2007', type: 'Parlamentare', dateLabel: '17.11.2007', statusLabel: 'Rezultatet sipas komunave dhe statistikat e votuesve nga dokumenti zyrtar OSBE/CEC.', sourceUrl: 'https://www.osce.org/mission-in-kosovo', hasOfficialResultsInApp: false, hasCandidateDataInApp: false, hasMunicipalityDataInApp: true),
+    ElectionArchiveItem(id: 'parliamentary-2004', title: 'Zgjedhjet për Kuvendin e Kosovës 2004', shortTitle: 'Parlamentare 2004', type: 'Parlamentare', dateLabel: '23.10.2004', statusLabel: 'Rezultatet sipas komunave dhe statistikat e votuesve nga dokumentet zyrtare OSBE/CEC.', sourceUrl: 'https://www.osce.org/mission-in-kosovo', hasOfficialResultsInApp: false, hasCandidateDataInApp: false, hasMunicipalityDataInApp: true),
+    ElectionArchiveItem(id: 'parliamentary-2001', title: 'Zgjedhjet për Kuvendin e Kosovës 2001', shortTitle: 'Parlamentare 2001', type: 'Parlamentare', dateLabel: '17.11.2001', statusLabel: 'Rezultatet komunale të certifikuara dhe statistikat e votuesve nga OSBE/OMiK.', sourceUrl: 'https://www.osce.org/mission-in-kosovo', hasOfficialResultsInApp: false, hasCandidateDataInApp: false, hasMunicipalityDataInApp: true),
     ElectionArchiveItem(
       id: 'local-2017',
       title: 'Zgjedhjet Lokale 2017',

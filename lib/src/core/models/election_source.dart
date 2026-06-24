@@ -5,6 +5,9 @@ enum ElectionSourceType {
   parliamentary2017,
   parliamentary2014,
   parliamentary2010,
+  parliamentary2007,
+  parliamentary2004,
+  parliamentary2001,
   local2017,
   local2025,
   local2025Round2,
@@ -106,6 +109,25 @@ class ElectionSource {
     date: DateTime(2010, 12, 12),
   );
 
+
+  static final ElectionSource parliamentary2007 = ElectionSource(
+    id: 'parliamentary-2007', title: 'Zgjedhjet për Kuvend të Kosovës 2007', shortTitle: 'Parlamentare 2007',
+    description: 'Rezultatet zyrtare të OSBE/CEC për zgjedhjet parlamentare 2007.',
+    type: ElectionSourceType.parliamentary2007, officialUrl: 'https://www.osce.org/mission-in-kosovo', date: DateTime(2007, 11, 17),
+  );
+
+  static final ElectionSource parliamentary2004 = ElectionSource(
+    id: 'parliamentary-2004', title: 'Zgjedhjet për Kuvend të Kosovës 2004', shortTitle: 'Parlamentare 2004',
+    description: 'Rezultatet zyrtare të OSBE/CEC për zgjedhjet parlamentare 2004.',
+    type: ElectionSourceType.parliamentary2004, officialUrl: 'https://www.osce.org/mission-in-kosovo', date: DateTime(2004, 10, 23),
+  );
+
+  static final ElectionSource parliamentary2001 = ElectionSource(
+    id: 'parliamentary-2001', title: 'Zgjedhjet për Kuvend të Kosovës 2001', shortTitle: 'Parlamentare 2001',
+    description: 'Rezultatet e certifikuara të OSBE/OMiK për zgjedhjet parlamentare 2001.',
+    type: ElectionSourceType.parliamentary2001, officialUrl: 'https://www.osce.org/mission-in-kosovo', date: DateTime(2001, 11, 17),
+  );
+
   static final ElectionSource local2017 = ElectionSource(
     id: 'local-2017',
     title: 'Zgjedhjet Lokale 2017 – Kuvende Komunale',
@@ -145,6 +167,9 @@ class ElectionSource {
     parliamentary2017,
     parliamentary2014,
     parliamentary2010,
+  parliamentary2007,
+  parliamentary2004,
+  parliamentary2001,
     local2017,
     local2025,
     local2025Round2,

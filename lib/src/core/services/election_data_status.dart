@@ -37,7 +37,10 @@ class ElectionDataStatus {
         source.type == ElectionSourceType.parliamentary2019 ||
         source.type == ElectionSourceType.parliamentary2017 ||
         source.type == ElectionSourceType.parliamentary2014 ||
-        source.type == ElectionSourceType.parliamentary2010;
+        source.type == ElectionSourceType.parliamentary2010 ||
+        source.type == ElectionSourceType.parliamentary2007 ||
+        source.type == ElectionSourceType.parliamentary2004 ||
+        source.type == ElectionSourceType.parliamentary2001;
   }
 
   static bool hasRegisteredMunicipalitySources(ElectionSource source) {
@@ -45,7 +48,10 @@ class ElectionDataStatus {
         source.type == ElectionSourceType.parliamentary2019 ||
         source.type == ElectionSourceType.parliamentary2017 ||
         source.type == ElectionSourceType.parliamentary2014 ||
-        source.type == ElectionSourceType.parliamentary2010;
+        source.type == ElectionSourceType.parliamentary2010 ||
+        source.type == ElectionSourceType.parliamentary2007 ||
+        source.type == ElectionSourceType.parliamentary2004 ||
+        source.type == ElectionSourceType.parliamentary2001;
   }
 
   static bool hasOfficialMunicipalityResults(ElectionSource source) {
@@ -54,7 +60,10 @@ class ElectionDataStatus {
         source.type == ElectionSourceType.parliamentary2019 ||
         source.type == ElectionSourceType.parliamentary2017 ||
         source.type == ElectionSourceType.parliamentary2014 ||
-        source.type == ElectionSourceType.parliamentary2010;
+        source.type == ElectionSourceType.parliamentary2010 ||
+        source.type == ElectionSourceType.parliamentary2007 ||
+        source.type == ElectionSourceType.parliamentary2004 ||
+        source.type == ElectionSourceType.parliamentary2001;
   }
 
   static String resultEmptyMessage(ElectionSource source) {
