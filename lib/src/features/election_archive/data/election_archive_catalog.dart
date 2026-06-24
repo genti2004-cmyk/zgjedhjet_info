@@ -74,7 +74,7 @@ class ElectionArchiveCatalog {
       sourceUrl: 'https://kqz-ks.org/rezultatet/',
       hasOfficialResultsInApp: false,
       hasCandidateDataInApp: false,
-      hasMunicipalityDataInApp: false,
+      hasMunicipalityDataInApp: true,
     ),
     ElectionArchiveItem(
       id: 'parliamentary-2014',
@@ -86,7 +86,7 @@ class ElectionArchiveCatalog {
       sourceUrl: 'https://kqz-ks.org/rezultatet/',
       hasOfficialResultsInApp: false,
       hasCandidateDataInApp: false,
-      hasMunicipalityDataInApp: false,
+      hasMunicipalityDataInApp: true,
     ),
     ElectionArchiveItem(
       id: 'parliamentary-2010',
@@ -98,7 +98,7 @@ class ElectionArchiveCatalog {
       sourceUrl: 'https://kqz-ks.org/rezultatet/',
       hasOfficialResultsInApp: false,
       hasCandidateDataInApp: false,
-      hasMunicipalityDataInApp: false,
+      hasMunicipalityDataInApp: true,
     ),
     ElectionArchiveItem(
       id: 'local-2021',

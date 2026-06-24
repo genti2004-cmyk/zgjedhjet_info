@@ -11,6 +11,9 @@ import '../../../core/widgets/app_state_cards.dart';
 import '../../../core/widgets/election_picker_card.dart';
 import '../../../core/widgets/premium_components.dart';
 import '../../results/data/election_repository.dart';
+import 'parliamentary_2017_municipality_detail_screen.dart';
+import 'parliamentary_2014_municipality_detail_screen.dart';
+import 'parliamentary_2010_municipality_detail_screen.dart';
 import 'parliamentary_2019_municipality_detail_screen.dart';
 import 'parliamentary_2021_municipality_detail_screen.dart';
 import 'parliamentary_2025_municipality_detail_screen.dart';
@@ -293,6 +296,36 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                                         MaterialPageRoute<void>(
                                           builder: (_) =>
                                               Parliamentary2019MunicipalityDetailScreen(
+                                            municipalityName: entry.value.name,
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  ElectionSourceType.parliamentary2017 => () {
+                                      Navigator.of(context).push(
+                                        MaterialPageRoute<void>(
+                                          builder: (_) =>
+                                              Parliamentary2017MunicipalityDetailScreen(
+                                            municipalityName: entry.value.name,
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  ElectionSourceType.parliamentary2014 => () {
+                                      Navigator.of(context).push(
+                                        MaterialPageRoute<void>(
+                                          builder: (_) =>
+                                              Parliamentary2014MunicipalityDetailScreen(
+                                            municipalityName: entry.value.name,
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  ElectionSourceType.parliamentary2010 => () {
+                                      Navigator.of(context).push(
+                                        MaterialPageRoute<void>(
+                                          builder: (_) =>
+                                              Parliamentary2010MunicipalityDetailScreen(
                                             municipalityName: entry.value.name,
                                           ),
                                         ),
