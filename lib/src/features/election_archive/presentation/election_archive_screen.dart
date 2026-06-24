@@ -379,7 +379,7 @@ class _SearchAndFilterCard extends StatelessWidget {
             ),
             const SizedBox(height: 12),
             DropdownButtonFormField<ElectionArchiveFilter>(
-              value: filter,
+              initialValue: filter,
               decoration: const InputDecoration(
                 labelText: 'Filtri',
               ),

@@ -30,7 +30,7 @@ class InfoScreen extends StatelessWidget {
                 'App për shfaqjen dhe verifikimin e rezultateve zgjedhore të Kosovës me burime të dokumentuara.',
             statusLabel: InfoScreen.version,
             verified: true,
-            pills: const [
+            pills: [
               PremiumWhitePill(
                 icon: Icons.verified_rounded,
                 label: 'Burime zyrtare',

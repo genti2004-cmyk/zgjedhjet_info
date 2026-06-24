@@ -120,7 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               _StatusStrip(
                                 hasPartyData: _hasOfficialPartyData(selectedSource),
                                 hasCandidateData:
-                                    _hasOfficialCandidateData(selectedSource),
+                                _hasOfficialCandidateData(selectedSource),
                                 isSourceOnly: _sourceOnly(selectedSource),
                                 source: selectedSource,
                               ),
@@ -205,13 +205,13 @@ class _PremiumHero extends StatelessWidget {
     final title = election?.title ?? source.title;
     final status = election?.status ?? 'Në pritje';
     final date =
-        election == null ? source.dateLabel : AppFormatters.date(election!.date);
+    election == null ? source.dateLabel : AppFormatters.date(election!.date);
 
     final statusText = isOfficial
         ? 'Të dhëna aktive nga KQZ'
         : isSourceOnly
-            ? 'Burime zyrtare'
-            : 'Në përgatitje';
+        ? 'Burime zyrtare'
+        : 'Në përgatitje';
 
     return Container(
       margin: const EdgeInsets.fromLTRB(16, 14, 16, 0),
@@ -402,28 +402,35 @@ class _WhitePill extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(9, 6, 10, 6),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.13),
-        borderRadius: BorderRadius.circular(999),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(icon, color: Colors.white, size: 14),
-          const SizedBox(width: 5),
-          Text(
-            label,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 11.6,
-              fontWeight: FontWeight.w800,
+    final maxWidth = MediaQuery.sizeOf(context).width - 92;
+
+    return ConstrainedBox(
+      constraints: BoxConstraints(maxWidth: maxWidth),
+      child: Container(
+        padding: const EdgeInsets.fromLTRB(9, 6, 10, 6),
+        decoration: BoxDecoration(
+          color: Colors.white.withValues(alpha: 0.13),
+          borderRadius: BorderRadius.circular(999),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon, color: Colors.white, size: 14),
+            const SizedBox(width: 5),
+            Flexible(
+              child: Text(
+                label,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 11.6,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
@@ -449,14 +456,14 @@ class _StatusStrip extends StatelessWidget {
     final title = isOfficial
         ? 'Të dhëna të verifikuara'
         : isSourceOnly
-            ? 'Burimet janë regjistruar'
-            : 'Strukturë në përgatitje';
+        ? 'Burimet janë regjistruar'
+        : 'Strukturë në përgatitje';
 
     final message = isOfficial
         ? 'Për ${source.shortTitle} janë vendosur të dhëna nga dokumentet zyrtare të KQZ.'
         : isSourceOnly
-            ? 'Për ${source.shortTitle} janë regjistruar burimet zyrtare. Rezultatet shfaqen pas verifikimit të plotë.'
-            : 'Kjo zgjedhje është e përgatitur në strukturë. Të dhënat reale shtohen vetëm nga KQZ.';
+        ? 'Për ${source.shortTitle} janë regjistruar burimet zyrtare. Rezultatet shfaqen pas verifikimit të plotë.'
+        : 'Kjo zgjedhje është e përgatitur në strukturë. Të dhënat reale shtohen vetëm nga KQZ.';
 
     return Container(
       padding: const EdgeInsets.fromLTRB(15, 14, 15, 14),
@@ -483,7 +490,7 @@ class _StatusStrip extends StatelessWidget {
                   title,
                   style: TextStyle(
                     color:
-                        isOfficial ? AppTheme.successText : const Color(0xFF7A4B00),
+                    isOfficial ? AppTheme.successText : const Color(0xFF7A4B00),
                     fontSize: 14.8,
                     fontWeight: FontWeight.w900,
                   ),
@@ -493,7 +500,7 @@ class _StatusStrip extends StatelessWidget {
                   message,
                   style: TextStyle(
                     color:
-                        isOfficial ? AppTheme.successText : const Color(0xFF7A4B00),
+                    isOfficial ? AppTheme.successText : const Color(0xFF7A4B00),
                     fontSize: 12.6,
                     fontWeight: FontWeight.w700,
                     height: 1.3,

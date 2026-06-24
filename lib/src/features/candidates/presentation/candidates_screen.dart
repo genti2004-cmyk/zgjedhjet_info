@@ -541,7 +541,7 @@ class _SearchAndSortCard extends StatelessWidget {
             ),
             const SizedBox(height: 12),
             DropdownButtonFormField<CandidateSortMode>(
-              value: sortMode,
+              initialValue: sortMode,
               decoration: const InputDecoration(
                 labelText: 'Renditja',
               ),
