@@ -258,7 +258,7 @@ class Parliamentary2019MunicipalityData {
     ),
     MunicipalityResult(
       id: 'parliamentary-2019-municipality-29',
-      name: 'Zvečan/Zveçan',
+      name: 'Zveçan',
       voters: 0,
       votesCast: 4572,
       turnoutPercentage: 0,

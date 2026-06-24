@@ -7006,7 +7006,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-109',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '109',
       subjectName: 'SRPSKA LISTA',
       shortName: 'SL',
@@ -7016,7 +7016,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-102',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '102',
       subjectName: 'LIDHJA DEMOKRATIKE E KOSOVËS',
       shortName: 'LDK',
@@ -7026,7 +7026,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-104',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '104',
       subjectName: 'PARTIA DEMOKRATIKE E KOSOVËS',
       shortName: 'PDK',
@@ -7036,7 +7036,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-103',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '103',
       subjectName: 'LËVIZJA VETËVENDOSJE!',
       shortName: 'LVV',
@@ -7046,7 +7046,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-118',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '118',
       subjectName: 'PARTIJA KOSOVSKIH SRBA',
       shortName: 'SRBA',
@@ -7056,7 +7056,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-120',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '120',
       subjectName: 'SAMOSTALNA LIBERALNA STRANKA',
       shortName: 'STRANKA',
@@ -7066,7 +7066,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-121',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '121',
       subjectName: 'SLOBODA',
       shortName: 'SLOBODA',
@@ -7076,7 +7076,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-101',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '101',
       subjectName: 'AAK-PSD KOALICIONI 100% KOSOVË',
       shortName: 'AAK-PSD',
@@ -7086,7 +7086,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-111',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '111',
       subjectName: 'GRAÐANSKA İNİCİJATİVA GORE',
       shortName: 'GORE',
@@ -7096,7 +7096,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-105',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '105',
       subjectName: 'NISMA SOCIALDEMOKRATE – ALEANCA KOSOVA E RE – PARTIA E DREJTËSISË',
       shortName: 'DREJTËSISË',
@@ -7106,7 +7106,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-119',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '119',
       subjectName: 'KOALICIJA VAKAT',
       shortName: 'VAKAT',
@@ -7116,7 +7116,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-112',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '112',
       subjectName: 'PARTIA DEMOKRATIKE E ASHKANLIVE TË KOSOVËS',
       shortName: 'KOSOVËS',
@@ -7126,7 +7126,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-114',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '114',
       subjectName: 'PARTIA E ASHKALINJËVE PËR INTEGRIM',
       shortName: 'INTEGRIM',
@@ -7136,7 +7136,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-122',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '122',
       subjectName: 'POKRET ZA GORA',
       shortName: 'GORA',
@@ -7146,7 +7146,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-113',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '113',
       subjectName: 'STRANKA DEMOKRATSKE AKCIJE',
       shortName: 'AKCIJE',
@@ -7156,7 +7156,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-123',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '123',
       subjectName: 'JEDINSTVENA GORANSKA PARTIJA',
       shortName: 'PARTIJA',
@@ -7166,7 +7166,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-110',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '110',
       subjectName: 'NOVA DEMOKRATSKA STRANKA',
       shortName: 'STRANKA',
@@ -7176,7 +7176,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-116',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '116',
       subjectName: 'INICIATIVA E RE DEMOKRATIKE E KOSOVËS',
       shortName: 'KOSOVËS',
@@ -7186,7 +7186,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-125',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '125',
       subjectName: 'KOSOVAKI NEVI ROMANI PARTIA',
       shortName: 'PARTIA',
@@ -7196,7 +7196,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-108',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '108',
       subjectName: 'PARTIA EUROATLANTIKE E KOSOVËS',
       shortName: 'KOSOVËS',
@@ -7206,7 +7206,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-106',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '106',
       subjectName: 'PARTIA LIBERALE EGJIPTIANE',
       shortName: 'EGJIPTIANE',
@@ -7216,7 +7216,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-117',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '117',
       subjectName: 'ESMIR KASI',
       shortName: 'KASI',
@@ -7226,7 +7226,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-107',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '107',
       subjectName: 'FJALA',
       shortName: 'FJALA',
@@ -7236,7 +7236,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-124',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '124',
       subjectName: 'KOSOVA DEMOKRATIK TÜRK PARTISI',
       shortName: 'PARTISI',
@@ -7246,7 +7246,7 @@ class Parliamentary2019MunicipalityPartyData {
     ),
     MunicipalityPartyResult(
       id: 'parliamentary-2019-29-115',
-      municipalityName: 'Zvečan/Zveçan',
+      municipalityName: 'Zveçan',
       subjectCode: '115',
       subjectName: 'PARTIA ROME E BASHKUAR E KOSOVËS',
       shortName: 'KOSOVËS',
