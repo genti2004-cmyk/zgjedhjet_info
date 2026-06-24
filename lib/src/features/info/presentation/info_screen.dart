@@ -7,7 +7,7 @@ class InfoScreen extends StatelessWidget {
   const InfoScreen({super.key});
 
   static const String appName = 'Zgjedhjet Info';
-  static const String version = 'v0.7.0+7';
+  static const String version = 'v0.8.0+8';
   static const String subtitle =
       'Rezultatet dhe informacionet zgjedhore në një vend';
   static const String disclaimer =
@@ -116,7 +116,12 @@ class _DataStatusCard extends StatelessWidget {
         ),
         _StatusLine(
           label: 'Parlamentare 2010',
-          value: 'Aktive',
+          value: 'Rezultate, kandidatë dhe komuna aktive',
+          done: true,
+        ),
+        _StatusLine(
+          label: 'Parlamentare 2007–2001',
+          value: 'Rezultate sipas komunave aktive',
           done: true,
         ),
         _StatusLine(
