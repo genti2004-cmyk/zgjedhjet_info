@@ -153,11 +153,11 @@ class ElectionSource {
 
   static final ElectionSource local2025 = ElectionSource(
     id: 'local-2025',
-    title: 'Zgjedhjet Lokale 2025',
-    shortTitle: 'Lokale 2025',
-    description: 'Burime zyrtare të përgatitura për zgjedhjet lokale 2025.',
+    title: 'Zgjedhjet për Kuvendet e Komunave 2025',
+    shortTitle: 'Kuvendet Komunale 2025',
+    description: 'Rezultatet, mandatet, kandidatët dhe statistikat zyrtare për kuvendet komunale 2025.',
     type: ElectionSourceType.local2025,
-    officialUrl: 'https://kqz-ks.org/rezultatet/zgjedhjet-per-kryetare-te-komunave/',
+    officialUrl: 'https://kqz-ks.org/rezultatet/zgjedhjet-per-kuvende-komunale/',
     date: DateTime(2025, 10, 12),
   );
 

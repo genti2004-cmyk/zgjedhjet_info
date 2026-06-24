@@ -3,6 +3,8 @@ import 'parliamentary_2004_municipality_detail_screen.dart';
 import 'parliamentary_2007_municipality_detail_screen.dart';
 import 'package:flutter/material.dart';
 
+import '../../local_2025/presentation/local_2025_municipality_detail_screen.dart';
+
 import '../../../core/models/election_source.dart';
 import '../../../core/services/election_data_status.dart';
 import '../../../core/models/municipality_result.dart';
@@ -350,6 +352,15 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                                     },
                                   ElectionSourceType.parliamentary2001 => () {
                                       Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => Parliamentary2001MunicipalityDetailScreen(municipalityName: entry.value.name)));
+                                    },
+                                  ElectionSourceType.local2025 => () {
+                                      Navigator.of(context).push(
+                                        MaterialPageRoute<void>(
+                                          builder: (_) => Local2025MunicipalityDetailScreen(
+                                            municipalityName: entry.value.name,
+                                          ),
+                                        ),
+                                      );
                                     },
                                   _ => null,
                                 },

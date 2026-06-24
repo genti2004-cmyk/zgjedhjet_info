@@ -67,6 +67,10 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
   }
 
   String _candidateNoticeMessage(ElectionSource source) {
+    if (source.type == ElectionSourceType.local2025) {
+      return 'Për ${source.shortTitle} shfaqen të gjithë kandidatët me votat e tyre nga skedari zyrtar i KQZ. Kandidatët e zgjedhur shfaqen edhe në detajet e komunës.';
+    }
+
     if (_hasOfficialCandidates(source)) {
       return 'Për ${source.shortTitle} shfaqen kandidatët e zgjedhur dhe votat nga dokumentet zyrtare të KQZ.';
     }

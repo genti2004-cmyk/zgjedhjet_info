@@ -1,0 +1,91 @@
+import '../../../core/models/municipality_result.dart';
+import 'local_2025_assembly_models.dart';
+
+class Local2025AssemblyData {
+  const Local2025AssemblyData._();
+
+  static const List<MunicipalityResult> municipalities = [
+    MunicipalityResult(id: 'local-2025-decan', name: 'Deçan', voters: 43759, votesCast: 17188, turnoutPercentage: 39.28, leadingSubject: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS'),
+    MunicipalityResult(id: 'local-2025-gjakove', name: 'Gjakovë', voters: 124909, votesCast: 42896, turnoutPercentage: 34.34, leadingSubject: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS'),
+    MunicipalityResult(id: 'local-2025-drenas', name: 'Drenas', voters: 58015, votesCast: 26209, turnoutPercentage: 45.18, leadingSubject: 'PËR DRENASIN KAMPION ME RAMIZ LLADROVCIN'),
+    MunicipalityResult(id: 'local-2025-gjilan', name: 'Gjilan', voters: 109920, votesCast: 46492, turnoutPercentage: 42.3, leadingSubject: 'Lëvizja VETËVENDOSJE!'),
+    MunicipalityResult(id: 'local-2025-dragash', name: 'Dragash', voters: 42573, votesCast: 14940, turnoutPercentage: 35.09, leadingSubject: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK'),
+    MunicipalityResult(id: 'local-2025-istog', name: 'Istog', voters: 52855, votesCast: 20609, turnoutPercentage: 38.99, leadingSubject: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK'),
+    MunicipalityResult(id: 'local-2025-kacanik', name: 'Kaçanik', voters: 34642, votesCast: 17520, turnoutPercentage: 50.57, leadingSubject: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK'),
+    MunicipalityResult(id: 'local-2025-kline', name: 'Klinë', voters: 52592, votesCast: 19178, turnoutPercentage: 36.47, leadingSubject: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS'),
+    MunicipalityResult(id: 'local-2025-fushe-kosove', name: 'Fushë Kosovë', voters: 51564, votesCast: 22032, turnoutPercentage: 42.73, leadingSubject: 'Lëvizja VETËVENDOSJE!'),
+    MunicipalityResult(id: 'local-2025-kamenice', name: 'Kamenicë', voters: 35092, votesCast: 16185, turnoutPercentage: 46.12, leadingSubject: 'Lëvizja VETËVENDOSJE!'),
+    MunicipalityResult(id: 'local-2025-mitrovice-e-jugut', name: 'Mitrovicë e Jugut', voters: 85883, votesCast: 33729, turnoutPercentage: 39.27, leadingSubject: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK'),
+    MunicipalityResult(id: 'local-2025-leposaviq', name: 'Leposaviq', voters: 12399, votesCast: 7526, turnoutPercentage: 60.7, leadingSubject: 'SRPSKA LISTA'),
+    MunicipalityResult(id: 'local-2025-lipjan', name: 'Lipjan', voters: 67268, votesCast: 30875, turnoutPercentage: 45.9, leadingSubject: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK'),
+    MunicipalityResult(id: 'local-2025-novoberde', name: 'Novobërdë', voters: 10329, votesCast: 6125, turnoutPercentage: 59.3, leadingSubject: 'SRPSKA LISTA'),
+    MunicipalityResult(id: 'local-2025-obiliq', name: 'Obiliq', voters: 26408, votesCast: 13010, turnoutPercentage: 49.27, leadingSubject: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK'),
+    MunicipalityResult(id: 'local-2025-rahovec', name: 'Rahovec', voters: 61475, votesCast: 22060, turnoutPercentage: 35.88, leadingSubject: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS'),
+    MunicipalityResult(id: 'local-2025-peje', name: 'Pejë', voters: 122099, votesCast: 43615, turnoutPercentage: 35.72, leadingSubject: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK'),
+    MunicipalityResult(id: 'local-2025-podujeve', name: 'Podujevë', voters: 88117, votesCast: 40059, turnoutPercentage: 45.46, leadingSubject: 'Lëvizja VETËVENDOSJE!'),
+    MunicipalityResult(id: 'local-2025-prishtine', name: 'Prishtinë', voters: 224053, votesCast: 107841, turnoutPercentage: 48.13, leadingSubject: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK'),
+    MunicipalityResult(id: 'local-2025-prizren', name: 'Prizren', voters: 191752, votesCast: 65460, turnoutPercentage: 34.14, leadingSubject: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK'),
+    MunicipalityResult(id: 'local-2025-skenderaj', name: 'Skenderaj', voters: 54774, votesCast: 16698, turnoutPercentage: 30.49, leadingSubject: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK'),
+    MunicipalityResult(id: 'local-2025-shtime', name: 'Shtime', voters: 28873, votesCast: 14754, turnoutPercentage: 51.1, leadingSubject: 'Lëvizja VETËVENDOSJE!'),
+    MunicipalityResult(id: 'local-2025-shterpce', name: 'Shtërpcë', voters: 12550, votesCast: 6843, turnoutPercentage: 54.53, leadingSubject: 'SRPSKA LISTA'),
+    MunicipalityResult(id: 'local-2025-suhareke', name: 'Suharekë', voters: 73095, votesCast: 28885, turnoutPercentage: 39.52, leadingSubject: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS'),
+    MunicipalityResult(id: 'local-2025-ferizaj', name: 'Ferizaj', voters: 125865, votesCast: 53876, turnoutPercentage: 42.8, leadingSubject: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK'),
+    MunicipalityResult(id: 'local-2025-viti', name: 'Viti', voters: 51607, votesCast: 21124, turnoutPercentage: 40.93, leadingSubject: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK'),
+    MunicipalityResult(id: 'local-2025-vushtrri', name: 'Vushtrri', voters: 78102, votesCast: 31760, turnoutPercentage: 40.66, leadingSubject: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK'),
+    MunicipalityResult(id: 'local-2025-zvecan', name: 'Zveçan', voters: 6879, votesCast: 4198, turnoutPercentage: 61.03, leadingSubject: 'SRPSKA LISTA'),
+    MunicipalityResult(id: 'local-2025-malisheve', name: 'Malishevë', voters: 58451, votesCast: 22136, turnoutPercentage: 37.87, leadingSubject: 'NISMA Socialdemokrate - NISMA'),
+    MunicipalityResult(id: 'local-2025-junik', name: 'Junik', voters: 6209, votesCast: 3726, turnoutPercentage: 60.01, leadingSubject: 'LIDHJA DEMOKRATIKE E KOSOVËS - LDK'),
+    MunicipalityResult(id: 'local-2025-mamushe', name: 'Mamushë', voters: 4739, votesCast: 3316, turnoutPercentage: 69.97, leadingSubject: 'KOSOVA DEMOKRATIK TÜRK PARTISI - KDTP'),
+    MunicipalityResult(id: 'local-2025-hani-elezit', name: 'Hani Elezit', voters: 8925, votesCast: 5369, turnoutPercentage: 60.16, leadingSubject: 'PARTIA DEMOKRATIKE E KOSOVËS - PDK'),
+    MunicipalityResult(id: 'local-2025-gracanice', name: 'Graçanicë', voters: 25325, votesCast: 11906, turnoutPercentage: 47.01, leadingSubject: 'SRPSKA LISTA'),
+    MunicipalityResult(id: 'local-2025-ranillug', name: 'Ranillug', voters: 4836, votesCast: 2917, turnoutPercentage: 60.32, leadingSubject: 'SRPSKA LISTA'),
+    MunicipalityResult(id: 'local-2025-partesh', name: 'Partesh', voters: 4738, votesCast: 2252, turnoutPercentage: 47.53, leadingSubject: 'SRPSKA LISTA'),
+    MunicipalityResult(id: 'local-2025-kllokot', name: 'Kllokot', voters: 4232, votesCast: 2310, turnoutPercentage: 54.58, leadingSubject: 'SRPSKA LISTA'),
+    MunicipalityResult(id: 'local-2025-mitrovice-e-veriut', name: 'Mitrovicë e Veriut', voters: 17667, votesCast: 8149, turnoutPercentage: 46.13, leadingSubject: 'SRPSKA LISTA'),
+  ];
+
+  static const List<Local2025MunicipalityStatistics> statistics = [
+    Local2025MunicipalityStatistics(municipalityName: 'Deçan', electorate: 43759, votersTotal: 17188, regularVoters: 15528, specialAndPostalVoters: 1660, turnout: 39.28, validBallots: 15949, invalidAndBlankBallots: 1239, damagedBallots: 61, assemblySeats: 21),
+    Local2025MunicipalityStatistics(municipalityName: 'Gjakovë', electorate: 124909, votersTotal: 42896, regularVoters: 40423, specialAndPostalVoters: 2473, turnout: 34.34, validBallots: 38987, invalidAndBlankBallots: 3913, damagedBallots: 166, assemblySeats: 35),
+    Local2025MunicipalityStatistics(municipalityName: 'Drenas', electorate: 58015, votersTotal: 26209, regularVoters: 25710, specialAndPostalVoters: 499, turnout: 45.18, validBallots: 23460, invalidAndBlankBallots: 2750, damagedBallots: 56, assemblySeats: 27),
+    Local2025MunicipalityStatistics(municipalityName: 'Gjilan', electorate: 109920, votersTotal: 46492, regularVoters: 44891, specialAndPostalVoters: 1601, turnout: 42.3, validBallots: 42575, invalidAndBlankBallots: 3920, damagedBallots: 192, assemblySeats: 35),
+    Local2025MunicipalityStatistics(municipalityName: 'Dragash', electorate: 42573, votersTotal: 14940, regularVoters: 12652, specialAndPostalVoters: 2288, turnout: 35.09, validBallots: 14128, invalidAndBlankBallots: 812, damagedBallots: 49, assemblySeats: 21),
+    Local2025MunicipalityStatistics(municipalityName: 'Istog', electorate: 52855, votersTotal: 20609, regularVoters: 18919, specialAndPostalVoters: 1690, turnout: 38.99, validBallots: 19325, invalidAndBlankBallots: 1287, damagedBallots: 89, assemblySeats: 27),
+    Local2025MunicipalityStatistics(municipalityName: 'Kaçanik', electorate: 34642, votersTotal: 17520, regularVoters: 16705, specialAndPostalVoters: 815, turnout: 50.57, validBallots: 16233, invalidAndBlankBallots: 1290, damagedBallots: 54, assemblySeats: 21),
+    Local2025MunicipalityStatistics(municipalityName: 'Klinë', electorate: 52592, votersTotal: 19178, regularVoters: 17608, specialAndPostalVoters: 1570, turnout: 36.47, validBallots: 17778, invalidAndBlankBallots: 1405, damagedBallots: 67, assemblySeats: 27),
+    Local2025MunicipalityStatistics(municipalityName: 'Fushë Kosovë', electorate: 51564, votersTotal: 22032, regularVoters: 21567, specialAndPostalVoters: 465, turnout: 42.73, validBallots: 20229, invalidAndBlankBallots: 1805, damagedBallots: 48, assemblySeats: 31),
+    Local2025MunicipalityStatistics(municipalityName: 'Kamenicë', electorate: 35092, votersTotal: 16185, regularVoters: 15089, specialAndPostalVoters: 1096, turnout: 46.12, validBallots: 14866, invalidAndBlankBallots: 1315, damagedBallots: 71, assemblySeats: 21),
+    Local2025MunicipalityStatistics(municipalityName: 'Mitrovicë e Jugut', electorate: 85883, votersTotal: 33729, regularVoters: 32830, specialAndPostalVoters: 899, turnout: 39.27, validBallots: 30939, invalidAndBlankBallots: 2787, damagedBallots: 136, assemblySeats: 31),
+    Local2025MunicipalityStatistics(municipalityName: 'Leposaviq', electorate: 12399, votersTotal: 7526, regularVoters: 7501, specialAndPostalVoters: 25, turnout: 60.7, validBallots: 6774, invalidAndBlankBallots: 753, damagedBallots: 9, assemblySeats: 15),
+    Local2025MunicipalityStatistics(municipalityName: 'Lipjan', electorate: 67268, votersTotal: 30875, regularVoters: 30094, specialAndPostalVoters: 781, turnout: 45.9, validBallots: 28643, invalidAndBlankBallots: 2230, damagedBallots: 68, assemblySeats: 31),
+    Local2025MunicipalityStatistics(municipalityName: 'Novobërdë', electorate: 10329, votersTotal: 6125, regularVoters: 5949, specialAndPostalVoters: 176, turnout: 59.3, validBallots: 5683, invalidAndBlankBallots: 458, damagedBallots: 11, assemblySeats: 15),
+    Local2025MunicipalityStatistics(municipalityName: 'Obiliq', electorate: 26408, votersTotal: 13010, regularVoters: 12825, specialAndPostalVoters: 185, turnout: 49.27, validBallots: 11955, invalidAndBlankBallots: 1052, damagedBallots: 100, assemblySeats: 21),
+    Local2025MunicipalityStatistics(municipalityName: 'Rahovec', electorate: 61475, votersTotal: 22060, regularVoters: 20740, specialAndPostalVoters: 1320, turnout: 35.88, validBallots: 20165, invalidAndBlankBallots: 1894, damagedBallots: 100, assemblySeats: 27),
+    Local2025MunicipalityStatistics(municipalityName: 'Pejë', electorate: 122099, votersTotal: 43615, regularVoters: 42167, specialAndPostalVoters: 1448, turnout: 35.72, validBallots: 40143, invalidAndBlankBallots: 3473, damagedBallots: 832, assemblySeats: 35),
+    Local2025MunicipalityStatistics(municipalityName: 'Podujevë', electorate: 88117, votersTotal: 40059, regularVoters: 39035, specialAndPostalVoters: 1024, turnout: 45.46, validBallots: 36854, invalidAndBlankBallots: 3214, damagedBallots: 129, assemblySeats: 35),
+    Local2025MunicipalityStatistics(municipalityName: 'Prishtinë', electorate: 224053, votersTotal: 107841, regularVoters: 106406, specialAndPostalVoters: 1435, turnout: 48.13, validBallots: 99871, invalidAndBlankBallots: 7973, damagedBallots: 580, assemblySeats: 51),
+    Local2025MunicipalityStatistics(municipalityName: 'Prizren', electorate: 191752, votersTotal: 65460, regularVoters: 63333, specialAndPostalVoters: 2127, turnout: 34.14, validBallots: 60546, invalidAndBlankBallots: 4920, damagedBallots: 154, assemblySeats: 41),
+    Local2025MunicipalityStatistics(municipalityName: 'Skenderaj', electorate: 54774, votersTotal: 16698, regularVoters: 16344, specialAndPostalVoters: 354, turnout: 30.49, validBallots: 14891, invalidAndBlankBallots: 1808, damagedBallots: 31, assemblySeats: 27),
+    Local2025MunicipalityStatistics(municipalityName: 'Shtime', electorate: 28873, votersTotal: 14754, regularVoters: 13969, specialAndPostalVoters: 785, turnout: 51.1, validBallots: 13449, invalidAndBlankBallots: 1306, damagedBallots: 346, assemblySeats: 21),
+    Local2025MunicipalityStatistics(municipalityName: 'Shtërpcë', electorate: 12550, votersTotal: 6843, regularVoters: 6703, specialAndPostalVoters: 140, turnout: 54.53, validBallots: 6330, invalidAndBlankBallots: 513, damagedBallots: 5, assemblySeats: 19),
+    Local2025MunicipalityStatistics(municipalityName: 'Suharekë', electorate: 73095, votersTotal: 28885, regularVoters: 26488, specialAndPostalVoters: 2397, turnout: 39.52, validBallots: 26685, invalidAndBlankBallots: 2201, damagedBallots: 130, assemblySeats: 27),
+    Local2025MunicipalityStatistics(municipalityName: 'Ferizaj', electorate: 125865, votersTotal: 53876, regularVoters: 52751, specialAndPostalVoters: 1125, turnout: 42.8, validBallots: 49440, invalidAndBlankBallots: 4445, damagedBallots: 265, assemblySeats: 41),
+    Local2025MunicipalityStatistics(municipalityName: 'Viti', electorate: 51607, votersTotal: 21124, regularVoters: 19670, specialAndPostalVoters: 1454, turnout: 40.93, validBallots: 19383, invalidAndBlankBallots: 1742, damagedBallots: 79, assemblySeats: 27),
+    Local2025MunicipalityStatistics(municipalityName: 'Vushtrri', electorate: 78102, votersTotal: 31760, regularVoters: 30960, specialAndPostalVoters: 800, turnout: 40.66, validBallots: 28803, invalidAndBlankBallots: 2958, damagedBallots: 87, assemblySeats: 15),
+    Local2025MunicipalityStatistics(municipalityName: 'Zveçan', electorate: 6879, votersTotal: 4198, regularVoters: 4191, specialAndPostalVoters: 7, turnout: 61.03, validBallots: 3832, invalidAndBlankBallots: 366, damagedBallots: 77, assemblySeats: 15),
+    Local2025MunicipalityStatistics(municipalityName: 'Malishevë', electorate: 58451, votersTotal: 22136, regularVoters: 20923, specialAndPostalVoters: 1213, turnout: 37.87, validBallots: 20373, invalidAndBlankBallots: 1761, damagedBallots: 68, assemblySeats: 27),
+    Local2025MunicipalityStatistics(municipalityName: 'Junik', electorate: 6209, votersTotal: 3726, regularVoters: 2517, specialAndPostalVoters: 1209, turnout: 60.01, validBallots: 3579, invalidAndBlankBallots: 147, damagedBallots: 7, assemblySeats: 15),
+    Local2025MunicipalityStatistics(municipalityName: 'Mamushë', electorate: 4739, votersTotal: 3316, regularVoters: 3037, specialAndPostalVoters: 279, turnout: 69.97, validBallots: 3198, invalidAndBlankBallots: 118, damagedBallots: 38, assemblySeats: 15),
+    Local2025MunicipalityStatistics(municipalityName: 'Hani Elezit', electorate: 8925, votersTotal: 5369, regularVoters: 5013, specialAndPostalVoters: 356, turnout: 60.16, validBallots: 5012, invalidAndBlankBallots: 361, damagedBallots: 9, assemblySeats: 15),
+    Local2025MunicipalityStatistics(municipalityName: 'Graçanicë', electorate: 25325, votersTotal: 11906, regularVoters: 11809, specialAndPostalVoters: 97, turnout: 47.01, validBallots: 10820, invalidAndBlankBallots: 1092, damagedBallots: 13, assemblySeats: 19),
+    Local2025MunicipalityStatistics(municipalityName: 'Ranillug', electorate: 4836, votersTotal: 2917, regularVoters: 2888, specialAndPostalVoters: 29, turnout: 60.32, validBallots: 2696, invalidAndBlankBallots: 223, damagedBallots: 4, assemblySeats: 15),
+    Local2025MunicipalityStatistics(municipalityName: 'Partesh', electorate: 4738, votersTotal: 2252, regularVoters: 2222, specialAndPostalVoters: 30, turnout: 47.53, validBallots: 1993, invalidAndBlankBallots: 260, damagedBallots: 34, assemblySeats: 15),
+    Local2025MunicipalityStatistics(municipalityName: 'Kllokot', electorate: 4232, votersTotal: 2310, regularVoters: 2267, specialAndPostalVoters: 43, turnout: 54.58, validBallots: 2103, invalidAndBlankBallots: 207, damagedBallots: 3, assemblySeats: 15),
+    Local2025MunicipalityStatistics(municipalityName: 'Mitrovicë e Veriut', electorate: 17667, votersTotal: 8149, regularVoters: 8079, specialAndPostalVoters: 70, turnout: 46.13, validBallots: 7567, invalidAndBlankBallots: 582, damagedBallots: 53, assemblySeats: 15),
+  ];
+
+  static Local2025MunicipalityStatistics? statisticsFor(String name) {
+    for (final item in statistics) { if (item.municipalityName == name) return item; }
+    return null;
+  }
+}
