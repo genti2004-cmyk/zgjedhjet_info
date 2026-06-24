@@ -62,7 +62,7 @@ class ElectionArchiveCatalog {
       sourceUrl: 'https://kqz-ks.org/rezultatet/',
       hasOfficialResultsInApp: false,
       hasCandidateDataInApp: false,
-      hasMunicipalityDataInApp: false,
+      hasMunicipalityDataInApp: true,
     ),
     ElectionArchiveItem(
       id: 'parliamentary-2017',

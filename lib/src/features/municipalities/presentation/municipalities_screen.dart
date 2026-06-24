@@ -11,6 +11,7 @@ import '../../../core/widgets/app_state_cards.dart';
 import '../../../core/widgets/election_picker_card.dart';
 import '../../../core/widgets/premium_components.dart';
 import '../../results/data/election_repository.dart';
+import 'parliamentary_2019_municipality_detail_screen.dart';
 import 'parliamentary_2021_municipality_detail_screen.dart';
 import 'parliamentary_2025_municipality_detail_screen.dart';
 
@@ -241,6 +242,9 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                       _SearchAndSortCard(
                         controller: _searchController,
                         sortMode: _sortMode,
+                        hasVoterStatistics: allMunicipalities.any(
+                          (item) => item.hasVoterStatistics,
+                        ),
                         onSearchChanged: (value) {
                           setState(() {
                             _searchQuery = value;
@@ -279,6 +283,16 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                                         MaterialPageRoute<void>(
                                           builder: (_) =>
                                               Parliamentary2021MunicipalityDetailScreen(
+                                            municipalityName: entry.value.name,
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  ElectionSourceType.parliamentary2019 => () {
+                                      Navigator.of(context).push(
+                                        MaterialPageRoute<void>(
+                                          builder: (_) =>
+                                              Parliamentary2019MunicipalityDetailScreen(
                                             municipalityName: entry.value.name,
                                           ),
                                         ),
@@ -661,12 +675,14 @@ class _SummaryItem extends StatelessWidget {
 class _SearchAndSortCard extends StatelessWidget {
   final TextEditingController controller;
   final MunicipalitySortMode sortMode;
+  final bool hasVoterStatistics;
   final ValueChanged<String> onSearchChanged;
   final ValueChanged<MunicipalitySortMode?> onSortChanged;
 
   const _SearchAndSortCard({
     required this.controller,
     required this.sortMode,
+    required this.hasVoterStatistics,
     required this.onSearchChanged,
     required this.onSortChanged,
   });
@@ -701,20 +717,22 @@ class _SearchAndSortCard extends StatelessWidget {
               decoration: const InputDecoration(
                 labelText: 'Renditja',
               ),
-              items: const [
-                DropdownMenuItem(
+              items: [
+                const DropdownMenuItem(
                   value: MunicipalitySortMode.name,
                   child: Text('Sipas emrit'),
                 ),
-                DropdownMenuItem(
-                  value: MunicipalitySortMode.turnout,
-                  child: Text('Sipas daljes'),
-                ),
-                DropdownMenuItem(
-                  value: MunicipalitySortMode.voters,
-                  child: Text('Sipas votuesve'),
-                ),
-                DropdownMenuItem(
+                if (hasVoterStatistics) ...[
+                  const DropdownMenuItem(
+                    value: MunicipalitySortMode.turnout,
+                    child: Text('Sipas daljes'),
+                  ),
+                  const DropdownMenuItem(
+                    value: MunicipalitySortMode.voters,
+                    child: Text('Sipas votuesve'),
+                  ),
+                ],
+                const DropdownMenuItem(
                   value: MunicipalitySortMode.votesCast,
                   child: Text('Sipas votave'),
                 ),
