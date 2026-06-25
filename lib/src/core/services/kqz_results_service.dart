@@ -9,7 +9,8 @@ import '../../features/local_2017/data/local_2017_assembly_candidate_data.dart';
 import '../../features/local_2025/data/local_2025_assembly_candidate_data.dart';
 import '../../features/local_2025/data/local_2025_assembly_data.dart';
 import '../../features/local_2025/data/local_2025_assembly_party_data.dart';
-import '../../features/local_2025/data/local_2025_placeholder_data.dart';
+import '../../features/local_2025/data/local_2025_mayor_data.dart';
+import '../../features/local_2025/data/local_2025_mayor_party_data.dart';
 import '../../features/parliamentary_2010/data/parliamentary_2010_party_data.dart';
 import '../../features/parliamentary_2010/data/parliamentary_2010_candidate_data.dart';
 import '../../features/parliamentary_2010/data/parliamentary_2010_municipality_data.dart';
@@ -65,7 +66,7 @@ class KqzResultsService {
       case ElectionSourceType.local2025:
         return Election(id: 'local-2025', title: source.title, type: 'Lokale', status: 'Rezultatet e kuvendeve komunale, kandidatët dhe statistikat nga dokumentet zyrtare të KQZ', date: DateTime(2025, 10, 12), lastUpdated: DateTime.now());
       case ElectionSourceType.local2025Round2:
-        return Election(id: 'local-2025-r2', title: source.title, type: 'Lokale - Raundi II', status: 'Burim zyrtar i përgatitur - test UI', date: DateTime(2025, 11, 9), lastUpdated: DateTime.now());
+        return Election(id: 'local-2025-r2', title: source.title, type: 'Lokale - Raundi II', status: 'Rezultatet e raundit të parë dhe balotazhit nga dokumentet zyrtare të KQZ', date: DateTime(2025, 10, 12), lastUpdated: DateTime.now());
     }
   }
 
@@ -95,7 +96,7 @@ class KqzResultsService {
       case ElectionSourceType.local2025:
         return Local2025AssemblyPartyData.nationalResults;
       case ElectionSourceType.local2025Round2:
-        return Local2025PlaceholderData.localRound2PartyResults;
+        return Local2025MayorPartyData.results;
     }
   }
 
@@ -127,7 +128,7 @@ class KqzResultsService {
       case ElectionSourceType.local2025:
         return Local2025AssemblyData.municipalities;
       case ElectionSourceType.local2025Round2:
-        return Local2025PlaceholderData.localRound2MunicipalitiesPlaceholder;
+        return Local2025MayorData.municipalityResults;
     }
   }
 
@@ -157,7 +158,7 @@ class KqzResultsService {
       case ElectionSourceType.local2025:
         return Local2025AssemblyCandidateData.allCandidates;
       case ElectionSourceType.local2025Round2:
-        return Local2025PlaceholderData.localRound2CandidatesPlaceholder;
+        return Local2025MayorData.candidateResults;
     }
   }
 }

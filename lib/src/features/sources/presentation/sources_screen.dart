@@ -219,7 +219,7 @@ class _SourcesScreenState extends State<SourcesScreen> {
       case ElectionSourceType.local2025:
         return 'local-2025';
       case ElectionSourceType.local2025Round2:
-        return 'local-2025-r2';
+        return 'Kryetarët e Komunave 2025';
     }
   }
 }

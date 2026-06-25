@@ -4,6 +4,7 @@ import 'parliamentary_2007_municipality_detail_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../local_2025/presentation/local_2025_municipality_detail_screen.dart';
+import '../../local_2025/presentation/local_2025_mayor_municipality_detail_screen.dart';
 
 import '../../../core/models/election_source.dart';
 import '../../../core/services/election_data_status.dart';
@@ -111,6 +112,10 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
   }
 
   String _municipalityNoticeMessage(ElectionSource source) {
+    if (source.type == ElectionSourceType.local2025Round2) {
+      return 'Shfaqen 38 komunat, fituesit përfundimtarë dhe votat e raundit vendimtar. Të dhënat janë nga skedarët zyrtarë të KQZ.';
+    }
+
     if (_hasOfficialMunicipalityResults(source)) {
       return 'Të dhënat janë importuar nga skedari zyrtar i KQZ. Votuesit dhe dalja nuk shfaqen, sepse skedari nuk i përmban.';
     }
@@ -357,6 +362,16 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                                       Navigator.of(context).push(
                                         MaterialPageRoute<void>(
                                           builder: (_) => Local2025MunicipalityDetailScreen(
+                                            municipalityName: entry.value.name,
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  ElectionSourceType.local2025Round2 => () {
+                                      Navigator.of(context).push(
+                                        MaterialPageRoute<void>(
+                                          builder: (_) =>
+                                              Local2025MayorMunicipalityDetailScreen(
                                             municipalityName: entry.value.name,
                                           ),
                                         ),

@@ -67,6 +67,10 @@ class _ResultsScreenState extends State<ResultsScreen> {
   }
 
   String _resultNoticeMessage(ElectionSource source) {
+    if (source.type == ElectionSourceType.local2025Round2) {
+      return 'Për ${source.shortTitle} votat janë totali i raundit të parë, ndërsa mandatet tregojnë numrin e kryetarëve të fituar përfundimisht.';
+    }
+
     if (_hasOfficialResults(source)) {
       return 'Për ${source.shortTitle} shfaqen rezultatet e subjekteve politike, votat, përqindjet dhe mandatet nga dokumentet zyrtare të KQZ.';
     }

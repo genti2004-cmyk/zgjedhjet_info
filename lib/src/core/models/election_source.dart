@@ -163,13 +163,13 @@ class ElectionSource {
 
   static final ElectionSource local2025Round2 = ElectionSource(
     id: 'local-2025-r2',
-    title: 'Zgjedhjet Lokale 2025 – Raundi II',
-    shortTitle: 'Lokale 2025 R2',
+    title: 'Zgjedhjet për Kryetarë të Komunave 2025',
+    shortTitle: 'Kryetarët e Komunave 2025',
     description:
-        'Burime zyrtare të përgatitura për raundin e dytë të zgjedhjeve lokale 2025.',
+        'Rezultatet zyrtare të raundit të parë dhe balotazhit për kryetarë komunash 2025.',
     type: ElectionSourceType.local2025Round2,
     officialUrl: 'https://resultslocal2025r2.kqz-ks.org/',
-    date: DateTime(2025, 11, 9),
+    date: DateTime(2025, 10, 12),
   );
 
   static final List<ElectionSource> all = [
