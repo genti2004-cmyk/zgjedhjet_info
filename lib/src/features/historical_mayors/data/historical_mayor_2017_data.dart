@@ -58,17 +58,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '1',
-          municipalityName: 'Deçan',
-          fullName: 'BASHKIM RAMOSAJ',
-          subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS',
-          votes: 10434,
-          percentage: 64.26,
-          round: 1,
-        ),
+        municipalityCode: '1',
+        municipalityName: 'Deçan',
+        fullName: 'BASHKIM RAMOSAJ',
+        subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS',
+        votes: 10434,
+        percentage: 64.26,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -142,11 +142,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '2',
+          municipalityName: 'Dragash',
+          fullName: 'SHABAN SHABANI',
+          subjectName: 'PDK - PARTIA DEMOKRATIKE E KOSOVËS',
+          votes: 6579,
+          percentage: 51.07,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '2',
+          municipalityName: 'Dragash',
+          fullName: 'SELIM KRYEZIU',
+          subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+          votes: 6303,
+          percentage: 48.93,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '2',
+        municipalityName: 'Dragash',
+        fullName: 'SHABAN SHABANI',
+        subjectName: 'PDK - PARTIA DEMOKRATIKE E KOSOVËS',
+        votes: 6579,
+        percentage: 51.07,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '3',
@@ -227,11 +252,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '3',
+          municipalityName: 'Ferizaj',
+          fullName: 'AGIM ALIU',
+          subjectName: 'PDK - PARTIA DEMOKRATIKE E KOSOVËS',
+          votes: 24384,
+          percentage: 56.18,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '3',
+          municipalityName: 'Ferizaj',
+          fullName: 'MUHAREM SVARQA',
+          subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+          votes: 19016,
+          percentage: 43.82,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '3',
+        municipalityName: 'Ferizaj',
+        fullName: 'AGIM ALIU',
+        subjectName: 'PDK - PARTIA DEMOKRATIKE E KOSOVËS',
+        votes: 24384,
+        percentage: 56.18,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '4',
@@ -303,17 +353,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '4',
-          municipalityName: 'Fushë Kosovë',
-          fullName: 'BURIM BERISHA',
-          subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
-          votes: 9821,
-          percentage: 63.84,
-          round: 1,
-        ),
+        municipalityCode: '4',
+        municipalityName: 'Fushë Kosovë',
+        fullName: 'BURIM BERISHA',
+        subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+        votes: 9821,
+        percentage: 63.84,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -387,11 +437,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '5',
+          municipalityName: 'Gjakovë',
+          fullName: 'ARDIAN GJINI',
+          subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS',
+          votes: 21999,
+          percentage: 53.46,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '5',
+          municipalityName: 'Gjakovë',
+          fullName: 'MIMOZA KUSARI LILA',
+          subjectName: 'ALTERNATIVA',
+          votes: 19152,
+          percentage: 46.54,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '5',
+        municipalityName: 'Gjakovë',
+        fullName: 'ARDIAN GJINI',
+        subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS',
+        votes: 21999,
+        percentage: 53.46,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '6',
@@ -454,11 +529,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '6',
+          municipalityName: 'Gjilan',
+          fullName: 'LUTFI HAZIRI',
+          subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+          votes: 21261,
+          percentage: 63.81,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '6',
+          municipalityName: 'Gjilan',
+          fullName: 'SAMI KURTESHI',
+          subjectName: 'LËVIZJA VETËVENDOSJE!',
+          votes: 12057,
+          percentage: 36.19,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '6',
+        municipalityName: 'Gjilan',
+        fullName: 'LUTFI HAZIRI',
+        subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+        votes: 21261,
+        percentage: 63.81,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '7',
@@ -539,17 +639,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '7',
-          municipalityName: 'Gllogovc',
-          fullName: 'RAMIZ LLADROVCI',
-          subjectName: 'PDK - PARTIA DEMOKRATIKE E KOSOVËS',
-          votes: 14074,
-          percentage: 59.04,
-          round: 1,
-        ),
+        municipalityCode: '7',
+        municipalityName: 'Gllogovc',
+        fullName: 'RAMIZ LLADROVCI',
+        subjectName: 'PDK - PARTIA DEMOKRATIKE E KOSOVËS',
+        votes: 14074,
+        percentage: 59.04,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -578,17 +678,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '8',
-          municipalityName: 'Graçanicë',
-          fullName: 'SRDJAN POPOVIĆ',
-          subjectName: 'SRPSKA LISTA',
-          votes: 6985,
-          percentage: 87.53,
-          round: 1,
-        ),
+        municipalityCode: '8',
+        municipalityName: 'Graçanicë',
+        fullName: 'SRDJAN POPOVIĆ',
+        subjectName: 'SRPSKA LISTA',
+        votes: 6985,
+        percentage: 87.53,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -626,17 +726,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '9',
-          municipalityName: 'Hani i Elezit',
-          fullName: 'RUFKI SUMA',
-          subjectName: 'RUFKI SUMA',
-          votes: 2839,
-          percentage: 57.40,
-          round: 1,
-        ),
+        municipalityCode: '9',
+        municipalityName: 'Hani i Elezit',
+        fullName: 'RUFKI SUMA',
+        subjectName: 'RUFKI SUMA',
+        votes: 2839,
+        percentage: 57.40,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -692,11 +792,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '10',
+          municipalityName: 'Istog',
+          fullName: 'HAKI RUGOVA',
+          subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+          votes: 10033,
+          percentage: 50.03,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '10',
+          municipalityName: 'Istog',
+          fullName: 'GANI DRESHAJ',
+          subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS',
+          votes: 10019,
+          percentage: 49.97,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '10',
+        municipalityName: 'Istog',
+        fullName: 'HAKI RUGOVA',
+        subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+        votes: 10033,
+        percentage: 50.03,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '11',
@@ -741,17 +866,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '11',
-          municipalityName: 'Junik',
-          fullName: 'AGRON KUÇI',
-          subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS',
-          votes: 1499,
-          percentage: 57.88,
-          round: 1,
-        ),
+        municipalityCode: '11',
+        municipalityName: 'Junik',
+        fullName: 'AGRON KUÇI',
+        subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS',
+        votes: 1499,
+        percentage: 57.88,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -816,11 +941,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '12',
+          municipalityName: 'Kamenicë',
+          fullName: 'QËNDRON KASTRATI',
+          subjectName: 'LËVIZJA VETËVENDOSJE!',
+          votes: 8764,
+          percentage: 55.57,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '12',
+          municipalityName: 'Kamenicë',
+          fullName: 'SHAIP SURDULLI',
+          subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+          votes: 7006,
+          percentage: 44.43,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '12',
+        municipalityName: 'Kamenicë',
+        fullName: 'QËNDRON KASTRATI',
+        subjectName: 'LËVIZJA VETËVENDOSJE!',
+        votes: 8764,
+        percentage: 55.57,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '13',
@@ -874,11 +1024,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '13',
+          municipalityName: 'Kaçanik',
+          fullName: 'BESIM ILAZI',
+          subjectName: 'PDK - PARTIA DEMOKRATIKE E KOSOVËS',
+          votes: 6782,
+          percentage: 54.73,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '13',
+          municipalityName: 'Kaçanik',
+          fullName: 'BASRI KODRA',
+          subjectName: 'LËVIZJA VETËVENDOSJE!',
+          votes: 5609,
+          percentage: 45.27,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '13',
+        municipalityName: 'Kaçanik',
+        fullName: 'BESIM ILAZI',
+        subjectName: 'PDK - PARTIA DEMOKRATIKE E KOSOVËS',
+        votes: 6782,
+        percentage: 54.73,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '14',
@@ -941,11 +1116,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '14',
+          municipalityName: 'Klinë',
+          fullName: 'ZENUN ELEZAJ',
+          subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS',
+          votes: 8397,
+          percentage: 51.62,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '14',
+          municipalityName: 'Klinë',
+          fullName: 'SOKOL BASHOTA',
+          subjectName: 'PDK - PARTIA DEMOKRATIKE E KOSOVËS',
+          votes: 7869,
+          percentage: 48.38,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '14',
+        municipalityName: 'Klinë',
+        fullName: 'ZENUN ELEZAJ',
+        subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS',
+        votes: 8397,
+        percentage: 51.62,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '15',
@@ -999,11 +1199,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '15',
+          municipalityName: 'Kllokot',
+          fullName: 'BOŽIDAR DEJANOVIĆ',
+          subjectName: 'GI KLOKOT-VRBOVAC',
+          votes: 1042,
+          percentage: 50.24,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '15',
+          municipalityName: 'Kllokot',
+          fullName: 'STRAHINJA SPASIĆ',
+          subjectName: 'SRPSKA LISTA',
+          votes: 1032,
+          percentage: 49.76,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '15',
+        municipalityName: 'Kllokot',
+        fullName: 'BOŽIDAR DEJANOVIĆ',
+        subjectName: 'GI KLOKOT-VRBOVAC',
+        votes: 1042,
+        percentage: 50.24,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '16',
@@ -1039,17 +1264,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '16',
-          municipalityName: 'Leposaviq',
-          fullName: 'ZORAN TODIĆ',
-          subjectName: 'SRPSKA LISTA',
-          votes: 5105,
-          percentage: 63.20,
-          round: 1,
-        ),
+        municipalityCode: '16',
+        municipalityName: 'Leposaviq',
+        fullName: 'ZORAN TODIĆ',
+        subjectName: 'SRPSKA LISTA',
+        votes: 5105,
+        percentage: 63.20,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -1105,17 +1330,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '17',
-          municipalityName: 'Lipjan',
-          fullName: 'IMRI AHMETI',
-          subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
-          votes: 17019,
-          percentage: 59.51,
-          round: 1,
-        ),
+        municipalityCode: '17',
+        municipalityName: 'Lipjan',
+        fullName: 'IMRI AHMETI',
+        subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+        votes: 17019,
+        percentage: 59.51,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -1207,11 +1432,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '18',
+          municipalityName: 'Malishevë',
+          fullName: 'RAGIP BEGAJ',
+          subjectName: 'NISMA - NISMA PËR KOSOVËN',
+          votes: 10868,
+          percentage: 55.80,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '18',
+          municipalityName: 'Malishevë',
+          fullName: 'MURSEL GASHI',
+          subjectName: 'PDK - PARTIA DEMOKRATIKE E KOSOVËS',
+          votes: 8607,
+          percentage: 44.20,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '18',
+        municipalityName: 'Malishevë',
+        fullName: 'RAGIP BEGAJ',
+        subjectName: 'NISMA - NISMA PËR KOSOVËN',
+        votes: 10868,
+        percentage: 55.80,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '19',
@@ -1247,17 +1497,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '19',
-          municipalityName: 'Mamushë',
-          fullName: 'ABDÜLHADİ KRASNİÇ',
-          subjectName: 'KDTP - KOSOVA DEMOKRATiK TÜRK PARTiSi',
-          votes: 1393,
-          percentage: 53.99,
-          round: 1,
-        ),
+        municipalityCode: '19',
+        municipalityName: 'Mamushë',
+        fullName: 'ABDÜLHADİ KRASNİÇ',
+        subjectName: 'KDTP - KOSOVA DEMOKRATiK TÜRK PARTiSi',
+        votes: 1393,
+        percentage: 53.99,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -1358,11 +1608,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '20',
+          municipalityName: 'Mitrovicë e Jugut',
+          fullName: 'AGIM BAHTIRI',
+          subjectName: 'AKR - ALEANCA KOSOVA E RE',
+          votes: 16509,
+          percentage: 57.41,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '20',
+          municipalityName: 'Mitrovicë e Jugut',
+          fullName: 'VALDETE IDRIZI',
+          subjectName: 'PDK - PARTIA DEMOKRATIKE E KOSOVËS',
+          votes: 12245,
+          percentage: 42.59,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '20',
+        municipalityName: 'Mitrovicë e Jugut',
+        fullName: 'AGIM BAHTIRI',
+        subjectName: 'AKR - ALEANCA KOSOVA E RE',
+        votes: 16509,
+        percentage: 57.41,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '21',
@@ -1407,17 +1682,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '21',
-          municipalityName: 'Mitrovicë e Veriut',
-          fullName: 'GORAN RAKIĆ',
-          subjectName: 'SRPSKA LISTA',
-          votes: 5372,
-          percentage: 67.45,
-          round: 1,
-        ),
+        municipalityCode: '21',
+        municipalityName: 'Mitrovicë e Veriut',
+        fullName: 'GORAN RAKIĆ',
+        subjectName: 'SRPSKA LISTA',
+        votes: 5372,
+        percentage: 67.45,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -1473,17 +1748,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '22',
-          municipalityName: 'Novobërdë',
-          fullName: 'SVETISLAV IVANOVIĆ',
-          subjectName: 'SRPSKA LISTA',
-          votes: 3097,
-          percentage: 59.40,
-          round: 1,
-        ),
+        municipalityCode: '22',
+        municipalityName: 'Novobërdë',
+        fullName: 'SVETISLAV IVANOVIĆ',
+        subjectName: 'SRPSKA LISTA',
+        votes: 3097,
+        percentage: 59.40,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -1548,11 +1823,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '23',
+          municipalityName: 'Obiliq',
+          fullName: 'XHAFER GASHI',
+          subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS',
+          votes: 6370,
+          percentage: 60.52,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '23',
+          municipalityName: 'Obiliq',
+          fullName: 'MEHMET KRASNIQI',
+          subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+          votes: 4155,
+          percentage: 39.48,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '23',
+        municipalityName: 'Obiliq',
+        fullName: 'XHAFER GASHI',
+        subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS',
+        votes: 6370,
+        percentage: 60.52,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '24',
@@ -1579,18 +1879,35 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
-      ],
-      winner: HistoricalMayorCandidate(
+        HistoricalMayorCandidate(
           municipalityCode: '24',
           municipalityName: 'Partesh',
           fullName: 'DRAGAN PETKOVIC',
           subjectName: 'SRPSKA LISTA',
-          votes: 1571,
-          percentage: 59.73,
-          round: 1,
+          votes: 1331,
+          percentage: 61.94,
+          round: 2,
         ),
-      decidedInRunoff: false,
+        HistoricalMayorCandidate(
+          municipalityCode: '24',
+          municipalityName: 'Partesh',
+          fullName: 'NENAD CVETKOVIĆ',
+          subjectName: 'GI GRAĐANSKA INICIJATIVA NARODNA SLOGA',
+          votes: 818,
+          percentage: 38.06,
+          round: 2,
+        )
+      ],
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '24',
+        municipalityName: 'Partesh',
+        fullName: 'DRAGAN PETKOVIC',
+        subjectName: 'SRPSKA LISTA',
+        votes: 1331,
+        percentage: 61.94,
+        round: 2,
+      ),
+      decidedInRunoff: true,
       finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
@@ -1663,17 +1980,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '25',
-          municipalityName: 'Pejë',
-          fullName: 'GAZMEND MUHAXHERI',
-          subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
-          votes: 22014,
-          percentage: 50.23,
-          round: 1,
-        ),
+        municipalityCode: '25',
+        municipalityName: 'Pejë',
+        fullName: 'GAZMEND MUHAXHERI',
+        subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+        votes: 22014,
+        percentage: 50.23,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -1738,11 +2055,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '26',
+          municipalityName: 'Podujevë',
+          fullName: 'AGIM VELIU',
+          subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+          votes: 20027,
+          percentage: 63.78,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '26',
+          municipalityName: 'Podujevë',
+          fullName: 'AJET POTERA',
+          subjectName: 'LËVIZJA VETËVENDOSJE!',
+          votes: 11373,
+          percentage: 36.22,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '26',
+        municipalityName: 'Podujevë',
+        fullName: 'AGIM VELIU',
+        subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+        votes: 20027,
+        percentage: 63.78,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '27',
@@ -1823,11 +2165,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '27',
+          municipalityName: 'Prishtinë',
+          fullName: 'SHPEND AHMETI',
+          subjectName: 'LËVIZJA VETËVENDOSJE!',
+          votes: 42262,
+          percentage: 50.22,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '27',
+          municipalityName: 'Prishtinë',
+          fullName: 'ARBAN ABRASHI',
+          subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+          votes: 41897,
+          percentage: 49.78,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '27',
+        municipalityName: 'Prishtinë',
+        fullName: 'SHPEND AHMETI',
+        subjectName: 'LËVIZJA VETËVENDOSJE!',
+        votes: 42262,
+        percentage: 50.22,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '28',
@@ -1926,11 +2293,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '28',
+          municipalityName: 'Prizren',
+          fullName: 'MYTAHER HASKUKA',
+          subjectName: 'LËVIZJA VETËVENDOSJE!',
+          votes: 25949,
+          percentage: 50.36,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '28',
+          municipalityName: 'Prizren',
+          fullName: 'SHAQIR TOTAJ',
+          subjectName: 'PDK - PARTIA DEMOKRATIKE E KOSOVËS',
+          votes: 25577,
+          percentage: 49.64,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '28',
+        municipalityName: 'Prizren',
+        fullName: 'MYTAHER HASKUKA',
+        subjectName: 'LËVIZJA VETËVENDOSJE!',
+        votes: 25949,
+        percentage: 50.36,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '29',
@@ -1984,11 +2376,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '29',
+          municipalityName: 'Rahovec',
+          fullName: 'SMAJL LATIFI',
+          subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS',
+          votes: 10561,
+          percentage: 50.70,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '29',
+          municipalityName: 'Rahovec',
+          fullName: 'IDRIZ VEHAPI',
+          subjectName: 'PDK - PARTIA DEMOKRATIKE E KOSOVËS',
+          votes: 10271,
+          percentage: 49.30,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '29',
+        municipalityName: 'Rahovec',
+        fullName: 'SMAJL LATIFI',
+        subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS',
+        votes: 10561,
+        percentage: 50.70,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '30',
@@ -2033,17 +2450,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '30',
-          municipalityName: 'Ranillug',
-          fullName: 'VLADICA ARITONOVIĆ',
-          subjectName: 'SRPSKA LISTA',
-          votes: 2439,
-          percentage: 78.25,
-          round: 1,
-        ),
+        municipalityCode: '30',
+        municipalityName: 'Ranillug',
+        fullName: 'VLADICA ARITONOVIĆ',
+        subjectName: 'SRPSKA LISTA',
+        votes: 2439,
+        percentage: 78.25,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -2099,11 +2516,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '31',
+          municipalityName: 'Shtime',
+          fullName: 'NAIM ISMAJLI',
+          subjectName: 'PDK - PARTIA DEMOKRATIKE E KOSOVËS',
+          votes: 6252,
+          percentage: 51.61,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '31',
+          municipalityName: 'Shtime',
+          fullName: 'FATMIR RASHITI',
+          subjectName: 'FATMIR RASHITI',
+          votes: 5861,
+          percentage: 48.39,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '31',
+        municipalityName: 'Shtime',
+        fullName: 'NAIM ISMAJLI',
+        subjectName: 'PDK - PARTIA DEMOKRATIKE E KOSOVËS',
+        votes: 6252,
+        percentage: 51.61,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '32',
@@ -2139,17 +2581,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '32',
-          municipalityName: 'Shtërpcë',
-          fullName: 'BRATISLAV NIKOLIĆ',
-          subjectName: 'SRPSKA LISTA',
-          votes: 5613,
-          percentage: 73.58,
-          round: 1,
-        ),
+        municipalityCode: '32',
+        municipalityName: 'Shtërpcë',
+        fullName: 'BRATISLAV NIKOLIĆ',
+        subjectName: 'SRPSKA LISTA',
+        votes: 5613,
+        percentage: 73.58,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -2196,17 +2638,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '33',
-          municipalityName: 'Skenderaj',
-          fullName: 'BEKIM JASHARI',
-          subjectName: 'BEKIM JASHARI',
-          votes: 13982,
-          percentage: 85.52,
-          round: 1,
-        ),
+        municipalityCode: '33',
+        municipalityName: 'Skenderaj',
+        fullName: 'BEKIM JASHARI',
+        subjectName: 'BEKIM JASHARI',
+        votes: 13982,
+        percentage: 85.52,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -2280,11 +2722,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '34',
+          municipalityName: 'Suharekë',
+          fullName: 'BALI MUHARREMAJ',
+          subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS',
+          votes: 13755,
+          percentage: 52.57,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '34',
+          municipalityName: 'Suharekë',
+          fullName: 'SALI ASLLANAJ',
+          subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+          votes: 12410,
+          percentage: 47.43,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '34',
+        municipalityName: 'Suharekë',
+        fullName: 'BALI MUHARREMAJ',
+        subjectName: 'AAK - ALEANCA PËR ARDHMËRINË E KOSOVËS',
+        votes: 13755,
+        percentage: 52.57,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '35',
@@ -2329,17 +2796,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '35',
-          municipalityName: 'Viti',
-          fullName: 'SOKOL HALITI',
-          subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
-          votes: 10768,
-          percentage: 51.65,
-          round: 1,
-        ),
+        municipalityCode: '35',
+        municipalityName: 'Viti',
+        fullName: 'SOKOL HALITI',
+        subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+        votes: 10768,
+        percentage: 51.65,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -2404,11 +2871,36 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+        HistoricalMayorCandidate(
+          municipalityCode: '36',
+          municipalityName: 'Vushtrri',
+          fullName: 'XHAFER TAHIRI',
+          subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+          votes: 15122,
+          percentage: 54.24,
+          round: 2,
+        ),
+        HistoricalMayorCandidate(
+          municipalityCode: '36',
+          municipalityName: 'Vushtrri',
+          fullName: 'FERIT IDRIZI',
+          subjectName: 'PDK - PARTIA DEMOKRATIKE E KOSOVËS',
+          votes: 12758,
+          percentage: 45.76,
+          round: 2,
+        )
       ],
-      winner: null,
+      winner: HistoricalMayorCandidate(
+        municipalityCode: '36',
+        municipalityName: 'Vushtrri',
+        fullName: 'XHAFER TAHIRI',
+        subjectName: 'LDK - LIDHJA DEMOKRATIKE E KOSOVËS',
+        votes: 15122,
+        percentage: 54.24,
+        round: 2,
+      ),
       decidedInRunoff: true,
-      finalResultComplete: false,
+      finalResultComplete: true,
     ),
     HistoricalMayorMunicipality(
       code: '37',
@@ -2435,17 +2927,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '37',
-          municipalityName: 'Zubin Potok',
-          fullName: 'STEVAN VULOVIĆ',
-          subjectName: 'SRPSKA LISTA',
-          votes: 2691,
-          percentage: 79.85,
-          round: 1,
-        ),
+        municipalityCode: '37',
+        municipalityName: 'Zubin Potok',
+        fullName: 'STEVAN VULOVIĆ',
+        subjectName: 'SRPSKA LISTA',
+        votes: 2691,
+        percentage: 79.85,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     ),
@@ -2474,17 +2966,17 @@ class HistoricalMayor2017Data {
         )
       ],
       secondRound: [
-        
+
       ],
       winner: HistoricalMayorCandidate(
-          municipalityCode: '38',
-          municipalityName: 'Zveçan',
-          fullName: 'VUČINA JANKOVIĆ',
-          subjectName: 'SRPSKA LISTA',
-          votes: 2863,
-          percentage: 70.59,
-          round: 1,
-        ),
+        municipalityCode: '38',
+        municipalityName: 'Zveçan',
+        fullName: 'VUČINA JANKOVIĆ',
+        subjectName: 'SRPSKA LISTA',
+        votes: 2863,
+        percentage: 70.59,
+        round: 1,
+      ),
       decidedInRunoff: false,
       finalResultComplete: true,
     )
@@ -2495,34 +2987,34 @@ class HistoricalMayor2017Data {
         .expand((municipality) => municipality.firstRound)
         .map(
           (candidate) => CandidateResult(
-            id: 'mayor-2017-${candidate.municipalityCode}-${candidate.fullName}',
-            fullName: candidate.fullName,
-            subjectName: candidate.subjectName,
-            municipalityName: candidate.municipalityName,
-            votes: candidate.votes,
-          ),
-        )
+        id: 'mayor-2017-${candidate.municipalityCode}-${candidate.fullName}',
+        fullName: candidate.fullName,
+        subjectName: candidate.subjectName,
+        municipalityName: candidate.municipalityName,
+        votes: candidate.votes,
+      ),
+    )
         .toList(growable: false);
   }
 
   static List<MunicipalityResult> get municipalityResults {
     return municipalities
         .map((municipality) {
-          final winner = municipality.winner;
-          final leading = winner?.subjectName ??
-              (municipality.firstRound.isEmpty
-                  ? ''
-                  : municipality.firstRound.first.subjectName);
-          return MunicipalityResult(
-            id: 'mayor-2017-${municipality.code}',
-            name: municipality.name,
-            voters: 0,
-            votesCast: municipality.finalRoundVotes,
-            turnoutPercentage: 0,
-            leadingSubject: leading,
-            hasVoterStatistics: false,
-          );
-        })
+      final winner = municipality.winner;
+      final leading = winner?.subjectName ??
+          (municipality.firstRound.isEmpty
+              ? ''
+              : municipality.firstRound.first.subjectName);
+      return MunicipalityResult(
+        id: 'mayor-2017-${municipality.code}',
+        name: municipality.name,
+        voters: 0,
+        votesCast: municipality.finalRoundVotes,
+        turnoutPercentage: 0,
+        leadingSubject: leading,
+        hasVoterStatistics: false,
+      );
+    })
         .toList(growable: false);
   }
 
