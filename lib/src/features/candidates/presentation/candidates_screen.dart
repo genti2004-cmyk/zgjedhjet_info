@@ -71,8 +71,10 @@ class _CandidatesScreenState extends State<CandidatesScreen> {
       return 'Për ${source.shortTitle} shfaqen të gjithë kandidatët me votat e tyre nga skedari zyrtar i KQZ. Kandidatët e zgjedhur shfaqen edhe në detajet e komunës.';
     }
 
-    if (source.type == ElectionSourceType.local2025Round2) {
-      return 'Për ${source.shortTitle} shfaqen të gjithë kandidatët e raundit të parë. Fituesi përfundimtar dhe balotazhi shfaqen në detajet e komunës.';
+    if (source.type == ElectionSourceType.local2017Mayor ||
+        source.type == ElectionSourceType.local2021Mayor ||
+        source.type == ElectionSourceType.local2025Round2) {
+      return 'Për ${source.shortTitle} shfaqen të gjithë kandidatët e raundit të parë. Fituesi dhe balotazhi, kur janë të disponueshme, shfaqen në detajet e komunës.';
     }
 
     if (_hasOfficialCandidates(source)) {

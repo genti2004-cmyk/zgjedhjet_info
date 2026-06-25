@@ -1,4 +1,4 @@
-import '../../../core/models/municipality_party_result.dart';
+
 import '../../../core/models/party_result.dart';
 import 'local_2025_assembly_models.dart';
 

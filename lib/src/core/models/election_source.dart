@@ -10,6 +10,8 @@ enum ElectionSourceType {
   parliamentary2004,
   parliamentary2001,
   local2017,
+  local2017Mayor,
+  local2021Mayor,
   local2025,
   local2025Round2,
 }
@@ -35,6 +37,8 @@ class ElectionSource {
 
   bool get isLocal =>
       type == ElectionSourceType.local2017 ||
+      type == ElectionSourceType.local2017Mayor ||
+      type == ElectionSourceType.local2021Mayor ||
       type == ElectionSourceType.local2025 ||
       type == ElectionSourceType.local2025Round2;
 
@@ -151,6 +155,29 @@ class ElectionSource {
     date: DateTime(2017, 10, 22),
   );
 
+
+  static final ElectionSource local2017Mayor = ElectionSource(
+    id: 'local-2017-mayor',
+    title: 'Zgjedhjet për Kryetarë të Komunave 2017',
+    shortTitle: 'Kryetarët e Komunave 2017',
+    description:
+        'Rezultatet zyrtare të raundit të parë për 38 komuna. Fituesit e drejtpërdrejtë janë të plotë; balotazhi 2017 do të plotësohet pas verifikimit të skedarit përkatës.',
+    type: ElectionSourceType.local2017Mayor,
+    officialUrl: 'https://kqz-ks.org/rezultatet/zgjedhjet-per-kryetare-te-komunave/',
+    date: DateTime(2017, 10, 22),
+  );
+
+  static final ElectionSource local2021Mayor = ElectionSource(
+    id: 'local-2021-mayor',
+    title: 'Zgjedhjet për Kryetarë të Komunave 2021',
+    shortTitle: 'Kryetarët e Komunave 2021',
+    description:
+        'Rezultatet zyrtare të raundit të parë dhe balotazhit për kryetarë komunash 2021.',
+    type: ElectionSourceType.local2021Mayor,
+    officialUrl: 'https://kqz-ks.org/rezultatet/zgjedhjet-per-kryetare-te-komunave/',
+    date: DateTime(2021, 10, 17),
+  );
+
   static final ElectionSource local2025 = ElectionSource(
     id: 'local-2025',
     title: 'Zgjedhjet për Kuvendet e Komunave 2025',
@@ -184,6 +211,8 @@ class ElectionSource {
   parliamentary2004,
   parliamentary2001,
     local2017,
+    local2017Mayor,
+    local2021Mayor,
     local2025,
     local2025Round2,
   ];

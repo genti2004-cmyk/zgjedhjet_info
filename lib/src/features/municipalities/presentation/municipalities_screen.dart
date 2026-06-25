@@ -1,3 +1,4 @@
+import '../../historical_mayors/presentation/historical_mayor_municipality_detail_screen.dart';
 import 'parliamentary_2001_municipality_detail_screen.dart';
 import 'parliamentary_2004_municipality_detail_screen.dart';
 import 'parliamentary_2007_municipality_detail_screen.dart';
@@ -112,7 +113,12 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
   }
 
   String _municipalityNoticeMessage(ElectionSource source) {
-    if (source.type == ElectionSourceType.local2025Round2) {
+    if (source.type == ElectionSourceType.local2017Mayor) {
+      return 'Shfaqen 38 komunat dhe rezultatet zyrtare të raundit të parë. Për komunat me balotazh, rezultati përfundimtar do të plotësohet pasi të importohet skedari zyrtar i raundit të dytë.';
+    }
+
+    if (source.type == ElectionSourceType.local2021Mayor ||
+        source.type == ElectionSourceType.local2025Round2) {
       return 'Shfaqen 38 komunat, fituesit përfundimtarë dhe votat e raundit vendimtar. Të dhënat janë nga skedarët zyrtarë të KQZ.';
     }
 
@@ -357,6 +363,28 @@ class _MunicipalitiesScreenState extends State<MunicipalitiesScreen> {
                                     },
                                   ElectionSourceType.parliamentary2001 => () {
                                       Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => Parliamentary2001MunicipalityDetailScreen(municipalityName: entry.value.name)));
+                                    },
+                                  ElectionSourceType.local2017Mayor => () {
+                                      Navigator.of(context).push(
+                                        MaterialPageRoute<void>(
+                                          builder: (_) =>
+                                              HistoricalMayorMunicipalityDetailScreen(
+                                            year: 2017,
+                                            municipalityName: entry.value.name,
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  ElectionSourceType.local2021Mayor => () {
+                                      Navigator.of(context).push(
+                                        MaterialPageRoute<void>(
+                                          builder: (_) =>
+                                              HistoricalMayorMunicipalityDetailScreen(
+                                            year: 2021,
+                                            municipalityName: entry.value.name,
+                                          ),
+                                        ),
+                                      );
                                     },
                                   ElectionSourceType.local2025 => () {
                                       Navigator.of(context).push(

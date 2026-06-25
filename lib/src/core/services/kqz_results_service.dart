@@ -1,3 +1,6 @@
+import '../../features/historical_mayors/data/historical_mayor_2017_data.dart';
+import '../../features/historical_mayors/data/historical_mayor_2021_data.dart';
+import '../../features/historical_mayors/data/historical_mayor_party_data.dart';
 import '../../features/parliamentary_2025_december/data/parliamentary_2025_december_party_data.dart';
 import '../../features/parliamentary_2025_december/data/parliamentary_2025_december_candidate_data.dart';
 import '../../features/parliamentary_2025_december/data/parliamentary_2025_december_municipality_data.dart';
@@ -63,6 +66,10 @@ class KqzResultsService {
         return Election(id: 'parliamentary-2010', title: source.title, type: 'Parlamentare', status: 'Rezultatet e subjekteve nga dokument zyrtar i KQZ', date: DateTime(2010, 12, 12), lastUpdated: DateTime.now());
       case ElectionSourceType.local2017:
         return Election(id: 'local-2017', title: source.title, type: 'Lokale - Kuvende Komunale', status: 'Rezultatet e subjekteve dhe kandidatët sipas komunave nga dokumentet zyrtare të KQZ', date: DateTime(2017, 10, 22), lastUpdated: DateTime.now());
+      case ElectionSourceType.local2017Mayor:
+        return Election(id: 'local-2017-mayor', title: source.title, type: 'Lokale - Kryetarë', status: 'Rezultatet zyrtare të raundit të parë; balotazhi 2017 ende i paplotësuar', date: DateTime(2017, 10, 22), lastUpdated: DateTime.now());
+      case ElectionSourceType.local2021Mayor:
+        return Election(id: 'local-2021-mayor', title: source.title, type: 'Lokale - Kryetarë', status: 'Rezultatet zyrtare të raundit të parë dhe balotazhit', date: DateTime(2021, 10, 17), lastUpdated: DateTime.now());
       case ElectionSourceType.local2025:
         return Election(id: 'local-2025', title: source.title, type: 'Lokale', status: 'Rezultatet e kuvendeve komunale, kandidatët dhe statistikat nga dokumentet zyrtare të KQZ', date: DateTime(2025, 10, 12), lastUpdated: DateTime.now());
       case ElectionSourceType.local2025Round2:
@@ -93,6 +100,10 @@ class KqzResultsService {
         return const <PartyResult>[];
       case ElectionSourceType.local2017:
         return Local2017AssemblySubjectData.results;
+      case ElectionSourceType.local2017Mayor:
+        return HistoricalMayorPartyData.results2017;
+      case ElectionSourceType.local2021Mayor:
+        return HistoricalMayorPartyData.results2021;
       case ElectionSourceType.local2025:
         return Local2025AssemblyPartyData.nationalResults;
       case ElectionSourceType.local2025Round2:
@@ -125,6 +136,10 @@ class KqzResultsService {
         return Parliamentary2001MunicipalityData.results;
       case ElectionSourceType.local2017:
         return const <MunicipalityResult>[];
+      case ElectionSourceType.local2017Mayor:
+        return HistoricalMayor2017Data.municipalityResults;
+      case ElectionSourceType.local2021Mayor:
+        return HistoricalMayor2021Data.municipalityResults;
       case ElectionSourceType.local2025:
         return Local2025AssemblyData.municipalities;
       case ElectionSourceType.local2025Round2:
@@ -155,6 +170,10 @@ class KqzResultsService {
         return const <CandidateResult>[];
       case ElectionSourceType.local2017:
         return Local2017AssemblyCandidateData.results;
+      case ElectionSourceType.local2017Mayor:
+        return HistoricalMayor2017Data.candidateResults;
+      case ElectionSourceType.local2021Mayor:
+        return HistoricalMayor2021Data.candidateResults;
       case ElectionSourceType.local2025:
         return Local2025AssemblyCandidateData.allCandidates;
       case ElectionSourceType.local2025Round2:

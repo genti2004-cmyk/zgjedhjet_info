@@ -67,7 +67,12 @@ class _ResultsScreenState extends State<ResultsScreen> {
   }
 
   String _resultNoticeMessage(ElectionSource source) {
-    if (source.type == ElectionSourceType.local2025Round2) {
+    if (source.type == ElectionSourceType.local2017Mayor) {
+      return 'Për ${source.shortTitle} votat janë nga raundi i parë. Mandatet tregojnë vetëm fituesit e drejtpërdrejtë, sepse balotazhi 2017 nuk është importuar ende.';
+    }
+
+    if (source.type == ElectionSourceType.local2021Mayor ||
+        source.type == ElectionSourceType.local2025Round2) {
       return 'Për ${source.shortTitle} votat janë totali i raundit të parë, ndërsa mandatet tregojnë numrin e kryetarëve të fituar përfundimisht.';
     }
 

@@ -31,6 +31,10 @@ class KqzRemoteConfig {
         return 'OSBE/OMiK Parlamentare 2001';
       case ElectionSourceType.local2017:
         return 'KQZ Lokale 2017';
+      case ElectionSourceType.local2017Mayor:
+        return 'KQZ Kryetarët 2017';
+      case ElectionSourceType.local2021Mayor:
+        return 'KQZ Kryetarët 2021';
       case ElectionSourceType.local2025:
         return 'KQZ Lokale 2025';
       case ElectionSourceType.local2025Round2:
@@ -60,6 +64,9 @@ class KqzRemoteConfig {
         return 'https://www.osce.org/mission-in-kosovo';
       case ElectionSourceType.local2017:
         return 'https://kqz-ks.org/rezultatet/zgjedhjet-per-kuvende-komunale/';
+      case ElectionSourceType.local2017Mayor:
+      case ElectionSourceType.local2021Mayor:
+        return 'https://kqz-ks.org/rezultatet/zgjedhjet-per-kryetare-te-komunave/';
       case ElectionSourceType.local2025:
         return 'https://kqz-ks.org/rezultatet/zgjedhjet-per-kryetare-te-komunave/';
       case ElectionSourceType.local2025Round2:
